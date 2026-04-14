@@ -63,22 +63,22 @@ function StatCard({ stat, inView }: { stat: typeof STATS[0]; inView: boolean }) 
 
   return (
     <div className="flex flex-col items-center p-8 bg-white rounded-2xl border border-[rgba(0,0,0,0.05)] shadow-[var(--sh-soft)] hover:shadow-[var(--sh-deep)] hover:-translate-y-1 transition-all duration-300">
-      <div className="w-16 h-16 rounded-full bg-[var(--color-bg-light)] flex items-center justify-center mb-6 text-[var(--color-accent-blue)]">
+      <div className="w-16 h-16 rounded-full bg-bg-light flex items-center justify-center mb-6 text-brand-blue">
         <stat.icon size={28} />
       </div>
 
-      <div className="text-[40px] md:text-[56px] font-black text-[var(--color-bg-navy)] mb-2 tracking-tighter leading-none">
+      <div className="text-[40px] md:text-[56px] font-black text-brand-navy mb-2 tracking-tighter leading-none">
         {count}
-        <span className="text-[var(--color-accent-blue)]">
+        <span className="text-brand-blue">
           {stat.suffix}
         </span>
       </div>
 
-      <h3 className="text-[13px] font-black uppercase tracking-widest text-[var(--color-bg-navy)] mb-4">
+      <h3 className="text-[13px] font-black uppercase tracking-widest text-brand-navy mb-4">
         {stat.label}
       </h3>
 
-      <p className="text-[14px] text-[var(--color-text-body)] leading-relaxed font-medium">
+      <p className="text-[14px] text-text-body leading-relaxed font-medium">
         {stat.description}
       </p>
     </div>
@@ -107,16 +107,16 @@ export function AutoridadeProva() {
           {/* Headline SaaS Builderall Style */}
           <motion.h2
             variants={fadeUpPremium}
-            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-[var(--color-bg-navy)] tracking-tighter uppercase leading-[0.95]"
+            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-brand-navy tracking-tighter uppercase leading-[0.95]"
           >
-            A AUTORIDADE DE<br className="hidden md:block" /> QUEM <span className="text-[var(--color-accent-blue)]">ENTREGA RESULTADO.</span>
+            A AUTORIDADE DE<br className="hidden md:block" /> QUEM <span className="text-brand-blue">ENTREGA RESULTADO.</span>
           </motion.h2>
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-xl text-[var(--color-text-body)] w-full max-w-4xl leading-relaxed font-medium"
+            className="text-lg md:text-xl text-text-body w-full max-w-4xl leading-relaxed font-medium"
           >
-            Fugimos de jargões técnicos confusos e "vanity metrics". Nossa plataforma eleva <br className="hidden md:block" />seu posicionamento com <span className="font-bold text-[var(--color-bg-navy)]">execução rápida e foco em vendas.</span>
+            Fugimos de jargões técnicos confusos e "vanity metrics". Nossa plataforma eleva <br className="hidden md:block" />seu posicionamento com <span className="font-bold text-brand-navy">execução rápida e foco em vendas.</span>
           </motion.p>
         </motion.div>
 

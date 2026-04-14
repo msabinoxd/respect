@@ -11,9 +11,9 @@ export function Hero() {
       {/* Abstract Corporate Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft Blue Orb top right */}
-        <div className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full bg-gradient-to-bl from-[var(--color-accent-cyan)]/20 to-[var(--color-accent-blue)]/5 blur-[120px]" />
+        <div className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full bg-gradient-to-bl from-brand-cyan/20 to-brand-blue/5 blur-[120px]" />
         {/* Deep Navy Orb bottom left */}
-        <div className="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-[var(--color-bg-navy)]/10 to-transparent blur-[120px]" />
+        <div className="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-brand-navy/10 to-transparent blur-[120px]" />
       </div>
 
       {/* Grid Pattern Clean */}
@@ -34,8 +34,8 @@ export function Hero() {
         >
           {/* Tagline Badge */}
           <motion.div variants={fadeUpPremium} className="mb-8">
-            <span className="inline-flex items-center gap-2 px-5 py-2 text-xs font-black uppercase tracking-widest rounded-full bg-[var(--color-bg-navy)] text-white shadow-lg">
-              <span className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)] animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-5 py-2 text-xs font-black uppercase tracking-widest rounded-full bg-brand-navy text-white shadow-lg">
+              <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
               CONHEÇA O NOVO ECOSSISTEMA RESPECT
             </span>
           </motion.div>
@@ -43,7 +43,7 @@ export function Hero() {
           {/* Builderall Style Headline: ALL CAPS, Geométrico, Gigante */}
           <motion.h1
             variants={fadeUpPremium}
-            className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.95] mb-8 text-[var(--color-text-title)] tracking-tighter uppercase"
+            className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.95] mb-8 text-text-title tracking-tighter uppercase"
           >
             A SOBERANIA <br className="hidden md:block"/> DIGITAL QUE SEU NEGÓCIO <br className="hidden md:block" />
             <span className="text-gradient-builderall">EXIGE.</span>
@@ -52,9 +52,9 @@ export function Hero() {
           {/* Subtitle - Sólido, largo */}
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-2xl text-[var(--color-text-body)] w-full max-w-4xl leading-relaxed font-medium mb-12"
+            className="text-lg md:text-2xl text-text-body w-full max-w-4xl leading-relaxed font-medium mb-12"
           >
-            A <strong className="text-[var(--color-text-title)]">MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.
+            A <strong className="text-text-title">MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.
           </motion.p>
 
           {/* CTA & Trust */}
@@ -71,9 +71,9 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="flex items-center gap-6 mt-4 text-[11px] md:text-xs font-bold uppercase tracking-widest text-[var(--color-text-muted)]">
-               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]"/> Sem contratos amarrados</div>
-               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]"/> Setup Acelerado</div>
+            <div className="flex items-center gap-6 mt-4 text-[11px] md:text-xs font-bold uppercase tracking-widest text-text-muted">
+               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue"/> Sem contratos amarrados</div>
+               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue"/> Setup Acelerado</div>
             </div>
           </motion.div>
         </motion.div>

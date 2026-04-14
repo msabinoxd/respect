@@ -5,24 +5,21 @@
   --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Plus Jakarta Sans", "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
-  /* Backgrounds (SaaS Clean & Deep Navy) */
-  --color-bg-light: #F8F9FA;         /* Fundo claro predominante SaaS */
-  --color-bg-white: #FFFFFF;         /* Cards brancos limpos */
-  --color-bg-navy: #0B1B36;          /* Azul marinho profundo (Builderall style) */
-  --color-bg-navy-dark: #050E20;     /* Navy ainda mais escuro para contraste */
+  /* Cores Nativas do Tailwind v4 (geram utilitários text-*, bg-*, from-*) */
+  --color-bg-light: #F8F9FA;
+  --color-bg-white: #FFFFFF;
+  --color-bg-navy: #0B1B36;
+  --color-bg-navy-dark: #050E20;
 
-  /* Accents (Builderall Elite Colors) */
-  --color-accent-blue: #0090FF;      /* Builderall Primary Blue */
-  --color-accent-cyan: #00D1FF;      /* Builderall Secondary Cyan */
-  --color-accent-navy: #0B1B36;      /* Brand Navy */
-  --color-accent-orange: #FF6A00;    /* CTA de alerta corporativo */
+  --color-brand-blue: #0090FF;
+  --color-brand-cyan: #00D1FF;
+  --color-brand-navy: #0B1B36;
+  --color-brand-orange: #FF6A00;
 
-  /* Textos */
-  --color-text-title: #0B1B36;       /* Títulos sobre fundo claro (Navy) */
-  --color-text-body: #334155;        /* Textos sobre fundo claro (Slate) */
-  --color-text-muted: #64748b;       /* Meta-textos */
-  --color-text-light: #F8FAFC;       /* Textos sobre fundo Navy */
-  --color-text-brand: #0090FF;       /* Azul Builderall */
+  --color-text-title: #0B1B36;
+  --color-text-body: #334155;
+  --color-text-muted: #64748b;
+  --color-text-light: #F8FAFC;
 
   /* Glassmorphism Enterprise */
   --color-glass-clean: rgba(255, 255, 255, 0.85); /* Fundo branco com blur */

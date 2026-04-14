@@ -77,7 +77,7 @@ export function PilaresSolucoes() {
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-xl text-[var(--color-text-light)]/80 w-full max-w-4xl leading-relaxed font-medium"
+            className="text-lg md:text-xl text-text-light/80 w-full max-w-4xl leading-relaxed font-medium"
           >
             Marketing, TI e Comercial orquestrados com precisão cirúrgica.{' '}
             <span className="text-white font-black">Sem mensalidades em dezenas de plataformas soltas.</span>
@@ -94,31 +94,31 @@ export function PilaresSolucoes() {
         >
           {PILARES.map((pilar, i) => (
             <motion.div key={i} variants={fadeUpPremium} className="h-full">
-              <Card interactive className="relative group text-left overflow-hidden border-none text-[var(--color-text-body)]">
+              <Card interactive className="relative group text-left overflow-hidden border-none text-text-body">
                 
                 {/* Linha azul superior */}
-                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan]" />
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-blue to-brand-cyan" />
 
                 <div className="mb-8 mt-2">
-                  <span className="text-[11px] font-black uppercase tracking-widest text-[--color-accent-blue] bg-[--color-accent-blue]/10 px-3 py-1.5 rounded-md">
+                  <span className="text-[11px] font-black uppercase tracking-widest text-brand-blue bg-brand-blue/10 px-3 py-1.5 rounded-md">
                     {pilar.badge}
                   </span>
                 </div>
 
-                <h3 className="text-[26px] font-black text-[var(--color-bg-navy)] mb-4 tracking-tighter uppercase leading-none">
+                <h3 className="text-[26px] font-black text-brand-navy mb-4 tracking-tighter uppercase leading-none">
                   {pilar.title}
                 </h3>
 
-                <p className="text-[15px] text-[var(--color-text-body)] leading-relaxed mb-8 flex-1">
+                <p className="text-[15px] text-text-body leading-relaxed mb-8 flex-1">
                   {pilar.description}
                 </p>
 
                 {/* Features List */}
                 <ul className="flex flex-col gap-4 mb-10">
                   {pilar.features.map((feat, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-[var(--color-bg-navy)]">
-                      <div className="w-8 h-8 rounded-full bg-[var(--color-bg-light)] flex items-center justify-center flex-shrink-0">
-                        <feat.icon size={16} className="text-[--color-accent-blue]" />
+                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
+                      <div className="w-8 h-8 rounded-full bg-bg-light flex items-center justify-center flex-shrink-0">
+                        <feat.icon size={16} className="text-brand-blue" />
                       </div>
                       {feat.text}
                     </li>
@@ -137,7 +137,7 @@ export function PilaresSolucoes() {
                   </Button>
                   <Link
                     to={`/${pilar.id}`}
-                    className="text-center text-sm font-bold uppercase tracking-widest text-[--color-accent-blue] hover:text-[--color-bg-navy] transition-colors py-2"
+                    className="text-center text-sm font-bold uppercase tracking-widest text-brand-blue hover:text-brand-navy transition-colors py-2"
                   >
                     Ver detalhes do serviço →
                   </Link>

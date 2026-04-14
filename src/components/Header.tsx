@@ -39,9 +39,9 @@ export function Header() {
           {/* Logo Builderall Style - Bold, limpo e forte */}
           <Link to="/" className="flex items-center gap-2 group cursor-pointer border-none outline-none">
             {/* Como o usuário quer reformular a marca, usamos uma tipografia forte */}
-            <span className={`text-2xl md:text-3xl font-black tracking-tighter uppercase ${scrolled ? 'text-[var(--color-bg-navy)]' : 'text-[var(--color-bg-navy)]'} font-[var(--font-display)]`}>
+            <span className={`text-2xl md:text-3xl font-black tracking-tighter uppercase text-brand-navy font-[var(--font-display)]`}>
               RESPECT
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan]">.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan">.</span>
             </span>
           </Link>
 
@@ -51,7 +51,7 @@ export function Header() {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-[13px] font-black uppercase tracking-widest ${scrolled ? 'text-[var(--color-text-body)] hover:text-[var(--color-bg-navy)]' : 'text-[var(--color-text-body)] hover:text-[var(--color-bg-navy)]'} transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-[var(--color-accent-blue)] after:transition-all after:duration-300 hover:after:w-full`}
+                className={`text-[13px] font-black uppercase tracking-widest text-text-body hover:text-brand-navy transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue after:transition-all after:duration-300 hover:after:w-full`}
               >
                 {link.label}
               </Link>
@@ -68,7 +68,7 @@ export function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-[var(--color-bg-navy)] p-2 hover:bg-[var(--color-accent-blue)]/10 rounded-lg transition-colors"
+            className="md:hidden text-brand-navy p-2 hover:bg-brand-blue/10 rounded-lg transition-colors"
             aria-label="Menu"
           >
             {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -93,7 +93,7 @@ export function Header() {
                     key={link.href}
                     to={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="text-sm font-black uppercase tracking-widest text-[var(--color-text-navy)] hover:text-[var(--color-accent-blue)] py-4 border-b border-[rgba(0,0,0,0.05)] transition-colors"
+                    className="text-sm font-black uppercase tracking-widest text-brand-navy hover:text-brand-blue py-4 border-b border-[rgba(0,0,0,0.05)] transition-colors"
                   >
                     {link.label}
                   </Link>

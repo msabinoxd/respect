@@ -22,10 +22,10 @@ export function Button({
   const base = 'inline-flex items-center justify-center gap-2 font-black uppercase tracking-wide rounded-xl transition-all duration-300 cursor-pointer select-none';
 
   const variants: Record<string, string> = {
-    primary: 'bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan] text-white hover:brightness-110 shadow-[var(--sh-button)] hover:scale-[1.02] active:scale-[0.98]',
-    secondary: 'bg-white text-[--color-accent-blue] border-2 border-[--color-accent-blue] hover:bg-[--color-accent-blue] hover:text-white hover:scale-[1.02]',
-    navy: 'bg-[--color-bg-navy] text-white hover:bg-[--color-bg-navy-dark] shadow-lg hover:shadow-xl hover:scale-[1.02]',
-    ghost: 'text-[--color-text-muted] hover:text-[--color-accent-blue] hover:bg-black/5',
+    primary: 'bg-gradient-to-r from-brand-blue to-brand-cyan text-white hover:brightness-110 shadow-[var(--sh-button)] hover:scale-[1.02] active:scale-[0.98]',
+    secondary: 'bg-bg-white text-brand-blue border-2 border-brand-blue hover:bg-brand-blue hover:text-white hover:scale-[1.02]',
+    navy: 'bg-bg-navy text-white hover:bg-bg-navy-dark shadow-lg hover:shadow-xl hover:scale-[1.02]',
+    ghost: 'text-text-muted hover:text-brand-blue hover:bg-black/5',
   };
 
   const sizes: Record<string, string> = {
@@ -78,8 +78,8 @@ interface BadgeProps {
 
 export function Badge({ icon: Icon, label, variant = 'blue', className = '' }: BadgeProps) {
   const variants: Record<string, string> = {
-    blue: 'bg-[--color-accent-blue]/10 text-[--color-accent-blue] border-[--color-accent-blue]/20',
-    navy: 'bg-[--color-bg-navy]/10 text-[--color-bg-navy] border-[--color-bg-navy]/20',
+    blue: 'bg-brand-blue/10 text-brand-blue border-brand-blue/20',
+    navy: 'bg-bg-navy/10 text-bg-navy border-bg-navy/20',
     light: 'bg-white/10 text-white border-white/20',
   };
 
@@ -103,9 +103,9 @@ interface SectionProps {
 
 export function Section({ children, variant = 'light', id, className = '' }: SectionProps) {
   const variants: Record<string, string> = {
-    light: 'bg-[var(--color-bg-light)] text-[--color-text-body]',
-    white: 'bg-white text-[--color-text-body]',
-    navy: 'bg-[var(--color-bg-navy)] text-[--color-text-light]',
+    light: 'bg-bg-light text-text-body',
+    white: 'bg-bg-white text-text-body',
+    navy: 'bg-bg-navy text-text-light',
   };
 
   return (
