@@ -1,57 +1,50 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Megaphone, Server, Handshake, ArrowRight, BarChart3, Globe, Bot, Code2, Shield, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA } from '../config';
 import { Button, Card, Badge, Section, Container } from './base';
 
-const PILARES = [
+const PILARES_META = [
   {
-    badge: 'Marketing Full-Stack',
-    title: 'PRESENÇA QUE CONVERTE',
-    description: 'Nossa suíte de marketing constrói funis inteligentes, automação de email e gestão de tráfego pago focado em ROI. Menos cliques perdidos, mais clientes.',
-    features: [
-      { icon: BarChart3, text: 'Funis com Upsell & Downsell' },
-      { icon: Globe, text: 'SEO & Landing Pages Premium' },
-      { icon: Bot, text: 'Automação de Email & CRM' },
-    ],
-    cta: 'ESCALAR MARKETING',
-    msg: 'Olá! Tenho interesse na Suíte de Marketing da Respect.',
     id: 'marketing',
+    icon: Megaphone,
+    features: [
+      { icon: BarChart3, key: 'f1' },
+      { icon: Globe, key: 'f2' },
+      { icon: Bot, key: 'f3' },
+    ],
+    msg: 'Olá! Tenho interesse na Suíte de Marketing da Respect.',
   },
   {
-    badge: 'TI & DevOps',
-    title: 'INFRAESTRUTURA INTELIGENTE',
-    description: 'Arquitetura de servidores cloud, software sob medida e desenvolvimento UI/UX. Uma base tecnológica que não trava quando sua empresa cresce.',
-    features: [
-      { icon: Code2, text: 'Sistemas Sob Medida' },
-      { icon: Shield, text: 'DevOps & Cloud Architecture' },
-      { icon: Server, text: 'Manutenção Contínua' },
-    ],
-    cta: 'BLINDAR MINHA TI',
-    msg: 'Olá! Tenho interesse na Suíte de TI da Respect.',
     id: 'ti',
+    icon: Server,
+    features: [
+      { icon: Code2, key: 'f1' },
+      { icon: Shield, key: 'f2' },
+      { icon: Server, key: 'f3' },
+    ],
+    msg: 'Olá! Tenho interesse na Suíte de TI da Respect.',
   },
   {
-    badge: 'Consultoria Comercial',
-    title: 'VENDAS AUTOMATIZADAS',
-    description: 'Chatbots inteligentes integrados ao WhatsApp e treinamento de CRM para seu time comercial. Atendimento ultra-rápido que escala seu fechamento.',
-    features: [
-      { icon: Bot, text: 'Chatbots WhatsApp com IA' },
-      { icon: Users, text: 'Treinamento de Equipes' },
-      { icon: Megaphone, text: 'Estratégia de Aquisição' },
-    ],
-    cta: 'AUTOMATIZAR VENDAS',
-    msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect.',
     id: 'vendas',
+    icon: Handshake,
+    features: [
+      { icon: Bot, key: 'f1' },
+      { icon: Users, key: 'f2' },
+      { icon: Megaphone, key: 'f3' },
+    ],
+    msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect.',
   },
 ];
 
 export function PilaresSolucoes() {
+  const { t } = useTranslation();
+
   return (
-    // Fundo azul corporativo escuro cruzando com blocos brancos
     <Section variant="navy" id="servicos" className="relative">
-      
+
       {/* Detalhe de fundo */}
       <div className="absolute top-0 left-0 w-full h-[300px] bg-gradient-to-b from-[rgba(0,144,255,0.05)] to-transparent" />
 
@@ -64,27 +57,27 @@ export function PilaresSolucoes() {
           className="flex flex-col items-center text-center mb-20"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge icon={Handshake} label="A SUÍTE DE SOLUÇÕES" variant="light" className="mb-6" />
+            <Badge icon={Handshake} label={t('pilares.badge')} variant="light" className="mb-6" />
           </motion.div>
 
           <motion.h2
             variants={fadeUpPremium}
             className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-6 text-white tracking-tighter uppercase leading-tight"
           >
-            TUDO QUE VOCÊ PRECISA <br className="hidden md:block" /> EM UM SÓ{' '}
-            <span className="text-gradient-builderall">LUGAR.</span>
+            {t('pilares.headline')} <br className="hidden md:block" />
+            <span className="text-gradient-builderall">{t('pilares.headline_highlight')}</span>
           </motion.h2>
 
           <motion.p
             variants={fadeUpPremium}
             className="text-lg md:text-xl text-text-light/80 w-full max-w-4xl leading-relaxed font-medium"
           >
-            Marketing, TI e Comercial orquestrados com precisão cirúrgica.{' '}
-            <span className="text-white font-black">Sem mensalidades em dezenas de plataformas soltas.</span>
+            {t('pilares.subline')}{' '}
+            <span className="text-white font-black">{t('pilares.subline_strong')}</span>
           </motion.p>
         </motion.div>
 
-        {/* Cards Grid - Cards Brancos em fundo Navy */}
+        {/* Cards Grid */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -92,25 +85,25 @@ export function PilaresSolucoes() {
           variants={staggerSlow}
           className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch"
         >
-          {PILARES.map((pilar, i) => (
+          {PILARES_META.map((pilar, i) => (
             <motion.div key={i} variants={fadeUpPremium} className="h-full">
               <Card interactive className="relative group text-left overflow-hidden border-none text-text-body">
-                
+
                 {/* Linha azul superior */}
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-blue to-brand-cyan" />
 
                 <div className="mb-8 mt-2">
                   <span className="text-[11px] font-black uppercase tracking-widest text-brand-blue bg-brand-blue/10 px-3 py-1.5 rounded-md">
-                    {pilar.badge}
+                    {t(`pilares.${pilar.id}.badge`)}
                   </span>
                 </div>
 
-                <h3 className="text-[26px] font-black text-brand-navy mb-4 tracking-tighter uppercase leading-none">
-                  {pilar.title}
+                <h3 className="text-[24px] font-black text-brand-navy mb-4 tracking-tighter uppercase leading-none">
+                  {t(`pilares.${pilar.id}.title`)}
                 </h3>
 
                 <p className="text-[15px] text-text-body leading-relaxed mb-8 flex-1">
-                  {pilar.description}
+                  {t(`pilares.${pilar.id}.description`)}
                 </p>
 
                 {/* Features List */}
@@ -120,7 +113,7 @@ export function PilaresSolucoes() {
                       <div className="w-8 h-8 rounded-full bg-bg-light flex items-center justify-center flex-shrink-0">
                         <feat.icon size={16} className="text-brand-blue" />
                       </div>
-                      {feat.text}
+                      {t(`pilares.${pilar.id}.${feat.key}`)}
                     </li>
                   ))}
                 </ul>
@@ -133,13 +126,13 @@ export function PilaresSolucoes() {
                     onClick={() => trackAndOpenWA(pilar.msg, 'Service_Card_Click')}
                     className="w-full"
                   >
-                    {pilar.cta}
+                    {t(`pilares.${pilar.id}.cta`)}
                   </Button>
                   <Link
                     to={`/${pilar.id}`}
                     className="text-center text-sm font-bold uppercase tracking-widest text-brand-blue hover:text-brand-navy transition-colors py-2"
                   >
-                    Ver detalhes do serviço →
+                    {t('pilares.ver_detalhes')}
                   </Link>
                 </div>
               </Card>

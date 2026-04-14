@@ -22,7 +22,7 @@
   --color-text-light: #F8FAFC;
 
   /* Glassmorphism Enterprise */
-  --color-glass-clean: rgba(255, 255, 255, 0.85); /* Fundo branco com blur */
+  --color-glass-clean: rgba(255, 255, 255, 0.85);
   --color-glass-border-clean: rgba(0, 0, 0, 0.05);
 
   /* Shadows Enterprise */
@@ -32,11 +32,30 @@
   --sh-nav: 0px 4px 30px rgba(11, 27, 54, 0.08);
 }
 
+/* ── Dark Mode Variant ── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Dark theme token overrides */
+.dark {
+  --color-bg-light: #050E20;
+  --color-bg-white: #0B1B36;
+  --color-text-title: #F8FAFC;
+  --color-text-body: #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-glass-clean: rgba(11, 27, 54, 0.85);
+  --color-glass-border-clean: rgba(255, 255, 255, 0.06);
+  --sh-soft: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  --sh-nav: 0px 4px 30px rgba(0, 0, 0, 0.5);
+}
+
 /* === Utilities Builderall Style === */
 @utility saas-card {
-  @apply bg-white rounded-2xl border border-[rgba(0,0,0,0.05)];
+  background-color: var(--color-bg-white);
+  border-radius: 1rem;
+  border: 1px solid var(--color-glass-border-clean);
   box-shadow: var(--sh-soft);
-  transition: all 0.3s var(--bezier);
+  transition: all 0.3s ease;
 }
 
 @utility saas-card-hover {
@@ -45,12 +64,28 @@
 }
 
 @utility glass-nav {
-  @apply bg-[rgba(255,255,255,0.85)] backdrop-blur-[15px] border-b border-[rgba(0,0,0,0.05)];
+  background-color: var(--color-glass-clean);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--color-glass-border-clean);
   box-shadow: var(--sh-nav);
 }
 
 @utility text-gradient-builderall {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan];
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan;
+}
+
+/* Glass card for dark navy sections */
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+@utility glass-subtle {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.5rem;
 }
 
 /* Base */
@@ -60,9 +95,9 @@ html {
 
 body {
   background-color: var(--color-bg-light);
-  /* Removido color fixo para permitir contraste via Section */
   font-family: var(--font-sans);
   @apply antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Títulos sempre geométricos e fortes */
@@ -71,11 +106,18 @@ h1, h2, h3 {
   color: var(--color-text-title);
 }
 
+/* Dark mode: headings in light sections */
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: var(--color-text-title);
+}
+
 /* Ajustes de Tailwind v4 base */
 @layer base {
   ::selection {
     background: rgba(0, 144, 255, 0.2);
-    color: var(--color-text-navy);
+    color: var(--color-text-title);
   }
 }
 

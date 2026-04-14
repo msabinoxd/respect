@@ -1,15 +1,17 @@
 import { motion } from 'motion/react';
 import { ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
 import { Button, Container, Badge } from './base';
 
 export function CTAFinal() {
+  const { t } = useTranslation();
+
   return (
-    // Fundo Navy Blue intenso com curvas ou sombras (Builderall Vibe Final Footer)
     <footer id="contato" className="relative bg-brand-navy pt-32 pb-16 overflow-hidden">
-      
-      {/* Luz Azul Corporativa atrás do texto */}
+
+      {/* Luz Azul Corporativa */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-brand-blue/20 rounded-full blur-[150px] pointer-events-none" />
 
       <Container className="relative z-10 text-center" size="default">
@@ -21,29 +23,22 @@ export function CTAFinal() {
           className="flex flex-col items-center text-center"
         >
           <motion.div variants={fadeUpPremium} className="mb-10">
-            <Badge
-              icon={ShieldCheck}
-              label="GARANTIA DE EXECUÇÃO"
-              variant="light"
-            />
+            <Badge icon={ShieldCheck} label={t('cta_final.badge')} variant="light" />
           </motion.div>
 
           <motion.h2
             variants={fadeUpPremium}
             className="text-[40px] sm:text-[56px] md:text-[80px] font-black leading-[0.95] tracking-tighter text-white uppercase mb-8"
           >
-            A PLATAFORMA PARA <br className="hidden md:block" />
-            VENDER{' '}
-            <span className="text-brand-blue">
-              TODOS OS DIAS.
-            </span>
+            {t('cta_final.headline')} <br className="hidden md:block" />
+            <span className="text-brand-blue">{t('cta_final.headline_highlight')}</span>
           </motion.h2>
 
           <motion.p
             variants={fadeUpPremium}
             className="text-lg md:text-2xl text-text-light w-full max-w-4xl leading-relaxed font-medium mb-16 opacity-90"
           >
-            Fale com um de nossos especialistas. Demonstração customizada para o contexto atual da sua operação. Sem compromisso formal.
+            {t('cta_final.subline')}
           </motion.p>
 
           <motion.div
@@ -57,14 +52,13 @@ export function CTAFinal() {
               onClick={() => trackAndOpenWA(CONFIG.wa.msgFinal, 'Footer_CTA')}
               className="w-full sm:w-auto md:min-w-[400px] animate-[pulseBlue_2s_infinite] mb-6"
             >
-              FALAR COM ESPECIALISTA RESPECT
+              {t('cta_final.cta')}
             </Button>
-            
-            {/* Trust Signals Footer */}
+
             <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-text-light/60">
-              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> Setup Acelerado</div>
-              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> Estratégia Comprovada</div>
-              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> Resposta Imediata</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust1')}</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust2')}</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust3')}</div>
             </div>
           </motion.div>
         </motion.div>
@@ -75,7 +69,7 @@ export function CTAFinal() {
             <span className="hidden md:block w-1 h-1 rounded-full bg-brand-blue" />
             <p>{CONFIG.brand.tagline}</p>
           </div>
-          <p className="text-center md:text-right">Soberania Garantida</p>
+          <p className="text-center md:text-right">{t('cta_final.footer_tagline')}</p>
         </div>
       </Container>
     </footer>

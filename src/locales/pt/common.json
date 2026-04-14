@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Início",
+    "marketing": "Marketing",
+    "ti": "TI & DevOps",
+    "comercial": "Comercial",
+    "cta_default": "VER DEMONSTRAÇÃO",
+    "cta_scrolled": "FALAR COM ESPECIALISTA"
+  },
+  "hero": {
+    "badge": "CONHEÇA O NOVO ECOSSISTEMA RESPECT",
+    "line1": "OPERE COM INTELIGÊNCIA.",
+    "line2": "ESCALE COM AUTORIDADE.",
+    "subtitle": "A <strong>MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.",
+    "cta": "CRIAR MEU ECOSSISTEMA AGORA",
+    "trust1": "Sem contratos amarrados",
+    "trust2": "Setup Acelerado"
+  },
+  "pilares": {
+    "badge": "A SUÍTE DE SOLUÇÕES",
+    "headline": "TUDO QUE VOCÊ PRECISA EM UM SÓ",
+    "headline_highlight": "LUGAR.",
+    "subline": "Marketing, TI e Comercial orquestrados com precisão cirúrgica.",
+    "subline_strong": "Sem mensalidades em dezenas de plataformas soltas.",
+    "ver_detalhes": "Ver detalhes do serviço →",
+    "marketing": {
+      "badge": "Marketing Full-Stack",
+      "title": "PRESENÇA QUE CONVERTE",
+      "description": "Nossa suíte de marketing constrói funis inteligentes, automação de email e gestão de tráfego pago focado em ROI. Menos cliques perdidos, mais clientes.",
+      "f1": "Funis com Upsell & Downsell",
+      "f2": "SEO & Landing Pages Premium",
+      "f3": "Automação de Email & CRM",
+      "cta": "ESCALAR MARKETING"
+    },
+    "ti": {
+      "badge": "TI & DevOps",
+      "title": "INFRAESTRUTURA INTELIGENTE",
+      "description": "Arquitetura de servidores cloud, software sob medida e desenvolvimento UI/UX. Uma base tecnológica que não trava quando sua empresa cresce.",
+      "f1": "Sistemas Sob Medida",
+      "f2": "DevOps & Cloud Architecture",
+      "f3": "Manutenção Contínua",
+      "cta": "BLINDAR MINHA TI"
+    },
+    "vendas": {
+      "badge": "Consultoria Comercial",
+      "title": "VENDAS AUTOMATIZADAS",
+      "description": "Chatbots inteligentes integrados ao WhatsApp e treinamento de CRM para seu time comercial. Atendimento ultra-rápido que escala seu fechamento.",
+      "f1": "Chatbots WhatsApp com IA",
+      "f2": "Treinamento de Equipes",
+      "f3": "Estratégia de Aquisição",
+      "cta": "AUTOMATIZAR VENDAS"
+    }
+  },
+  "autoridade": {
+    "badge": "POR QUE A RESPECT",
+    "headline": "A AUTORIDADE DE QUEM",
+    "headline_highlight": "ENTREGA RESULTADO.",
+    "subline": "Fugimos de jargões técnicos confusos e \"vanity metrics\". Nossa plataforma eleva seu posicionamento com execução rápida e foco em vendas.",
+    "subline_strong": "execução rápida e foco em vendas.",
+    "stats": {
+      "anos_label": "Anos no Mercado",
+      "anos_desc": "Experiência robusta arquitetando a soberania digital de negócios sérios.",
+      "pilares_label": "Pilares Integrados",
+      "pilares_desc": "Marketing, Tecnologia e Vendas operando sob o mesmo teto.",
+      "resultados_label": "Retilíneos",
+      "resultados_desc": "Entrega transparente baseada em métricas de performance reais (ROI).",
+      "suporte_label": "Suporte & Operação",
+      "suporte_desc": "Nossa automação trabalha enquanto você escala a sua empresa."
+    }
+  },
+  "faq": {
+    "badge": "Perguntas Frequentes",
+    "headline": "Dúvidas",
+    "headline_highlight": "frequentes.",
+    "subline": "Respondemos as perguntas mais comuns antes da sua primeira conversa conosco.",
+    "q1": "Como funciona o processo de onboarding?",
+    "a1": "Iniciamos com uma reunião de diagnóstico (gratuita) para entender seu negócio, objetivos e desafios. Em seguida, entregamos uma proposta com escopo, cronograma e investimento. Após aprovação, o projeto começa em até 5 dias úteis.",
+    "q2": "Vocês trabalham com contratos de curto ou longo prazo?",
+    "a2": "Oferecemos projetos pontuais e retentores mensais. Para marketing e consultoria comercial, recomendamos mínimo de 3 meses para resultados consistentes. Para TI, o prazo varia conforme o escopo do desenvolvimento.",
+    "q3": "Como medem os resultados das estratégias de marketing?",
+    "a3": "Todas as ações são rastreadas com KPIs definidos no início do projeto: CAC, ROAS, taxa de conversão, LTV e engajamento. Entregamos relatórios mensais e acesso a dashboards em tempo real.",
+    "q4": "Minha empresa é pequena. Faz sentido contratar a Respect?",
+    "a4": "Sim — atendemos desde empresas em fase de crescimento até negócios estabelecidos. Temos pacotes adequados a diferentes estágios e budgets. O mais importante é ter clareza do objetivo e vontade de crescer.",
+    "q5": "Vocês desenvolvem software do zero ou também trabalham com sistemas existentes?",
+    "a5": "Fazemos os dois. Desenvolvemos novas soluções sob medida e também evoluímos sistemas legados — seja adicionando módulos, migrando para a nuvem ou modernizando a arquitetura.",
+    "q6": "Qual o diferencial da Respect em relação a outras agências/consultorias?",
+    "a6": "A integração. Marketing, TI e Comercial trabalhando juntos elimina silos e garante que cada parte da operação fale a mesma língua. Não vendemos serviços isolados — construímos ecossistemas digitais completos."
+  },
+  "cta_final": {
+    "badge": "GARANTIA DE EXECUÇÃO",
+    "headline": "A PLATAFORMA PARA VENDER",
+    "headline_highlight": "TODOS OS DIAS.",
+    "subline": "Fale com um de nossos especialistas. Demonstração customizada para o contexto atual da sua operação. Sem compromisso formal.",
+    "cta": "FALAR COM ESPECIALISTA RESPECT",
+    "trust1": "Setup Acelerado",
+    "trust2": "Estratégia Comprovada",
+    "trust3": "Resposta Imediata",
+    "footer_tagline": "Soberania Garantida"
+  },
+  "pilar_detalhe": {
+    "back": "Voltar para o início",
+    "services_badge": "O que entregamos",
+    "services_title": "Serviços incluídos",
+    "services_sub": "Cada serviço é executado com foco em resultado, não em horas vendidas.",
+    "deliverables_badge": "Entregáveis",
+    "deliverables_title": "O que você recebe",
+    "outcomes_badge": "Resultados Esperados",
+    "outcomes_title": "Impacto no negócio",
+    "stack_badge": "Stack & Ferramentas",
+    "stack_title": "Tecnologias que usamos",
+    "ideal_badge": "Ideal para",
+    "ideal_title": "Para quem é este serviço?",
+    "cta_analysis": "Quero uma análise personalizada",
+    "outros_title": "Conheça os outros pilares",
+    "outros_sub": "Marketing, TI e Comercial integrados — cada um amplifica o outro."
+  },
+  "theme": {
+    "toggle_dark": "Modo escuro",
+    "toggle_light": "Modo claro"
+  },
+  "lang": {
+    "pt": "PT",
+    "en": "EN",
+    "es": "ES"
+  }
+}

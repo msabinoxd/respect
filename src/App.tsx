@@ -11,9 +11,9 @@ function AppLayout() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] font-sans">
-      {/* Barra de progresso de scroll */}
+      {/* Progress Bar (Global) - Builderall Colors */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-violet-600 to-cyan-500 z-[100] origin-left"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-blue to-brand-cyan z-[100] origin-left"
         style={{ scaleX: scrollYProgress }}
       />
 

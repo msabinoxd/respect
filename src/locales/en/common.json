@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Home",
+    "marketing": "Marketing",
+    "ti": "IT & DevOps",
+    "comercial": "Sales",
+    "cta_default": "SEE DEMO",
+    "cta_scrolled": "TALK TO A SPECIALIST"
+  },
+  "hero": {
+    "badge": "DISCOVER THE NEW RESPECT ECOSYSTEM",
+    "line1": "OPERATE WITH INTELLIGENCE.",
+    "line2": "SCALE WITH AUTHORITY.",
+    "subtitle": "<strong>MS Group Respect</strong> is the definitive platform for Marketing, IT and Sales Consulting. Simplify your sales and scale with a premium suite.",
+    "cta": "BUILD MY ECOSYSTEM NOW",
+    "trust1": "No lock-in contracts",
+    "trust2": "Accelerated Setup"
+  },
+  "pilares": {
+    "badge": "THE SOLUTIONS SUITE",
+    "headline": "EVERYTHING YOU NEED IN ONE",
+    "headline_highlight": "PLACE.",
+    "subline": "Marketing, IT and Sales orchestrated with surgical precision.",
+    "subline_strong": "No monthly fees across dozens of scattered platforms.",
+    "ver_detalhes": "See service details →",
+    "marketing": {
+      "badge": "Full-Stack Marketing",
+      "title": "PRESENCE THAT CONVERTS",
+      "description": "Our marketing suite builds intelligent funnels, email automation and paid traffic management focused on ROI. Fewer lost clicks, more customers.",
+      "f1": "Funnels with Upsell & Downsell",
+      "f2": "SEO & Premium Landing Pages",
+      "f3": "Email & CRM Automation",
+      "cta": "SCALE MY MARKETING"
+    },
+    "ti": {
+      "badge": "IT & DevOps",
+      "title": "INTELLIGENT INFRASTRUCTURE",
+      "description": "Cloud server architecture, custom software and UI/UX development. A technological foundation that doesn't break when your company grows.",
+      "f1": "Custom-Built Systems",
+      "f2": "DevOps & Cloud Architecture",
+      "f3": "Continuous Maintenance",
+      "cta": "FORTIFY MY IT"
+    },
+    "vendas": {
+      "badge": "Commercial Consulting",
+      "title": "AUTOMATED SALES",
+      "description": "Intelligent chatbots integrated with WhatsApp and CRM training for your sales team. Ultra-fast service that scales your closing rate.",
+      "f1": "WhatsApp AI Chatbots",
+      "f2": "Team Training",
+      "f3": "Acquisition Strategy",
+      "cta": "AUTOMATE MY SALES"
+    }
+  },
+  "autoridade": {
+    "badge": "WHY RESPECT",
+    "headline": "THE AUTHORITY OF THOSE WHO",
+    "headline_highlight": "DELIVER RESULTS.",
+    "subline": "We avoid confusing technical jargon and \"vanity metrics\". Our platform elevates your positioning with fast execution and a focus on sales.",
+    "subline_strong": "fast execution and a focus on sales.",
+    "stats": {
+      "anos_label": "Years in Market",
+      "anos_desc": "Robust experience architecting the digital sovereignty of serious businesses.",
+      "pilares_label": "Integrated Pillars",
+      "pilares_desc": "Marketing, Technology and Sales operating under the same roof.",
+      "resultados_label": "On Track",
+      "resultados_desc": "Transparent delivery based on real performance metrics (ROI).",
+      "suporte_label": "Support & Operations",
+      "suporte_desc": "Our automation works while you scale your company."
+    }
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "headline": "Common",
+    "headline_highlight": "questions.",
+    "subline": "We answer the most common questions before your first conversation with us.",
+    "q1": "How does the onboarding process work?",
+    "a1": "We start with a free diagnostic meeting to understand your business, goals and challenges. We then deliver a proposal with scope, timeline and investment. After approval, the project starts within 5 business days.",
+    "q2": "Do you work with short or long-term contracts?",
+    "a2": "We offer one-time projects and monthly retainers. For marketing and commercial consulting, we recommend a minimum of 3 months for consistent results. For IT, the timeline varies according to the development scope.",
+    "q3": "How do you measure the results of marketing strategies?",
+    "a3": "All actions are tracked with KPIs defined at the start of the project: CAC, ROAS, conversion rate, LTV and engagement. We deliver monthly reports and access to real-time dashboards.",
+    "q4": "My company is small. Does it make sense to hire Respect?",
+    "a4": "Yes — we serve companies from growth stage to established businesses. We have packages suited to different stages and budgets. The most important thing is to have clarity of objective and willingness to grow.",
+    "q5": "Do you develop software from scratch or also work with existing systems?",
+    "a5": "Both. We develop new custom solutions and also evolve legacy systems — whether adding modules, migrating to the cloud or modernizing the architecture.",
+    "q6": "What sets Respect apart from other agencies/consultancies?",
+    "a6": "Integration. Marketing, IT and Sales working together eliminates silos and ensures every part of the operation speaks the same language. We don't sell isolated services — we build complete digital ecosystems."
+  },
+  "cta_final": {
+    "badge": "EXECUTION GUARANTEE",
+    "headline": "THE PLATFORM TO SELL",
+    "headline_highlight": "EVERY DAY.",
+    "subline": "Talk to one of our specialists. Customized demonstration for your current operational context. No formal commitment.",
+    "cta": "TALK TO A RESPECT SPECIALIST",
+    "trust1": "Accelerated Setup",
+    "trust2": "Proven Strategy",
+    "trust3": "Immediate Response",
+    "footer_tagline": "Guaranteed Sovereignty"
+  },
+  "pilar_detalhe": {
+    "back": "Back to home",
+    "services_badge": "What we deliver",
+    "services_title": "Included services",
+    "services_sub": "Each service is executed with a focus on results, not hours sold.",
+    "deliverables_badge": "Deliverables",
+    "deliverables_title": "What you receive",
+    "outcomes_badge": "Expected Results",
+    "outcomes_title": "Business impact",
+    "stack_badge": "Stack & Tools",
+    "stack_title": "Technologies we use",
+    "ideal_badge": "Ideal for",
+    "ideal_title": "Who is this service for?",
+    "cta_analysis": "I want a personalized analysis",
+    "outros_title": "Explore the other pillars",
+    "outros_sub": "Marketing, IT and Sales integrated — each one amplifies the other."
+  },
+  "theme": {
+    "toggle_dark": "Dark mode",
+    "toggle_light": "Light mode"
+  },
+  "lang": {
+    "pt": "PT",
+    "en": "EN",
+    "es": "ES"
+  }
+}
