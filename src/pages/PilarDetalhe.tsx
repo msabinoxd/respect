@@ -6,6 +6,7 @@ import { trackAndOpenWA } from '../config';
 import { Button, Badge, Container, Section } from '../components/base';
 import { getPilar } from '../data/pilares';
 import { CTAFinal } from '../components/CTAFinal';
+import { useSEO } from '../hooks/useSEO';
 
 interface PilarDetalheProps {
   id: 'marketing' | 'ti' | 'vendas';
@@ -13,6 +14,11 @@ interface PilarDetalheProps {
 
 export function PilarDetalhe({ id }: PilarDetalheProps) {
   const pilar = getPilar(id);
+  
+  useSEO(
+    pilar ? `${pilar.title} | Respect da MS Group` : 'Serviço não encontrado | Respect',
+    pilar ? pilar.description : 'Confira os serviços oferecidos pela Respect'
+  );
 
   if (!pilar) {
     return (

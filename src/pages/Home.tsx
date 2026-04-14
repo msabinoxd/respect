@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Hero } from '../components/Hero';
 import { FAQ } from '../components/FAQ';
+import { useSEO } from '../hooks/useSEO';
 
 const PilaresSolucoes = lazy(() =>
   import('../components/PilaresSolucoes').then((m) => ({ default: m.PilaresSolucoes }))
@@ -13,6 +14,11 @@ const CTAFinal = lazy(() =>
 );
 
 export function Home() {
+  useSEO(
+    'Respect — Soberania Digital para o seu Negócio',
+    'Agência Full-Stack de Marketing Digital, TI & DevOps e Consultoria Comercial. Construindo ecossistemas de alta conversão e infraestrutura corporativa.'
+  );
+
   return (
     <>
       {/* 1. ATENÇÃO — Impacto principal */}

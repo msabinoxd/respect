@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Megaphone, Server, Handshake, ArrowRight, BarChart3, Globe, Bot, Code2, Shield, Users } from 'lucide-react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA } from '../config';
@@ -16,6 +17,7 @@ const PILARES = [
     ],
     cta: 'ESCALAR MARKETING',
     msg: 'Olá! Tenho interesse na Suíte de Marketing da Respect.',
+    id: 'marketing',
   },
   {
     badge: 'TI & DevOps',
@@ -28,6 +30,7 @@ const PILARES = [
     ],
     cta: 'BLINDAR MINHA TI',
     msg: 'Olá! Tenho interesse na Suíte de TI da Respect.',
+    id: 'ti',
   },
   {
     badge: 'Consultoria Comercial',
@@ -40,6 +43,7 @@ const PILARES = [
     ],
     cta: 'AUTOMATIZAR VENDAS',
     msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect.',
+    id: 'vendas',
   },
 ];
 
@@ -121,15 +125,23 @@ export function PilaresSolucoes() {
                   ))}
                 </ul>
 
-                <Button
-                  variant="secondary"
-                  size="md"
-                  icon={ArrowRight}
-                  onClick={() => trackAndOpenWA(pilar.msg, 'Service_Card_Click')}
-                  className="w-full mt-auto"
-                >
-                  {pilar.cta}
-                </Button>
+                <div className="flex flex-col gap-3 mt-auto">
+                  <Button
+                    variant="secondary"
+                    size="md"
+                    icon={ArrowRight}
+                    onClick={() => trackAndOpenWA(pilar.msg, 'Service_Card_Click')}
+                    className="w-full"
+                  >
+                    {pilar.cta}
+                  </Button>
+                  <Link
+                    to={`/${pilar.id}`}
+                    className="text-center text-sm font-bold uppercase tracking-widest text-[--color-accent-blue] hover:text-[--color-bg-navy] transition-colors py-2"
+                  >
+                    Ver detalhes do serviço →
+                  </Link>
+                </div>
               </Card>
             </motion.div>
           ))}

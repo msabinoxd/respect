@@ -19,10 +19,13 @@ export default defineConfig(() => {
       emptyOutDir: true,
       rollupOptions: {
         output: {
-          manualChunks: {
-            'vendor-react': ['react', 'react-dom'],
-            'vendor-motion': ['motion/react'],
-            'vendor-lucide': ['lucide-react'],
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              if (id.includes('react')) return 'vendor-react';
+              if (id.includes('motion')) return 'vendor-motion';
+              if (id.includes('lucide')) return 'vendor-lucide';
+              return 'vendor';
+            }
           },
         },
       },

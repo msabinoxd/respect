@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { Home } from './pages/Home';
 import { PilarDetalhe } from './pages/PilarDetalhe';
+import { NotFound } from './pages/NotFound';
 
 function AppLayout() {
   const { scrollYProgress } = useScroll();
@@ -24,6 +25,7 @@ function AppLayout() {
           <Route path="/marketing" element={<PilarDetalhe id="marketing" />} />
           <Route path="/ti" element={<PilarDetalhe id="ti" />} />
           <Route path="/vendas" element={<PilarDetalhe id="vendas" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

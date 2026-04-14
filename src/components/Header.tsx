@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { CONFIG } from '../config';
@@ -6,10 +7,10 @@ import { Container, Button } from './base';
 import { trackAndOpenWA } from '../config';
 
 const NAV_LINKS = [
-  { label: 'Início', href: '#inicio' },
-  { label: 'Soluções', href: '#servicos' },
-  { label: 'O Ecossistema', href: '#autoridade' },
-  { label: 'Começar', href: '#contato' },
+  { label: 'Início', href: '/' },
+  { label: 'Marketing', href: '/marketing' },
+  { label: 'TI & DevOps', href: '/ti' },
+  { label: 'Comercial', href: '/vendas' },
 ];
 
 export function Header() {
@@ -36,24 +37,24 @@ export function Header() {
       <Container size="lg">
         <nav className="flex items-center justify-between h-20 md:h-24">
           {/* Logo Builderall Style - Bold, limpo e forte */}
-          <a href="#inicio" className="flex items-center gap-2 group cursor-pointer border-none outline-none">
+          <Link to="/" className="flex items-center gap-2 group cursor-pointer border-none outline-none">
             {/* Como o usuário quer reformular a marca, usamos uma tipografia forte */}
             <span className={`text-2xl md:text-3xl font-black tracking-tighter uppercase ${scrolled ? 'text-[var(--color-bg-navy)]' : 'text-[var(--color-bg-navy)]'} font-[var(--font-display)]`}>
               RESPECT
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan]">.</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 className={`text-[13px] font-black uppercase tracking-widest ${scrolled ? 'text-[var(--color-text-body)] hover:text-[var(--color-bg-navy)]' : 'text-[var(--color-text-body)] hover:text-[var(--color-bg-navy)]'} transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-[var(--color-accent-blue)] after:transition-all after:duration-300 hover:after:w-full`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Button
               variant="primary"
@@ -88,14 +89,14 @@ export function Header() {
             <Container>
               <div className="flex flex-col gap-2 py-8">
                 {NAV_LINKS.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
-                    href={link.href}
+                    to={link.href}
                     onClick={() => setMobileOpen(false)}
                     className="text-sm font-black uppercase tracking-widest text-[var(--color-text-navy)] hover:text-[var(--color-accent-blue)] py-4 border-b border-[rgba(0,0,0,0.05)] transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
                 <Button
                   variant="primary"
