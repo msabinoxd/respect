@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useScroll, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
