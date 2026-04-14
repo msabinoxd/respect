@@ -64,7 +64,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             <motion.div variants={fadeUpPremium}>
               <Badge
                 label={pilar.badge}
-                variant={pilar.id === 'marketing' ? 'accent' : pilar.id === 'ti' ? 'light' : 'gold'}
+                variant={pilar.id === 'ti' ? 'light' : 'blue'}
                 className="mb-6"
               />
             </motion.div>
@@ -99,7 +99,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </section>
 
       {/* ── SERVIÇOS DETALHADOS ── */}
-      <Section variant="darker" id="servicos-detalhes">
+      <Section variant="navy" id="servicos-detalhes">
         <Container size="lg">
           <motion.div
             initial="hidden"
@@ -109,7 +109,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             className="mb-14"
           >
             <motion.div variants={fadeUpPremium}>
-              <Badge label="O que entregamos" variant="dark" className="mb-6" />
+              <Badge label="O que entregamos" variant="navy" className="mb-6" />
             </motion.div>
             <motion.h2
               variants={fadeUpPremium}
@@ -147,7 +147,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── DELIVERABLES + OUTCOMES ── */}
-      <Section variant="dark" id="entregaveis">
+      <Section variant="navy" id="entregaveis">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Deliverables */}
@@ -158,7 +158,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               variants={staggerSlow}
             >
               <motion.div variants={fadeUpPremium}>
-                <Badge label="Entregáveis" variant="accent" className="mb-6" />
+                <Badge label="Entregáveis" variant="blue" className="mb-6" />
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
@@ -188,7 +188,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               variants={staggerSlow}
             >
               <motion.div variants={fadeUpPremium}>
-                <Badge label="Resultados Esperados" variant="gold" className="mb-6" />
+                <Badge label="Resultados Esperados" variant="light" className="mb-6" />
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
@@ -214,7 +214,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── STACK (TI only) + IDEAL FOR ── */}
-      <Section variant="darker" id="perfil">
+      <Section variant="navy" id="perfil">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Stack (TI only) */}
@@ -226,7 +226,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 variants={staggerSlow}
               >
                 <motion.div variants={fadeUpPremium}>
-                  <Badge label="Stack & Ferramentas" variant="dark" className="mb-6" />
+                  <Badge label="Stack & Ferramentas" variant="navy" className="mb-6" />
                 </motion.div>
                 <motion.h2
                   variants={fadeUpPremium}
@@ -297,7 +297,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── OUTROS PILARES ── */}
-      <Section variant="dark" id="outros-pilares">
+      <Section variant="navy" id="outros-pilares">
         <Container>
           <motion.div
             initial="hidden"
