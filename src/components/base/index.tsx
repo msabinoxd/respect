@@ -105,7 +105,7 @@ export function Section({ children, variant = 'light', id, className = '' }: Sec
   const variants: Record<string, string> = {
     light: 'bg-[var(--color-bg-light)] text-[--color-text-body]',
     white: 'bg-white text-[--color-text-body]',
-    navy: 'bg-[var(--color-bg-navy)] text-white',
+    navy: 'bg-[var(--color-bg-navy)] text-[--color-text-light]',
   };
 
   return (

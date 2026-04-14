@@ -90,9 +90,9 @@ export const PILARES: Pilar[] = [
       'Negócios que vendem online ou querem escalar captação de leads — e-commerce, SaaS, serviços profissionais, infoprodutores e marcas locais que querem crescer além do boca a boca.',
     cta: 'Quero escalar meu marketing',
     msg: 'Olá! Tenho interesse nos serviços de Marketing Digital Full-Stack da Respect. Gostaria de entender como vocês podem ajudar meu negócio.',
-    gradient: 'from-violet-600 to-purple-500',
-    glowColor: 'violet',
-    accentColor: 'text-violet-400',
+    gradient: 'from-[#0090FF] to-[#00D1FF]',
+    glowColor: 'blue',
+    accentColor: 'text-[--color-accent-blue]',
   },
   {
     id: 'ti',
@@ -156,9 +156,9 @@ export const PILARES: Pilar[] = [
       'Empresas que dependem de tecnologia para operar e querem sair de planilhas e sistemas legados — startups em crescimento, negócios estabelecidos modernizando processos e times sem capacidade técnica interna.',
     cta: 'Quero infraestrutura sólida',
     msg: 'Olá! Tenho interesse nos serviços de TI e DevOps da Respect. Gostaria de discutir um projeto de desenvolvimento ou infraestrutura.',
-    gradient: 'from-cyan-500 to-blue-500',
-    glowColor: 'cyan',
-    accentColor: 'text-cyan-400',
+    gradient: 'from-[#0B1B36] to-[#0090FF]',
+    glowColor: 'navy',
+    accentColor: 'text-[--color-accent-navy]',
   },
   {
     id: 'vendas',
@@ -218,9 +218,9 @@ export const PILARES: Pilar[] = [
       'Negócios com equipe comercial que quer escalar sem contratar proporcionalmente — empresas B2B, prestadores de serviço, SaaS e negócios com ticket médio acima de R$500.',
     cta: 'Quero vender mais e melhor',
     msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect. Quero entender como vocês podem melhorar o meu processo de vendas.',
-    gradient: 'from-amber-500 to-orange-500',
-    glowColor: 'amber',
-    accentColor: 'text-amber-400',
+    gradient: 'from-[#00D1FF] to-[#0B1B36]',
+    glowColor: 'cyan',
+    accentColor: 'text-[--color-accent-cyan]',
   },
 ];
 

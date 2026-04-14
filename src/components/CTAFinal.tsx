@@ -61,7 +61,7 @@ export function CTAFinal() {
             </Button>
             
             {/* Trust Signals Footer */}
-            <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-[#888888]">
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-[var(--color-text-light)]/60">
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Setup Acelerado</div>
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Estratégia Comprovada</div>
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Resposta Imediata</div>
@@ -69,7 +69,7 @@ export function CTAFinal() {
           </motion.div>
         </motion.div>
 
-        <div className="mt-28 md:mt-32 pt-8 border-t border-[rgba(255,255,255,0.05)] flex flex-col md:flex-row items-center justify-between gap-6 text-[12px] font-black uppercase tracking-widest text-[#555] opacity-80">
+        <div className="mt-28 md:mt-32 pt-8 border-t border-[rgba(255,255,255,0.05)] flex flex-col md:flex-row items-center justify-between gap-6 text-[12px] font-black uppercase tracking-widest text-[var(--color-text-light)]/40">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name} MARKETING SUITE</p>
             <span className="hidden md:block w-1 h-1 rounded-full bg-[var(--color-accent-blue)]" />

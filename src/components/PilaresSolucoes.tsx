@@ -77,10 +77,10 @@ export function PilaresSolucoes() {
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-xl text-slate-300 w-full max-w-4xl leading-relaxed font-medium"
+            className="text-lg md:text-xl text-[var(--color-text-light)]/80 w-full max-w-4xl leading-relaxed font-medium"
           >
             Marketing, TI e Comercial orquestrados com precisão cirúrgica.{' '}
-            <span className="text-white font-bold">Sem mensalidades em dezenas de plataformas soltas.</span>
+            <span className="text-white font-black">Sem mensalidades em dezenas de plataformas soltas.</span>
           </motion.p>
         </motion.div>
 
@@ -109,7 +109,7 @@ export function PilaresSolucoes() {
                   {pilar.title}
                 </h3>
 
-                <p className="text-[15px] text-slate-500 leading-relaxed mb-8 flex-1">
+                <p className="text-[15px] text-[var(--color-text-body)] leading-relaxed mb-8 flex-1">
                   {pilar.description}
                 </p>
 
@@ -117,7 +117,7 @@ export function PilaresSolucoes() {
                 <ul className="flex flex-col gap-4 mb-10">
                   {pilar.features.map((feat, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-sm font-bold text-[var(--color-bg-navy)]">
-                      <div className="w-8 h-8 rounded-full bg-[#F8F9FA] flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-[var(--color-bg-light)] flex items-center justify-center flex-shrink-0">
                         <feat.icon size={16} className="text-[--color-accent-blue]" />
                       </div>
                       {feat.text}

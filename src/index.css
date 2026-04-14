@@ -14,14 +14,15 @@
   /* Accents (Builderall Elite Colors) */
   --color-accent-blue: #0090FF;      /* Builderall Primary Blue */
   --color-accent-cyan: #00D1FF;      /* Builderall Secondary Cyan */
+  --color-accent-navy: #0B1B36;      /* Brand Navy */
   --color-accent-orange: #FF6A00;    /* CTA de alerta corporativo */
 
   /* Textos */
-  --color-text-title: #1A1A1A;       /* Títulos sobre fundo claro */
-  --color-text-body: #4A4A4A;        /* Textos sobre fundo claro */
-  --color-text-muted: #888888;       /* Meta-textos, smalls */
-  --color-text-navy: #0B1B36;        /* Títulos com a cor da marca */
+  --color-text-title: #0B1B36;       /* Títulos sobre fundo claro (Navy) */
+  --color-text-body: #334155;        /* Textos sobre fundo claro (Slate) */
+  --color-text-muted: #64748b;       /* Meta-textos */
   --color-text-light: #F8FAFC;       /* Textos sobre fundo Navy */
+  --color-text-brand: #0090FF;       /* Azul Builderall */
 
   /* Glassmorphism Enterprise */
   --color-glass-clean: rgba(255, 255, 255, 0.85); /* Fundo branco com blur */
@@ -62,7 +63,7 @@ html {
 
 body {
   background-color: var(--color-bg-light);
-  color: var(--color-text-body);
+  /* Removido color fixo para permitir contraste via Section */
   font-family: var(--font-sans);
   @apply antialiased;
 }

@@ -31,10 +31,10 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
   return (
     <>
       {/* ── HERO DA PÁGINA ── */}
-      <section className="relative min-h-[70vh] flex items-end pb-20 overflow-hidden bg-[var(--color-bg-primary)] pt-32">
-        {/* Ambient Glow */}
-        <div className="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-violet-600/8 rounded-full blur-[180px] pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/8 rounded-full blur-[140px] pointer-events-none" />
+      <section className="relative min-h-[70vh] flex items-end pb-20 overflow-hidden bg-[var(--color-bg-light)] pt-32">
+        {/* Ambient Glow Branding */}
+        <div className="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-[var(--color-accent-blue)]/5 rounded-full blur-[180px] pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[var(--color-bg-navy)]/5 rounded-full blur-[140px] pointer-events-none" />
 
         {/* Grid */}
         <div
@@ -49,7 +49,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
           {/* Back link */}
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-slate-300 transition-colors mb-10"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent-blue)] transition-colors mb-10"
           >
             <ArrowLeft size={14} />
             Voltar para o início
@@ -71,14 +71,14 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
 
             <motion.h1
               variants={fadeUpPremium}
-              className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-white tracking-tighter"
+              className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-[var(--color-text-title)] tracking-tighter"
             >
               {pilar.title}
             </motion.h1>
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-base md:text-xl text-slate-400 leading-relaxed font-medium mb-10 max-w-2xl"
+              className="text-base md:text-xl text-[var(--color-text-body)] leading-relaxed font-medium mb-10 max-w-2xl"
             >
               {pilar.description}
             </motion.p>
@@ -139,7 +139,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   <svc.icon size={20} className="text-white" />
                 </div>
                 <h3 className="text-base font-bold text-white mb-2">{svc.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{svc.desc}</p>
+                <p className="text-sm text-white/70 leading-relaxed">{svc.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -171,9 +171,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   <motion.li
                     key={d}
                     variants={fadeUpPremium}
-                    className="flex items-start gap-3 text-sm text-slate-300"
+                    className="flex items-start gap-3 text-sm text-[--color-text-light]/90"
                   >
-                    <CheckCircle2 size={16} className="text-violet-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 size={16} className="text-[--color-accent-cyan] flex-shrink-0 mt-0.5" />
                     {d}
                   </motion.li>
                 ))}
@@ -201,9 +201,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   <motion.li
                     key={o}
                     variants={fadeUpPremium}
-                    className="flex items-start gap-3 text-sm text-slate-300"
+                    className="flex items-start gap-3 text-sm text-[--color-text-light]/90"
                   >
-                    <Zap size={16} className="text-amber-400 flex-shrink-0 mt-0.5" />
+                    <Zap size={16} className="text-[--color-accent-cyan] flex-shrink-0 mt-0.5" />
                     {o}
                   </motion.li>
                 ))}

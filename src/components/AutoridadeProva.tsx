@@ -78,7 +78,7 @@ function StatCard({ stat, inView }: { stat: typeof STATS[0]; inView: boolean }) 
         {stat.label}
       </h3>
 
-      <p className="text-[14px] text-slate-500 leading-relaxed font-medium">
+      <p className="text-[14px] text-[var(--color-text-body)] leading-relaxed font-medium">
         {stat.description}
       </p>
     </div>

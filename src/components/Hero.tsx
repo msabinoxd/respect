@@ -43,7 +43,7 @@ export function Hero() {
           {/* Builderall Style Headline: ALL CAPS, Geométrico, Gigante */}
           <motion.h1
             variants={fadeUpPremium}
-            className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.95] mb-8 text-[var(--color-text-navy)] tracking-tighter uppercase"
+            className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.95] mb-8 text-[var(--color-text-title)] tracking-tighter uppercase"
           >
             A SOBERANIA <br className="hidden md:block"/> DIGITAL QUE SEU NEGÓCIO <br className="hidden md:block" />
             <span className="text-gradient-builderall">EXIGE.</span>
@@ -54,7 +54,7 @@ export function Hero() {
             variants={fadeUpPremium}
             className="text-lg md:text-2xl text-[var(--color-text-body)] w-full max-w-4xl leading-relaxed font-medium mb-12"
           >
-            A <strong className="text-[var(--color-text-navy)]">MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.
+            A <strong className="text-[var(--color-text-title)]">MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.
           </motion.p>
 
           {/* CTA & Trust */}
