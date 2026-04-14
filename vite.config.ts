@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/respect/',
+    base: '/respect/', // <-- Corrigido o BasePath conforme o Repositório do Github
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -19,10 +19,10 @@ export default defineConfig(() => {
       emptyOutDir: true,
       rollupOptions: {
         output: {
-          manualChunks: (id: string) => {
-            if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) return 'vendor-react';
-            if (id.includes('node_modules/motion') || id.includes('node_modules/framer-motion')) return 'vendor-motion';
-            if (id.includes('node_modules/lucide-react')) return 'vendor-lucide';
+          manualChunks: {
+            'vendor-react': ['react', 'react-dom'],
+            'vendor-motion': ['motion/react'],
+            'vendor-lucide': ['lucide-react'],
           },
         },
       },

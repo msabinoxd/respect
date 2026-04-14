@@ -1,130 +1,93 @@
 @import "tailwindcss";
 
 @theme {
-  /* Tipografia */
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  /* Tipografia: Builderall usa tipografia geométrica arredondada para dar ar de SaaS premium */
+  --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
-  /* Backgrounds */
-  --color-bg-primary: #0A0A0F;
-  --color-bg-secondary: #12121A;
-  --color-bg-tertiary: #1A1A2E;
+  /* Backgrounds (SaaS Clean & Deep Navy) */
+  --color-bg-light: #F8F9FA;         /* Fundo claro predominante SaaS */
+  --color-bg-white: #FFFFFF;         /* Cards brancos limpos */
+  --color-bg-navy: #0B1B36;          /* Azul marinho profundo (Builderall style) */
+  --color-bg-navy-dark: #050E20;     /* Navy ainda mais escuro para contraste */
 
-  /* Accents */
-  --color-accent-violet: #8B5CF6;
-  --color-accent-cyan: #06B6D4;
-  --color-accent-gold: #F59E0B;
+  /* Accents (Builderall Elite Colors) */
+  --color-accent-blue: #0090FF;      /* Builderall Primary Blue */
+  --color-accent-cyan: #00D1FF;      /* Builderall Secondary Cyan */
+  --color-accent-orange: #FF6A00;    /* CTA de alerta corporativo */
 
-  /* Text */
-  --color-text-primary: #F8FAFC;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
+  /* Textos */
+  --color-text-title: #1A1A1A;       /* Títulos sobre fundo claro */
+  --color-text-body: #4A4A4A;        /* Textos sobre fundo claro */
+  --color-text-muted: #888888;       /* Meta-textos, smalls */
+  --color-text-navy: #0B1B36;        /* Títulos com a cor da marca */
+  --color-text-light: #F8FAFC;       /* Textos sobre fundo Navy */
 
-  /* Glass */
-  --color-glass-bg: rgba(255, 255, 255, 0.05);
-  --color-glass-border: rgba(255, 255, 255, 0.10);
+  /* Glassmorphism Enterprise */
+  --color-glass-clean: rgba(255, 255, 255, 0.85); /* Fundo branco com blur */
+  --color-glass-border-clean: rgba(0, 0, 0, 0.05);
 
-  /* Shadows */
-  --sh: 0px 4px 20px rgba(0, 0, 0, 0.3);
-  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.5);
-  --sh-glow-violet: 0px 0px 60px rgba(139, 92, 246, 0.15);
-  --sh-glow-cyan: 0px 0px 60px rgba(6, 182, 212, 0.15);
-
-  /* Bezier */
-  --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Shadows Enterprise */
+  --sh-soft: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.08);
+  --sh-button: 0px 8px 20px rgba(0, 144, 255, 0.3);
+  --sh-nav: 0px 4px 30px rgba(11, 27, 54, 0.08);
 }
 
-/* === Utilities === */
-@utility glass-card {
-  @apply bg-white/5 backdrop-blur-[12px] border border-white/10 rounded-2xl;
-  box-shadow: var(--sh), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+/* === Utilities Builderall Style === */
+@utility saas-card {
+  @apply bg-white rounded-2xl border border-[rgba(0,0,0,0.05)];
+  box-shadow: var(--sh-soft);
+  transition: all 0.3s var(--bezier);
 }
 
-@utility glass-subtle {
-  @apply bg-white/[0.03] backdrop-blur-[8px] border border-white/[0.06] rounded-xl;
+@utility saas-card-hover {
+  @apply hover:-translate-y-1;
+  box-shadow: var(--sh-deep);
 }
 
-@utility text-gradient {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-cyan-400;
+@utility glass-nav {
+  @apply bg-[rgba(255,255,255,0.85)] backdrop-blur-[15px] border-b border-[rgba(0,0,0,0.05)];
+  box-shadow: var(--sh-nav);
 }
 
-@utility floating {
-  animation: floating 3s ease-in-out infinite;
+@utility text-gradient-builderall {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan];
 }
 
-/* === Keyframes === */
-@keyframes floating {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes waPulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-
-@keyframes ctaPulse {
-  0% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4); }
-  70% { box-shadow: 0 0 0 25px rgba(139, 92, 246, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
-}
-
-@keyframes shimmer {
-  100% { transform: translateX(100%); }
-}
-
-@keyframes glow {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
-}
-
-/* === Base === */
+/* Base */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-body);
   font-family: var(--font-sans);
   @apply antialiased;
 }
 
+/* Títulos sempre geométricos e fortes */
 h1, h2, h3 {
   font-family: var(--font-display);
+  color: var(--color-text-title);
 }
 
-/* === Accessibility === */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+/* Ajustes de Tailwind v4 base */
+@layer base {
+  ::selection {
+    background: rgba(0, 144, 255, 0.2);
+    color: var(--color-text-navy);
   }
 }
 
-/* === Scrollbar === */
-::-webkit-scrollbar {
-  width: 6px;
+/* Animações Builderall */
+@keyframes pulseBlue {
+  0% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(0, 144, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0); }
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-bg-primary);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* === Selection === */
-::selection {
-  background: rgba(139, 92, 246, 0.3);
-  color: #F8FAFC;
+@utility btn-pulse {
+  animation: pulseBlue 2s infinite;
 }

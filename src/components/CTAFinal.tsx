@@ -1,17 +1,18 @@
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, CheckCircle2, Zap } from 'lucide-react';
+import { ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
 import { Button, Container, Badge } from './base';
 
 export function CTAFinal() {
   return (
-    <footer id="contato" className="relative bg-[var(--color-bg-secondary)] pt-28 md:pt-32 pb-12 overflow-hidden border-t border-white/5">
-      {/* Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-violet-600/5 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-cyan-500/5 rounded-full blur-[120px] pointer-events-none" />
+    // Fundo Navy Blue intenso com curvas ou sombras (Builderall Vibe Final Footer)
+    <footer id="contato" className="relative bg-[var(--color-bg-navy)] pt-32 pb-16 overflow-hidden">
+      
+      {/* Luz Azul Corporativa atrás do texto */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[var(--color-accent-blue)]/20 rounded-full blur-[150px] pointer-events-none" />
 
-      <Container className="relative z-10 text-center">
+      <Container className="relative z-10 text-center" size="default">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -19,88 +20,62 @@ export function CTAFinal() {
           variants={staggerSlow}
           className="flex flex-col items-center text-center"
         >
-          {/* Badge */}
-          <motion.div variants={fadeUpPremium} className="flex justify-center mb-8">
+          <motion.div variants={fadeUpPremium} className="mb-10">
             <Badge
               icon={ShieldCheck}
-              label="Compromisso com Resultados"
-              variant="gold"
+              label="GARANTIA DE EXECUÇÃO"
+              variant="light"
             />
           </motion.div>
 
-          {/* Heading */}
           <motion.h2
             variants={fadeUpPremium}
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tighter text-white"
+            className="text-[40px] sm:text-[56px] md:text-[80px] font-black leading-[0.95] tracking-tighter text-white uppercase mb-8"
           >
-            Pronto para uma presença digital{' '}
-            <br className="hidden md:block" />
-            que impõe{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-cyan-400">
-              respeito?
+            A PLATAFORMA PARA <br className="hidden md:block" />
+            VENDER{' '}
+            <span className="text-[var(--color-accent-blue)]">
+              TODOS OS DIAS.
             </span>
           </motion.h2>
 
-          {/* Subtitle */}
           <motion.p
             variants={fadeUpPremium}
-            className="text-base md:text-xl text-slate-400 w-full max-w-3xl leading-relaxed font-medium mb-10 md:mb-12"
+            className="text-lg md:text-2xl text-[var(--color-text-light)] w-full max-w-4xl leading-relaxed font-medium mb-16 opacity-90"
           >
-            Vamos conversar sobre o seu projeto.{' '}
-            <br className="hidden md:block" />
-            <span className="text-slate-300">
-              Análise estratégica personalizada, sem compromisso.
-            </span>
+            Fale com um de nossos especialistas. Demonstração customizada para o contexto atual da sua operação. Sem compromisso formal.
           </motion.p>
 
-          {/* CTA */}
           <motion.div
             variants={fadeUpPremium}
-            className="flex flex-col items-center justify-center gap-5 mb-10"
+            className="flex flex-col items-center justify-center w-full sm:w-auto"
           >
             <Button
               variant="primary"
               size="lg"
               icon={ArrowRight}
-              onClick={() => trackAndOpenWA(CONFIG.wa.msgFinal, 'Final_CTA_Click')}
-              className="w-full sm:w-auto shadow-2xl animate-[ctaPulse_2s_ease-in-out_infinite]"
+              onClick={() => trackAndOpenWA(CONFIG.wa.msgFinal, 'Footer_CTA')}
+              className="w-full sm:w-auto md:min-w-[400px] animate-[pulseBlue_2s_infinite] mb-6"
             >
-              {CONFIG.wa.ctaFinal}
+              FALAR COM ESPECIALISTA RESPECT
             </Button>
-
-            <p className="text-[11px] uppercase tracking-[0.2em] text-slate-600 font-bold">
-              Sem compromisso · Resposta em minutos
-            </p>
-          </motion.div>
-
-          {/* Trust Signals */}
-          <motion.div
-            variants={fadeUpPremium}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16 text-xs font-bold uppercase tracking-widest text-slate-500"
-          >
-            <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-violet-500" />
-              <span>Atendimento Personalizado</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-violet-500" />
-              <span>Resultados Mensuráveis</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Zap size={16} className="text-cyan-500" />
-              <span>IA + Supervisão Humana</span>
+            
+            {/* Trust Signals Footer */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-[#888888]">
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Setup Acelerado</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Estratégia Comprovada</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]" /> Resposta Imediata</div>
             </div>
           </motion.div>
         </motion.div>
 
-        {/* Footer Bar */}
-        <div className="mt-12 pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600 opacity-60">
+        <div className="mt-28 md:mt-32 pt-8 border-t border-[rgba(255,255,255,0.05)] flex flex-col md:flex-row items-center justify-between gap-6 text-[12px] font-black uppercase tracking-widest text-[#555] opacity-80">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name}</p>
-            <span className="hidden md:block w-1.5 h-1.5 rounded-full bg-violet-500/30" />
+            <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name} MARKETING SUITE</p>
+            <span className="hidden md:block w-1 h-1 rounded-full bg-[var(--color-accent-blue)]" />
             <p>{CONFIG.brand.tagline}</p>
           </div>
-          <p className="text-center md:text-right">Construído com respeito pelo seu negócio</p>
+          <p className="text-center md:text-right">Soberania Garantida</p>
         </div>
       </Container>
     </footer>

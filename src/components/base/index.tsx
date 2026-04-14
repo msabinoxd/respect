@@ -2,10 +2,10 @@ import { type ReactNode, type ElementType } from 'react';
 import { motion, type HTMLMotionProps } from 'motion/react';
 
 /* ============================================
-   BUTTON
+   BUTTON - Builderall Style
    ============================================ */
 interface ButtonProps extends Omit<HTMLMotionProps<'button'>, 'children'> {
-  variant?: 'primary' | 'secondary' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'navy' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   icon?: ElementType;
   children: ReactNode;
@@ -19,18 +19,19 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const base = 'inline-flex items-center justify-center gap-2 font-bold uppercase tracking-wider rounded-xl transition-all duration-300 cursor-pointer select-none';
+  const base = 'inline-flex items-center justify-center gap-2 font-black uppercase tracking-wide rounded-xl transition-all duration-300 cursor-pointer select-none';
 
   const variants: Record<string, string> = {
-    primary: 'bg-gradient-to-r from-violet-600 to-cyan-500 text-white hover:from-violet-500 hover:to-cyan-400 shadow-lg hover:shadow-violet-500/25 hover:scale-[1.02] active:scale-[0.98]',
-    secondary: 'bg-white/10 text-white border border-white/20 hover:bg-white/15 hover:border-white/30 backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98]',
-    ghost: 'text-slate-400 hover:text-white hover:bg-white/5',
+    primary: 'bg-gradient-to-r from-[--color-accent-blue] to-[--color-accent-cyan] text-white hover:brightness-110 shadow-[var(--sh-button)] hover:scale-[1.02] active:scale-[0.98]',
+    secondary: 'bg-white text-[--color-accent-blue] border-2 border-[--color-accent-blue] hover:bg-[--color-accent-blue] hover:text-white hover:scale-[1.02]',
+    navy: 'bg-[--color-bg-navy] text-white hover:bg-[--color-bg-navy-dark] shadow-lg hover:shadow-xl hover:scale-[1.02]',
+    ghost: 'text-[--color-text-muted] hover:text-[--color-accent-blue] hover:bg-black/5',
   };
 
   const sizes: Record<string, string> = {
-    sm: 'px-4 py-2 text-xs',
-    md: 'px-6 py-3 text-sm',
-    lg: 'px-8 py-4 text-base min-h-[48px]',
+    sm: 'px-5 py-2.5 text-xs',
+    md: 'px-8 py-3.5 text-sm',
+    lg: 'px-10 py-5 text-base min-h-[56px]',
   };
 
   return (
@@ -40,28 +41,26 @@ export function Button({
       {...props}
     >
       {children}
-      {Icon && <Icon size={size === 'lg' ? 20 : 16} />}
+      {Icon && <Icon size={size === 'lg' ? 22 : 18} />}
     </motion.button>
   );
 }
 
 /* ============================================
-   CARD
+   CARD - SaaS Clear Style
    ============================================ */
 interface CardProps {
   children: ReactNode;
   interactive?: boolean;
-  elevated?: boolean;
   className?: string;
 }
 
-export function Card({ children, interactive = false, elevated = false, className = '' }: CardProps) {
-  const base = 'glass-card flex flex-col h-full p-6 md:p-8';
-  const interactiveClass = interactive ? 'hover:bg-white/[0.08] hover:border-white/15 hover:scale-[1.02] transition-all duration-300 cursor-pointer' : '';
-  const elevatedClass = elevated ? 'shadow-[var(--sh-deep)]' : '';
+export function Card({ children, interactive = false, className = '' }: CardProps) {
+  const base = 'saas-card flex flex-col h-full p-8 md:p-10';
+  const interactiveClass = interactive ? 'saas-card-hover cursor-pointer' : '';
 
   return (
-    <div className={`${base} ${interactiveClass} ${elevatedClass} ${className}`}>
+    <div className={`${base} ${interactiveClass} ${className}`}>
       {children}
     </div>
   );
@@ -73,20 +72,19 @@ export function Card({ children, interactive = false, elevated = false, classNam
 interface BadgeProps {
   icon?: ElementType;
   label: string;
-  variant?: 'accent' | 'gold' | 'dark' | 'light';
+  variant?: 'blue' | 'navy' | 'light';
   className?: string;
 }
 
-export function Badge({ icon: Icon, label, variant = 'accent', className = '' }: BadgeProps) {
+export function Badge({ icon: Icon, label, variant = 'blue', className = '' }: BadgeProps) {
   const variants: Record<string, string> = {
-    accent: 'bg-violet-500/10 text-violet-400 border-violet-500/20',
-    gold: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-    dark: 'bg-black/20 text-slate-300 border-white/10',
+    blue: 'bg-[--color-accent-blue]/10 text-[--color-accent-blue] border-[--color-accent-blue]/20',
+    navy: 'bg-[--color-bg-navy]/10 text-[--color-bg-navy] border-[--color-bg-navy]/20',
     light: 'bg-white/10 text-white border-white/20',
   };
 
   return (
-    <span className={`inline-flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-widest rounded-full border backdrop-blur-sm ${variants[variant]} ${className}`}>
+    <span className={`inline-flex items-center gap-2 px-5 py-2 text-xs font-black uppercase tracking-widest rounded-full border backdrop-blur-sm ${variants[variant]} ${className}`}>
       {Icon && <Icon size={14} />}
       {label}
     </span>
@@ -98,20 +96,20 @@ export function Badge({ icon: Icon, label, variant = 'accent', className = '' }:
    ============================================ */
 interface SectionProps {
   children: ReactNode;
-  variant?: 'dark' | 'darker' | 'gradient';
+  variant?: 'light' | 'white' | 'navy';
   id?: string;
   className?: string;
 }
 
-export function Section({ children, variant = 'dark', id, className = '' }: SectionProps) {
+export function Section({ children, variant = 'light', id, className = '' }: SectionProps) {
   const variants: Record<string, string> = {
-    dark: 'bg-[var(--color-bg-primary)]',
-    darker: 'bg-[var(--color-bg-secondary)]',
-    gradient: 'bg-gradient-to-b from-[var(--color-bg-primary)] to-[var(--color-bg-secondary)]',
+    light: 'bg-[var(--color-bg-light)] text-[--color-text-body]',
+    white: 'bg-white text-[--color-text-body]',
+    navy: 'bg-[var(--color-bg-navy)] text-white',
   };
 
   return (
-    <section id={id} className={`relative py-24 md:py-32 overflow-hidden ${variants[variant]} ${className}`}>
+    <section id={id} className={`relative py-28 md:py-40 overflow-hidden ${variants[variant]} ${className}`}>
       {children}
     </section>
   );
@@ -129,8 +127,8 @@ interface ContainerProps {
 export function Container({ children, size = 'default', className = '' }: ContainerProps) {
   const sizes: Record<string, string> = {
     sm: 'max-w-[42rem]',
-    default: 'max-w-[64rem]',
-    lg: 'max-w-[80rem]',
+    default: 'max-w-[72rem]', // Aumentado para dar feeling de plataforma enterprise
+    lg: 'max-w-[88rem]',
   };
 
   return (

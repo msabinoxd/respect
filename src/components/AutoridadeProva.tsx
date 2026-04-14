@@ -32,29 +32,29 @@ const STATS = [
     icon: Clock,
     value: 10,
     suffix: '+',
-    label: 'Anos de Experiência',
-    description: 'Uma década construindo soberania digital para negócios sérios.',
+    label: 'Anos no Mercado',
+    description: 'Experiência robusta arquitetando a soberania digital de negócios sérios.',
   },
   {
     icon: Layers,
     value: 3,
     suffix: '',
     label: 'Pilares Integrados',
-    description: 'Marketing, TI e Comercial operando em sinergia total.',
+    description: 'Marketing, Tecnologia e Vendas operando sob o mesmo teto.',
   },
   {
     icon: TrendingUp,
     value: 100,
     suffix: '%',
-    label: 'Comprometimento',
-    description: 'Cada projeto recebe atenção total. Sem promessas vazias.',
+    label: 'Retilíneos',
+    description: 'Entrega transparente baseada em métricas de performance reais (ROI).',
   },
   {
     icon: Award,
     value: 24,
     suffix: '/7',
-    label: 'Suporte Contínuo',
-    description: 'Automação inteligente que trabalha enquanto você descansa.',
+    label: 'Suporte & Operação',
+    description: 'Nossa automação trabalha enquanto você escala a sua empresa.',
   },
 ];
 
@@ -62,23 +62,23 @@ function StatCard({ stat, inView }: { stat: typeof STATS[0]; inView: boolean }) 
   const count = useCounter(stat.value, 2000, inView);
 
   return (
-    <div className="glass-card p-6 md:p-8 text-center group hover:bg-white/[0.08] transition-all duration-300">
-      <div className="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-        <stat.icon size={24} className="text-violet-400" />
+    <div className="flex flex-col items-center p-8 bg-white rounded-2xl border border-[rgba(0,0,0,0.05)] shadow-[var(--sh-soft)] hover:shadow-[var(--sh-deep)] hover:-translate-y-1 transition-all duration-300">
+      <div className="w-16 h-16 rounded-full bg-[var(--color-bg-light)] flex items-center justify-center mb-6 text-[var(--color-accent-blue)]">
+        <stat.icon size={28} />
       </div>
 
-      <div className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tighter">
+      <div className="text-[40px] md:text-[56px] font-black text-[var(--color-bg-navy)] mb-2 tracking-tighter leading-none">
         {count}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-cyan-400">
+        <span className="text-[var(--color-accent-blue)]">
           {stat.suffix}
         </span>
       </div>
 
-      <h3 className="text-sm font-bold uppercase tracking-widest text-slate-300 mb-2">
+      <h3 className="text-[13px] font-black uppercase tracking-widest text-[var(--color-bg-navy)] mb-4">
         {stat.label}
       </h3>
 
-      <p className="text-xs text-slate-500 leading-relaxed">
+      <p className="text-[14px] text-slate-500 leading-relaxed font-medium">
         {stat.description}
       </p>
     </div>
@@ -90,37 +90,33 @@ export function AutoridadeProva() {
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <Section variant="dark" id="autoridade">
-      <Container>
+    <Section variant="light" id="autoridade">
+      <Container size="lg">
         <motion.div
           ref={ref}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
           variants={staggerSlow}
-          className="flex flex-col items-center text-center mb-16 md:mb-20"
+          className="flex flex-col items-center text-center mb-20"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge icon={Award} label="Por que a Respect" variant="gold" className="mb-6" />
+            <Badge icon={Award} label="POR QUE A RESPECT" variant="blue" className="mb-8" />
           </motion.div>
 
+          {/* Headline SaaS Builderall Style */}
           <motion.h2
             variants={fadeUpPremium}
-            className="text-3xl sm:text-4xl md:text-6xl font-black mb-6 text-white tracking-tighter"
+            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-[var(--color-bg-navy)] tracking-tighter uppercase leading-[0.95]"
           >
-            Autoridade{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-cyan-400">
-              comprovada.
-            </span>
+            A AUTORIDADE DE<br className="hidden md:block" /> QUEM <span className="text-[var(--color-accent-blue)]">ENTREGA RESULTADO.</span>
           </motion.h2>
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-base md:text-xl text-slate-400 w-full max-w-3xl leading-relaxed font-medium"
+            className="text-lg md:text-xl text-[var(--color-text-body)] w-full max-w-4xl leading-relaxed font-medium"
           >
-            Não vendemos promessas. Entregamos{' '}
-            <span className="text-slate-300">resultados mensuráveis</span> com{' '}
-            <span className="text-slate-300">respeito</span> pelo seu investimento.
+            Fugimos de jargões técnicos confusos e "vanity metrics". Nossa plataforma eleva <br className="hidden md:block" />seu posicionamento com <span className="font-bold text-[var(--color-bg-navy)]">execução rápida e foco em vendas.</span>
           </motion.p>
         </motion.div>
 
@@ -130,7 +126,7 @@ export function AutoridadeProva() {
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
           variants={staggerSlow}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {STATS.map((stat) => (
             <motion.div key={stat.label} variants={fadeUpPremium}>

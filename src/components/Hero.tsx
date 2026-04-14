@@ -1,105 +1,83 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
-import { Button, Badge, Container } from './base';
+import { Button, Container } from './base';
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-[var(--color-bg-primary)]">
-      {/* Ambient Glow Orbs */}
-      <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet-500/5 rounded-full blur-[200px] pointer-events-none" />
+    <section id="inicio" className="relative min-h-[100vh] flex items-center pt-32 pb-20 overflow-hidden bg-[var(--color-bg-light)]">
+      
+      {/* Abstract Corporate Background Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Soft Blue Orb top right */}
+        <div className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full bg-gradient-to-bl from-[var(--color-accent-cyan)]/20 to-[var(--color-accent-blue)]/5 blur-[120px]" />
+        {/* Deep Navy Orb bottom left */}
+        <div className="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-[var(--color-bg-navy)]/10 to-transparent blur-[120px]" />
+      </div>
 
-      {/* Grid Pattern Overlay */}
+      {/* Grid Pattern Clean */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.4]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px',
+          backgroundImage: `linear-gradient(rgba(11,27,54,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(11,27,54,0.03) 1px, transparent 1px)`,
+          backgroundSize: '40px 40px',
         }}
       />
 
-      <Container className="relative z-10">
+      <Container className="relative z-10 w-full" size="lg">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={staggerSlow}
-          className="flex flex-col items-center text-center max-w-5xl mx-auto"
+          className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto"
         >
-          {/* Badge */}
-          <motion.div variants={fadeUpPremium}>
-            <Badge
-              icon={Sparkles}
-              label="Marketing · TI · Comercial"
-              variant="accent"
-              className="mb-8"
-            />
+          {/* Tagline Badge */}
+          <motion.div variants={fadeUpPremium} className="mb-8">
+            <span className="inline-flex items-center gap-2 px-5 py-2 text-xs font-black uppercase tracking-widest rounded-full bg-[var(--color-bg-navy)] text-white shadow-lg">
+              <span className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)] animate-pulse" />
+              CONHEÇA O NOVO ECOSSISTEMA RESPECT
+            </span>
           </motion.div>
 
-          {/* Heading */}
+          {/* Builderall Style Headline: ALL CAPS, Geométrico, Gigante */}
           <motion.h1
             variants={fadeUpPremium}
-            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] mb-6 text-white tracking-tighter"
+            className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.95] mb-8 text-[var(--color-text-navy)] tracking-tighter uppercase"
           >
-            Seu Negócio{' '}
-            <br className="hidden sm:block" />
-            Merece{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-cyan-400">
-              Respeito.
-            </span>
+            A SOBERANIA <br className="hidden md:block"/> DIGITAL QUE SEU NEGÓCIO <br className="hidden md:block" />
+            <span className="text-gradient-builderall">EXIGE.</span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Subtitle - Sólido, largo */}
           <motion.p
             variants={fadeUpPremium}
-            className="text-base md:text-xl text-slate-400 w-full max-w-2xl leading-relaxed font-medium mb-10 md:mb-12"
+            className="text-lg md:text-2xl text-[var(--color-text-body)] w-full max-w-4xl leading-relaxed font-medium mb-12"
           >
-            Marketing, TI e Consultoria Comercial sob um mesmo teto.{' '}
-            <br className="hidden md:block" />
-            <span className="text-slate-300">
-              Mais de 10 anos construindo soberania digital para negócios que levam resultados a sério.
-            </span>
+            A <strong className="text-[var(--color-text-navy)]">MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.
           </motion.p>
 
-          {/* CTA */}
-          <motion.div variants={fadeUpPremium} className="flex flex-col items-center gap-4">
-            <Button
-              variant="primary"
-              size="lg"
-              icon={ArrowRight}
-              onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_CTA_Click')}
-              className="w-full sm:w-auto shadow-2xl animate-[ctaPulse_2s_ease-in-out_infinite]"
-            >
-              {CONFIG.wa.ctaHero}
-            </Button>
+          {/* CTA & Trust */}
+          <motion.div variants={fadeUpPremium} className="flex flex-col items-center gap-5 w-full">
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+              <Button
+                variant="primary"
+                size="lg"
+                icon={ArrowRight}
+                onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA')}
+                className="w-full sm:w-auto text-base sm:text-lg px-12 animate-[pulseBlue_2s_infinite]"
+              >
+                CRIAR MEU ECOSSISTEMA AGORA
+              </Button>
+            </div>
 
-            <p className="text-[10px] uppercase tracking-[0.3em] text-slate-500 font-bold">
-              Sem compromisso · Resposta em minutos
-            </p>
+            <div className="flex items-center gap-6 mt-4 text-[11px] md:text-xs font-bold uppercase tracking-widest text-[var(--color-text-muted)]">
+               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]"/> Sem contratos amarrados</div>
+               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-[var(--color-accent-blue)]"/> Setup Acelerado</div>
+            </div>
           </motion.div>
         </motion.div>
       </Container>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-[10px] uppercase tracking-[0.2em] text-slate-600 font-bold">
-          Conheça nosso trabalho
-        </span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-          className="w-5 h-8 border-2 border-slate-600 rounded-full flex justify-center pt-1.5"
-        >
-          <div className="w-1 h-1 bg-slate-500 rounded-full" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }
