@@ -81,7 +81,7 @@ function FAQItem({ faq, index }: { faq: typeof FAQS[0]; index: number }) {
 
 export function FAQ() {
   return (
-    <Section variant="darker" id="faq">
+    <Section variant="navy" id="faq">
       <Container size="default">
         <motion.div
           initial="hidden"
@@ -91,7 +91,7 @@ export function FAQ() {
           className="flex flex-col items-center text-center mb-14"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge icon={HelpCircle} label="Perguntas Frequentes" variant="dark" className="mb-6" />
+            <Badge icon={HelpCircle} label="Perguntas Frequentes" variant="blue" className="mb-6" />
           </motion.div>
 
           <motion.h2

@@ -15,7 +15,7 @@ export function PilarCard({ pilar }: PilarCardProps) {
 
   return (
     <motion.div variants={fadeUpPremium} className="h-full">
-      <Card interactive elevated className="relative group">
+      <Card interactive className="relative group">
         {/* Icon + Badge */}
         <div
           className={`w-14 h-14 rounded-xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
