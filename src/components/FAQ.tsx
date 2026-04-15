@@ -19,10 +19,10 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
         aria-expanded={open}
       >
         <span className="flex items-start gap-3">
-          <span className="text-xs font-bold text-text-muted pt-1 w-5 flex-shrink-0">
+          <span className="text-xs font-bold text-text-light pt-1 w-5 flex-shrink-0">
             {String(index + 1).padStart(2, '0')}
           </span>
-          <span className="text-sm md:text-base font-semibold text-text-light/90 group-hover:text-white transition-colors">
+          <span className="text-sm md:text-base font-semibold text-white group-hover:text-white transition-colors">
             {t(`faq.${qKey}`)}
           </span>
         </span>
@@ -31,7 +31,7 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
           transition={{ duration: 0.3 }}
           className="flex-shrink-0 mt-0.5"
         >
-          <ChevronDown size={18} className="text-text-muted group-hover:text-text-light/80 transition-colors" />
+          <ChevronDown size={18} className="text-text-light group-hover:text-white transition-colors" />
         </motion.div>
       </button>
 
@@ -45,7 +45,7 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
             className="overflow-hidden"
           >
             <div className="px-6 pb-5 pt-2 pl-14">
-              <p className="text-text-muted leading-relaxed text-sm md:text-base">
+              <p className="text-text-light leading-relaxed text-sm md:text-base">
                 {t(`faq.${qKey.replace('q', 'a')}`)}
               </p>
             </div>

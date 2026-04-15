@@ -84,7 +84,7 @@ export function PilaresSolucoes() {
         >
           {PILARES_META.map((pilar, i) => (
             <motion.div key={i} variants={fadeUpPremium} className="h-full">
-              <Card interactive className="relative group text-left overflow-hidden border-none text-text-body">
+              <Card interactive className="relative group text-left overflow-hidden border-none">
 
                 {/* Linha azul superior */}
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-blue to-brand-cyan" />
@@ -95,18 +95,18 @@ export function PilaresSolucoes() {
                   </span>
                 </div>
 
-                <h3 className="text-[24px] font-black text-brand-navy mb-4 tracking-tighter uppercase leading-none">
+                <h3 className="text-[24px] font-black text-white mb-4 tracking-tighter uppercase leading-none">
                   {t(`pilares.${pilar.id}.title`)}
                 </h3>
 
-                <p className="text-[15px] text-text-body leading-relaxed mb-8 flex-1">
+                <p className="text-[15px] text-text-light leading-relaxed mb-8 flex-1">
                   {t(`pilares.${pilar.id}.description`)}
                 </p>
 
                 {/* Features List */}
                 <ul className="flex flex-col gap-4 mb-10">
                   {pilar.features.map((feat, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
+                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-text-light">
                       <div className="w-8 h-8 rounded-full bg-bg-light flex items-center justify-center flex-shrink-0">
                         <feat.icon size={16} className="text-brand-blue" />
                       </div>
@@ -127,7 +127,7 @@ export function PilaresSolucoes() {
                   </Button>
                   <Link
                     to={`/${pilar.id}`}
-                    className="text-center text-sm font-bold uppercase tracking-widest text-brand-blue hover:text-brand-navy transition-colors py-2"
+                    className="text-center text-sm font-bold uppercase tracking-widest text-brand-blue hover:text-white transition-colors py-2"
                   >
                     {t('pilares.ver_detalhes')}
                   </Link>
