@@ -123,7 +123,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             </motion.div>
             <motion.h2
               variants={fadeUpPremium}
-              className="text-3xl md:text-5xl font-black text-white tracking-tighter mb-4"
+              className="text-3xl md:text-5xl font-black text-text-title tracking-tighter mb-4"
             >
               {t('pilar_detalhe.services_title')}
             </motion.h2>
@@ -148,7 +148,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <svc.icon size={20} className="text-white" />
                 </div>
-                <h3 className="text-base font-bold text-white mb-2">
+                <h3 className="text-base font-bold text-text-title mb-2">
                   {t(`pilares_data.${id}.services.${svc.key}.title`)}
                 </h3>
                 <p className="text-sm text-text-light/70 leading-relaxed">
@@ -176,7 +176,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               </motion.div>
               <motion.h2
               variants={fadeUpPremium}
-              className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-8"
+              className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8"
             >
                 {t('pilar_detalhe.deliverables_title')}
               </motion.h2>
@@ -206,7 +206,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
-                className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-8"
+                className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8"
               >
                 {t('pilar_detalhe.outcomes_title')}
               </motion.h2>
@@ -244,7 +244,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 </motion.div>
                 <motion.h2
                   variants={fadeUpPremium}
-                  className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-8"
+                  className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8"
                 >
                   {t('pilar_detalhe.stack_title')}
                 </motion.h2>
@@ -278,7 +278,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
-                className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-6"
+                className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-6"
               >
                 {t('pilar_detalhe.ideal_title')}
               </motion.h2>
@@ -322,7 +322,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
           >
             <motion.h2
               variants={fadeUpPremium}
-              className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-3"
+              className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-3"
             >
               {t('pilar_detalhe.outros_title')}
             </motion.h2>
@@ -355,7 +355,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                         <p className="text-[10px] font-bold uppercase tracking-widest text-text-light mb-0.5">
                           {t(`pilares_data.${otherId}.badge`)}
                         </p>
-                        <p className="text-sm font-bold text-white">{t(`pilares_data.${otherId}.title`)}</p>
+                        <p className="text-sm font-bold text-text-title">{t(`pilares_data.${otherId}.title`)}</p>
                       </div>
                       <ArrowRight size={16} className="text-text-light/80 group-hover:text-white ml-auto transition-colors" />
                     </Link>
