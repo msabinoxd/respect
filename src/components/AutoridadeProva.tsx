@@ -45,12 +45,12 @@ function StatCard({ stat, inView }: { stat: typeof STATS_META[0]; inView: boolea
         <stat.icon size={28} />
       </div>
 
-      <div className="text-[40px] md:text-[56px] font-black text-brand-navy mb-2 tracking-tighter leading-none">
+      <div className="text-[40px] md:text-[56px] font-black text-text-title mb-2 tracking-tighter leading-none">
         {count}
         <span className="text-brand-blue">{stat.suffix}</span>
       </div>
 
-      <h3 className="text-[13px] font-black uppercase tracking-widest text-brand-navy mb-4">
+      <h3 className="text-[13px] font-black uppercase tracking-widest text-text-title mb-4">
         {t(`autoridade.stats.${stat.labelKey}`)}
       </h3>
 
@@ -83,7 +83,7 @@ export function AutoridadeProva() {
 
           <motion.h2
             variants={fadeUpPremium}
-            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-brand-navy tracking-tighter uppercase leading-[0.95]"
+            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-text-title tracking-tighter uppercase leading-[0.95]"
           >
             {t('autoridade.headline')}
             <br className="hidden md:block" />
@@ -95,7 +95,7 @@ export function AutoridadeProva() {
             className="text-lg md:text-xl text-text-body w-full max-w-4xl leading-relaxed font-medium"
           >
             {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
-            <span className="font-bold text-brand-navy">{t('autoridade.subline_strong')}</span>
+            <span className="font-bold text-text-title">{t('autoridade.subline_strong')}</span>
           </motion.p>
         </motion.div>
 
