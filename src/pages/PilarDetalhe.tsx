@@ -127,7 +127,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             >
               {t('pilar_detalhe.services_title')}
             </motion.h2>
-            <motion.p variants={fadeUpPremium} className="text-text-muted max-w-xl font-medium">
+            <motion.p variants={fadeUpPremium} className="text-text-light/80 max-w-xl font-medium">
               {t('pilar_detalhe.services_sub')}
             </motion.p>
           </motion.div>
@@ -175,9 +175,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 <Badge label={t('pilar_detalhe.deliverables_badge')} variant="blue" className="mb-6" />
               </motion.div>
               <motion.h2
-                variants={fadeUpPremium}
-                className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-8"
-              >
+              variants={fadeUpPremium}
+              className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-8"
+            >
                 {t('pilar_detalhe.deliverables_title')}
               </motion.h2>
               <motion.ul variants={staggerSlow} className="flex flex-col gap-4">
@@ -326,7 +326,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             >
               {t('pilar_detalhe.outros_title')}
             </motion.h2>
-            <motion.p variants={fadeUpPremium} className="text-text-muted text-sm">
+              <motion.p variants={fadeUpPremium} className="text-text-light/80 text-sm">
               {t('pilar_detalhe.outros_sub')}
             </motion.p>
           </motion.div>
@@ -352,12 +352,12 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                         <other.icon size={20} className="text-white" />
                       </div>
                       <div>
-                        <p className={`text-[10px] font-bold uppercase tracking-widest ${other.accentColor} mb-0.5`}>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-text-light mb-0.5">
                           {t(`pilares_data.${otherId}.badge`)}
                         </p>
                         <p className="text-sm font-bold text-white">{t(`pilares_data.${otherId}.title`)}</p>
                       </div>
-                      <ArrowRight size={16} className="text-text-muted group-hover:text-text-light/80 ml-auto transition-colors" />
+                      <ArrowRight size={16} className="text-text-light/80 group-hover:text-white ml-auto transition-colors" />
                     </Link>
                   </motion.div>
                 );

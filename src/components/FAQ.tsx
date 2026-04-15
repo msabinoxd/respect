@@ -81,7 +81,7 @@ export function FAQ() {
             <span className="text-gradient-builderall">{t('faq.headline_highlight')}</span>
           </motion.h2>
 
-          <motion.p variants={fadeUpPremium} className="text-text-muted max-w-xl text-base font-medium">
+          <motion.p variants={fadeUpPremium} className="text-text-light/80 max-w-xl text-base font-medium">
             {t('faq.subline')}
           </motion.p>
         </motion.div>

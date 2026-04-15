@@ -40,7 +40,7 @@ export function Header() {
         <nav className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group cursor-pointer border-none outline-none">
-            <span className="text-2xl md:text-3xl font-black tracking-tighter uppercase text-brand-navy font-[var(--font-display)]">
+            <span className="text-2xl md:text-3xl font-black tracking-tighter uppercase text-text-title font-[var(--font-display)]">
               RESPECT
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan">.</span>
             </span>
@@ -79,7 +79,7 @@ export function Header() {
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="text-brand-navy p-2 hover:bg-brand-blue/10 rounded-lg transition-colors"
+              className="text-text-title p-2 hover:bg-brand-blue/10 rounded-lg transition-colors"
               aria-label="Menu"
             >
               {mobileOpen ? <X size={26} /> : <Menu size={26} />}
