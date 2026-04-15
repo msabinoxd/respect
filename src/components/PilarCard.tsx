@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -17,12 +16,22 @@ export function PilarCard({ pilar }: PilarCardProps) {
 
   return (
     <motion.div variants={fadeUpPremium} className="h-full">
-      <Card interactive className="relative group">
-        {/* Icon + Badge */}
-        <div
-          className={`w-14 h-14 rounded-xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
-        >
-          <pilar.icon size={28} className="text-white" />
+      <Card interactive className="relative group overflow-hidden">
+        {/* Pilar Image Cover */}
+        <div className="relative h-48 -mx-8 -mt-10 mb-8 overflow-hidden">
+          <img
+            src={pilar.image}
+            alt={pilar.id}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-90 group-hover:brightness-100"
+          />
+          <div className={`absolute inset-0 bg-gradient-to-t from-bg-navy/80 to-transparent opacity-60`} />
+          
+          {/* Icon Overlay */}
+          <div
+            className={`absolute bottom-4 left-6 w-12 h-12 rounded-xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+          >
+            <pilar.icon size={24} className="text-white" />
+          </div>
         </div>
 
         {/* Badge label */}
@@ -48,7 +57,6 @@ export function PilarCard({ pilar }: PilarCardProps) {
           ))}
         </ul>
 
-        {/* Actions */}
         <div className="flex flex-col gap-3">
           <Button
             variant="secondary"
@@ -59,13 +67,6 @@ export function PilarCard({ pilar }: PilarCardProps) {
           >
             {t(`pilares_data.${pilar.id}.cta`)}
           </Button>
-
-          <Link
-            to={`/${pilar.id}`}
-            className="text-center text-xs font-bold uppercase tracking-wider text-text-muted hover:text-text-light/80 transition-colors py-1"
-          >
-            {t('pilares.ver_detalhes')}
-          </Link>
         </div>
 
         {/* Hover Glow */}

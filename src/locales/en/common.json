@@ -8,34 +8,34 @@
     "cta_scrolled": "TALK TO A SPECIALIST"
   },
   "hero": {
-    "badge": "DISCOVER THE NEW RESPECT ECOSYSTEM",
-    "line1": "UNIFIED OPERATION.",
-    "line2": "DIGITAL SOVEREIGNTY.",
-    "subtitle": "Marketing, Technology and Sales operating as a single system with end-to-end <strong>Artificial Intelligence</strong>.",
-    "cta": "Run Operational Diagnosis",
-    "cta_secondary": "See how it works",
-    "trust1": "AI-accelerated setup",
-    "trust2": "Scalable architecture",
-    "trust3": "Focus on margin and results"
+    "badge": "THE JOURNEY TO DIGITAL SOVEREIGNTY",
+    "line1": "STOP JUST OPERATING.",
+    "line2": "START DOMINATING.",
+    "subtitle": "We are not an agency. We are the <strong>Revenue Engineering</strong> that unifies Marketing, IT, and Sales into a single, armored ecosystem.",
+    "cta": "Start Sovereignty Diagnosis",
+    "cta_secondary": "Discover the Methodology",
+    "trust1": "AI-Armored Setup",
+    "trust2": "Battle-Ready Architecture",
+    "trust3": "Profit-Oriented Engineering"
   },
   "problem": {
-    "headline": "The problem isn't a lack of investment.",
-    "subline": "Most companies suffer from operational fragmentation. Marketing doesn't speak to Sales, and Technology is seen as a cost, not an accelerator.",
-    "item1_title": "Isolated Marketing",
-    "item1_desc": "Demand generation that doesn't translate into real sales due to lack of alignment.",
-    "item2_title": "Reactive Technology",
-    "item2_desc": "Systems that stall growth instead of automating scale.",
+    "headline": "The Invisible Cost of Chaos.",
+    "subline": "You hired tools, but inherited silence. Marketing generates leads that Sales ignores. IT is a cost that stalls innovation. Your company is bleeding margin where the pieces don't fit.",
+    "item1_title": "The Marketing Abyss",
+    "item1_desc": "Traffic investment that turns into smoke because there is no conversion technology at the end of the line.",
+    "item2_title": "The Technological Labyrinth",
+    "item2_desc": "Software that doesn't talk, data that doesn't match, and an operation that depends on manual spreadsheets.",
     "item3_title": "Analog Sales",
-    "item3_desc": "Processes dependent on manual effort and without data predictability.",
-    "footer": "And cash bleeds out in the middle of the road."
+    "item3_desc": "Talented teams wasting time with unqualified leads and without automated processes.",
+    "footer": "You don't have a sales problem. You have an engineering problem."
   },
   "big_idea": {
     "headline": "Companies don't break for lack of effort.",
-    "subline": "They break for lack of integration.",
-    "description": "Respect was born to be the operating system for your growth. We integrate the three vital pillars to ensure your business sovereignty.",
-    "eco_acquisition": "Acquisition",
-    "eco_conversion": "Conversion",
-    "eco_retention": "Retention"
+    "subline": "They break for lack of architecture.",
+    "description": "Respect doesn't deliver 'projects'. We install your Revenue Operating System. We unify what was loose so your only concern is scaling.",
+    "eco_acquisition": "Acquisition Engineering",
+    "eco_conversion": "Conversion Architecture",
+    "eco_retention": "Retention Systems"
   },
   "transition": {
     "headline": "How does it work in practice?"
@@ -76,9 +76,9 @@
     }
   },
   "explanation": {
-    "headline": "You don't need more tools.",
-    "headline_highlight": "You need integration.",
-    "subline": "The excess of disconnected software creates data silos. We unify your operation so each part empowers the other."
+    "headline": "Digital Sovereignty is not optional.",
+    "headline_highlight": "It is your ultimate defense.",
+    "subline": "While others look for the 'next hack', we build the infrastructure that makes your competitor obsolete. Total integration is the end of waste."
   },
   "autoridade": {
     "badge": "WHY RESPECT",

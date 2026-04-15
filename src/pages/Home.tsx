@@ -22,29 +22,41 @@ export function Home() {
   return (
     <>
       {/* 1. ATENÇÃO — Impacto principal */}
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
 
       <Suspense fallback={<div className="min-h-[60vh] bg-bg-light" />}>
         {/* 2. PROBLEMA — O contraste e a fragmentação */}
-        <ProblemSection />
+        <div id="problema">
+          <ProblemSection />
+        </div>
 
         {/* 3. INSIGHT — A Big Idea da integração */}
-        <BigIdeaSection />
+        <div id="insight">
+          <BigIdeaSection />
+        </div>
 
         {/* 4. TRANSIÇÃO — Para as soluções */}
         <TransitionSection />
 
         {/* 5. SOLUÇÕES — Os 3 pilares */}
-        <PilaresSolucoes />
+        <div id="solucoes">
+          <PilaresSolucoes />
+        </div>
 
         {/* 6. INTEGRAÇÃO — A explicação de por que unificar */}
         <ExplanationSection />
 
         {/* 7. PROVA — Autoridade com números e métricas */}
-        <AutoridadeProva />
+        <div id="autoridade">
+          <AutoridadeProva />
+        </div>
 
         {/* 8. FAQ — Quebra de objeções finais */}
-        <FAQ />
+        <div id="faq">
+          <FAQ />
+        </div>
 
         {/* 9. ESCASSEZ — Capacidade técnica limitada */}
         <ScarcitySection />

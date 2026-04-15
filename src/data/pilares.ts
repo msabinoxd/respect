@@ -26,6 +26,7 @@ export interface Pilar {
   gradient: string;
   glowColor: string;
   accentColor: string;
+  image: string;
 }
 
 export const PILARES: Pilar[] = [
@@ -46,6 +47,7 @@ export const PILARES: Pilar[] = [
     gradient: 'from-[#0090FF] to-[#00D1FF]',
     glowColor: 'blue',
     accentColor: 'text-brand-blue',
+    image: '/images/branding/respect_pillar_marketing_1776280883560.png',
   },
   {
     id: 'ti',
@@ -68,6 +70,7 @@ export const PILARES: Pilar[] = [
     gradient: 'from-[#0B1B36] to-[#0090FF]',
     glowColor: 'navy',
     accentColor: 'text-brand-navy',
+    image: '/images/branding/respect_pillar_ti_1776280911682.png',
   },
   {
     id: 'vendas',
@@ -86,6 +89,7 @@ export const PILARES: Pilar[] = [
     gradient: 'from-[#00D1FF] to-[#0B1B36]',
     glowColor: 'cyan',
     accentColor: 'text-brand-cyan',
+    image: '/images/branding/respect_pillar_sales_vendas_1776280963089.png',
   },
 ];
 

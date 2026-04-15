@@ -18,6 +18,13 @@
 
   --color-text-title: #0B1B36;
   --color-text-body: #334155;
+  --color-text-light: #F8F9FA;
+  --color-text-muted: #64748B;
+
+  --shadow-premium: 0 20px 50px -12px rgba(0, 70, 180, 0.12);
+  --shadow-soft: 0 10px 30px -15px rgba(0, 0, 0, 0.05);
+
+  --color-bg-light: #FBFBFC;
   --color-text-muted: #64748b;
   --color-text-light: #F8FAFC;
 
@@ -130,4 +137,25 @@ h1, h2, h3 {
 
 @utility btn-pulse {
   animation: pulseBlue 2s infinite;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-bg-light text-text-body;
+  }
+
+  /* Melhoria no contraste do Light Mode (Premium White) */
+}
+
+@utility glass-card {
+  @apply backdrop-blur-md bg-white/70 border border-white/40 shadow-premium;
+}
+
+@utility text-gradient-builderall {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-cyan font-black;
 }
