@@ -92,7 +92,7 @@ export const PILARES: Pilar[] = [
     msg: 'Olá! Tenho interesse nos serviços de Marketing Digital Full-Stack da Respect. Gostaria de entender como vocês podem ajudar meu negócio.',
     gradient: 'from-[#0090FF] to-[#00D1FF]',
     glowColor: 'blue',
-    accentColor: 'text-[--color-accent-blue]',
+    accentColor: 'text-brand-blue',
   },
   {
     id: 'ti',
@@ -158,7 +158,7 @@ export const PILARES: Pilar[] = [
     msg: 'Olá! Tenho interesse nos serviços de TI e DevOps da Respect. Gostaria de discutir um projeto de desenvolvimento ou infraestrutura.',
     gradient: 'from-[#0B1B36] to-[#0090FF]',
     glowColor: 'navy',
-    accentColor: 'text-[--color-accent-navy]',
+    accentColor: 'text-brand-navy',
   },
   {
     id: 'vendas',
@@ -220,7 +220,7 @@ export const PILARES: Pilar[] = [
     msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect. Quero entender como vocês podem melhorar o meu processo de vendas.',
     gradient: 'from-[#00D1FF] to-[#0B1B36]',
     glowColor: 'cyan',
-    accentColor: 'text-[--color-accent-cyan]',
+    accentColor: 'text-brand-cyan',
   },
 ];
 
