@@ -58,26 +58,43 @@ export function Hero() {
             dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
           />
 
-          {/* CTA */}
-          <motion.div variants={fadeUpPremium} className="flex flex-col items-center gap-5 w-full">
-            <Button
-              variant="primary"
-              size="lg"
-              icon={ArrowRight}
-              onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA')}
-              className="w-full sm:w-auto text-base sm:text-lg px-12 animate-[pulseBlue_2s_infinite]"
-            >
-              {t('hero.cta')}
-            </Button>
+          {/* CTAs */}
+          <motion.div variants={fadeUpPremium} className="flex flex-col items-center gap-6 w-full">
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
+              <Button
+                variant="primary"
+                size="lg"
+                icon={ArrowRight}
+                onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA')}
+                className="w-full sm:w-auto text-base sm:text-lg px-12 animate-[pulseBlue_2s_infinite]"
+              >
+                {t('hero.cta')}
+              </Button>
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={() => {
+                  const el = document.getElementById('problema');
+                  el?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="w-full sm:w-auto text-base sm:text-lg px-10"
+              >
+                {t('hero.cta_secondary')}
+              </Button>
+            </div>
 
-            <div className="flex items-center gap-6 mt-4 text-[11px] md:text-xs font-bold uppercase tracking-widest text-text-muted">
-              <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mt-4 text-[11px] md:text-xs font-bold uppercase tracking-widest text-text-muted">
+              <div className="flex items-center gap-2">
                 <CheckCircle2 size={16} className="text-brand-blue" />
                 {t('hero.trust1')}
               </div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-2">
                 <CheckCircle2 size={16} className="text-brand-blue" />
                 {t('hero.trust2')}
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-brand-blue" />
+                {t('hero.trust3')}
               </div>
             </div>
           </motion.div>

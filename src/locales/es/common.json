@@ -9,12 +9,36 @@
   },
   "hero": {
     "badge": "DESCUBRE EL NUEVO ECOSISTEMA RESPECT",
-    "line1": "OPERA CON INTELIGENCIA.",
-    "line2": "ESCALA CON AUTORIDAD.",
-    "subtitle": "<strong>MS Group Respect</strong> es la plataforma definitiva de Marketing, TI y Consultoría Comercial. Simplifica tus ventas y escala con una suite premium.",
-    "cta": "CREAR MI ECOSISTEMA AHORA",
-    "trust1": "Sin contratos atados",
-    "trust2": "Configuración Acelerada"
+    "line1": "OPERACIÓN UNIFICADA.",
+    "line2": "SOBERANÍA DIGITAL.",
+    "subtitle": "Marketing, Tecnología y Comercial operando como un único sistema con <strong>Inteligencia Artificial</strong> aplicada de punta a punta.",
+    "cta": "Ejecutar Diagnóstico de Operación",
+    "cta_secondary": "Ver cómo funciona",
+    "trust1": "Configuración acelerada con IA",
+    "trust2": "Arquitectura escalable",
+    "trust3": "Enfoque en margen y resultado"
+  },
+  "problem": {
+    "headline": "El problema no es la falta de inversión.",
+    "subline": "La mayoría de las empresas sufre de fragmentación operativa. El Marketing no habla con el Comercial, y la Tecnología se ve como un coste, no como un acelerador.",
+    "item1_title": "Marketing Aislado",
+    "item1_desc": "Generación de demanda que no se traduce en ventas reales por falta de alineación.",
+    "item2_title": "Tecnología Reactiva",
+    "item2_desc": "Sistemas que frenan el crecimiento en lugar de automatizar la escala.",
+    "item3_title": "Comercial Analógico",
+    "item3_desc": "Procesos dependientes del esfuerzo manual y sin previsibilidad de datos.",
+    "footer": "Y la caja sangra en el medio del camino."
+  },
+  "big_idea": {
+    "headline": "Las empresas no quiebran por falta de esfuerzo.",
+    "subline": "Quiebran por falta de integración.",
+    "description": "Respect nació para ser el sistema operativo de tu crecimiento. Integramos los tres pilares vitales para garantizar la soberanía de tu negocio.",
+    "eco_acquisition": "Adquisición",
+    "eco_conversion": "Conversión",
+    "eco_retention": "Retención"
+  },
+  "transition": {
+    "headline": "¿Cómo funciona esto en la práctica?"
   },
   "pilares": {
     "badge": "LA SUITE DE SOLUCIONES",
@@ -51,12 +75,19 @@
       "cta": "AUTOMATIZAR MIS VENTAS"
     }
   },
+  "explanation": {
+    "headline": "No necesitas más herramientas.",
+    "headline_highlight": "Necesitas integración.",
+    "subline": "El exceso de software desconectado crea silos de datos. Unificamos tu operación para que cada parte potencie a la otra."
+  },
   "autoridade": {
     "badge": "POR QUÉ RESPECT",
     "headline": "LA AUTORIDAD DE QUIENES",
     "headline_highlight": "ENTREGAN RESULTADOS.",
     "subline": "Huimos de jergas técnicas confusas y \"vanity metrics\". Nuestra plataforma eleva tu posicionamiento con ejecución rápida y enfoque en ventas.",
     "subline_strong": "ejecución rápida y enfoque en ventas.",
+    "revenue_headline": "No somos una agencia.",
+    "revenue_subline": "Somos ingeniería de ingresos.",
     "stats": {
       "anos_label": "Años en el Mercado",
       "anos_desc": "Experiencia robusta arquitectando la soberanía digital de negocios serios.",
@@ -88,14 +119,18 @@
   },
   "cta_final": {
     "badge": "GARANTÍA DE EJECUCIÓN",
-    "headline": "LA PLATAFORMA PARA VENDER",
-    "headline_highlight": "TODOS LOS DÍAS.",
-    "subline": "Habla con uno de nuestros especialistas. Demostración personalizada para el contexto actual de tu operación. Sin compromiso formal.",
-    "cta": "HABLAR CON ESPECIALISTA RESPECT",
-    "trust1": "Configuración Acelerada",
+    "headline": "EL MERCADO NO ESPERA A QUE TU OPERACIÓN",
+    "headline_highlight": "SE ORGANICE.",
+    "subline": "Ejecutar un Diagnóstico Estratégico es el primer paso hacia la soberanía digital. Sin compromiso formal, solo claridad técnica.",
+    "cta": "EJECUTAR DIAGNÓSTICO ESTRATÉGICO",
+    "trust1": "Sin Coste de Diagnóstico",
     "trust2": "Estrategia Comprobada",
     "trust3": "Respuesta Inmediata",
     "footer_tagline": "Soberanía Garantizada"
+  },
+  "scarcity": {
+    "headline": "Capacidad de ejecución limitada.",
+    "subline": "Para garantizar la profundidad técnica y el enfoque en el margen de cada socio, limitamos las nuevas incorporaciones mensuales. No somos una fábrica, somos ingeniería de ingresos."
   },
   "pilar_detalhe": {
     "back": "Volver al inicio",

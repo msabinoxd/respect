@@ -108,11 +108,32 @@ Se o design "bugar e ficar tudo numa mesma cor", reveja as classes do componente
 
 ## 8. Headline Hero oficial
 
-- Linha 1: `OPERE COM INTELIGÊNCIA.` (via i18n key `hero.line1`)
-- Linha 2: `ESCALE COM AUTORIDADE.` (via i18n key `hero.line2`, com `.text-gradient-builderall`)
-- Direção: posicionamento resultado/ação — nunca usar frases passivas ou genéricas
+- Linha 1: `OPERAÇÃO UNIFICADA.` (via i18n key `hero.line1`)
+- Linha 2: `SOBERANIA DIGITAL.` (via i18n key `hero.line2`, com `.text-gradient-builderall`)
+- Subhead: Deve conter a menção a **Inteligência Artificial** aplicada.
+- Direção: posicionamento de soberania e autoridade máxima.
 
-## 9. Cores PROIBIDAS (remover se encontradas)
+## 9. Fluxo de Conversão Psicológico
+
+A One Page deve seguir rigorosamente a ordem:
+1. **Atenção** (Hero)
+2. **Problema** (Contraste de fragmentação)
+3. **Insight** (Big Idea: Integração)
+4. **Ponte** (Transição prática)
+5. **Solução** (3 Pilares)
+6. **Integração** (Por que o ecossistema vence as ferramentas soltas)
+7. **Prova** (Stats e Autoridade)
+8. **Objeções** (FAQ)
+9. **Escassez** (Capacidade limitada)
+10. **Ação** (CTA Final Estratégico)
+
+## 10. Posicionamento de Marca
+
+- **Regra**: Nunca se referir à Respect como uma simples "agência".
+- **Termo oficial**: "Engenharia de Receita" (Revenue Engineering).
+- **Abordagem**: Foco em margem, lucro e eficiência técnica, não em "likes" ou métricas de vaidade.
+
+## 11. Cores PROIBIDAS (remover se encontradas)
 
 - `violet-*` — NUNCA
 - `purple-*` — NUNCA  

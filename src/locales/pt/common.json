@@ -9,12 +9,36 @@
   },
   "hero": {
     "badge": "CONHEÇA O NOVO ECOSSISTEMA RESPECT",
-    "line1": "OPERE COM INTELIGÊNCIA.",
-    "line2": "ESCALE COM AUTORIDADE.",
-    "subtitle": "A <strong>MS Group Respect</strong> é a plataforma definitiva de Marketing, TI e Consultoria Comercial. Simplifique suas vendas e escale com uma suíte premium.",
-    "cta": "CRIAR MEU ECOSSISTEMA AGORA",
-    "trust1": "Sem contratos amarrados",
-    "trust2": "Setup Acelerado"
+    "line1": "OPERAÇÃO UNIFICADA.",
+    "line2": "SOBERANIA DIGITAL.",
+    "subtitle": "Marketing, Tecnologia e Comercial operando como um único sistema com <strong>Inteligência Artificial</strong> aplicada de ponta a ponta.",
+    "cta": "Executar Diagnóstico de Operação",
+    "cta_secondary": "Ver como funciona",
+    "trust1": "Setup acelerado com IA",
+    "trust2": "Arquitetura escalável",
+    "trust3": "Foco em margem e resultado"
+  },
+  "problem": {
+    "headline": "O problema não é falta de investimento.",
+    "subline": "A maioria das empresas sofre com a fragmentação operacional. O Marketing não fala com o Comercial, e a Tecnologia é vista como um custo, não como um acelerador.",
+    "item1_title": "Marketing Isolado",
+    "item1_desc": "Geração de demanda que não se traduz em vendas reais por falta de alinhamento.",
+    "item2_title": "Tecnologia Reativa",
+    "item2_desc": "Sistemas que travam o crescimento em vez de automatizar a escala.",
+    "item3_title": "Comercial Analógico",
+    "item3_desc": "Processos dependentes de esforço manual e sem previsibilidade de dados.",
+    "footer": "E o caixa sangra no meio do caminho."
+  },
+  "big_idea": {
+    "headline": "Empresas não quebram por falta de esforço.",
+    "subline": "Elas quebram por falta de integração.",
+    "description": "A Respect nasceu para ser o sistema operacional do seu crescimento. Integramos os três pilares vitais para garantir a soberania do seu negócio.",
+    "eco_acquisition": "Aquisição",
+    "eco_conversion": "Conversão",
+    "eco_retention": "Retenção"
+  },
+  "transition": {
+    "headline": "Como isso funciona na prática?"
   },
   "pilares": {
     "badge": "A SUÍTE DE SOLUÇÕES",
@@ -51,12 +75,19 @@
       "cta": "AUTOMATIZAR VENDAS"
     }
   },
+  "explanation": {
+    "headline": "Você não precisa de mais ferramentas.",
+    "headline_highlight": "Você precisa de integração.",
+    "subline": "O excesso de softwares desconectados cria silos de dados. Nós unificamos sua operação para que cada parte potencialize a outra."
+  },
   "autoridade": {
     "badge": "POR QUE A RESPECT",
     "headline": "A AUTORIDADE DE QUEM",
     "headline_highlight": "ENTREGA RESULTADO.",
     "subline": "Fugimos de jargões técnicos confusos e \"vanity metrics\". Nossa plataforma eleva seu posicionamento com execução rápida e foco em vendas.",
     "subline_strong": "execução rápida e foco em vendas.",
+    "revenue_headline": "Não somos uma agência.",
+    "revenue_subline": "Somos engenharia de receita.",
     "stats": {
       "anos_label": "Anos no Mercado",
       "anos_desc": "Experiência robusta arquitetando a soberania digital de negócios sérios.",
@@ -88,14 +119,18 @@
   },
   "cta_final": {
     "badge": "GARANTIA DE EXECUÇÃO",
-    "headline": "A PLATAFORMA PARA VENDER",
-    "headline_highlight": "TODOS OS DIAS.",
-    "subline": "Fale com um de nossos especialistas. Demonstração customizada para o contexto atual da sua operação. Sem compromisso formal.",
-    "cta": "FALAR COM ESPECIALISTA RESPECT",
-    "trust1": "Setup Acelerado",
+    "headline": "O MERCADO NÃO ESPERA SUA OPERAÇÃO",
+    "headline_highlight": "SE ORGANIZAR.",
+    "subline": "Executar um Diagnóstico Estratégico é o primeiro passo para a soberania digital. Sem compromisso formal, apenas clareza técnica.",
+    "cta": "EXECUTAR DIAGNÓSTICO ESTRATÉGICO",
+    "trust1": "Sem Custo de Diagnóstico",
     "trust2": "Estratégia Comprovada",
     "trust3": "Resposta Imediata",
     "footer_tagline": "Soberania Garantida"
+  },
+  "scarcity": {
+    "headline": "Capacidade de execução limitada.",
+    "subline": "Para garantir a profundidade técnica e o foco em margem de cada parceiro, limitamos novos onboardings mensais. Não somos uma fábrica, somos engenharia de receita."
   },
   "pilar_detalhe": {
     "back": "Voltar para o início",

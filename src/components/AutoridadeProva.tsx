@@ -97,6 +97,18 @@ export function AutoridadeProva() {
             {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
             <span className="font-bold text-text-title">{t('autoridade.subline_strong')}</span>
           </motion.p>
+
+          <motion.div
+            variants={fadeUpPremium}
+            className="mt-12 flex flex-col items-center"
+          >
+            <h3 className="text-xl md:text-2xl font-black text-text-title tracking-tight uppercase">
+              {t('autoridade.revenue_headline')}
+            </h3>
+            <p className="text-brand-blue font-black text-2xl md:text-4xl uppercase tracking-tighter mt-2">
+              {t('autoridade.revenue_subline')}
+            </p>
+          </motion.div>
         </motion.div>
 
         <motion.div

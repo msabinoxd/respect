@@ -9,12 +9,36 @@
   },
   "hero": {
     "badge": "DISCOVER THE NEW RESPECT ECOSYSTEM",
-    "line1": "OPERATE WITH INTELLIGENCE.",
-    "line2": "SCALE WITH AUTHORITY.",
-    "subtitle": "<strong>MS Group Respect</strong> is the definitive platform for Marketing, IT and Sales Consulting. Simplify your sales and scale with a premium suite.",
-    "cta": "BUILD MY ECOSYSTEM NOW",
-    "trust1": "No lock-in contracts",
-    "trust2": "Accelerated Setup"
+    "line1": "UNIFIED OPERATION.",
+    "line2": "DIGITAL SOVEREIGNTY.",
+    "subtitle": "Marketing, Technology and Sales operating as a single system with end-to-end <strong>Artificial Intelligence</strong>.",
+    "cta": "Run Operational Diagnosis",
+    "cta_secondary": "See how it works",
+    "trust1": "AI-accelerated setup",
+    "trust2": "Scalable architecture",
+    "trust3": "Focus on margin and results"
+  },
+  "problem": {
+    "headline": "The problem isn't a lack of investment.",
+    "subline": "Most companies suffer from operational fragmentation. Marketing doesn't speak to Sales, and Technology is seen as a cost, not an accelerator.",
+    "item1_title": "Isolated Marketing",
+    "item1_desc": "Demand generation that doesn't translate into real sales due to lack of alignment.",
+    "item2_title": "Reactive Technology",
+    "item2_desc": "Systems that stall growth instead of automating scale.",
+    "item3_title": "Analog Sales",
+    "item3_desc": "Processes dependent on manual effort and without data predictability.",
+    "footer": "And cash bleeds out in the middle of the road."
+  },
+  "big_idea": {
+    "headline": "Companies don't break for lack of effort.",
+    "subline": "They break for lack of integration.",
+    "description": "Respect was born to be the operating system for your growth. We integrate the three vital pillars to ensure your business sovereignty.",
+    "eco_acquisition": "Acquisition",
+    "eco_conversion": "Conversion",
+    "eco_retention": "Retention"
+  },
+  "transition": {
+    "headline": "How does it work in practice?"
   },
   "pilares": {
     "badge": "THE SOLUTIONS SUITE",
@@ -51,12 +75,19 @@
       "cta": "AUTOMATE MY SALES"
     }
   },
+  "explanation": {
+    "headline": "You don't need more tools.",
+    "headline_highlight": "You need integration.",
+    "subline": "The excess of disconnected software creates data silos. We unify your operation so each part empowers the other."
+  },
   "autoridade": {
     "badge": "WHY RESPECT",
     "headline": "THE AUTHORITY OF THOSE WHO",
     "headline_highlight": "DELIVER RESULTS.",
     "subline": "We avoid confusing technical jargon and \"vanity metrics\". Our platform elevates your positioning with fast execution and a focus on sales.",
     "subline_strong": "fast execution and a focus on sales.",
+    "revenue_headline": "We are not an agency.",
+    "revenue_subline": "We are revenue engineering.",
     "stats": {
       "anos_label": "Years in Market",
       "anos_desc": "Robust experience architecting the digital sovereignty of serious businesses.",
@@ -88,14 +119,18 @@
   },
   "cta_final": {
     "badge": "EXECUTION GUARANTEE",
-    "headline": "THE PLATFORM TO SELL",
-    "headline_highlight": "EVERY DAY.",
-    "subline": "Talk to one of our specialists. Customized demonstration for your current operational context. No formal commitment.",
-    "cta": "TALK TO A RESPECT SPECIALIST",
-    "trust1": "Accelerated Setup",
+    "headline": "THE MARKET DOESN'T WAIT FOR YOUR OPERATION",
+    "headline_highlight": "TO ORGANIZE.",
+    "subline": "Running a Strategic Diagnosis is the first step toward digital sovereignty. No formal commitment, just technical clarity.",
+    "cta": "RUN STRATEGIC DIAGNOSIS",
+    "trust1": "No Diagnostic Cost",
     "trust2": "Proven Strategy",
     "trust3": "Immediate Response",
     "footer_tagline": "Guaranteed Sovereignty"
+  },
+  "scarcity": {
+    "headline": "Limited execution capacity.",
+    "subline": "To ensure technical depth and focus on margin for each partner, we limit new monthly onboardings. We are not a factory; we are revenue engineering."
   },
   "pilar_detalhe": {
     "back": "Back to home",
