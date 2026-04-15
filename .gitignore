@@ -7,8 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-.claude/
-.agents/
+# Agent Intelligence
+!.agents/
+!.claude/
+.claude/settings.local.json
+*.local
 node_modules
 dist
 dist-ssr
