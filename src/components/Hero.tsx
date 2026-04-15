@@ -44,7 +44,7 @@ export function Hero() {
           {/* Headline — Posicionamento resultado/ação */}
           <motion.h1
             variants={fadeUpPremium}
-            className="text-[38px] sm:text-[56px] md:text-[76px] lg:text-[92px] font-black leading-[0.95] mb-8 text-text-title tracking-tighter uppercase"
+            className="text-[38px] sm:text-[56px] md:text-[76px] lg:text-[92px] font-black leading-[0.95] mb-8 text-white tracking-tighter uppercase"
           >
             {t('hero.line1')}
             <br />

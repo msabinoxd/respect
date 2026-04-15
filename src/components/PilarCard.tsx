@@ -34,14 +34,14 @@ export function PilarCard({ pilar }: PilarCardProps) {
           {t(`pilares_data.${pilar.id}.title`)}
         </h3>
 
-        <p className="text-text-muted leading-relaxed mb-6 font-medium text-sm">
+        <p className="text-text-body leading-relaxed mb-6 font-medium text-sm">
           {t(`pilares_data.${pilar.id}.tagline`)}
         </p>
 
         {/* Top 3 services */}
         <ul className="flex flex-col gap-3 mb-8 flex-1">
           {topServices.map((svc) => (
-            <li key={svc.key} className="flex items-center gap-3 text-sm text-text-light/80">
+            <li key={svc.key} className="flex items-center gap-3 text-sm text-text-body">
               <svc.icon size={16} className="text-text-muted flex-shrink-0" />
               {t(`pilares_data.${pilar.id}.services.${svc.key}.title`)}
             </li>
