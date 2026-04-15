@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { fadeUpPremium } from '../shared/animations.premium';
 import { trackAndOpenWA } from '../config';
 import { Card, Button } from './base';
@@ -11,6 +12,7 @@ interface PilarCardProps {
 }
 
 export function PilarCard({ pilar }: PilarCardProps) {
+  const { t } = useTranslation();
   const topServices = pilar.services.slice(0, 3);
 
   return (
@@ -25,23 +27,23 @@ export function PilarCard({ pilar }: PilarCardProps) {
 
         {/* Badge label */}
         <span className={`text-[10px] font-bold uppercase tracking-widest ${pilar.accentColor} mb-2 block`}>
-          {pilar.badge}
+          {t(`pilares_data.${pilar.id}.badge`)}
         </span>
 
         <h3 className="text-2xl font-black text-white mb-3 tracking-tight">
-          {pilar.title}
+          {t(`pilares_data.${pilar.id}.title`)}
         </h3>
 
-        <p className="text-slate-400 leading-relaxed mb-6 font-medium text-sm">
-          {pilar.tagline}
+        <p className="text-text-muted leading-relaxed mb-6 font-medium text-sm">
+          {t(`pilares_data.${pilar.id}.tagline`)}
         </p>
 
         {/* Top 3 services */}
         <ul className="flex flex-col gap-3 mb-8 flex-1">
           {topServices.map((svc) => (
-            <li key={svc.title} className="flex items-center gap-3 text-sm text-slate-300">
-              <svc.icon size={16} className="text-slate-500 flex-shrink-0" />
-              {svc.title}
+            <li key={svc.key} className="flex items-center gap-3 text-sm text-text-light/80">
+              <svc.icon size={16} className="text-text-muted flex-shrink-0" />
+              {t(`pilares_data.${pilar.id}.services.${svc.key}.title`)}
             </li>
           ))}
         </ul>
@@ -52,17 +54,17 @@ export function PilarCard({ pilar }: PilarCardProps) {
             variant="secondary"
             size="md"
             icon={ArrowRight}
-            onClick={() => trackAndOpenWA(pilar.msg, `Pilar_${pilar.glowColor}_Click`)}
+            onClick={() => trackAndOpenWA(t(`pilares_data.${pilar.id}.msg`), `Pilar_${pilar.glowColor}_Click`)}
             className="w-full"
           >
-            {pilar.cta}
+            {t(`pilares_data.${pilar.id}.cta`)}
           </Button>
 
           <Link
             to={`/${pilar.id}`}
-            className="text-center text-xs font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 transition-colors py-1"
+            className="text-center text-xs font-bold uppercase tracking-wider text-text-muted hover:text-text-light/80 transition-colors py-1"
           >
-            Ver todos os serviços →
+            {t('pilares.ver_detalhes')}
           </Link>
         </div>
 

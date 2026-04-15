@@ -15,14 +15,43 @@ npm **NÃO** está no PATH. Usar sempre:
 "C:\Program Files\nodejs\npm.cmd" <comando>
 ```
 
-## REGRA ZERO — Discovery obrigatório
+## ⚠️ REGRA ZERO — Ler ANTES de qualquer tarefa
 
-Nenhum código antes de entender o nicho. Se o usuário pedir "crie uma LP" sem briefing detalhado → delegar imediatamente para o subagente `discovery-interviewer`.
+Nenhum código antes de ler estes arquivos:
 
-## Leitura obrigatória antes de qualquer tarefa
+1. **[.agents/rules.md](.agents/rules.md)** — 12 regras inquebráveis + workflow
+2. **[.agents/anti-patterns.md](.agents/anti-patterns.md)** — erros que geram retrabalho
+3. **[.agents/prd.md](.agents/prd.md)** — objetivo do produto
 
-1. [.agents/rules.md](.agents/rules.md) — regras que nunca quebram
-2. [.agents/prd.md](.agents/prd.md) — objetivo do produto
+Se o usuário pedir "crie uma LP" sem briefing detalhado → delegar imediatamente para o subagente `discovery-interviewer`.
+
+---
+
+## 🔴 5 erros mais comuns (ler obrigatoriamente)
+
+> Estes erros já aconteceram neste projeto. **NÃO repita.**
+
+### 1. Hardcoded PT-BR em data files
+❌ `title: "Presença que Converte"` no .ts  
+✅ Dados estruturais no .ts (ícones, gradientes), texto via `t('pilares_data.marketing.title')`
+
+### 2. Smoke tests sem valor
+❌ `it('renderiza sem crash', () => { render(<X />); })`  
+✅ Testar comportamento: click → state change, aria-expanded, handlers chamados, âncoras na seção
+
+### 3. Cores proibidas do Tailwind
+❌ `text-slate-400`, `bg-gray-100`, `violet-500`, `bg-white`  
+✅ Tokens semânticos: `text-text-muted`, `bg-bg-light`, `bg-bg-white`
+
+### 4. Dependências implícitas
+❌ `react` e `react-dom` não listados no package.json  
+✅ Toda dependência usada em `import` **DEVE** estar explícita no package.json
+
+### 5. Arquivos de teste no build de produção
+❌ `tsc` compilando `*.test.tsx` e `setup.ts` → erros de `global`, `require`  
+✅ `tsconfig.json` deve ter `"exclude": ["src/test", "src/**/*.test.tsx", "src/**/*.test.ts"]`
+
+---
 
 ## Matriz de skills por tarefa
 
@@ -32,7 +61,8 @@ Nenhum código antes de entender o nicho. Se o usuário pedir "crie uma LP" sem 
 | Escrever copy | copywriting + i18n |
 | Criar componente | branding + component-library + i18n + animation-libraries |
 | Animação / efeito | modern-techniques + animation-libraries + design-references |
-| Validar mudança | testing |
+| Validar mudança | testing + anti-patterns |
+| Adicionar dados (pilares, features) | i18n (seção "Padrão Data-i18n") + component-library |
 
 ## Subagentes disponíveis
 

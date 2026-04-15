@@ -15,7 +15,6 @@ const PILARES_META = [
       { icon: Globe, key: 'f2' },
       { icon: Bot, key: 'f3' },
     ],
-    msg: 'Olá! Tenho interesse na Suíte de Marketing da Respect.',
   },
   {
     id: 'ti',
@@ -25,7 +24,6 @@ const PILARES_META = [
       { icon: Shield, key: 'f2' },
       { icon: Server, key: 'f3' },
     ],
-    msg: 'Olá! Tenho interesse na Suíte de TI da Respect.',
   },
   {
     id: 'vendas',
@@ -35,7 +33,6 @@ const PILARES_META = [
       { icon: Users, key: 'f2' },
       { icon: Megaphone, key: 'f3' },
     ],
-    msg: 'Olá! Tenho interesse na Consultoria Comercial da Respect.',
   },
 ];
 
@@ -123,7 +120,7 @@ export function PilaresSolucoes() {
                     variant="secondary"
                     size="md"
                     icon={ArrowRight}
-                    onClick={() => trackAndOpenWA(pilar.msg, 'Service_Card_Click')}
+                    onClick={() => trackAndOpenWA(t(`pilares_data.${pilar.id}.msg`), 'Service_Card_Click')}
                     className="w-full"
                   >
                     {t(`pilares.${pilar.id}.cta`)}

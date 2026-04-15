@@ -122,5 +122,100 @@
     "pt": "PT",
     "en": "EN",
     "es": "ES"
+  },
+  "pilares_data": {
+    "marketing": {
+      "badge": "Full-Stack Marketing",
+      "title": "Presence that Converts",
+      "tagline": "Smart funnels, automation and traffic that generate real revenue.",
+      "description": "We build integrated digital marketing ecosystems: from the first click to repurchase. Every channel, every message and every funnel is designed to turn attention into revenue. No vanity metrics — only results that show up in your bottom line.",
+      "cta": "I want to scale my marketing",
+      "msg": "Hello! I'm interested in Respect's Full-Stack Digital Marketing services. I'd like to understand how you can help my business.",
+      "ideal_for": "Businesses selling online or looking to scale lead generation — e-commerce, SaaS, professional services, info-product creators and local brands wanting to grow beyond word-of-mouth.",
+      "services": {
+        "s1": { "title": "Funnels with Upsell & Downsell", "desc": "Mapped and optimized purchase journeys to maximize average ticket and LTV of each customer." },
+        "s2": { "title": "SEO & Authority Content", "desc": "Keyword strategy, content production and link building to dominate organic results." },
+        "s3": { "title": "Email & CRM Automation", "desc": "Nurturing sequences, behavioral segmentation and automations that sell while you sleep." },
+        "s4": { "title": "Paid Traffic (Meta & Google)", "desc": "Performance campaigns with continuous optimization, A/B testing and proven ROAS." },
+        "s5": { "title": "Analytics & Dashboards", "desc": "Pixel, GA4, Tag Manager and real-time dashboards for data-driven decisions." },
+        "s6": { "title": "Strategic Social Media", "desc": "Editorial calendar, content production and community management aligned with brand identity." }
+      },
+      "deliverables": {
+        "d1": "Monthly editorial planning with content calendar",
+        "d2": "Conversion-optimized landing pages",
+        "d3": "Complete Pixel, GA4 and event tracking setup",
+        "d4": "Monthly performance reports with actionable insights",
+        "d5": "Automated email funnels (welcome, nurture, reactivation)",
+        "d6": "Creative library for ads (copy + visual brief)"
+      },
+      "outcomes": {
+        "o1": "20-40% reduction in CAC (Customer Acquisition Cost)",
+        "o2": "Increased LTV with retention and upsell funnels",
+        "o3": "Organic traffic growth in 3-6 months",
+        "o4": "Positive ROAS on paid campaigns from the first month"
+      }
+    },
+    "ti": {
+      "badge": "IT & DevOps",
+      "title": "Robust Infrastructure",
+      "tagline": "Architecture, custom software and DevOps that sustain growth.",
+      "description": "We develop the technological backbone of your business: from management software to cloud architecture, through high-level UI/UX and DevOps that ensures stress-free deployments. We build systems that scale with you — not against you.",
+      "cta": "I want solid infrastructure",
+      "msg": "Hello! I'm interested in Respect's IT and DevOps services. I'd like to discuss a development or infrastructure project.",
+      "ideal_for": "Companies that depend on technology to operate and want to move away from spreadsheets and legacy systems — growing startups, established businesses modernizing processes and teams without internal technical capacity.",
+      "services": {
+        "s1": { "title": "Custom Management Software", "desc": "Web and mobile applications designed for your process — without forced adaptations to generic solutions." },
+        "s2": { "title": "DevOps & CI/CD", "desc": "Automated pipelines, Docker containerization and continuous deployment for fast and secure deliveries." },
+        "s3": { "title": "Cloud Architecture (AWS/GCP/VPS)", "desc": "Scalable, monitored infrastructure with high availability for critical applications." },
+        "s4": { "title": "Premium UI/UX", "desc": "Interfaces that delight: consistent design system, accessibility and mobile-first experience." },
+        "s5": { "title": "Maintenance & SLA", "desc": "Continuous technical support, uptime monitoring and proactive updates for zero surprises." },
+        "s6": { "title": "Security & Integrations", "desc": "Robust authentication, encryption, RESTful APIs and integrations with ERPs, CRMs and payment gateways." }
+      },
+      "deliverables": {
+        "d1": "Version-controlled code on GitHub with technical documentation",
+        "d2": "Automated deployment via CI/CD (GitHub Actions / GitLab CI)",
+        "d3": "Monitoring with alerts (uptime, performance, errors)",
+        "d4": "Staging environment separated from production",
+        "d5": "Operations manual and onboarding for internal team",
+        "d6": "Security report and load testing before go-live"
+      },
+      "outcomes": {
+        "o1": "99%+ uptime with proactive monitoring",
+        "o2": "50% faster time-to-market with automated CI/CD",
+        "o3": "Reduced technical debt and maintenance costs",
+        "o4": "New dev onboarding in hours, not weeks"
+      }
+    },
+    "vendas": {
+      "badge": "Commercial & Consulting",
+      "title": "Sales with Intelligence",
+      "tagline": "Chatbots, CRM and consulting for a predictable and scalable pipeline.",
+      "description": "We transform your sales process into a predictable machine: AI chatbots that qualify and convert 24/7, CRM-trained teams and sales playbooks that eliminate dependence on \"superstar sellers\". More consistency, more revenue, fewer surprises.",
+      "cta": "I want to sell more and better",
+      "msg": "Hello! I'm interested in Respect's Commercial Consulting. I want to understand how you can improve my sales process.",
+      "ideal_for": "Businesses with sales teams that want to scale without proportional hiring — B2B companies, service providers, SaaS and businesses with average tickets above $100.",
+      "services": {
+        "s1": { "title": "WhatsApp AI Chatbots", "desc": "Service automation, lead qualification and scheduling via WhatsApp Business API with generative AI." },
+        "s2": { "title": "CRM Team Training", "desc": "Hands-on training in HubSpot, RD Station or Pipedrive — from basics to advanced automation usage." },
+        "s3": { "title": "Strategic Sales Consulting", "desc": "Sales funnel diagnosis, bottleneck identification and action plan to increase conversion." },
+        "s4": { "title": "Sales Playbooks", "desc": "Scripts, mapped objections, prospecting cadences and documented and tested qualification processes." },
+        "s5": { "title": "CRM ↔ Marketing Integration", "desc": "Connection between marketing and sales tools to eliminate silos and ensure full pipeline visibility." },
+        "s6": { "title": "Pipeline Dashboards", "desc": "Real-time panels with conversion rate per stage, revenue forecast and sales team KPIs." }
+      },
+      "deliverables": {
+        "d1": "Chatbot configured and in production on WhatsApp Business",
+        "d2": "Complete sales playbook (script, objections, cadences)",
+        "d3": "Recorded training for future team onboarding",
+        "d4": "CRM configured with stages, automations and integrations",
+        "d5": "Pipeline dashboard and automated weekly reports",
+        "d6": "Monthly performance review with process adjustments"
+      },
+      "outcomes": {
+        "o1": "30-50% shorter sales cycle with automated qualification",
+        "o2": "Increased lead-to-customer conversion",
+        "o3": "Revenue predictability with well-managed pipeline",
+        "o4": "Reduced dependence on \"star\" sellers"
+      }
+    }
   }
 }

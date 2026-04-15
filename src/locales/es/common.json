@@ -122,5 +122,100 @@
     "pt": "PT",
     "en": "EN",
     "es": "ES"
+  },
+  "pilares_data": {
+    "marketing": {
+      "badge": "Marketing Full-Stack",
+      "title": "Presencia que Convierte",
+      "tagline": "Embudos inteligentes, automatización y tráfico que generan ingresos reales.",
+      "description": "Construimos ecosistemas de marketing digital integrados: desde el primer clic hasta la recompra. Cada canal, cada mensaje y cada embudo están diseñados para transformar atención en ingresos. Sin vanity metrics — solo resultados que aparecen en tu facturación.",
+      "cta": "Quiero escalar mi marketing",
+      "msg": "¡Hola! Me interesan los servicios de Marketing Digital Full-Stack de Respect. Me gustaría entender cómo pueden ayudar a mi negocio.",
+      "ideal_for": "Negocios que venden online o quieren escalar la captación de leads — e-commerce, SaaS, servicios profesionales, infoproductores y marcas locales que quieren crecer más allá del boca a boca.",
+      "services": {
+        "s1": { "title": "Embudos con Upsell y Downsell", "desc": "Jornadas de compra mapeadas y optimizadas para maximizar el ticket medio y el LTV de cada cliente." },
+        "s2": { "title": "SEO y Contenido de Autoridad", "desc": "Estrategia de palabras clave, producción de contenido y link building para dominar los resultados orgánicos." },
+        "s3": { "title": "Automatización de Email y CRM", "desc": "Secuencias de nutrición, segmentación comportamental y automatizaciones que venden mientras duermes." },
+        "s4": { "title": "Tráfico Pago (Meta y Google)", "desc": "Campañas de performance con optimización continua, tests A/B y ROAS comprobado." },
+        "s5": { "title": "Analytics y Dashboards", "desc": "Pixel, GA4, Tag Manager y dashboards en tiempo real para decisiones basadas en datos." },
+        "s6": { "title": "Social Media Estratégico", "desc": "Calendario editorial, producción de contenido y gestión de comunidad alineados con la identidad de marca." }
+      },
+      "deliverables": {
+        "d1": "Planificación editorial mensual con calendario de contenido",
+        "d2": "Landing pages optimizadas para conversión",
+        "d3": "Configuración completa de Pixel, GA4 y rastreo de eventos",
+        "d4": "Informes mensuales de performance con insights accionables",
+        "d5": "Embudos de email automatizados (bienvenida, nutrición, reactivación)",
+        "d6": "Biblioteca de creativos para anuncios (copy + brief visual)"
+      },
+      "outcomes": {
+        "o1": "Reducción de 20-40% en CAC (Costo de Adquisición de Cliente)",
+        "o2": "Aumento de LTV con embudos de retención y upsell",
+        "o3": "Crecimiento de tráfico orgánico en 3-6 meses",
+        "o4": "ROAS positivo en campañas pagas desde el primer mes"
+      }
+    },
+    "ti": {
+      "badge": "TI y DevOps",
+      "title": "Infraestructura Robusta",
+      "tagline": "Arquitectura, software a medida y DevOps que sustentan el crecimiento.",
+      "description": "Desarrollamos la columna vertebral tecnológica de tu negocio: desde el software de gestión hasta la arquitectura cloud, pasando por UI/UX de alto nivel y DevOps que garantiza deploys sin estrés. Construimos sistemas que escalan contigo — no contra ti.",
+      "cta": "Quiero infraestructura sólida",
+      "msg": "¡Hola! Me interesan los servicios de TI y DevOps de Respect. Me gustaría discutir un proyecto de desarrollo o infraestructura.",
+      "ideal_for": "Empresas que dependen de la tecnología para operar y quieren salir de hojas de cálculo y sistemas legados — startups en crecimiento, negocios establecidos modernizando procesos y equipos sin capacidad técnica interna.",
+      "services": {
+        "s1": { "title": "Software de Gestión a Medida", "desc": "Aplicaciones web y móviles diseñadas para tu proceso — sin adaptaciones forzadas a soluciones genéricas." },
+        "s2": { "title": "DevOps y CI/CD", "desc": "Pipelines automatizados, containerización Docker y deploy continuo para entregas rápidas y seguras." },
+        "s3": { "title": "Cloud Architecture (AWS/GCP/VPS)", "desc": "Infraestructura escalable, monitoreada y con alta disponibilidad para aplicaciones críticas." },
+        "s4": { "title": "UI/UX Premium", "desc": "Interfaces que encantan: design system consistente, accesibilidad y experiencia mobile-first." },
+        "s5": { "title": "Mantenimiento y SLA", "desc": "Soporte técnico continuo, monitoreo de uptime y actualizaciones proactivas para cero sorpresas." },
+        "s6": { "title": "Seguridad e Integraciones", "desc": "Autenticación robusta, cifrado, APIs RESTful e integraciones con ERPs, CRMs y pasarelas de pago." }
+      },
+      "deliverables": {
+        "d1": "Código versionado en GitHub con documentación técnica",
+        "d2": "Deploy automatizado vía CI/CD (GitHub Actions / GitLab CI)",
+        "d3": "Monitoreo con alertas (uptime, performance, errores)",
+        "d4": "Ambiente de staging separado de producción",
+        "d5": "Manual de operación y onboarding para el equipo interno",
+        "d6": "Informe de seguridad y pruebas de carga antes del go-live"
+      },
+      "outcomes": {
+        "o1": "99%+ de uptime con monitoreo proactivo",
+        "o2": "Time-to-market 50% menor con CI/CD automatizado",
+        "o3": "Reducción de deuda técnica y costos de mantenimiento",
+        "o4": "Onboarding de nuevos devs en horas, no semanas"
+      }
+    },
+    "vendas": {
+      "badge": "Comercial y Consultoría",
+      "title": "Ventas con Inteligencia",
+      "tagline": "Chatbots, CRM y consultoría para un pipeline predecible y escalable.",
+      "description": "Transformamos tu proceso comercial en una máquina predecible: chatbots con IA que califican y convierten 24/7, equipos entrenados en CRM y playbooks de ventas que eliminan la dependencia de \"super vendedores\". Más consistencia, más ingresos, menos imprevistos.",
+      "cta": "Quiero vender más y mejor",
+      "msg": "¡Hola! Me interesa la Consultoría Comercial de Respect. Quiero entender cómo pueden mejorar mi proceso de ventas.",
+      "ideal_for": "Negocios con equipo comercial que quiere escalar sin contratar proporcionalmente — empresas B2B, prestadores de servicio, SaaS y negocios con ticket medio superior a $100 USD.",
+      "services": {
+        "s1": { "title": "Chatbots WhatsApp con IA", "desc": "Automatización de atención, calificación de leads y agendamientos vía WhatsApp Business API con IA generativa." },
+        "s2": { "title": "Entrenamiento de Equipos en CRM", "desc": "Capacitación práctica en HubSpot, RD Station o Pipedrive — desde lo básico hasta el uso avanzado de automatizaciones." },
+        "s3": { "title": "Consultoría Comercial Estratégica", "desc": "Diagnóstico del embudo de ventas, identificación de cuellos de botella y plan de acción para aumentar conversión." },
+        "s4": { "title": "Playbooks de Ventas", "desc": "Scripts, objeciones mapeadas, cadencias de prospección y proceso de calificación documentados y probados." },
+        "s5": { "title": "Integración CRM ↔ Marketing", "desc": "Conexión entre las herramientas de marketing y ventas para eliminar silos y garantizar visibilidad total del pipeline." },
+        "s6": { "title": "Dashboards de Pipeline", "desc": "Paneles en tiempo real con tasa de conversión por etapa, forecast de ingresos y KPIs del equipo comercial." }
+      },
+      "deliverables": {
+        "d1": "Chatbot configurado y en producción en WhatsApp Business",
+        "d2": "Playbook de ventas completo (script, objeciones, cadencias)",
+        "d3": "Entrenamientos grabados para onboarding futuro del equipo",
+        "d4": "CRM configurado con etapas, automatizaciones e integraciones",
+        "d5": "Dashboard de pipeline e informes semanales automatizados",
+        "d6": "Revisión mensual de performance con ajustes de proceso"
+      },
+      "outcomes": {
+        "o1": "Ciclo de venta 30-50% menor con calificación automatizada",
+        "o2": "Aumento de conversión de lead a cliente",
+        "o3": "Previsibilidad de ingresos con pipeline bien gestionado",
+        "o4": "Reducción de dependencia de vendedores \"estrella\""
+      }
+    }
   }
 }

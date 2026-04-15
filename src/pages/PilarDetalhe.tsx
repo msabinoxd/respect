@@ -16,19 +16,27 @@ interface PilarDetalheProps {
 export function PilarDetalhe({ id }: PilarDetalheProps) {
   const pilar = getPilar(id);
   const { t } = useTranslation();
-  
+
+  const pilarTitle = t(`pilares_data.${id}.title`);
+  const pilarDesc = t(`pilares_data.${id}.description`);
+
   useSEO(
-    pilar ? `${pilar.title} | Respect da MS Group` : 'Serviço não encontrado | Respect',
-    pilar ? pilar.description : 'Confira os serviços oferecidos pela Respect'
+    pilar ? `${pilarTitle} | Respect da MS Group` : t('pilar_detalhe.not_found_title', 'Serviço não encontrado | Respect'),
+    pilar ? pilarDesc : t('pilar_detalhe.not_found_desc', 'Confira os serviços oferecidos pela Respect')
   );
 
   if (!pilar) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-text-muted">Pilar não encontrado.</p>
+        <p className="text-text-muted">{t('pilar_detalhe.not_found', 'Pilar não encontrado.')}</p>
       </div>
     );
   }
+
+  // Generate deliverable keys: d1, d2, ... dN
+  const deliverableKeys = Array.from({ length: pilar.deliverableCount }, (_, i) => `d${i + 1}`);
+  // Generate outcome keys: o1, o2, ... oN
+  const outcomeKeys = Array.from({ length: pilar.outcomeCount }, (_, i) => `o${i + 1}`);
 
   return (
     <>
@@ -65,8 +73,8 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
           >
             <motion.div variants={fadeUpPremium}>
               <Badge
-                label={pilar.badge}
-                variant={pilar.id === 'ti' ? 'light' : 'blue'}
+                label={t(`pilares_data.${id}.badge`)}
+                variant={id === 'ti' ? 'light' : 'blue'}
                 className="mb-6"
               />
             </motion.div>
@@ -75,14 +83,14 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               variants={fadeUpPremium}
               className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-text-title tracking-tighter"
             >
-              {pilar.title}
+              {pilarTitle}
             </motion.h1>
 
             <motion.p
               variants={fadeUpPremium}
               className="text-base md:text-xl text-text-body leading-relaxed font-medium mb-10 max-w-2xl"
             >
-              {pilar.description}
+              {pilarDesc}
             </motion.p>
 
             <motion.div variants={fadeUpPremium}>
@@ -90,10 +98,10 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
-                onClick={() => trackAndOpenWA(pilar.msg, `Detalhe_${pilar.glowColor}_CTA`)}
+                onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_CTA`)}
                 className="shadow-2xl"
               >
-                {pilar.cta}
+                {t(`pilares_data.${id}.cta`)}
               </Button>
             </motion.div>
           </motion.div>
@@ -133,15 +141,19 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
           >
             {pilar.services.map((svc) => (
               <motion.div
-                key={svc.title}
+                key={svc.key}
                 variants={fadeUpPremium}
                 className="glass-card p-6 group hover:bg-white/[0.07] transition-all duration-300"
               >
                 <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <svc.icon size={20} className="text-white" />
                 </div>
-                <h3 className="text-base font-bold text-white mb-2">{svc.title}</h3>
-                <p className="text-sm text-text-light/70 leading-relaxed">{svc.desc}</p>
+                <h3 className="text-base font-bold text-white mb-2">
+                  {t(`pilares_data.${id}.services.${svc.key}.title`)}
+                </h3>
+                <p className="text-sm text-text-light/70 leading-relaxed">
+                  {t(`pilares_data.${id}.services.${svc.key}.desc`)}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -169,14 +181,14 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 {t('pilar_detalhe.deliverables_title')}
               </motion.h2>
               <motion.ul variants={staggerSlow} className="flex flex-col gap-4">
-                {pilar.deliverables.map((d) => (
+                {deliverableKeys.map((dKey) => (
                   <motion.li
-                    key={d}
+                    key={dKey}
                     variants={fadeUpPremium}
                     className="flex items-start gap-3 text-sm text-text-light/90"
                   >
                     <CheckCircle2 size={16} className="text-brand-cyan flex-shrink-0 mt-0.5" />
-                    {d}
+                    {t(`pilares_data.${id}.deliverables.${dKey}`)}
                   </motion.li>
                 ))}
               </motion.ul>
@@ -199,14 +211,14 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 {t('pilar_detalhe.outcomes_title')}
               </motion.h2>
               <motion.ul variants={staggerSlow} className="flex flex-col gap-4">
-                {pilar.outcomes.map((o) => (
+                {outcomeKeys.map((oKey) => (
                   <motion.li
-                    key={o}
+                    key={oKey}
                     variants={fadeUpPremium}
                     className="flex items-start gap-3 text-sm text-text-light/90"
                   >
                     <Zap size={16} className="text-brand-cyan flex-shrink-0 mt-0.5" />
-                    {o}
+                    {t(`pilares_data.${id}.outcomes.${oKey}`)}
                   </motion.li>
                 ))}
               </motion.ul>
@@ -278,7 +290,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   <Users size={20} className="text-white" />
                 </div>
                 <p className="text-text-light/80 leading-relaxed text-sm md:text-base">
-                  {pilar.idealFor}
+                  {t(`pilares_data.${id}.ideal_for`)}
                 </p>
               </motion.div>
 
@@ -287,7 +299,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   variant="primary"
                   size="md"
                   icon={Target}
-                  onClick={() => trackAndOpenWA(pilar.msg, `Detalhe_${pilar.glowColor}_Bottom`)}
+                  onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_Bottom`)}
                   className="shadow-xl"
                 >
                   {t('pilar_detalhe.cta_analysis')}
@@ -341,9 +353,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                       </div>
                       <div>
                         <p className={`text-[10px] font-bold uppercase tracking-widest ${other.accentColor} mb-0.5`}>
-                          {other.badge}
+                          {t(`pilares_data.${otherId}.badge`)}
                         </p>
-                        <p className="text-sm font-bold text-white">{other.title}</p>
+                        <p className="text-sm font-bold text-white">{t(`pilares_data.${otherId}.title`)}</p>
                       </div>
                       <ArrowRight size={16} className="text-text-muted group-hover:text-text-light/80 ml-auto transition-colors" />
                     </Link>
