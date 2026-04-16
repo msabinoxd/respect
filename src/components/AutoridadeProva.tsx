@@ -70,7 +70,7 @@ export function AutoridadeProva() {
     <Section variant="white" id="autoridade" className="relative overflow-hidden pt-40 pb-40">
       {/* Background Decorative Asset - High Authority */}
       <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl opacity-[0.03] pointer-events-none">
-        <img src="images/branding/respect_authority_3d.png" alt="" className="w-full h-auto" />
+        <img src="images/branding/respect_authority_3d.png" alt={t('alts.authority_3d')} className="w-full h-auto" />
       </div>
 
       <Container size="lg" className="relative z-10">

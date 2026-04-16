@@ -1,4 +1,27 @@
 {
+  "common": {
+    "status": "STATUS",
+    "active": "ATIVO",
+    "technical_rigor": "RIGOR TÉCNICO",
+    "operational_friction": "FRICÇÃO OPERACIONAL",
+    "efficiency_leak_alert": "VAZAMENTO DE EFICIÊNCIA",
+    "trust_engine_active": "TRUST ENGINE V4.0 ATIVA",
+    "execution_engineering": "ENGENHARIA DE EXECUÇÃO",
+    "integrated_100": "100% INTEGRADO",
+    "speak_whatsapp_aria": "Falar no WhatsApp",
+    "select_language_aria": "Selecionar idioma"
+  },
+  "alts": {
+    "hero_laptop": "Sistema de Infraestrutura Respect em um MacBook",
+    "problem_chaos": "Visualização do Caos Operacional e Fragmentação",
+    "engine_integration": "Motor de Integração Respect - Visão Sistêmica",
+    "pillar_marketing": "Pilar de Aquisição e Performance Respect",
+    "pillar_ti": "Pilar de Arquitetura e Infraestrutura Respect",
+    "pillar_sales": "Pilar de Conversão e Engenharia de Vendas Respect",
+    "methodology_3d": "Metodologia Visual Respect 3D",
+    "authority_3d": "Elemento de Autoridade Técnica Respect",
+    "workflow_visual": "Visualização de Workflow Integrado Respect"
+  },
   "nav": {
     "home": "SISTEMA",
     "marketing": "AQUISIÇÃO",
@@ -20,7 +43,7 @@
     "trust3": "Solidez Operacional"
   },
   "problem": {
-    "headline": "EFFICIENCY LEAK.",
+    "headline": "VAZAMENTO DE EFICIÊNCIA.",
     "subline": "A fragmentação entre marketing, TI e comercial custa caro. Você perde margem, aumenta seu CAC e perde o controle da sua escala.",
     "item1_title": "MARKETING ISOLADO",
     "item1_desc": "Investimento cego. Campanhas que geram tráfego mas falham na entrega para o comercial.",

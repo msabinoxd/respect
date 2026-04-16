@@ -113,7 +113,7 @@ export function Hero() {
               <div className="relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
                 <img
                   src="images/branding/respect_laptop_mockup.png"
-                  alt="Respect Infrastructure System"
+                  alt={t('alts.hero_laptop')}
                   className="w-full h-auto drop-shadow-[0_35px_60px_rgba(0,144,255,0.15)]"
                 />
                 
@@ -127,8 +127,8 @@ export function Hero() {
                     <ShieldCheck size={20} />
                   </div>
                   <div>
-                    <div className="text-[9px] font-black text-brand-blue uppercase tracking-tighter">Status</div>
-                    <div className="text-xs font-black text-text-title uppercase">Trust Engine V4.0 Active</div>
+                    <div className="text-[9px] font-black text-brand-blue uppercase tracking-tighter">{t('common.status')}</div>
+                    <div className="text-xs font-black text-text-title uppercase">{t('common.trust_engine_active')}</div>
                   </div>
                 </motion.div>
               </div>

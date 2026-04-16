@@ -94,14 +94,14 @@ export function ExplanationSection() {
                
                <img 
                  src="images/branding/respect_workflow_visual.png" 
-                 alt="Integrated Workflow" 
+                 alt={t('alts.workflow_visual')} 
                  className="w-full h-auto relative z-10 group-hover:scale-105 transition-transform duration-1000"
                />
 
                {/* Stats Floating */}
                <div className="absolute bottom-10 left-10 p-6 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 z-20">
-                  <div className="text-[10px] font-black text-brand-blue uppercase tracking-widest mb-2">Engenharia de Execução</div>
-                  <div className="text-2xl font-black text-white uppercase tracking-tighter">100% Integrado</div>
+                  <div className="text-[10px] font-black text-brand-blue uppercase tracking-widest mb-2">{t('common.execution_engineering')}</div>
+                  <div className="text-2xl font-black text-white uppercase tracking-tighter">{t('common.integrated_100')}</div>
                </div>
             </div>
           </motion.div>

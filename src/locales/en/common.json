@@ -1,4 +1,27 @@
 {
+  "common": {
+    "status": "STATUS",
+    "active": "ACTIVE",
+    "technical_rigor": "TECHNICAL RIGOR",
+    "operational_friction": "OPERATIONAL FRICTION",
+    "efficiency_leak_alert": "EFFICIENCY LEAK",
+    "trust_engine_active": "TRUST ENGINE V4.0 ACTIVE",
+    "execution_engineering": "EXECUTION ENGINEERING",
+    "integrated_100": "100% INTEGRATED",
+    "speak_whatsapp_aria": "Chat on WhatsApp",
+    "select_language_aria": "Select language"
+  },
+  "alts": {
+    "hero_laptop": "Respect Infrastructure System on a MacBook",
+    "problem_chaos": "Operational Chaos and Fragmentation Visualization",
+    "engine_integration": "Respect Integration Engine - Systemic View",
+    "pillar_marketing": "Respect Acquisition and Performance Pillar",
+    "pillar_ti": "Respect Architecture and Infrastructure Pillar",
+    "pillar_sales": "Respect Conversion and Sales Engineering Pillar",
+    "methodology_3d": "Respect 3D Visual Methodology",
+    "authority_3d": "Respect Technical Authority Element",
+    "workflow_visual": "Respect Integrated Workflow Visualization"
+  },
   "nav": {
     "home": "SYSTEM",
     "marketing": "ACQUISITION",

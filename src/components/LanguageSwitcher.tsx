@@ -35,7 +35,7 @@ export function LanguageSwitcher() {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1.5 px-3 h-9 rounded-lg text-xs font-black uppercase tracking-widest text-text-muted hover:text-brand-blue hover:bg-brand-blue/10 transition-all duration-200"
-        aria-label="Select language"
+        aria-label={t('common.select_language_aria')}
       >
         <Globe size={14} />
         {currentLang.label}

@@ -32,7 +32,7 @@ export function ScarcitySection() {
 
             <div className="mt-12 flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-text-muted opacity-40">
               <span className="w-12 h-[1px] bg-black" />
-              Technical Rigor
+              {t('common.technical_rigor')}
               <span className="w-12 h-[1px] bg-black" />
             </div>
           </div>

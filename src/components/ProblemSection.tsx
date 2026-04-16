@@ -41,7 +41,7 @@ export function ProblemSection() {
               <div className="absolute inset-0 bg-black/[0.02] rounded-full blur-[80px] -z-10" />
               <img
                 src="images/branding/respect_problem_chaos.png"
-                alt="Operational Chaos"
+                alt={t('alts.problem_chaos')}
                 className="w-full max-w-[500px] h-auto transition-all duration-1000 group-hover:scale-[1.02] loading='lazy'"
               />
               
@@ -55,8 +55,8 @@ export function ProblemSection() {
                   <ShieldAlert size={20} />
                 </div>
                 <div className="text-[10px] font-black uppercase tracking-widest text-text-title leading-tight">
-                  Status: <br/>
-                  <span className="text-brand-blue">EFFICIENCY LEAK</span>
+                  {t('common.status')}: <br/>
+                  <span className="text-brand-blue">{t('common.efficiency_leak_alert')}</span>
                 </div>
               </motion.div>
             </div>
@@ -71,7 +71,7 @@ export function ProblemSection() {
             className="order-1 lg:order-2"
           >
             <motion.div variants={fadeUpPremium} className="mb-8">
-              <Badge label="Operational Friction" variant="navy" className="bg-black/5 border-black/10 text-black/50" />
+              <Badge label={t('common.operational_friction')} variant="navy" className="bg-black/5 border-black/10 text-black/50" />
             </motion.div>
 
             <motion.h2

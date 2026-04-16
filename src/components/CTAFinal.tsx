@@ -67,7 +67,7 @@ export function CTAFinal() {
              <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[120px] -z-1" />
              <img 
               src="images/branding/respect_methodology_3d.png" 
-              alt="Respect Methodology"
+              alt={t('alts.methodology_3d')}
               className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02] loading='lazy'"
             />
           </motion.div>

@@ -74,7 +74,7 @@ export function PilaresSolucoes() {
                 <img 
                   src="images/branding/respect_pillar_marketing_1776280883560.png" 
                   className="w-full max-w-[320px] h-auto object-contain relative z-10 group-hover:translate-x-2 transition-transform duration-1000 loading='lazy'" 
-                  alt="Marketing Acquisition"
+                  alt={t('alts.pillar_marketing')}
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ export function PilaresSolucoes() {
                    <img 
                     src="images/branding/respect_pillar_ti_1776280911682.png" 
                     className="w-full max-w-[200px] h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700 loading='lazy'" 
-                    alt="TI Infrastructure"
+                    alt={t('alts.pillar_ti')}
                   />
                 </div>
               </div>
@@ -140,7 +140,7 @@ export function PilaresSolucoes() {
                 <img 
                   src="images/branding/respect_pillar_sales_vendas_1776280963089.png" 
                   className="w-full max-w-[200px] h-auto group-hover:scale-110 transition-transform duration-1000 loading='lazy'" 
-                  alt="Sales Conversion"
+                  alt={t('alts.pillar_sales')}
                 />
                 <div onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} className="px-12 py-5 bg-white text-black font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer">
                   {t('pilares.cta')}

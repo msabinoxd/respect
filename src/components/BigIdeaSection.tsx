@@ -51,7 +51,7 @@ export function BigIdeaSection() {
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[300px] bg-brand-blue/5 rounded-full blur-[140px] -z-1" />
             <img
               src="images/branding/respect_big_idea_integration_1776280861053.png"
-              alt="Respect Integration System"
+              alt={t('alts.engine_integration')}
               className="relative z-10 w-full max-w-[800px] h-auto transition-transform duration-1000 hover:scale-[1.01] loading='lazy'"
             />
           </motion.div>

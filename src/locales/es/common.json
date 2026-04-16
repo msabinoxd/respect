@@ -1,4 +1,27 @@
 {
+  "common": {
+    "status": "STATUS",
+    "active": "ACTIVO",
+    "technical_rigor": "RIGOR TÉCNICO",
+    "operational_friction": "FRICCIÓN OPERACIONAL",
+    "efficiency_leak_alert": "FUGA DE EFICIENCIA",
+    "trust_engine_active": "TRUST ENGINE V4.0 ACTIVO",
+    "execution_engineering": "INGENIERÍA DE EJECUCIÓN",
+    "integrated_100": "100% INTEGRADO",
+    "speak_whatsapp_aria": "Hablar por WhatsApp",
+    "select_language_aria": "Seleccionar idioma"
+  },
+  "alts": {
+    "hero_laptop": "Sistema de Infraestructura Respect en un MacBook",
+    "problem_chaos": "Visualización del Caos Operativo y Fragmentación",
+    "engine_integration": "Motor de Integración Respect - Visión Sistémica",
+    "pillar_marketing": "Pilar de Adquisición y Rendimiento de Respect",
+    "pillar_ti": "Pilar de Arquitectura e Infraestructura de Respect",
+    "pillar_sales": "Pilar de Conversión e Ingeniería de Ventas de Respect",
+    "methodology_3d": "Metodología Visual Respect 3D",
+    "authority_3d": "Elemento de Autoridad Técnica Respect",
+    "workflow_visual": "Visualización de Workflow Integrado Respect"
+  },
   "nav": {
     "home": "SISTEMA",
     "marketing": "ADQUISICIÓN",
@@ -20,7 +43,7 @@
     "trust3": "Solidez Operativa"
   },
   "problem": {
-    "headline": "EFFICIENCY LEAK.",
+    "headline": "FUGA DE EFICIENCIA.",
     "subline": "La fragmentación entre marketing, TI y ventas cuesta caro. Pierde margen, aumenta su CAC y pierde el control de su escala.",
     "item1_title": "MARKETING AISLADO",
     "item1_desc": "Inversión ciega. Campañas que generan tráfico pero fallan en la entrega al comercial.",
