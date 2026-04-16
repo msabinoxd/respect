@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'motion/react';
-import { TrendingUp, Layers, Clock, Award } from 'lucide-react';
+import { TrendingUp, Layers, Clock, Award, ShieldCheck, Activity } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
+import { fadeUpPremium } from '../shared/animations.premium';
 import { Badge, Section, Container } from './base';
 import { InteractiveGrid } from './InteractiveGrid';
 
@@ -29,39 +29,6 @@ function useCounter(target: number, duration = 2000, inView: boolean) {
   return count;
 }
 
-const STATS_META = [
-  { icon: Clock, value: 10, suffix: '+', labelKey: 'anos_label', descKey: 'anos_desc' },
-  { icon: Layers, value: 3, suffix: '', labelKey: 'pilares_label', descKey: 'pilares_desc' },
-  { icon: TrendingUp, value: 100, suffix: '%', labelKey: 'resultados_label', descKey: 'resultados_desc' },
-  { icon: Award, value: 24, suffix: '/7', labelKey: 'suporte_label', descKey: 'suporte_desc' },
-];
-
-function StatCard({ stat, inView }: { stat: typeof STATS_META[0]; inView: boolean }) {
-  const count = useCounter(stat.value, 2000, inView);
-  const { t } = useTranslation();
-
-  return (
-    <div className="flex flex-col items-center p-12 bg-[var(--background)] border border-[var(--color-glass-border-clean)] rounded-3xl group hover:border-[var(--foreground)]/10 transition-all">
-      <div className="w-16 h-16 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center mb-8 text-[var(--foreground)] opacity-30 group-hover:text-brand-blue group-hover:opacity-100 transition-all">
-        <stat.icon size={26} strokeWidth={1.5} />
-      </div>
-
-      <div className="text-4xl md:text-6xl font-black text-text-title mb-2 tracking-tighter leading-none">
-        {count}
-        <span className="text-brand-blue">{stat.suffix}</span>
-      </div>
-
-      <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-text-title mb-4 opacity-50">
-        {t(`autoridade.stats.${stat.labelKey}`)}
-      </h3>
-
-      <p className="text-[13px] text-text-body leading-relaxed font-medium text-center opacity-70">
-        {t(`autoridade.stats.${stat.descKey}`)}
-      </p>
-    </div>
-  );
-}
-
 export function AutoridadeProva() {
   const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
@@ -70,95 +37,161 @@ export function AutoridadeProva() {
   return (
     <Section variant="white" id="autoridade" className="relative overflow-hidden pt-40 pb-40">
       <InteractiveGrid />
-      
-      {/* Background Decorative Asset - High Authority */}
-      <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl opacity-[0.03] pointer-events-none">
-        <img src="images/branding/respect_authority_3d.png" alt={t('alts.authority_3d')} className="w-full h-auto" />
-      </div>
 
       <Container size="lg" className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
-          <motion.div
-            ref={ref}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
-            variants={staggerSlow}
-            className="lg:col-span-12 flex flex-col items-center text-center mb-24"
-          >
-            <motion.div variants={fadeUpPremium}>
-              <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="mb-8" />
-            </motion.div>
-
-            <motion.h2
-              variants={fadeUpPremium}
-              className="text-4xl md:text-[80px] font-black mb-10 text-text-title tracking-tighter uppercase leading-[0.9] font-display"
-            >
-              {t('autoridade.headline')}<br />
-              <span className="text-brand-blue">{t('autoridade.headline_highlight')}</span>
-            </motion.h2>
-
-            <motion.p
-              variants={fadeUpPremium}
-              className="text-lg md:text-2xl text-text-body w-full max-w-4xl leading-relaxed font-medium opacity-70 mb-16"
-            >
-              {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
-              <span className="font-bold text-brand-blue">{t('autoridade.subline_strong')}</span>
-            </motion.p>
-
-            <motion.div
-              variants={fadeUpPremium}
-              className="flex flex-col items-center border-t border-[var(--color-glass-border-clean)] pt-16 w-full"
-            >
-              <h3 className="text-xs font-black text-text-muted tracking-[0.4em] uppercase mb-4">
-                {t('autoridade.revenue_headline')}
-              </h3>
-              <p className="text-[var(--foreground)] font-black text-3xl md:text-7xl uppercase tracking-tighter">
-                {t('autoridade.revenue_subline')}
-              </p>
-            </motion.div>
-          </motion.div>
-
+        <div className="flex flex-col items-center text-center mb-32">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-50px' }}
-            variants={staggerSlow}
-            className="lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+            viewport={{ once: true }}
+            variants={fadeUpPremium}
           >
-            {STATS_META.map((stat) => (
-              <motion.div key={stat.labelKey} variants={fadeUpPremium}>
-                <StatCard stat={stat} inView={inView} />
-              </motion.div>
-            ))}
-
-            {/* STRATEGIC IMPACT METRICS (The user specified ones) */}
-            <motion.div 
-              variants={fadeUpPremium}
-              className="col-span-12 lg:col-span-4 lg:col-start-3 md:col-start-1"
-            >
-              <div className="bg-brand-blue/5 border border-brand-blue/10 p-10 rounded-3xl text-center group">
-                <div className="text-4xl md:text-5xl font-black text-brand-blue mb-2 tracking-tighter">
-                  {t('metrics.efficiency')}
-                </div>
-                <div className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted opacity-60">Resultados Operacionais</div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              variants={fadeUpPremium}
-              className="col-span-12 lg:col-span-4"
-            >
-              <div className="bg-brand-blue/5 border border-brand-blue/10 p-10 rounded-3xl text-center group">
-                <div className="text-4xl md:text-5xl font-black text-brand-blue mb-2 tracking-tighter">
-                  {t('metrics.cac')}
-                </div>
-                <div className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted opacity-60">Escala Estratégica</div>
-              </div>
-            </motion.div>
+            <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="mb-8 px-6 py-2" />
           </motion.div>
+
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpPremium}
+            className="text-[40px] md:text-[90px] font-black mb-10 text-text-title tracking-[-0.05em] uppercase leading-[0.85] font-display"
+          >
+            {t('autoridade.headline')}<br />
+            <span className="text-brand-blue">{t('autoridade.headline_highlight')}</span>
+          </motion.h2>
+
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpPremium}
+            className="text-lg md:text-2xl text-text-body w-full max-w-4xl leading-relaxed font-medium opacity-60 mb-20"
+          >
+            {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
+            <span className="font-bold text-brand-blue">{t('autoridade.subline_strong')}</span>
+          </motion.p>
         </div>
+
+        {/* SOVEREIGN PERFORMANCE DASHBOARD */}
+        <div ref={ref} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          {/* Main Stats Panel */}
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpPremium}
+            className="lg:col-span-8 saas-card-premium p-12 bg-white dark:bg-black/20"
+          >
+             <div className="flex items-center gap-3 mb-12 opacity-40">
+                <Activity size={16} className="text-brand-blue" />
+                <span className="text-[10px] font-black uppercase tracking-[0.4em]">LIVE_PERFORMANCE_AUDIT</span>
+             </div>
+
+             <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+                <div>
+                  <div className="text-[11px] font-black uppercase tracking-[0.3em] text-brand-blue mb-4">
+                    {t('autoridade.stats.resultados_label')}
+                  </div>
+                  <div className="text-6xl md:text-8xl font-black text-text-title mb-4 tracking-tighter">
+                    <Counter value={100} inView={inView} />
+                    <span className="text-brand-blue">%</span>
+                  </div>
+                  <p className="text-sm text-text-body font-medium opacity-60 leading-relaxed">
+                    {t('autoridade.stats.resultados_desc')}
+                  </p>
+                </div>
+
+                <div className="flex flex-col justify-center gap-8 border-l border-[var(--color-glass-border-clean)] pl-12">
+                   <div>
+                      <div className="text-[10px] font-black uppercase tracking-[0.2em] text-text-muted mb-1">MARKET_EXPERIENCE</div>
+                      <div className="text-3xl font-black text-text-title">
+                        <Counter value={10} inView={inView} />
+                        <span className="text-brand-blue">+ Years</span>
+                      </div>
+                   </div>
+                   <div>
+                      <div className="text-[10px] font-black uppercase tracking-[0.2em] text-text-muted mb-1">SYSTEM_UPTIME</div>
+                      <div className="text-3xl font-black text-text-title">99.9%</div>
+                   </div>
+                </div>
+             </div>
+
+             <div className="mt-16 pt-12 border-t border-[var(--color-glass-border-clean)] flex flex-wrap gap-12">
+                <div className="flex items-center gap-3">
+                   <ShieldCheck className="text-brand-blue" size={20} />
+                   <span className="text-xs font-black uppercase tracking-widest text-text-title">Protocolo de Elite</span>
+                </div>
+                <div className="flex items-center gap-3">
+                   <Clock className="text-brand-blue" size={20} />
+                   <span className="text-xs font-black uppercase tracking-widest text-text-title">24/7 Monitoring</span>
+                </div>
+             </div>
+          </motion.div>
+
+          {/* Strategic Metrics (CAC & Efficiency) Side Cards */}
+          <div className="lg:col-span-4 flex flex-col gap-8">
+             <motion.div 
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true }}
+               variants={fadeUpPremium}
+               className="flex-1 saas-card-premium saas-card-premium-hover bg-brand-blue p-10 flex flex-col justify-between group shadow-xl"
+             >
+                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white mb-8 border border-white/20">
+                   <TrendingUp size={24} />
+                </div>
+                <div>
+                   <div className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tighter">
+                      {t('metrics.efficiency')}
+                   </div>
+                   <div className="text-[10px] font-black uppercase tracking-[0.3em] text-white/60">Otimização Operacional</div>
+                </div>
+             </motion.div>
+
+             <motion.div 
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true }}
+               variants={fadeUpPremium}
+               className="flex-1 saas-card-premium saas-card-premium-hover p-10 flex flex-col justify-between"
+             >
+                <div className="w-12 h-12 rounded-xl bg-brand-blue/5 flex items-center justify-center text-brand-blue mb-8 border border-brand-blue/10">
+                   <Layers size={24} />
+                </div>
+                <div>
+                   <div className="text-4xl md:text-5xl font-black text-brand-blue mb-2 tracking-tighter">
+                      {t('metrics.cac')}
+                   </div>
+                   <div className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted opacity-60">Escala Estratégica</div>
+                </div>
+             </motion.div>
+          </div>
+        </div>
+
+        {/* REVENUE INDICATOR - The Grand Statement */}
+        <motion.div
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true }}
+           variants={fadeUpPremium}
+           className="mt-20 py-20 border-t border-[var(--color-glass-border-clean)] text-center"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-xs font-black text-text-muted tracking-[0.5em] uppercase mb-8">
+              {t('autoridade.revenue_headline')}
+            </h3>
+            <p className="text-[var(--foreground)] font-black text-[42px] md:text-[100px] leading-none uppercase tracking-[-0.06em]">
+              {t('autoridade.revenue_subline')}
+            </p>
+          </div>
+        </motion.div>
       </Container>
     </Section>
   );
+}
+
+function Counter({ value, inView }: { value: number; inView: boolean }) {
+  const count = useCounter(value, 2000, inView);
+  return <>{count}</>;
 }

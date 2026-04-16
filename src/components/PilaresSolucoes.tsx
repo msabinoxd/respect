@@ -1,50 +1,34 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Code2, Target, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Lottie from 'lottie-react';
-import { useEffect, useState } from 'react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { Badge, Container, Section } from './base';
-
-// Lottie Animation URLs
-const LOTTIE_MARKETING = "https://lottie.host/8553641b-ca88-466d-a162-811c75124294/Z0i2Xw836J.json";
-const LOTTIE_TI = "https://lottie.host/7e923145-c335-430b-936d-e448b301769d/bNInO6Z1Y1.json";
-const LOTTIE_SALES = "https://lottie.host/79185a97-9092-49d6-953b-e0f49f48ac62/uW6W8z7X0J.json";
-
-function RemoteLottie({ url, className }: { url: string; className?: string }) {
-  const [data, setData] = useState<any>(null);
-
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch((err) => console.error("Lottie Load Error:", err));
-  }, [url]);
-
-  if (!data) return <div className={className} />;
-
-  return <Lottie animationData={data} loop={true} className={className} />;
-}
+import { BlueprintMarketing } from './BlueprintMarketing';
+import { BlueprintTI } from './BlueprintTI';
+import { BlueprintSales } from './BlueprintSales';
 
 export function PilaresSolucoes() {
   const { t } = useTranslation();
 
   return (
-    <Section variant="white" id="solucoes" className="relative">
-      <Container size="lg">
+    <Section variant="white" id="solucoes" className="relative pt-32 pb-32">
+       {/* Background Decoration */}
+       <div className="absolute top-0 left-0 w-full h-full bg-dots-premium opacity-[0.03] pointer-events-none" />
+
+      <Container size="lg" className="relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={staggerSlow}
-          className="mb-24 text-center lg:text-left"
+          className="mb-20"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge label={t('pilares.badge')} variant="blue" className="mb-6" />
+            <Badge label={t('pilares.badge')} variant="blue" className="mb-6 px-5 py-2" />
           </motion.div>
           <motion.h2
             variants={fadeUpPremium}
-            className="text-4xl md:text-7xl font-black text-text-title tracking-tighter mb-6 uppercase font-display"
+            className="text-4xl md:text-[80px] font-black text-text-title tracking-[-0.04em] mb-8 uppercase font-display leading-[0.9]"
           >
             {t('pilares.title_line1')}
             <br />
@@ -52,115 +36,118 @@ export function PilaresSolucoes() {
           </motion.h2>
           <motion.p
             variants={fadeUpPremium}
-            className="text-text-body max-w-2xl font-medium text-xl lg:ml-0 mx-auto opacity-70"
+            className="text-text-body max-w-2xl font-medium text-xl opacity-70 border-l-4 border-brand-blue/10 pl-8"
           >
             {t('pilares.subtitle')}
           </motion.p>
         </motion.div>
 
-        {/* Bento Grid Implementation */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
-          variants={staggerSlow}
-          className="bento-grid"
-        >
-          {/* MARKETING - The Large Anchor (8 cols) */}
+        {/* RESTRUCTURED BENTO GRID V4.0 */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          {/* MARKETING - Strategic Lead (7 cols) */}
           <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUpPremium}
-            className="col-span-12 lg:col-span-8 group relative"
+            className="col-span-12 md:col-span-7 group"
           >
             <div id="marketing" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover h-full p-12 flex flex-col md:flex-row gap-12 overflow-hidden relative border-[var(--color-glass-border-clean)]">
+            <div className="saas-card-premium saas-card-premium-hover h-full p-10 flex flex-col md:flex-row gap-8 overflow-hidden">
               <div className="flex-1 z-10 flex flex-col justify-between">
                  <div>
-                   <div className="w-16 h-16 rounded-2xl bg-brand-blue/5 flex items-center justify-center text-brand-blue mb-10">
-                     <TrendingUp size={32} />
+                   <div className="w-14 h-14 rounded-2xl bg-brand-blue/5 flex items-center justify-center text-brand-blue mb-8 border border-brand-blue/10">
+                     <TrendingUp size={28} />
                    </div>
-                   <h3 className="text-3xl md:text-4xl font-black text-text-title mb-6 uppercase tracking-tighter">
+                   <h3 className="text-3xl font-black text-text-title mb-5 uppercase tracking-tighter">
                      {t('pilares.marketing.title')}
                    </h3>
-                   <p className="text-text-body font-medium mb-10 max-w-sm opacity-70">
+                   <p className="text-text-body font-medium text-base mb-8 opacity-60 leading-relaxed">
                      {t('pilares.marketing.desc')}
                    </p>
                  </div>
-                 <div className="flex items-center gap-3 text-brand-blue font-black text-xs uppercase tracking-[0.2em] group-hover:gap-5 transition-all cursor-pointer" onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}>
+                 <div 
+                    onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="flex items-center gap-3 text-brand-blue font-black text-xs uppercase tracking-[0.2em] group-hover:gap-5 transition-all cursor-pointer"
+                 >
                    {t('pilares.cta')} <ArrowRight size={16} />
                  </div>
               </div>
               
-              <div className="flex-1 relative hidden md:flex items-center justify-center min-h-[300px]">
-                <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[100px] -z-1" />
-                <RemoteLottie url={LOTTIE_MARKETING} className="w-full max-w-[320px] relative z-10 group-hover:scale-105 transition-transform duration-1000" />
+              <div className="flex-1 relative min-h-[240px] flex items-center justify-center bg-[var(--foreground)]/[0.01] rounded-[20px]">
+                 <BlueprintMarketing />
               </div>
             </div>
           </motion.div>
 
-          {/* TI & DEVOPS - Side Block (4 cols) */}
+          {/* TI & DEVOPS - Architecture (5 cols) */}
           <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUpPremium}
-            className="col-span-12 lg:col-span-4 relative"
+            className="col-span-12 md:col-span-5 relative group"
           >
             <div id="ti" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover h-full p-12 flex flex-col justify-between group border-[var(--color-glass-border-clean)]">
+            <div className="saas-card-premium saas-card-premium-hover h-full p-10 flex flex-col justify-between">
               <div className="relative">
-                <div className="w-16 h-16 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center text-text-title mb-10">
-                  <Code2 size={32} />
+                <div className="w-14 h-14 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center text-text-title mb-8 border border-[var(--color-glass-border-clean)]">
+                  <Code2 size={28} />
                 </div>
-                <h3 className="text-3xl font-black text-text-title mb-6 uppercase tracking-tighter">
+                <h3 className="text-2xl font-black text-text-title mb-5 uppercase tracking-tighter">
                   {t('pilares.ti.title')}
                 </h3>
-                <p className="text-text-body font-medium text-sm leading-relaxed opacity-60">
+                <p className="text-text-body font-medium text-[15px] leading-relaxed opacity-60">
                   {t('pilares.ti.desc')}
                 </p>
                 
-                <div className="mt-12 flex justify-center min-h-[150px]">
-                  <RemoteLottie url={LOTTIE_TI} className="w-full max-w-[200px] opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="mt-8 relative h-40 bg-[var(--foreground)]/[0.01] rounded-[20px] flex items-center justify-center overflow-hidden">
+                   <BlueprintTI />
                 </div>
               </div>
-              <div className="mt-12 flex items-center gap-3 text-text-title font-black text-xs uppercase tracking-[0.2em] group-hover:text-brand-blue transition-colors cursor-pointer" onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}>
+              <div 
+                onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}
+                className="mt-8 flex items-center gap-3 text-text-title font-black text-xs uppercase tracking-[0.2em] group-hover:text-brand-blue transition-colors cursor-pointer"
+              >
                 {t('pilares.cta')} <ArrowRight size={16} />
               </div>
             </div>
           </motion.div>
 
-          {/* COMERCIAL - Bottom Full (12 cols) */}
+          {/* COMERCIAL - Growth Expansion (12 cols) */}
           <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUpPremium}
-            className="col-span-12 relative"
+            className="col-span-12 relative group"
           >
             <div id="vendas" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 group overflow-hidden relative border-[var(--color-glass-border-clean)] bg-[var(--background)]">
-              <div className="absolute inset-0 bg-brand-blue/[0.02] -z-1" />
-              <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-brand-blue/[0.03] rounded-full blur-[100px] -z-1" />
+            <div className="saas-card-premium saas-card-premium-hover p-12 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden bg-[var(--background)]">
+              {/* Internal Accent */}
+              <div className="absolute inset-0 bg-brand-blue/[0.015] pointer-events-none" />
               
-              <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10 text-center lg:text-left">
-                <div className="w-20 h-20 rounded-2xl bg-brand-blue/5 flex items-center justify-center text-brand-blue">
+              <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative z-10 text-center lg:text-left flex-1">
+                <div className="w-20 h-20 rounded-[24px] bg-brand-blue flex items-center justify-center text-white shadow-lg shadow-brand-blue/20">
                   <Target size={36} />
                 </div>
                 <div className="max-w-xl">
-                  <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tighter text-text-title">
+                  <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-[-0.03em] text-text-title">
                     {t('pilares.comercial.title')}
                   </h3>
-                  <p className="text-text-body font-medium text-lg opacity-70">
+                  <p className="text-text-body font-medium text-lg opacity-70 leading-relaxed">
                     {t('pilares.comercial.desc')}
                   </p>
                 </div>
               </div>
               
-              <div className="relative z-10 lg:w-[350px] flex flex-col items-center gap-8">
-                <RemoteLottie url={LOTTIE_SALES} className="w-full max-w-[280px] group-hover:scale-105 transition-transform duration-1000" />
-                <div 
-                  onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} 
-                  className="px-12 py-5 bg-[var(--background)] border border-[var(--color-glass-border-clean)] text-[var(--foreground)] font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer"
-                >
-                  {t('pilares.cta')}
-                </div>
+              <div className="relative z-10 w-full lg:w-[400px] h-[280px] bg-[var(--foreground)]/[0.02] rounded-[30px] flex items-center justify-center">
+                 <BlueprintSales />
               </div>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </Container>
     </Section>
   );
