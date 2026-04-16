@@ -1,83 +1,83 @@
 {
   "hero": {
-    "headline": "Your Operation is Bleeding Money in the Gaps Between Marketing, IT, and Sales. <br/> <span class='text-brand-blue'>We Stop the Bleeding.</span>",
-    "subheadline": "No more revenue sabotaged by fragile infrastructure and disconnected data. Respect is the Elite Execution Engineering that unifies your operation and shields your profit.",
-    "cta_primary": "SCHEDULE FREE TECHNICAL DIAGNOSTIC",
-    "cta_secondary": "SEE HOW WE SHIELD YOUR REVENUE",
+    "headline": "Your unified Marketing and Sales infrastructure.",
+    "subheadline": "We connect your technology to ensure no lead is lost due to lack of traceability or technical failures between platforms.",
+    "cta_primary": "LEARN ABOUT THE TECHNICAL SOLUTION",
+    "cta_secondary": "UNDERSTAND HOW IT WORKS",
     "metrics": {
-      "efficiency": "+30% Proven Operational Efficiency.",
-      "cac": "-25% CAC Reduction in 90 Days.",
-      "uptime": "100% Integrated and Resilient Infrastructure."
+      "efficiency": "Real-time integrated data.",
+      "cac": "Technical optimization of acquisition cost.",
+      "uptime": "Scalable and resilient infrastructure."
     }
   },
   "problem": {
-    "headline": "The Hidden Cost of Fragmentation: Why Your Company is Losing Millions.",
-    "subline": "Most companies don't have a product problem; they have a TECHNICAL INTEGRATION problem.",
+    "headline": "Where is your business growth stalling?",
+    "subline": "Technological fragmentation between departments is the main bottleneck for scaling companies.",
     "items": {
       "mkt": {
-        "title": "ISOLATED MARKETING",
-        "desc": "High-cost campaigns generating cold leads and useless data. You invest, but you don't convert."
+        "title": "TRACKING FAILURE",
+        "desc": "High-cost ad campaigns that don't report real conversions to the CRM, making ROI optimization impossible."
       },
       "ti": {
-        "title": "FRAGILE TECHNOLOGY",
-        "desc": "Slow and unstable infrastructure that kills sales and sabotages your growth. Your site goes down, your revenue follows."
+        "title": "TECHNICAL INSTABILITY",
+        "desc": "Slow pages or checkouts that fail at the moment of purchase, resulting in immediate loss of revenue."
       },
       "sales": {
-        "title": "FLOWLESS SALES",
-        "desc": "Qualified leads lost in manual processes and lack of commercial intelligence. Your sales team is firing in the dark."
+        "title": "DISCONNECTED DATA",
+        "desc": "Sales teams receiving leads without a browsing history or prior technical qualification."
       }
     }
   },
   "solution": {
-    "headline": "The Respect Engine: The Only Solution that Unifies and Multiplies Your Profit.",
-    "subline": "When Marketing, IT, and Sales operate under a single technical intelligence, friction disappears. Your total focus is on Net Margin.",
+    "headline": "The Respect Flow: The Engine that Connects Marketing and Sales.",
+    "subline": "We build the technical layer necessary for your departments to operate in a single fluid ecosystem.",
     "items": {
       "acquisition": {
-        "title": "ROI ACQUISITION",
-        "desc": "Scaling channels with full traceability. Every penny invested generates measurable profit."
+        "title": "TOTAL TRACEABILITY",
+        "desc": "Direct connection between ad clicks and sales closed in the CRM for precise metrics."
       },
       "architecture": {
-        "title": "SHIELDED ARCHITECTURE",
-        "desc": "Resilient and fast infrastructure. Technology that supports any scale without failure."
+        "title": "MAXIMUM AVAILABILITY",
+        "desc": "Web servers and architecture designed to support traffic peaks without performance drops."
       },
       "conversion": {
-        "title": "MAXIMIZED CONVERSION",
-        "desc": "High-closing commercial engineering. We transform data into real and predictable revenue."
+        "title": "DATA EFFICIENCY",
+        "desc": "Lead flow automation, ensuring information reaches the salesperson at the exact moment."
       }
     }
   },
   "authority": {
-    "headline": "Proven Value Engineering. Real Numbers. Silent Solidity.",
-    "subline": "We aren't just consultants. We are profit architects for high-complexity operations.",
+    "headline": "Technical Experience Applied to Business Results.",
+    "subline": "We are not a marketing agency; we are the architects who ensure your technology works for your profit.",
     "metrics": {
-      "efficiency": "+30% OPERATIONAL EFFICIENCY",
-      "efficiency_desc": "Through smart automation and process optimization.",
-      "cac": "-25% CAC REDUCTION",
-      "cac_desc": "With precise segmentation and predictive lead qualification.",
-      "uptime": "99.9% SYSTEM UPTIME",
-      "uptime_desc": "Infrastructure monitored 24/7 for uninterrupted revenue.",
-      "experience": "10+ YEARS OF EXPERIENCE",
-      "experience_desc": "A decade shielding high-impact digital operations."
+      "efficiency": "COMPLETE INTEGRATION",
+      "efficiency_desc": "We connect Ads, CRM, Webhooks, and Payment Gateways.",
+      "cac": "DATA-DRIVEN DECISIONS",
+      "cac_desc": "Precise technical reports that allow reducing budget waste.",
+      "uptime": "ZERO TECHNICAL FRICTION",
+      "uptime_desc": "Constant monitoring of system performance and stability.",
+      "experience": "FOCUS ON INFRASTRUCTURE",
+      "experience_desc": "Specialists in solving the technical complexity of digital businesses."
     }
   },
   "methodology": {
-    "headline": "Our Scaling Engineering: Linear Process for Maximum Solidity.",
-    "subline": "From diagnostic to consolidation, every step is technical, precise, and focused on your results.",
+    "headline": "Our Methodology: Implementation in 4 Stages.",
+    "subline": "A clear and structured process to organize your technology from end to end.",
     "steps": {
-      "s1": "STRATEGIC DIAGNOSTIC: We identify technical bottlenecks draining your revenue.",
-      "s2": "ELITE STRUCTURING: We design the integration architecture that unifies your operation.",
-      "s3": "SHIELDED EXECUTION: We implement the solution with technical rigor and constant monitoring.",
-      "s4": "PROFIT CONSOLIDATION: We guarantee the sustainability and scalability of your new operational engine."
+      "s1": "TECHNICAL DIAGNOSIS: We map all tools and identify where information is being lost.",
+      "s2": "DATA ARCHITECTURE: We design how tools should communicate to generate efficiency.",
+      "s3": "IMPLEMENTATION AND INTEGRATION: We execute technical connections and set up real monitoring.",
+      "s4": "CONTINUOUS OPTIMIZATION: We adjust the operational engine to support new levels of scale and profit."
     },
-    "cta": "SCHEDULE DIAGNOSTIC NOW"
+    "cta": "TALK TO A TECHNICAL CONSULTANT"
   },
   "faq": {
-    "headline": "Frequently Asked Questions: Direct Answers to Your Technical Doubts.",
-    "subline": "Understand how Respect solves your operation's most complex challenges."
+    "headline": "Clarifying Doubts About Our Performance.",
+    "subline": "Understand how technical infrastructure directly impacts your revenue."
   },
   "scarcity": {
-    "headline": "Limited Capacity: Extreme Technical Rigor Demands Focus.",
-    "subline": "To ensure excellence, we limit the number of projects per quarter. Your spot is valuable.",
-    "cta": "GUARANTEE YOUR FREE DIAGNOSTIC"
+    "headline": "Focus on Delivery Quality.",
+    "subline": "Due to the technical complexity of our projects, we accept a limited number of new implementations per month.",
+    "cta": "REQUEST TECHNICAL DIAGNOSIS"
   }
 }

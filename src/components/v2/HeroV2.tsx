@@ -60,15 +60,15 @@ export function HeroV2() {
             {/* ... [previous parts remain the same] ... */}
             {/* Note: I'm skipping re-writing the whole text but keeping the hierarchy */}
             
-            {/* Status Badge */}
+            {/* Status Badge - Educational Tone */}
             <motion.div variants={fadeUpPremium} className="inline-flex mb-10">
-              <div className="flex items-center gap-3 px-5 py-2.5 rounded-full bg-red-500/10 border border-red-500/20 backdrop-blur-md">
+              <div className="flex items-center gap-3 px-5 py-2.5 rounded-full bg-brand-blue/5 border border-brand-blue/10 backdrop-blur-md">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue/40 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
                 </span>
-                <span className="text-[11px] font-black tracking-[0.25em] text-red-600 uppercase">
-                  Operação em Risco
+                <span className="text-[11px] font-black tracking-[0.25em] text-brand-blue uppercase">
+                  Infraestrutura sob Monitoramento
                 </span>
               </div>
             </motion.div>

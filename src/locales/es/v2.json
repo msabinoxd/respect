@@ -1,83 +1,83 @@
 {
   "hero": {
-    "headline": "Su Operación Sangra Dinero en los Huecos entre Marketing, TI y Ventas. <br/> <span class='text-brand-blue'>Nosotros Detenemos la Hemorragia.</span>",
-    "subheadline": "Basta de facturación saboteda por infraestructura frágil y datos desconectados. Respect es la Ingeniería de Ejecución de Élite que unifica su operación y blinda su beneficio.",
-    "cta_primary": "AGENDAR DIAGNÓSTICO TÉCNICO GRATUITO",
-    "cta_secondary": "VEA CÓMO BLINDAMOS SU FACTURACIÓN",
+    "headline": "Sua infraestrutura de Marketing e Vendas unificada.",
+    "subheadline": "Conectamos sua tecnologia para garantir que nenhum lead seja perdido por falta de rastreabilidade ou falhas técnicas entre plataformas.",
+    "cta_primary": "CONHECER A SOLUÇÃO TÉCNICA",
+    "cta_secondary": "ENTENDER COMO FUNCIONA",
     "metrics": {
-      "efficiency": "+30% Eficiencia Operativa Comprobada.",
-      "cac": "-25% Reducción del CAC en 90 Días.",
-      "uptime": "Infraestructura 100% Integrada y Resiliente."
+      "efficiency": "Dados integrados em tempo real.",
+      "cac": "Otimização técnica do custo de aquisição.",
+      "uptime": "Infraestrutura escalável e resiliente."
     }
   },
   "problem": {
-    "headline": "El Coste Oculto de la Fragmentación: Por Qué Su Empresa Está Perdiendo Millones.",
-    "subline": "La mayoría de las empresas no tienen un problema de producto, tienen un problema de INTEGRACIÓN TÉCNICA.",
+    "headline": "Onde o crescimento do seu negócio está parando?",
+    "subline": "A fragmentação tecnológica entre departamentos é o principal gargalo para empresas em escala.",
     "items": {
       "mkt": {
-        "title": "MARKETING AISLADO",
-        "desc": "Campañas de alto coste que generan leads fríos y datos inútiles. Usted invierte, pero no convierte."
+        "title": "FALHA DE RASTREIO",
+        "desc": "Investimentos em anúncios que não reportam conversões reais para o CRM, impossibilitando a otimização do ROI."
       },
       "ti": {
-        "title": "TECNOLOGÍA FRÁGIL",
-        "desc": "Infraestructura lenta e inestable que derrumba ventas y sabotea su crecimiento. Su sitio cae, su facturación también."
+        "title": "INSTABILIDADE TÉCNICA",
+        "desc": "Páginas lentas ou checkouts que falham no momento da compra, resultando em perda imediata de faturamento."
       },
       "sales": {
-        "title": "VENTAS SIN FLUJO",
-        "desc": "Leads cualificados que se pierden en procesos manuales y falta de inteligencia comercial. Su equipo de ventas está disparando en la oscuridad."
+        "title": "DADOS DESCONECTADOS",
+        "desc": "Equipes de vendas que recebem leads sem histórico de navegação ou qualificação técnica prévia."
       }
     }
   },
   "solution": {
-    "headline": "El Motor Respect: La Única Solución que Unifica y Multiplica su Beneficio.",
-    "subline": "Cuando Marketing, TI y Ventas operan bajo una única inteligencia técnica, la fricción desaparece. Su foco total está en el Margen Neto.",
+    "headline": "O Fluxo Respect: O Motor que Conecta marketing e Vendas.",
+    "subline": "Construímos a camada técnica necessária para que seus departamentos operem em um único ecossistema fluido.",
     "items": {
       "acquisition": {
-        "title": "ADQUISICIÓN ROI",
-        "desc": "Canales de escala con trazabilidad total. Cada centavo invertido genera beneficios medibles."
+        "title": "RASTREABILIDADE TOTAL",
+        "desc": "Conexão direta entre cliques em anúncios e fechamento de vendas no CRM para métricas precisas."
       },
       "architecture": {
-        "title": "ARQUITECTURA BLINDADA",
-        "desc": "Infraestructura resiliente y rápida. Tecnología que soporta cualquier escala sin fallos."
+        "title": "DISPONIBILIDADE MÁXIMA",
+        "desc": "Servidores e arquitetura web projetados para suportar picos de tráfego sem queda de performance."
       },
       "conversion": {
-        "title": "CONVERSIÓN MAXIMIZADA",
-        "desc": "Ingeniería comercial de alto cierre. Transformamos datos en facturación real y previsible."
+        "title": "EFICIÊNCIA DE DADOS",
+        "desc": "Automação do fluxo de leads, garantindo que a informação chegue ao vendedor no momento exato."
       }
     }
   },
   "authority": {
-    "headline": "Ingeniería de Valor Comprobada. Números Reales. Solidez Silenciosa.",
-    "subline": "No somos solo consultores. Somos arquitectos de beneficios para operaciones de alta complejidad.",
+    "headline": "Experiência Técnica Aplicada a Resultados de Negócio.",
+    "subline": "Não somos uma agência de marketing, somos os arquitetos que garantem que sua tecnologia funcione para o seu lucro.",
     "metrics": {
-      "efficiency": "+30% EFICIENCIA OPERATIVA",
-      "efficiency_desc": "A través de automatización inteligente y optimización de procesos.",
-      "cac": "-25% REDUCCIÓN DEL CAC",
-      "cac_desc": "Con segmentación precisa y calificación predictiva de leads.",
-      "uptime": "99.9% SYSTEM UPTIME",
-      "uptime_desc": "Infraestructura monitoreada 24/7 para facturación ininterrumpida.",
-      "experience": "10+ AÑOS DE EXPERIENCIA",
-      "experience_desc": "Una década blindando operaciones digitales de alto impacto."
+      "efficiency": "INTEGRAÇÃO COMPLETA",
+      "efficiency_desc": "Conectamos Ads, CRM, Webhooks e Gateways de Pagamento.",
+      "cac": "DECISÕES BASEADAS EM DADOS",
+      "cac_desc": "Relatórios técnicos precisos que permitem reduzir desperdício de verba.",
+      "uptime": "ZERO FRIÇÃO TÉCNICA",
+      "uptime_desc": "Monitoramento constante de performance e estabilidade de sistemas.",
+      "experience": "FOCO EM INFRAESTRUTURA",
+      "experience_desc": "Especialistas em resolver a complexidade técnica dos negócios digitais."
     }
   },
   "methodology": {
-    "headline": "Nuestra Ingeniería de Escala: Proceso Lineal para la Solidez Máxima.",
-    "subline": "Del diagnóstico a la consolidación, cada paso es técnico, preciso y enfocado en su resultado.",
+    "headline": "Nossa Metodologia: Implementação em 4 Etapas.",
+    "subline": "Um processo claro e estruturado para organizar sua tecnologia de ponta a ponta.",
     "steps": {
-      "s1": "DIAGNÓSTICO ESTRATÉGICO: Identificamos los cuellos de botella técnicos que drenan su facturación.",
-      "s2": "ESTRUCTURACIÓN DE ÉLITE: Diseñamos la arquitectura de integración que unifica su operación.",
-      "s3": "EJECUCIÓN BLINDADA: Implementamos la solución con rigor técnico y monitoreo constante.",
-      "s4": "CONSOLIDACIÓN DE BENEFICIOS: Garantizamos la sostenibilidad y escalabilidad de su nuevo motor operativo."
+      "s1": "DIAGNÓSTICO TÉCNICO: Mapeamos todas as ferramentas e identificamos onde a informação está se perdendo.",
+      "s2": "ARQUITETURA DE DADOS: Projetamos como as ferramentas devem se comunicar para gerar eficiência.",
+      "s3": "IMPLEMENTAÇÃO E INTEGRAÇÃO: Executamos as conexões técnicas e configuramos o monitoramento real.",
+      "s4": "OTIMIZAÇÃO CONTÍNUA: Ajustamos o motor operacional para suportar novos níveis de escala e lucro."
     },
-    "cta": "AGENDAR DIAGNÓSTICO AHORA"
+    "cta": "FALAR COM UM CONSULTOR TÉCNICO"
   },
   "faq": {
-    "headline": "Preguntas Frecuentes: Respuestas Directas para sus Dudas Técnicas.",
-    "subline": "Entienda cómo Respect resuelve los desafíos más complejos de su operación."
+    "headline": "Esclarecendo Dúvidas Sobre Nossa Atuação.",
+    "subline": "Entenda como a infraestrutura técnica impacta diretamente no seu faturamento."
   },
   "scarcity": {
-    "headline": "Capacidad Limitada: El Rigor Técnico Extremo Exige Foco.",
-    "subline": "Para garantizar la excelencia, limitamos el número de proyectos por trimestre. Su plaza é valiosa.",
-    "cta": "GARANTICE SU DIAGNÓSTICO GRATUITO"
+    "headline": "Foco em Qualidade de Entrega.",
+    "subline": "Devido à complexidade técnica dos nossos projetos, aceitamos um número limitado de novas implementações por mês.",
+    "cta": "SOLICITAR DIAGNÓSTICO TÉCNICO"
   }
 }

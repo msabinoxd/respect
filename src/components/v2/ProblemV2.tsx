@@ -54,7 +54,7 @@ export function ProblemV2() {
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg md:text-xl text-red-600 font-bold mb-10 border-l-4 border-red-500/30 pl-8 py-2 bg-red-500/5 rounded-r-xl"
+              className="text-lg md:text-xl text-brand-blue font-bold mb-10 border-l-4 border-brand-blue/30 pl-8 py-2 bg-brand-blue/5 rounded-r-xl"
             >
               {t('problem.subline')}
             </motion.p>
