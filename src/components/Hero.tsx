@@ -35,19 +35,18 @@ export function Hero() {
               />
             </motion.div>
 
-            {/* Headline - "The Sovereign Edition" Scale */}
+            {/* Headline - Focus on Infrastructure */}
             <motion.h1
               variants={fadeUpPremium}
-              className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[1] md:leading-[0.95] mb-12 text-text-title tracking-[-0.05em] uppercase font-display"
+              className="text-[48px] sm:text-[64px] md:text-[88px] lg:text-[104px] font-black leading-[0.9] mb-12 text-text-title tracking-[-0.05em] uppercase font-display"
             >
-              <span className="opacity-20 block mb-2">{t('hero.line1')}</span>
-              <span className="text-brand-blue block">{t('hero.line2')}</span>
+              <span className="text-brand-blue block drop-shadow-sm">{t('hero.line2')}</span>
             </motion.h1>
 
-            {/* Subtitle - Strategic Framing */}
+            {/* Subtitle - Increased Legibility */}
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg md:text-2xl text-text-body w-full max-w-2xl leading-relaxed font-medium mb-12 opacity-80"
+              className="text-xl md:text-3xl text-text-body w-full max-w-3xl leading-snug font-bold mb-14"
               dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
             />
 
@@ -103,9 +102,9 @@ export function Hero() {
           {/* Hero Visual - Sovereign Dashboard */}
           <motion.div
             initial={{ opacity: 0, x: 50, rotate: 2 }}
-            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            animate={{ opacity: 0.6, x: 0, rotate: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex-1 hidden lg:flex justify-center"
+            className="flex-1 hidden lg:flex justify-center grayscale-[0.2]"
           >
             <DashboardMockup />
           </motion.div>

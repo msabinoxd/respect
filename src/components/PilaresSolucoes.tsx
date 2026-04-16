@@ -63,7 +63,7 @@ export function PilaresSolucoes() {
                    <h3 className="text-3xl font-black text-text-title mb-5 uppercase tracking-tighter">
                      {t('pilares.marketing.title')}
                    </h3>
-                   <p className="text-text-body font-medium text-base mb-8 opacity-60 leading-relaxed">
+                   <p className="text-text-body font-bold text-base mb-8 opacity-80 leading-relaxed">
                      {t('pilares.marketing.desc')}
                    </p>
                  </div>
@@ -98,7 +98,7 @@ export function PilaresSolucoes() {
                 <h3 className="text-2xl font-black text-text-title mb-5 uppercase tracking-tighter">
                   {t('pilares.ti.title')}
                 </h3>
-                <p className="text-text-body font-medium text-[15px] leading-relaxed opacity-60">
+                <p className="text-text-body font-bold text-[15px] leading-relaxed opacity-80">
                   {t('pilares.ti.desc')}
                 </p>
                 
@@ -136,7 +136,7 @@ export function PilaresSolucoes() {
                   <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-[-0.03em] text-text-title">
                     {t('pilares.comercial.title')}
                   </h3>
-                  <p className="text-text-body font-medium text-lg opacity-70 leading-relaxed">
+                  <p className="text-text-body font-bold text-lg opacity-80 leading-relaxed">
                     {t('pilares.comercial.desc')}
                   </p>
                 </div>

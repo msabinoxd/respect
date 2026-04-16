@@ -36,10 +36,10 @@
     "cac": "-25% REDUCCIÓN EN EL CAC"
   },
   "hero": {
-    "badge": "INFRAESTRUCTURA ESTRATÉGICA",
+    "badge": "SOLUCIÓN END-TO-END PARA ESCALA",
     "line1": "RESPECT.",
-    "line2": "ESTRUCTURA. TECNOLOGÍA. RESULTADO.",
-    "subtitle": "El eslabón técnico que blinda la facturación de su operación. Fusión entre Marketing y Ventas con <span class='text-brand-blue font-black'>Ingeniería de Ejecución de Élite.</span>",
+    "line2": "Integramos su Marketing, TI y Ventas en una única infraestructura de beneficios.",
+    "subtitle": "Deje de perder leads por fallos técnicos. Unificamos sus datos y procesos para garantizar escala sin fricción operativa.",
     "cta": "Agendar Diagnóstico Técnico",
     "cta_secondary": "Ver Metodología",
     "trust1": "Efectividad Real",
@@ -47,15 +47,15 @@
     "trust3": "Solidez Operativa"
   },
   "problem": {
-    "headline": "FUGA DE EFICIENCIA.",
+    "headline": "¿Su operación está perdiendo dinero en los huecos entre departamentos?",
     "subline": "La fragmentación operativa cuesta caro. Cuando Marketing, TI y Ventas no hablan el mismo idioma, usted pierde margen y sacrifica su escala.",
     "item1_title": "MARKETING AISLADO",
-    "item1_desc": "Inversión ciega. Campañas de alto coste que fallan en la entrega de datos accionables para el cierre de ventas.",
+    "item1_desc": "Usted invierte en anuncios, pero el CRM no recibe los datos de conversión.",
     "item2_title": "TECNOLOGÍA FRÁGIL",
-    "item2_desc": "Infraestructura lenta que interrumpe la facturación. El cuello de botella técnico que sabotea su crecimiento.",
+    "item2_desc": "Infraestructura inestable que interrumpe la facturación en el momento de la escala.",
     "item3_title": "VENTAS SIN FLUJO",
-    "item3_desc": "Leads desperdiciados en procesos manuales. Falta de inteligencia comercial para la máxima conversión.",
-    "footer": "La mayoría de las empresas no tienen un problema de producto, tienen un problema de integración técnica."
+    "item3_desc": "Leads cualificados que se pierden en procesos manuales y falta de integración.",
+    "footer": "Solucionamos el cuello de botella invisible que sabotea su crecimiento operativo."
   },
   "big_idea": {
     "headline": "EL MOTOR.",
@@ -76,15 +76,15 @@
     "cta": "Analizar Estructura",
     "marketing": {
       "title": "ADQUISICIÓN ROI.",
-      "desc": "Canales de escala con rastreabilidad total. Donde cada centavo invertido genera datos y beneficios."
+      "desc": "Automatización de procesos e integración de datos para trazabilidad total de ROI."
     },
     "ti": {
       "title": "ARQUITECTURA.",
-      "desc": "Infraestructura resiliente y rápida. Blindaje tecnológico para soportar cualquier escala."
+      "desc": "Infraestructura que no cae: Cloud Computing y DevOps para soportar picos de tráfico."
     },
     "comercial": {
       "title": "CONVERSIÓN.",
-      "desc": "Ingeniería comercial de alto cierre. Transformamos datos en facturación real."
+      "desc": "Ingeniería de procesos de venta e integración con CRM para máxima conversión."
     }
   },
   "explanation": {

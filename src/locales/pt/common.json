@@ -36,10 +36,10 @@
     "cac": "-25% REDUÇÃO NO CAC"
   },
   "hero": {
-    "badge": "INFRAESTRUTURA ESTRATÉGICA",
+    "badge": "SOLUÇÃO END-TO-END PARA ESCALA",
     "line1": "RESPECT.",
-    "line2": "ESTRUTURA. TECNOLOGIA. RESULTADO.",
-    "subtitle": "O elo técnico que blinda o faturamento da sua operação. Fusão entre Marketing e Vendas com <span class='text-brand-blue font-black'>Engenharia de Execução de Elite.</span>",
+    "line2": "Integramos seu Marketing, TI e Vendas em uma única infraestrutura de lucro.",
+    "subtitle": "Pare de perder leads por falhas técnicas. Unificamos seus dados e processos para garantir escala sem fricção operacional.",
     "cta": "Agendar Diagnóstico Técnico",
     "cta_secondary": "Ver Metodologia",
     "trust1": "Efetividade Real",
@@ -47,15 +47,15 @@
     "trust3": "Solidez Operacional"
   },
   "problem": {
-    "headline": "VAZAMENTO DE EFICIÊNCIA.",
+    "headline": "Sua operação está perdendo dinheiro nos vãos entre os departamentos?",
     "subline": "A fragmentação operacional custa caro. Quando Marketing, TI e Vendas não falam a mesma língua, você perde margem e sacrifica sua escala.",
     "item1_title": "MARKETING ISOLADO",
-    "item1_desc": "Investimento cego. Campanhas de alto custo que falham na entrega de dados úteis para o fechamento.",
+    "item1_desc": "Você investe em anúncios, mas o CRM não recebe os dados de conversão.",
     "item2_title": "TECNOLOGIA FRÁGIL",
-    "item2_desc": "Infraestrutura lenta que interrompe o faturamento. O gargalo técnico que sabota o seu crescimento.",
+    "item2_desc": "Infraestrutura instável que interrompe o faturamento no momento da escala.",
     "item3_title": "VENDAS SEM FLUXO",
-    "item3_desc": "Leads desperdiçados em processos manuais. Falta de inteligência comercial para máxima conversão.",
-    "footer": "A maioria das empresas não tem um problema de produto, tem um problema de integração técnica."
+    "item3_desc": "Leads qualificados que se perdem em processos manuais e falta de integração.",
+    "footer": "Solucionamos o gargalo invisível que sabota o seu crescimento operacional."
   },
   "big_idea": {
     "headline": "O MOTOR.",
@@ -76,15 +76,15 @@
     "cta": "Analisar Estrutura",
     "marketing": {
       "title": "AQUISIÇÃO ROI.",
-      "desc": "Canais de escala com rastreabilidade total. Onde cada centavo investido gera dado e lucro."
+      "desc": "Automação de processos e integração de dados para rastreabilidade total de ROI."
     },
     "ti": {
       "title": "ARQUITETURA.",
-      "desc": "Infraestrutura resiliente e rápida. Blindagem tecnológica para suportar qualquer escala."
+      "desc": "Infraestrutura que não cai: Cloud Computing e DevOps para suportar picos de tráfego."
     },
     "comercial": {
       "title": "CONVERSÃO.",
-      "desc": "Engenharia comercial de alto fechamento. Transformamos dados em faturamento real."
+      "desc": "Engenharia de processos de venda e integração com CRM para máxima conversão."
     }
   },
   "explanation": {

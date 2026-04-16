@@ -36,10 +36,10 @@
     "cac": "-25% CAC REDUCTION"
   },
   "hero": {
-    "badge": "STRATEGIC INFRASTRUCTURE",
+    "badge": "END-TO-END SOLUTION FOR SCALING",
     "line1": "RESPECT.",
-    "line2": "STRUCTURE. TECH. RESULT.",
-    "subtitle": "The technical link that shields your revenue. Marketing and Sales fused with <span class='text-brand-blue font-black'>Elite Execution Engineering.</span>",
+    "line2": "We integrate your Marketing, IT, and Sales into a single profit infrastructure.",
+    "subtitle": "Stop losing leads due to technical failures. We unify your data and processes to ensure scale without operational friction.",
     "cta": "Schedule Technical Diagnostic",
     "cta_secondary": "See Methodology",
     "trust1": "Real Effectiveness",
@@ -47,15 +47,15 @@
     "trust3": "Operational Stability"
   },
   "problem": {
-    "headline": "EFFICIENCY LEAK.",
-    "subline": "Operational fragmentation is expensive. When Marketing, IT, and Sales are not aligned, you lose margin and sacrifice your scaling potential.",
+    "headline": "Is your operation losing money in the gaps between departments?",
+    "subline": "Operational fragmentation is expensive. When Marketing, IT, and Sales don't speak the same language, you lose margin and sacrifice your scale.",
     "item1_title": "ISOLATED MARKETING",
-    "item1_desc": "Blind investment. High-cost campaigns that fail to deliver actionable data for closing.",
+    "item1_desc": "You invest in ads, but your CRM doesn't receive conversion data.",
     "item2_title": "FRAGILE TECH",
-    "item2_desc": "Slow infrastructure that interrupts revenue. The technical bottleneck that sabotages your growth.",
+    "item2_desc": "Unstable infrastructure that interrupts revenue during scaling phases.",
     "item3_title": "SALES WITH NO FLOW",
-    "item3_desc": "Leads wasted in manual processes. Lack of commercial intelligence for maximum conversion.",
-    "footer": "Most companies don't have a product problem; they have a technical integration problem."
+    "item3_desc": "Qualified leads wasted in manual processes and lack of integration.",
+    "footer": "We solve the invisible bottleneck sabotaging your operational growth."
   },
   "big_idea": {
     "headline": "THE ENGINE.",
@@ -76,15 +76,15 @@
     "cta": "Analyze Structure",
     "marketing": {
       "title": "ROI ACQUISITION.",
-      "desc": "Scaling channels with full traceability. Where every penny invested generates data and profit."
+      "desc": "Process automation and data integration for full ROI traceability."
     },
     "ti": {
       "title": "ARCHITECTURE.",
-      "desc": "Resilient and fast infrastructure. Technical shielding to support any scale."
+      "desc": "Uptime-guaranteed infrastructure: Cloud Computing and DevOps to support traffic peaks."
     },
     "comercial": {
       "title": "CONVERSION.",
-      "desc": "High-closing sales engineering. We transform data into real revenue."
+      "desc": "Sales process engineering and CRM integration for maximum conversion."
     }
   },
   "explanation": {

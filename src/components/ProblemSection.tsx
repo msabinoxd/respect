@@ -94,16 +94,16 @@ export function ProblemSection() {
                 <motion.div
                   key={i}
                   variants={fadeUpPremium}
-                  className="flex gap-8 p-8 rounded-2xl bg-[var(--background)] border border-[var(--color-glass-border-clean)] hover:border-[var(--foreground)]/10 transition-all group"
+                  className="flex gap-8 p-8 rounded-2xl bg-[var(--background)] border border-[var(--color-glass-border-clean)] hover:border-brand-blue/20 transition-all group"
                 >
-                  <div className="shrink-0 w-14 h-14 rounded-xl bg-[var(--foreground)]/[0.02] flex items-center justify-center group-hover:bg-brand-blue/5 transition-colors">
-                    <prob.icon size={24} className="text-text-title group-hover:text-brand-blue transition-colors" />
+                  <div className="shrink-0 w-14 h-14 rounded-xl bg-brand-blue/5 flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                    <prob.icon size={24} className="text-brand-blue transition-colors" />
                   </div>
                   <div>
                     <h3 className="text-xl font-black text-text-title mb-2 uppercase tracking-tight">
                       {prob.title}
                     </h3>
-                    <p className="text-text-body font-medium leading-relaxed opacity-60 text-sm">
+                    <p className="text-text-body font-bold leading-relaxed text-sm">
                       {prob.desc}
                     </p>
                   </div>
@@ -115,8 +115,8 @@ export function ProblemSection() {
               variants={fadeUpPremium}
               className="mt-12"
             >
-              <p className="text-xs font-black text-text-muted uppercase tracking-[0.3em] flex items-center gap-4">
-                <span className="w-12 h-[1px] bg-[var(--foreground)]/10" />
+              <p className="text-sm font-black text-brand-blue uppercase tracking-[0.2em] flex items-center gap-4 bg-brand-blue/5 p-4 rounded-xl border border-brand-blue/10">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
                 {t('problem.footer')}
               </p>
             </motion.div>
