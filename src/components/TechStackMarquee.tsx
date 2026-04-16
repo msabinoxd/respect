@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Cloud, Code2, Database, Globe, Layers, ShieldCheck, Zap, Terminal } from 'lucide-react';
+import { Cloud, Code2, Database, Layers, ShieldCheck, Zap, Terminal } from 'lucide-react';
 
 const STACK = [
   { name: 'AWS Cloud', icon: Cloud },
