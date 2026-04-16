@@ -40,10 +40,13 @@ export function Home() {
         {/* 4. TRANSIÇÃO — Para as soluções */}
         <TransitionSection />
 
-        {/* 5. SOLUÇÕES — Os 3 pilares */}
-        <div id="solucoes">
+        {/* 5. SOLUÇÕES — Os 3 pilares integrado (Anchor Points) */}
+        <div id="marketing">
+          {/* Note: In the one-page flow, individual pillares IDs can be handled within PilaresSolucoes or as wrappers */}
           <PilaresSolucoes />
         </div>
+        <div id="ti" className="h-0" />
+        <div id="vendas" className="h-0" />
 
         {/* 6. INTEGRAÇÃO — A explicação de por que unificar */}
         <ExplanationSection />
@@ -62,7 +65,9 @@ export function Home() {
         <ScarcitySection />
 
         {/* 10. AÇÃO — CTA Final + Footer */}
-        <CTAFinal />
+        <div id="diagnostico">
+          <CTAFinal />
+        </div>
       </Suspense>
     </>
   );

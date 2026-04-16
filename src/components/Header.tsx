@@ -17,10 +17,10 @@ export function Header() {
   const navigate = useNavigate();
 
   const NAV_LINKS = [
-    { label: t('nav.home'), href: '/' },
-    { label: t('nav.marketing'), href: '/marketing' },
-    { label: t('nav.ti'), href: '/ti' },
-    { label: t('nav.comercial'), href: '/vendas' },
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.marketing'), href: '#marketing' },
+    { label: t('nav.ti'), href: '#ti' },
+    { label: t('nav.comercial'), href: '#vendas' },
     { label: t('nav.results'), href: '#autoridade' },
   ];
 

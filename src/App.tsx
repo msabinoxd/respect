@@ -24,10 +24,7 @@ function AppLayout() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/marketing" element={<PilarDetalhe id="marketing" />} />
-          <Route path="/ti" element={<PilarDetalhe id="ti" />} />
-          <Route path="/vendas" element={<PilarDetalhe id="vendas" />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </main>
 

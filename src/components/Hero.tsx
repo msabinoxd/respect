@@ -41,15 +41,15 @@ export function Hero() {
               variants={fadeUpPremium}
               className="text-[48px] sm:text-[64px] md:text-[84px] lg:text-[92px] font-black leading-[0.9] mb-8 text-text-title tracking-tighter uppercase font-display"
             >
-              <span className="opacity-40">{t('hero.line1')}</span>
+              <span className="opacity-30">{t('hero.line1')}</span>
               <br />
-              <span className="text-gradient-builderall">{t('hero.line2')}</span>
+              <span className="text-brand-blue">{t('hero.line2')}</span>
             </motion.h1>
 
             {/* Subtitle - Professional & Technical */}
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg md:text-xl text-text-body w-full max-w-xl leading-relaxed font-medium mb-12 border-l-4 border-brand-blue/20 pl-6"
+              className="text-lg md:text-xl text-text-body w-full max-w-xl leading-relaxed font-medium mb-12 border-l-4 border-brand-blue/10 pl-6"
               dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
             />
 
@@ -59,8 +59,12 @@ export function Hero() {
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
-                onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA')}
-                className="w-full sm:w-auto text-base sm:text-lg px-12 btn-pulse"
+                onClick={() => {
+                   const el = document.getElementById('diagnostico');
+                   el?.scrollIntoView({ behavior: 'smooth' });
+                   trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA');
+                }}
+                className="w-full sm:w-auto text-base sm:text-lg px-12"
               >
                 {t('hero.cta')}
               </Button>
@@ -68,7 +72,7 @@ export function Hero() {
                 variant="ghost"
                 size="lg"
                 onClick={() => {
-                  const el = document.getElementById('metodologia');
+                  const el = document.getElementById('marketing');
                   el?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="w-full sm:w-auto text-base font-bold tracking-widest"
@@ -124,7 +128,7 @@ export function Hero() {
                   </div>
                   <div>
                     <div className="text-[9px] font-black text-brand-blue uppercase tracking-tighter">Status</div>
-                    <div className="text-xs font-black text-text-title uppercase">Sovereign Engine Active</div>
+                    <div className="text-xs font-black text-text-title uppercase">Trust Engine V4.0 Active</div>
                   </div>
                 </motion.div>
               </div>
