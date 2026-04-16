@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, Code2, Target, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';

@@ -113,7 +113,7 @@ export function AutoridadeProva() {
               <p className="text-black font-black text-3xl md:text-7xl uppercase tracking-tighter">
                 {t('autoridade.revenue_subline')}
               </p>
-            </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -132,7 +132,5 @@ export function AutoridadeProva() {
         </div>
       </Container>
     </Section>
-  );
-}
   );
 }

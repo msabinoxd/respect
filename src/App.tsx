@@ -3,8 +3,6 @@ import { useScroll, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { Home } from './pages/Home';
-import { PilarDetalhe } from './pages/PilarDetalhe';
-import { NotFound } from './pages/NotFound';
 import { CONFIG } from './config';
 
 function AppLayout() {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 import { MessageCircle } from 'lucide-react';
 import { trackAndOpenWA, CONFIG } from '../config';
 
