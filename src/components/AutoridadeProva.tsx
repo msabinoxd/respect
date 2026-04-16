@@ -40,21 +40,21 @@ function StatCard({ stat, inView }: { stat: typeof STATS_META[0]; inView: boolea
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center p-8 saas-card hover:-translate-y-1 transition-all duration-300">
-      <div className="w-16 h-16 rounded-full bg-bg-light flex items-center justify-center mb-6 text-brand-blue">
-        <stat.icon size={28} />
+    <div className="flex flex-col items-center p-12 bg-white border border-black/[0.03] rounded-3xl group hover:border-black/[0.1] transition-all">
+      <div className="w-16 h-16 rounded-2xl bg-black/[0.02] flex items-center justify-center mb-8 text-black opacity-30 group-hover:text-brand-blue group-hover:opacity-100 transition-all">
+        <stat.icon size={26} strokeWidth={1.5} />
       </div>
 
-      <div className="text-[40px] md:text-[56px] font-black text-text-title mb-2 tracking-tighter leading-none">
+      <div className="text-4xl md:text-6xl font-black text-text-title mb-2 tracking-tighter leading-none">
         {count}
         <span className="text-brand-blue">{stat.suffix}</span>
       </div>
 
-      <h3 className="text-[13px] font-black uppercase tracking-widest text-text-title mb-4">
+      <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-text-title mb-4 opacity-50">
         {t(`autoridade.stats.${stat.labelKey}`)}
       </h3>
 
-      <p className="text-[14px] text-text-body leading-relaxed font-medium text-center">
+      <p className="text-[13px] text-text-body leading-relaxed font-medium text-center opacity-70">
         {t(`autoridade.stats.${stat.descKey}`)}
       </p>
     </div>
@@ -67,69 +67,72 @@ export function AutoridadeProva() {
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <Section variant="light" id="autoridade" className="relative overflow-hidden">
-      {/* Background Decorative Asset */}
-      <div className="absolute top-1/2 -right-64 -translate-y-1/2 w-full max-w-2xl opacity-50 hidden lg:block pointer-events-none">
+    <Section variant="white" id="autoridade" className="relative overflow-hidden pt-40 pb-40">
+      {/* Background Decorative Asset - High Authority */}
+      <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl opacity-[0.03] pointer-events-none">
         <img src="images/branding/respect_authority_3d.png" alt="" className="w-full h-auto" />
       </div>
 
       <Container size="lg" className="relative z-10">
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
-          variants={staggerSlow}
-          className="flex flex-col items-center text-center mb-20"
-        >
-          <motion.div variants={fadeUpPremium}>
-            <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="mb-8" />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={staggerSlow}
+            className="lg:col-span-12 flex flex-col items-center text-center mb-24"
+          >
+            <motion.div variants={fadeUpPremium}>
+              <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="bg-black/5 border-black/10 text-black/50 mb-8" />
+            </motion.div>
+
+            <motion.h2
+              variants={fadeUpPremium}
+              className="text-4xl md:text-[80px] font-black mb-10 text-text-title tracking-tighter uppercase leading-[0.9] font-display"
+            >
+              {t('autoridade.headline')}<br />
+              <span className="text-brand-blue">{t('autoridade.headline_highlight')}</span>
+            </motion.h2>
+
+            <motion.p
+              variants={fadeUpPremium}
+              className="text-lg md:text-2xl text-text-body w-full max-w-4xl leading-relaxed font-medium opacity-70 mb-16"
+            >
+              {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
+              <span className="font-bold text-brand-blue">{t('autoridade.subline_strong')}</span>
+            </motion.p>
+
+            <motion.div
+              variants={fadeUpPremium}
+              className="flex flex-col items-center border-t border-black/[0.03] pt-16 w-full"
+            >
+              <h3 className="text-xs font-black text-text-muted tracking-[0.4em] uppercase mb-4">
+                {t('autoridade.revenue_headline')}
+              </h3>
+              <p className="text-black font-black text-3xl md:text-7xl uppercase tracking-tighter">
+                {t('autoridade.revenue_subline')}
+              </p>
+            </div>
           </motion.div>
-
-          <motion.h2
-            variants={fadeUpPremium}
-            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-8 text-text-title tracking-tighter uppercase leading-[0.95]"
-          >
-            {t('autoridade.headline')}
-            <br className="hidden md:block" />
-            <span className="text-brand-blue">{t('autoridade.headline_highlight')}</span>
-          </motion.h2>
-
-          <motion.p
-            variants={fadeUpPremium}
-            className="text-lg md:text-xl text-text-body w-full max-w-4xl leading-relaxed font-medium"
-          >
-            {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
-            <span className="font-bold text-brand-blue">{t('autoridade.subline_strong')}</span>
-          </motion.p>
 
           <motion.div
-            variants={fadeUpPremium}
-            className="mt-12 flex flex-col items-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-50px' }}
+            variants={staggerSlow}
+            className="lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
           >
-            <h3 className="text-xl md:text-2xl font-black text-text-title tracking-tight uppercase">
-              {t('autoridade.revenue_headline')}
-            </h3>
-            <p className="text-brand-blue font-black text-2xl md:text-5xl uppercase tracking-tighter mt-2">
-              {t('autoridade.revenue_subline')}
-            </p>
+            {STATS_META.map((stat) => (
+              <motion.div key={stat.labelKey} variants={fadeUpPremium}>
+                <StatCard stat={stat} inView={inView} />
+              </motion.div>
+            ))}
           </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
-          variants={staggerSlow}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          {STATS_META.map((stat) => (
-            <motion.div key={stat.labelKey} variants={fadeUpPremium}>
-              <StatCard stat={stat} inView={inView} />
-            </motion.div>
-          ))}
-        </motion.div>
+        </div>
       </Container>
     </Section>
+  );
+}
   );
 }
