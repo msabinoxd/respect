@@ -4,6 +4,7 @@ import { TrendingUp, Layers, Clock, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { Badge, Section, Container } from './base';
+import { InteractiveGrid } from './InteractiveGrid';
 
 /* Animated Counter Hook */
 function useCounter(target: number, duration = 2000, inView: boolean) {
@@ -68,6 +69,8 @@ export function AutoridadeProva() {
 
   return (
     <Section variant="white" id="autoridade" className="relative overflow-hidden pt-40 pb-40">
+      <InteractiveGrid />
+      
       {/* Background Decorative Asset - High Authority */}
       <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl opacity-[0.03] pointer-events-none">
         <img src="images/branding/respect_authority_3d.png" alt={t('alts.authority_3d')} className="w-full h-auto" />
@@ -128,6 +131,31 @@ export function AutoridadeProva() {
                 <StatCard stat={stat} inView={inView} />
               </motion.div>
             ))}
+
+            {/* STRATEGIC IMPACT METRICS (The user specified ones) */}
+            <motion.div 
+              variants={fadeUpPremium}
+              className="col-span-12 lg:col-span-4 lg:col-start-3 md:col-start-1"
+            >
+              <div className="bg-brand-blue/5 border border-brand-blue/10 p-10 rounded-3xl text-center group">
+                <div className="text-4xl md:text-5xl font-black text-brand-blue mb-2 tracking-tighter">
+                  {t('metrics.efficiency')}
+                </div>
+                <div className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted opacity-60">Resultados Operacionais</div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              variants={fadeUpPremium}
+              className="col-span-12 lg:col-span-4"
+            >
+              <div className="bg-brand-blue/5 border border-brand-blue/10 p-10 rounded-3xl text-center group">
+                <div className="text-4xl md:text-5xl font-black text-brand-blue mb-2 tracking-tighter">
+                  {t('metrics.cac')}
+                </div>
+                <div className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted opacity-60">Escala Estratégica</div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </Container>

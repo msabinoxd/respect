@@ -8,6 +8,7 @@ import { getPilar } from '../data/pilares';
 import { CTAFinal } from '../components/CTAFinal';
 import { useSEO } from '../hooks/useSEO';
 import { useTranslation } from 'react-i18next';
+import { InteractiveGrid } from '../components/InteractiveGrid';
 
 interface PilarDetalheProps {
   id: 'marketing' | 'ti' | 'vendas';
@@ -42,18 +43,11 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
     <div className="bg-[var(--background)] transition-colors duration-500">
       {/* ── HERO DA PÁGINA ── */}
       <section className="relative min-h-[70vh] flex items-end pb-20 overflow-hidden pt-32 border-b border-[var(--color-glass-border-clean)]">
+        <InteractiveGrid />
+
         {/* Ambient Glow Branding */}
         <div className="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[180px] pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-navy/5 rounded-full blur-[140px] pointer-events-none" />
-
-        {/* Grid Overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
-          style={{
-            backgroundImage: `linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)`,
-            backgroundSize: '40px 40px',
-          }}
-        />
 
         <Container size="lg" className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -31,6 +31,10 @@
     "cta_scrolled": "AGENDAR",
     "results": "DATOS"
   },
+  "metrics": {
+    "efficiency": "+30% EFICIENCIA OPERATIVA",
+    "cac": "-25% REDUCCIÓN EN EL CAC"
+  },
   "hero": {
     "badge": "INFRAESTRUCTURA ESTRATÉGICA",
     "line1": "RESPECT.",

@@ -4,23 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
 import { Button, Container, Badge } from './base';
+import { InteractiveGrid } from './InteractiveGrid';
 
 export function Hero() {
   const { t } = useTranslation();
 
   return (
     <section id="home" className="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 overflow-hidden bg-bg-light">
-      {/* Technical Background Grid - Minimalist approach */}
-      <div 
-        className="absolute inset-0 opacity-[0.05] pointer-events-none darken:opacity-[0.02]"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(10, 25, 47, 0.1) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(10, 25, 47, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '80px 80px'
-        }}
-      />
+      <InteractiveGrid />
 
       {/* Ambient Depth - Very Subtle */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vh] bg-gradient-to-tr from-brand-blue/[0.02] to-transparent pointer-events-none" />
@@ -83,20 +74,34 @@ export function Hero() {
               </Button>
             </motion.div>
 
-            {/* Technical Trust Indicators */}
-            <motion.div variants={fadeUpPremium} className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[var(--background)] dark:bg-white/5 shadow-soft flex items-center justify-center text-brand-blue border border-[var(--color-glass-border-clean)]">
-                    {i === 1 && <Zap size={18} />}
-                    {i === 2 && <ShieldCheck size={18} />}
-                    {i === 3 && <CheckCircle2 size={18} />}
+            {/* Technical Trust Indicators + Strategic Metrics */}
+            <motion.div variants={fadeUpPremium} className="flex flex-col gap-8 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[var(--background)] dark:bg-white/5 shadow-soft flex items-center justify-center text-brand-blue border border-[var(--color-glass-border-clean)]">
+                      {i === 1 && <Zap size={18} />}
+                      {i === 2 && <ShieldCheck size={18} />}
+                      {i === 3 && <CheckCircle2 size={18} />}
+                    </div>
+                    <div className="text-[10px] font-black uppercase tracking-widest text-text-muted leading-tight">
+                      {t(`hero.trust${i}`)}
+                    </div>
                   </div>
-                  <div className="text-[10px] font-black uppercase tracking-widest text-text-muted leading-tight">
-                    {t(`hero.trust${i}`)}
-                  </div>
+                ))}
+              </div>
+
+              {/* Strategic Metrics Reveal */}
+              <div className="flex flex-wrap gap-10 border-t border-[var(--color-glass-border-clean)] pt-8">
+                <div>
+                  <div className="text-2xl md:text-3xl font-black text-brand-blue tracking-tighter">{t('metrics.efficiency')}</div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-text-muted mt-1 opacity-60">Impacto Direto na Operação</div>
                 </div>
-              ))}
+                <div>
+                  <div className="text-2xl md:text-3xl font-black text-brand-blue tracking-tighter">{t('metrics.cac')}</div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-text-muted mt-1 opacity-60">Otimização de Escala</div>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
 

@@ -1,8 +1,30 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Code2, Target, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Lottie from 'lottie-react';
+import { useEffect, useState } from 'react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { Badge, Container, Section } from './base';
+
+// Lottie Animation URLs
+const LOTTIE_MARKETING = "https://lottie.host/8553641b-ca88-466d-a162-811c75124294/Z0i2Xw836J.json";
+const LOTTIE_TI = "https://lottie.host/7e923145-c335-430b-936d-e448b301769d/bNInO6Z1Y1.json";
+const LOTTIE_SALES = "https://lottie.host/79185a97-9092-49d6-953b-e0f49f48ac62/uW6W8z7X0J.json";
+
+function RemoteLottie({ url, className }: { url: string; className?: string }) {
+  const [data, setData] = useState<any>(null);
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Lottie Load Error:", err));
+  }, [url]);
+
+  if (!data) return <div className={className} />;
+
+  return <Lottie animationData={data} loop={true} className={className} />;
+}
 
 export function PilaresSolucoes() {
   const { t } = useTranslation();
@@ -68,14 +90,9 @@ export function PilaresSolucoes() {
                  </div>
               </div>
               
-              <div className="flex-1 relative hidden md:flex items-center justify-center">
+              <div className="flex-1 relative hidden md:flex items-center justify-center min-h-[300px]">
                 <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[100px] -z-1" />
-                <img 
-                  src="images/branding/respect_pillar_marketing_1776280883560.png" 
-                  className="w-full max-w-[320px] h-auto object-contain relative z-10 group-hover:translate-x-2 transition-transform duration-1000" 
-                  loading="lazy"
-                  alt={t('alts.pillar_marketing')}
-                />
+                <RemoteLottie url={LOTTIE_MARKETING} className="w-full max-w-[320px] relative z-10 group-hover:scale-105 transition-transform duration-1000" />
               </div>
             </div>
           </motion.div>
@@ -98,13 +115,8 @@ export function PilaresSolucoes() {
                   {t('pilares.ti.desc')}
                 </p>
                 
-                <div className="mt-12 flex justify-center">
-                   <img 
-                    src="images/branding/respect_pillar_ti_1776280911682.png" 
-                    className="w-full max-w-[200px] h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700" 
-                    loading="lazy"
-                    alt={t('alts.pillar_ti')}
-                  />
+                <div className="mt-12 flex justify-center min-h-[150px]">
+                  <RemoteLottie url={LOTTIE_TI} className="w-full max-w-[200px] opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                 </div>
               </div>
               <div className="mt-12 flex items-center gap-3 text-text-title font-black text-xs uppercase tracking-[0.2em] group-hover:text-brand-blue transition-colors cursor-pointer" onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -137,13 +149,8 @@ export function PilaresSolucoes() {
                 </div>
               </div>
               
-              <div className="relative z-10 lg:w-[300px] flex flex-col items-center gap-8">
-                <img 
-                  src="images/branding/respect_pillar_sales_vendas_1776280963089.png" 
-                  className="w-full max-w-[200px] h-auto group-hover:scale-110 transition-transform duration-1000" 
-                  loading="lazy"
-                  alt={t('alts.pillar_sales')}
-                />
+              <div className="relative z-10 lg:w-[350px] flex flex-col items-center gap-8">
+                <RemoteLottie url={LOTTIE_SALES} className="w-full max-w-[280px] group-hover:scale-105 transition-transform duration-1000" />
                 <div 
                   onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} 
                   className="px-12 py-5 bg-[var(--background)] border border-[var(--color-glass-border-clean)] text-[var(--foreground)] font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer"
