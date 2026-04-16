@@ -147,7 +147,7 @@ export function Header() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden backdrop-blur-3xl border-t border-[var(--color-glass-border-clean)] shadow-2xl absolute w-full"
-            style={{ backgroundColor: 'var(--color-bg-white)' }}
+            style={{ backgroundColor: 'var(--background)' }}
           >
             <Container>
               <div className="flex flex-col gap-2 py-8">

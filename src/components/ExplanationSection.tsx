@@ -15,7 +15,7 @@ export function ExplanationSection() {
   ];
 
   return (
-    <Section variant="navy" id="metodologia" className="bg-[#050E20] border-y border-white/5">
+    <Section variant="navy" id="metodologia" className="border-y border-black/[0.03] dark:border-white/5">
       <Container size="lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           

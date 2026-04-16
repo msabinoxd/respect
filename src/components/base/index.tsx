@@ -79,7 +79,7 @@ interface BadgeProps {
 export function Badge({ icon: Icon, label, variant = 'blue', className = '' }: BadgeProps) {
   const variants: Record<string, string> = {
     blue: 'bg-brand-blue/10 text-brand-blue border-brand-blue/20',
-    navy: 'bg-bg-navy/10 text-bg-navy border-bg-navy/20',
+    navy: 'bg-black/5 dark:bg-white/5 text-text-title dark:text-white border-black/10 dark:border-white/10',
     light: 'bg-white/10 text-white border-white/20',
   };
 
@@ -103,13 +103,13 @@ interface SectionProps {
 
 export function Section({ children, variant = 'light', id, className = '' }: SectionProps) {
   const variants: Record<string, string> = {
-    light: 'bg-white text-text-body',
-    white: 'bg-white text-text-body',
-    navy: 'bg-black text-text-light',
+    light: 'bg-[var(--background)] text-[var(--foreground)]',
+    white: 'bg-[var(--background)] text-[var(--foreground)]',
+    navy: 'bg-[var(--background)] dark:bg-[var(--background)] text-[var(--foreground)]',
   };
 
   return (
-    <section id={id} className={`relative py-28 md:py-40 overflow-hidden ${variants[variant]} ${className}`}>
+    <section id={id} className={`relative py-28 md:py-40 overflow-hidden transition-colors duration-400 ${variants[variant]} ${className}`}>
       {children}
     </section>
   );
