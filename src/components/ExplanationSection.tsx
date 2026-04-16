@@ -16,7 +16,7 @@ export function ExplanationSection() {
   ];
 
   return (
-    <Section variant="default" id="metodologia" className="border-y border-black/[0.03] dark:border-white/5 relative overflow-hidden">
+    <Section variant="white" id="metodologia" className="border-y border-black/[0.03] dark:border-white/5 relative overflow-hidden">
       {/* Background Accent for Light Theme */}
       <div className="absolute inset-0 bg-brand-blue/[0.01] dark:bg-transparent -z-1" />
       

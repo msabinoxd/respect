@@ -11,14 +11,14 @@ export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="relative min-h-[95vh] md:min-h-screen flex items-center pt-24 overflow-hidden bg-[var(--background)]">
+    <section id="home" className="relative min-h-screen flex items-center pt-32 lg:pt-48 pb-20 overflow-hidden bg-[var(--background)]">
       <InteractiveGrid />
 
       {/* Ambient Gradient Depth */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140vw] h-[140vh] bg-gradient-to-tr from-brand-blue/[0.03] via-transparent to-brand-cyan/[0.03] pointer-events-none" />
 
       <Container size="lg" className="relative z-10 w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 mb-20">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -38,7 +38,7 @@ export function Hero() {
             {/* Headline - "The Sovereign Edition" Scale */}
             <motion.h1
               variants={fadeUpPremium}
-              className="text-[42px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[0.88] mb-10 text-text-title tracking-[-0.05em] uppercase font-display"
+              className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-black leading-[1] md:leading-[0.95] mb-12 text-text-title tracking-[-0.05em] uppercase font-display"
             >
               <span className="opacity-20 block mb-2">{t('hero.line1')}</span>
               <span className="text-brand-blue block">{t('hero.line2')}</span>
@@ -110,25 +110,25 @@ export function Hero() {
             <DashboardMockup />
           </motion.div>
         </div>
+
+        {/* Strategic Metrics Anchor (Now in flow, more robust) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+          className="flex flex-wrap justify-center gap-6 md:gap-12 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-[var(--color-glass-border-clean)] px-8 md:px-12 py-5 rounded-3xl md:rounded-full w-fit mx-auto"
+        >
+            <div className="flex items-center gap-4">
+                <span className="text-xl md:text-2xl font-black text-brand-blue tracking-tighter">{t('metrics.efficiency')}</span>
+                <span className="text-[9px] font-black uppercase tracking-[0.3em] opacity-40">Impact</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-[var(--color-glass-border-clean)] self-center" />
+            <div className="flex items-center gap-4">
+                <span className="text-xl md:text-2xl font-black text-brand-blue tracking-tighter">{t('metrics.cac')}</span>
+                <span className="text-[9px] font-black uppercase tracking-[0.3em] opacity-40">Optimization</span>
+            </div>
+        </motion.div>
       </Container>
-      
-      {/* Strategic Metrics Anchor (Bottom Float) */}
-      <motion.div 
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden xl:flex gap-12 bg-[var(--background)]/50 backdrop-blur-md border border-[var(--color-glass-border-clean)] px-12 py-5 rounded-full z-20"
-      >
-          <div className="flex items-center gap-4">
-              <span className="text-2xl font-black text-brand-blue tracking-tighter">{t('metrics.efficiency')}</span>
-              <span className="text-[9px] font-black uppercase tracking-[0.3em] opacity-40">Impact</span>
-          </div>
-          <div className="w-px h-6 bg-[var(--color-glass-border-clean)] self-center" />
-          <div className="flex items-center gap-4">
-              <span className="text-2xl font-black text-brand-blue tracking-tighter">{t('metrics.cac')}</span>
-              <span className="text-[9px] font-black uppercase tracking-[0.3em] opacity-40">Optimization</span>
-          </div>
-      </motion.div>
     </section>
   );
 }

@@ -25,6 +25,7 @@ export function Home() {
       {/* 1. ATENÇÃO — Impacto principal */}
       <div id="home">
         <Hero />
+        <TechStackMarquee />
       </div>
 
       <Suspense fallback={<div className="min-h-[60vh] bg-white" />}>
@@ -55,7 +56,6 @@ export function Home() {
         {/* 7. PROVA — Autoridade com números e métricas */}
         <div id="autoridade">
           <AutoridadeProva />
-          <TechStackMarquee />
         </div>
 
         {/* 8. FAQ — Quebra de objeções finais */}
