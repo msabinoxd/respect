@@ -33,12 +33,13 @@ npm run preview  # preview do build
 src/
 ├── components/      # Componentes reutilizáveis
 │   ├── base/        # Button, Card, Badge, Section, Container
-│   ├── PilarCard    # Card resumido de cada pilar
 │   └── FAQ          # Accordion de perguntas frequentes
 ├── data/
-│   └── pilares.ts   # Conteúdo completo dos 3 pilares
+│   └── pilares.ts   # Dados estruturais (ícones, gradientes)
+├── locales/
+│   └── pt/en/es     # Toda a copy profissional via i18n
 ├── pages/
-│   ├── Home.tsx     # Página principal
+│   ├── Home.tsx     # Landing Page principal
 │   └── PilarDetalhe # Página detalhada de cada pilar
 ├── shared/
 │   └── animations.premium.ts  # Variantes Framer Motion

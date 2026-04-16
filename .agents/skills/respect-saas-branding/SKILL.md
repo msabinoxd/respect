@@ -3,141 +3,132 @@
 > **Skills relacionadas:** [Core Rules](../../rules.md) | [i18n](../respect-i18n/SKILL.md) | [LP Architecture](../respect-lp-architecture/SKILL.md) | [Modern Techniques](../respect-modern-techniques/SKILL.md) | [Design References](../respect-design-references/SKILL.md) | [Component Library](../respect-component-library/SKILL.md)
 
 **Status:** Ativo ✅
-**Versão:** 1.0.0 (Padrão Unificado Builderall)
-**Meta:** Garantir que a agência Respect transmita autoridade, robustez e a sensação de uma "Suíte de Software" corporativa integrada.
+**Versão:** 2.0.0 (Profissional & Resultado)
+**Meta:** A LP da Respect deve transmitir profissionalismo, capacidade técnica e facilitar a conversão.
 
 ---
 
-## 1. Princípios de Design (The SaaS Feeling)
+## 1. Princípios de Design
 
-A marca Respect não é mais uma agência "criativa" ou "cyber". É uma **Plataforma de Soberania Digital**. 
-O design deve sempre privilegiar a clareza, o espaço e o azul institucional.
+A Respect é uma **agência integrada** (Marketing + TI + Comercial). O design prioriza:
+- **Clareza**: O lead precisa entender o que fazemos em 5 segundos
+- **Profissionalismo**: Estética limpa, sem excessos, tom corporativo sério
+- **Facilidade**: Toda informação organizada e acessível
 
 ### Regras de Ouro:
-1. **Tipografia Monstruosa**: Headlines (`h1`, `h2`) devem ser em **CAIXA ALTA (ALL-CAPS)** com peso `black` ou `extrabold`. Use gradientes discretos (Azul -> Ciano) apenas em palavras-chave.
-2. **Espaçamento Generoso**: Seções com muito respiro (`py-32` a `py-48`). Nada deve parecer "apertado".
-3. **Contraste de Suíte**: 
-   - Áreas de leitura: Fundo Branco ou Cinza Gelo (`#F8F9FA`).
-   - Áreas de impacto/quebra: Fundo Navy Blue (`#0B1B36`).
+1. **Tipografia Monstruosa**: Headlines (`h1`, `h2`) em **ALL-CAPS** com peso `black` ou `extrabold`. Gradientes discretos (Azul → Ciano) apenas em palavras-chave de destaque.
+2. **Espaçamento Generoso**: Seções com muito respiro (`py-32` a `py-48`).
+3. **Total White**: Fundo branco puro (`#FFFFFF`). Sem cinzas, sem navy backgrounds.
 
 ---
 
-## 2. Paleta Técnica Unificada (The Blue Ocean)
+## 2. Paleta Técnica
 
 ```css
 :root {
-  /* Primárias Branding */
-  --brand-navy: #0B1B36;     /* Poder, Autoridade, Corporativo */
-  --brand-blue: #0090FF;     /* Ação, Tecnologia, Builderall Style */
-  --brand-cyan: #00D1FF;     /* Inovação, High-tech */
+  /* Primárias */
+  --brand-blue: #0090FF;     /* CTAs, destaques, ação */
+  --brand-cyan: #00D1FF;     /* Gradientes de destaque */
+  --brand-navy: #0B1B36;     /* Títulos, texto principal */
   
   /* Backgrounds */
-  --bg-clean: #F8F9FA;       /* Fundo SaaS Predominante */
-  --bg-white: #FFFFFF;       /* Cards e Destaques */
+  --bg-light: #FFFFFF;       /* Fundo principal */
+  --bg-white: #FFFFFF;       /* Cards */
+  
+  /* Texto */
+  --text-title: #0B1B36;     /* Headlines */
+  --text-body: #334155;      /* Corpo */
+  --text-muted: #64748B;     /* Secundário */
 }
 ```
 
-### Gradients dos Pilares (Ecossistema Integrado):
-Para manter a unidade, usamos variações apenas dentro do espectro azul:
-- **Marketing**: `from-[--brand-blue] to-[--brand-cyan]`
-- **TI & DevOps**: `from-[--brand-navy] to-[--brand-blue]`
-- **Comercial**: `from-[--brand-cyan] to-[--brand-navy]`
+### Gradients dos Pilares:
+- **Marketing**: `from-brand-blue to-brand-cyan`
+- **TI & DevOps**: `from-brand-navy to-brand-blue`
+- **Comercial**: `from-brand-cyan to-brand-navy`
 
 ---
 
-## 3. Componentes e Variantes Estritas
+## 3. Componentes e Variantes
 
-Qualquer nova página ou componente deve usar rigorosamente estas variantes:
-
-| Componente | Variantes Válidas | Uso Recomendado |
+| Componente | Variantes Válidas | Uso |
 | :--- | :--- | :--- |
-| **Section** | `navy`, `white`, `light` | Navy para impacto, Light para leitura. |
-| **Badge** | `blue`, `navy`, `light` | Blue para destaque, Navy para tags. |
-| **Button** | `primary`, `secondary`, `navy` | Primary Azul para conversão majoritária. |
+| **Section** | `white`, `light` | White para tudo. Light para fallback. |
+| **Badge** | `blue`, `light` | Blue para destaques. |
+| **Button** | `primary`, `secondary` | Primary para conversão. |
+| **Cards** | Borda sutil + sombra premium | `border border-black/5 shadow-sm` |
+
+> ⚠️ **Variante `navy` está DEPRECADA**. Não usar backgrounds escuros.
 
 ---
 
 ## 4. O que NUNCA fazer
 
-- ❌ **Usar cores "alienígenas"**: Proibido Roxo, Laranja, Vermelho ou Verde (exceto ícones de sucesso ou WhatsApp).
-- ❌ **Cases Misturados em Títulos**: Todo título majoritário de seção deve ser Uppercase.
-- ❌ **Fundo Preto Absoluto**: Use `--brand-navy` para áreas escuras. O preto absoluto passa uma imagem de "gamer" ou "hacker", não de empresa de TI multinacional.
+- ❌ **Backgrounds navy/escuros** em seções
+- ❌ **Cores fora da paleta**: violet, purple, orange, red, green (exceto ícones WhatsApp)
+- ❌ **Copy filosófica**: "boutique", "soberania", "artesãos", "legado", "abundância"
+- ❌ **Escassez que culpa o lead**: frases como "precisa ser recíproco" ou "invista sério"
+- ❌ **Fundo preto absoluto**: `#000000` nunca
+- ❌ **Glassmorphism pesado** em cards
 
 ---
 
-## 5. Tailwind V4 & Prevenção de Perda de Cor (Contraste)
+## 5. Tailwind V4 & Tokens
 
-A versão V4 do Tailwind otimiza rigorosamente as classes CSS geradas. Classes dinâmicas baseadas em variações cruas (`text-[var(--color-bg-navy)]`) podem ser ignoradas no build e "sumir" (ficando transparentes/invisíveis), causando o bug de texto invisível sobre fundo da mesma cor.
+Classes válidas para cores de marca:
+- **Fundos**: `bg-bg-light`, `bg-bg-white`, `bg-brand-blue`
+- **Textos**: `text-text-title`, `text-text-body`, `text-text-muted`, `text-brand-blue`
+- **Gradients**: `from-brand-blue to-brand-cyan`
+- **Bordas**: `border-black/5`, `border-brand-blue`
 
-**Regra Absoluta do CSS Global (`index.css`):**
-- Todas as variáveis estritas de cor estão definidas dentro da diretiva `@theme` usando chaves `--color-brand-...`, `--color-text-...` e `--color-bg-...`.
-- **Você nunca deve usar `var(--...)` arbitrário dentro do HTML para cores de marca.**
-
-**Como aplicar cores corretamente (Gatilhos v4):**
-- **Fundos**: `bg-bg-light`, `bg-brand-navy`, `bg-brand-blue`
-- **Textos**: `text-text-title`, `text-text-body`, `text-brand-navy`, `text-brand-blue`
-- **Gradients**: `from-brand-blue to-brand-cyan` (sem `[]` arrastados).
-
-Se o design "bugar e ficar tudo numa mesma cor", reveja as classes do componente e limpe utilitários v3 sujos.
+**NUNCA usar `var(--...)` arbitrário no HTML nem classes cruas do Tailwind (`text-slate-*`, `bg-gray-*`).**
 
 ---
-
-**Diretriz de Execução**: Ao encontrar variações cromáticas legadas (`violet`, `amber`, `orange`) ou classes CSS baseadas em utilitários inseguros (ex: `text-[var(--color-text-navy)]`), modifique imediatamente para a paleta configurada e segura (`text-brand-navy`) definida nesta SKILL.
 
 ## 6. Tema Dark / Light
 
-- Sistema de tema via classe `.dark` no `<html>` (Tailwind v4 `@custom-variant dark`)
-- Token semânticos: quando `.dark` é aplicado, as CSS vars `--color-bg-light`, `--color-bg-white`, `--color-text-title` etc. sobrescrevem automaticamente
-- Padrão: **Light** (Builderall standard). Dark é opt-in via toggle
-- `ThemeProvider` em `src/components/ThemeProvider.tsx` gerencia estado
-- `useTheme()` hook em `src/hooks/useTheme.ts` — expõe `theme`, `toggle`, `isDark`
+- Toggle via classe `.dark` no `<html>`
+- Tokens semânticos sobrescrevem automaticamente no dark mode
+- Padrão: **Light**
+- Provider: `src/components/ThemeProvider.tsx`
+- Hook: `useTheme()` → `theme`, `toggle`, `isDark`
 - Persistência: `localStorage` key `respect_theme`
-- Toggle UI: `src/components/ThemeToggle.tsx` — ícones Sun/Moon da Lucide
 
-## 7. Internacionalização (i18n)
+## 7. i18n
 
-- Stack: `i18next` + `react-i18next` + `i18next-browser-languagedetector`
+- Stack: `i18next` + `react-i18next`
 - Idiomas: PT-BR (padrão), EN-US, ES-ES
-- Locale files: `src/locales/{pt,en,es}/common.json`
-- Config: `src/i18n.ts` — importar em `main.tsx` ANTES do render
-- Persistência de idioma: `localStorage` key `respect_lang`
-- Seletor UI: `src/components/LanguageSwitcher.tsx`
-- **REGRA:** TODA string visível ao usuário deve vir de `t('chave')`. Zero exceções.
-- **Dados em `src/data/`**: Apenas estruturais (ícones, gradientes, contagens). Texto via `pilares_data.*` nos locales.
-- Ver: [i18n SKILL](../respect-i18n/SKILL.md) | [anti-patterns AP-1](../../anti-patterns.md)
+- Locales: `src/locales/{pt,en,es}/common.json`
+- **REGRA:** TODA string visível vem de `t('chave')`. Zero exceções.
+- Dados estruturais em `src/data/` (ícones, gradientes, IDs). Texto via locales.
 
-## 8. Headline Hero oficial
+## 8. Posicionamento de Marca
 
-- Linha 1: `OPERAÇÃO UNIFICADA.` (via i18n key `hero.line1`)
-- Linha 2: `SOBERANIA DIGITAL.` (via i18n key `hero.line2`, com `.text-gradient-builderall`)
-- Subhead: Deve conter a menção a **Inteligência Artificial** aplicada.
-- Direção: posicionamento de soberania e autoridade máxima.
+- **Termo:** "Agência integrada de Marketing, TI e Comercial"
+- **Badge oficial:** `MARKETING · TI · COMERCIAL`
+- **Tom:** Profissional, direto, focado no resultado do cliente
+- **Foco:** Capacidade, integração, facilidade para começar
+- **Proibido:** Se referir como "boutique", "engenharia de valor/receita", ou qualquer termo abstrato
 
-## 9. Fluxo de Conversão Psicológico
+## 9. Fluxo de Conversão (Storytelling)
 
-A One Page deve seguir rigorosamente a ordem:
-1. **Atenção** (Hero)
-2. **Problema** (Contraste de fragmentação)
-3. **Insight** (Big Idea: Integração)
-4. **Ponte** (Transição prática)
-5. **Solução** (3 Pilares)
-6. **Integração** (Por que o ecossistema vence as ferramentas soltas)
-7. **Prova** (Stats e Autoridade)
-8. **Objeções** (FAQ)
-9. **Escassez** (Capacidade limitada)
-10. **Ação** (CTA Final Estratégico)
+A LP segue a cascata de perguntas do lead:
+1. **Atenção** (Hero) → "O que fazem?"
+2. **Dor** (Problema) → "Entendem meu problema?"
+3. **Insight** (Big Idea) → "O que é diferente?"
+4. **Capacidade** (Soluções) → "Me mostra tudo"
+5. **Método** (Explicação) → "Como funciona?"
+6. **Prova** (Autoridade) → "Prove que funciona"
+7. **Objeções** (FAQ) → "Quanto custa? Quanto tempo?"
+8. **Segurança** (Escassez) → "Vou ter atenção?" (SIM, projetos limitados = qualidade garantida)
+9. **Ação** (CTA) → "Diagnóstico gratuito, 30 min, sem compromisso"
 
-## 10. Posicionamento de Marca
-
-- **Regra**: Nunca se referir à Respect como uma simples "agência".
-- **Termo oficial**: "Engenharia de Receita" (Revenue Engineering).
-- **Abordagem**: Foco em margem, lucro e eficiência técnica, não em "likes" ou métricas de vaidade.
-
-## 11. Cores PROIBIDAS (remover se encontradas)
+## 10. Cores PROIBIDAS
 
 - `violet-*` — NUNCA
-- `purple-*` — NUNCA  
-- `from-violet-*` / `to-cyan-*` (gradiente roxo-ciano) — NUNCA
-- `text-slate-*` — substituir sempre por tokens semânticos (`text-text-title`, `text-text-body`, `text-text-muted`, `text-text-light`)
-- `bg-white` hardcoded — usar `bg-bg-white` (responde ao dark mode)
+- `purple-*` — NUNCA
+- `from-violet-*` / `to-cyan-*` — NUNCA
+- `text-slate-*` — substituir por tokens (`text-text-title`, etc.)
+- `bg-white` hardcoded — usar `bg-bg-white`
 - `bg-gray-*` — NUNCA
+- `bg-bg-navy` em Section variant — DEPRECADO

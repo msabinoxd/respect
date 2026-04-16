@@ -1,66 +1,82 @@
-# PRD — Respect: A Jornada da Soberania e Valor
+# PRD — Respect: Landing Page Institucional
 
-**Versão:** 1.0  
-**Status:** Em Definição Estratégica  
-**Objetivo:** Transformar a presença digital da Respect de uma "agência de serviços" para uma **Plataforma de Engenharia de Valor**, focada em autoridade, parceria de longo prazo e consolidação da jornada do cliente (Híbrido Físico-Digital).
-
----
-
-## 1. Visão Geral (The Big Why)
-A Respect não vende "horas" ou "pacotes". Ela instala o **Sistema Operacional da Soberania**. O foco mudou do imediatismo do lucro para a construção de **Ativos de Autoridade** que se retroalimentam. O digital é a ponte que une franquias físicas, outdoors e marcas pessoais em um ecossistema blindado.
+**Versão:** 2.0  
+**Status:** Em Produção  
+**Atualizado:** 2026-04-16  
+**Objetivo:** LP One-Page que demonstra capacidade integrada (Marketing + TI + Comercial), gera confiança e converte em diagnóstico gratuito via WhatsApp.
 
 ---
 
-## 2. O Público-Alvo (O Parceiro de Propósito)
-*   **Perfil**: Líderes e empresários que já tentaram o "digital comum" e se frustraram com a falta de propósito e profundidade das prestadoras tradicionais.
-*   **Mentalidade**: Entendem que o digital é necessário e estão dispostos a investir sério para ter tranquilidade e exclusividade.
-*   **Necessidade**: Alguém que cuide de toda a "sujeira técnica" e do "marketing real", permitindo que eles foquem na expansão da marca.
+## 1. O Problema que Resolvemos para o Lead
+
+Empresários gastam tempo e dinheiro gerenciando múltiplos fornecedores (agência de marketing, dev freelancer, consultor comercial) que não se comunicam. O resultado é retrabalho, dados espalhados e resultado aquém do potencial.
+
+**Nossa solução:** Um time integrado que cuida das 3 áreas. Sem silos, sem telefone sem fio, sem culpar outro fornecedor.
 
 ---
 
-## 3. Pilares da Experiência (Brand DNA)
-*   **Soberania**: Controle total dos ativos, sem dependência de terceiros.
-*   **Tranquilidade**: Uma contratação leve, baseada em confiança e parceria de longo prazo.
-*   **Engenharia de Valor**: Tudo é mensurável, validado e orquestrado para gerar autoridade (o dinheiro é consequência).
-*   **Hibridismo**: O digital amplia o físico; o físico ancora o digital.
+## 2. Público-Alvo
+
+*   Empresários e gestores de empresas de médio porte
+*   Já tiveram experiências com pelo menos 1 agência ou freelancer
+*   Procuram profissionalismo, resultado mensurável e menos dor de cabeça
+*   Nível de consciência: **morno a quente** (sabem que precisam, estão comparando opções)
 
 ---
 
-## 4. Estrutura Estratégica ("Faixa por Faixa")
+## 3. Estrutura da LP (10 seções)
 
-### 4.1. HERO: O Farol da Autoridade
-*   **Copy**: Focar na **Expansão com Propósito**.
-*   **Vibe**: "Autoridade Serena". Um ambiente limpo, branco, expansivo, que traz paz e segurança.
-*   **Visual**: Premium White. Sombras suaves, tipografia "Bold" mas elegante.
+### 3.1. HERO — "Seu objetivo. Nossa execução."
+Badge: `MARKETING · TI · COMERCIAL`
+CTA primário: Diagnóstico gratuito
+CTA secundário: Ver o que fazemos (scroll to soluções)
 
-### 4.2. PROBLEMA: O Desalinhamento de Propósito
-*   **Foco**: Não é apenas "caos técnico", é a **Solidão do Empresário**.
-*   **Mensagem**: "Você já teve agências. Você já teve freelancers. O que te faltou foi um parceiro que olhasse para o seu negócio com o mesmo propósito que você."
+### 3.2. PROBLEMA — "Você já passou por isso."
+3 pain points reais: marketing que não converte, tech que trava, vendas sem processo.
 
-### 4.3. INSIGHT: A Ponte de Valor
-*   **Foco**: A integração total.
-*   **Conceito**: Como a Respect une o Outdoor no mundo real ao funil digital. Como uma franquia física se escala através de uma micro-franquia digital.
+### 3.3. BIG IDEA — "E se tudo funcionasse junto?"
+A integração como diferencial prático, não conceitual.
 
-### 4.4. SOLUÇÕES: Os 3 Pilares da Soberania
-1.  **Marketing de Autoridade**: Branding que dura.
-2.  **TI & Infra Estratégica**: A espinha dorsal que não quebra.
-3.  **Comercial de Elite**: O fechamento da jornada com inteligência.
+### 3.4. TRANSIÇÃO — "Veja tudo que implementamos"
 
-### 4.5. CURADORIA (Antiga Escassez)
-*   **Foco**: Não vendemos para todos.
-*   **Mensagem**: "Nosso compromisso com a sua qualidade exige que escolhamos com quem caminhar. Atendemos apenas parceiros que entendem a grandeza da jornada."
+### 3.5. SOLUÇÕES — "Tudo que você precisa. Em um só lugar."
+3 cards (Marketing, TI, Comercial) com features específicas e CTAs individuais.
+
+### 3.6. METODOLOGIA — "Não é mágica. É método."
+Processo: diagnóstico → estratégia → execução → mensuração.
+
+### 3.7. AUTORIDADE — "Resultados falam mais que promessas."
+Stats: anos de mercado, áreas integradas, foco em resultado, suporte contínuo.
+
+### 3.8. FAQ — "Perguntas que todo mundo faz."
+6 perguntas: custo, prazo, escopo, porte, diferencial, como começar.
+
+### 3.9. ESCASSEZ — "Cada cliente recebe atenção total."
+Limitação de projetos = qualidade garantida pro lead (não barreira).
+
+### 3.10. CTA FINAL — "Seu próximo passo é simples."
+Diagnóstico gratuito de 30 min. Sem compromisso.
 
 ---
 
-## 5. Requisitos de Identidade Visual (Premium White)
-*   **Background**: `Absolute White (#FFFFFF)`. Tchau cinzas claros.
-*   **Accent**: `Brand Blue (#0090FF)` usado apenas para destacar o **Valor**.
-*   **Depth**: Sombras "Glassmorphism" extremamente sutis para separar seções, sem quebrar o fluxo branco.
-*   **Typography**: All-caps para headlines (Autoridade), Sans-serif limpa para corpo (Leveza).
+## 4. Conversão
+
+*   **CTA único:** WhatsApp (diagnóstico gratuito)
+*   **Float:** WhatsApp sempre visível
+*   **Navegação:** Anchors + Links diretos para páginas de detalhe dos pilares
 
 ---
 
-## 6. Próximos Passos (Execução)
-1.  **Refatoração do Locales**: Reescrever o `common.json` em PT/EN/ES com o novo tom de voz.
-2.  **Purificação de Estilos**: Uniformizar o `index.css` para o padrão Total White.
-3.  **Revisão de Componentes**: Ajustar cada seção do site para refletir a "Ponte de Valor".
+## 5. Estética
+
+*   Total White (`#FFFFFF`)
+*   Tipografia bold corporativa (Plus Jakarta Sans + DM Sans)
+*   Accent: Brand Blue (`#0090FF`)
+*   Cards com bordas sutis e sombras premium
+*   Sem backgrounds navy, sem glassmorphism pesado
+
+---
+
+## 6. i18n
+
+PT-BR (principal), EN-US, ES-ES — todos sincronizados com a mesma mensagem.

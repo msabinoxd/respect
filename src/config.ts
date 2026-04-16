@@ -1,17 +1,17 @@
 export const CONFIG = {
   wa: {
     phone: "5511947648312",
-    msgHero: "Olá! Vi o site da Respect e quero entender como vocês podem ajudar meu negócio.",
+    msgHero: "Olá! Vi o site da Respect e quero agendar um diagnóstico gratuito pro meu negócio.",
     msgFloat: "Olá! Tenho interesse nos serviços da Respect.",
-    msgDemo: "Olá! Quero agendar uma demonstração dos serviços da Respect.",
-    msgFinal: "Olá! Quero uma análise estratégica para o meu negócio. Podemos conversar?",
-    ctaHero: "QUERO MINHA ANÁLISE ESTRATÉGICA →",
-    ctaFloat: "Falar com Especialista",
-    ctaFinal: "COMEÇAR AGORA →",
+    msgDemo: "Olá! Quero entender como a Respect pode ajudar meu negócio.",
+    msgFinal: "Olá! Quero agendar um diagnóstico gratuito. Podemos conversar?",
+    ctaHero: "AGENDAR DIAGNÓSTICO GRATUITO →",
+    ctaFloat: "Falar com a Respect",
+    ctaFinal: "AGENDAR DIAGNÓSTICO →",
   },
   brand: {
     name: "Respect",
-    tagline: "Soberania Digital para o seu Negócio",
+    tagline: "Marketing · TI · Comercial",
     concept: "Respeito",
   },
 } as const;
