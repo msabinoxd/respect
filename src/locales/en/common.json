@@ -289,5 +289,25 @@
         "o4": "Lead-to-Profit Visibility"
       }
     }
+  },
+  "lgpd": {
+    "modal_title": "ACCESS CONDITIONS AND PRIVACY",
+    "modal_text": "To view our infrastructure and ensure technical rigor, we use performance and security cookies. By accepting, you agree to our technical and commercial data processing protocol.",
+    "accept": "ACCEPT AND ACCESS",
+    "decline": "DECLINE",
+    "privacy_link": "Privacy Policy"
+  },
+  "privacy": {
+    "title": "PRIVACY POLICY",
+    "subtitle": "Respect Data Processing Protocol - MS Group",
+    "section1_title": "1. DATA COLLECTION",
+    "section1_text": "We collect technical data (Cookies, IP) and contact data (WhatsApp/Form) strictly for Technical Diagnostic and Scale Engineering purposes.",
+    "section2_title": "2. USE OF INFORMATION",
+    "section2_text": "Information is used to optimize the Conversion Architecture, prevent efficiency leaks, and personalize the delivery of our 3 pillars.",
+    "section3_title": "3. SECURITY AND SHIELDING",
+    "section3_text": "Your data is protected by end-to-end encryption and stored in resilient cloud infrastructure (AWS/GCP), following the highest systemic security standards.",
+    "section4_title": "4. USER RIGHTS",
+    "section4_text": "In compliance with GDPR/LGPD, you have full rights to access, rectify, and delete your data at any time via our official channels.",
+    "back_to_site": "BACK TO SYSTEM"
   }
 }

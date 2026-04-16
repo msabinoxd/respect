@@ -2,7 +2,9 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useScroll, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
+import { LGPDModal } from './components/LGPDModal';
 import { Home } from './pages/Home';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CONFIG } from './config';
 
 function AppLayout() {
@@ -22,11 +24,13 @@ function AppLayout() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
 
       <WhatsAppFloat />
+      <LGPDModal />
     </div>
   );
 }

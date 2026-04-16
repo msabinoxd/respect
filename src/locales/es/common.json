@@ -289,5 +289,25 @@
         "o4": "Visibilidad del Lead al Beneficio"
       }
     }
+  },
+  "lgpd": {
+    "modal_title": "CONDICIONES DE ACCESO Y PRIVACIDAD",
+    "modal_text": "Para visualizar nuestra infraestructura y garantizar el rigor técnico, utilizamos cookies de rendimiento y seguridad. Al aceptar, usted acepta nuestro protocolo de tratamiento de datos técnicos y comerciales.",
+    "accept": "ACEPTAR Y ACCEDER",
+    "decline": "RECHAZAR",
+    "privacy_link": "Política de Privacidad"
+  },
+  "privacy": {
+    "title": "POLÍTICA DE PRIVACIDAD",
+    "subtitle": "Protocolo de Tratamiento de Datos Respect - MS Group",
+    "section1_title": "1. RECOLECCIÓN DE DATOS",
+    "section1_text": "Recopilamos datos técnicos (Cookies, IP) y datos de contacto (WhatsApp/Formulario) estrictamente con fines de Diagnóstico Técnico e Ingeniería de Escala.",
+    "section2_title": "2. USO DE LA INFORMACIÓN",
+    "section2_text": "La información se utiliza para optimizar la Arquitectura de Conversión, prevenir fugas de eficiencia y personalizar la entrega de nuestros 3 pilares.",
+    "section3_title": "3. SEGURIDAD Y BLINDAJE",
+    "section3_text": "Sus datos están protegidos por encriptación de extremo a extremo y se almacenan en una infraestructura de nube resiliente (AWS/GCP), siguiendo los más altos estándares de seguridad sistémica.",
+    "section4_title": "4. DERECHOS DEL USUARIO",
+    "section4_text": "De conformidad con el GDPR/LGPD, usted tiene pleno derecho a acceder, rectificar y eliminar sus datos en cualquier momento a través de nuestros canales oficiales.",
+    "back_to_site": "VOLVER AL SISTEMA"
   }
 }

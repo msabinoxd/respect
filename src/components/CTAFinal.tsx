@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, ShieldCheck, CheckCircle2, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
 import { Button, Container, Badge } from './base';
@@ -57,6 +58,7 @@ export function CTAFinal() {
             </motion.div>
           </motion.div>
 
+          {/* Image visual */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -66,17 +68,23 @@ export function CTAFinal() {
           >
              <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[120px] -z-1" />
              <img 
-              src="images/branding/respect_methodology_3d.png" 
-              alt={t('alts.methodology_3d')}
-              className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02]"
-              loading="lazy"
-            />
+               src="images/branding/respect_methodology_3d.png" 
+               alt={t('alts.methodology_3d')}
+               className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02]"
+               loading="lazy"
+             />
           </motion.div>
         </div>
 
+        {/* Footer Bottom Logics */}
         <div className="mt-40 pt-12 border-t border-[var(--color-glass-border-clean)] flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-text-muted/40">
             <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name}</p>
+            <span className="hidden md:block w-1 h-1 rounded-full bg-[var(--foreground)]/10" />
+            <Link to="/privacy" className="hover:text-brand-blue flex items-center gap-2 transition-colors">
+               <Lock size={12} />
+               {t('lgpd.privacy_link')}
+            </Link>
             <span className="hidden md:block w-1 h-1 rounded-full bg-[var(--foreground)]/10" />
             <p>{CONFIG.brand.tagline}</p>
           </div>
