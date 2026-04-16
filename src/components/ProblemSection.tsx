@@ -40,7 +40,7 @@ export function ProblemSection() {
             <div className="relative group">
               <div className="absolute inset-0 bg-brand-navy/5 rounded-[32px] blur-2xl -z-10 group-hover:bg-brand-navy/10 transition-colors" />
               <img
-                src="/images/branding/respect_problem_chaos.png"
+                src="images/branding/respect_problem_chaos.png"
                 alt="Operational Chaos"
                 className="w-full h-auto rounded-[32px] shadow-premium grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 border border-black/5"
               />

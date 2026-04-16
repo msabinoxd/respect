@@ -95,7 +95,7 @@ export function Hero() {
             <div className="relative w-full aspect-square max-w-[550px]">
               <div className="absolute inset-0 bg-brand-blue/10 rounded-[40px] blur-3xl -z-10" />
               <img
-                src="/images/branding/respect_hero_abstract_3d_1776280816156.png"
+                src="images/branding/respect_hero_abstract_3d_1776280816156.png"
                 alt="Respect Digital Sovereignty"
                 className="w-full h-full object-cover rounded-[40px] shadow-premium border border-white/20"
               />

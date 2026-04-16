@@ -43,7 +43,7 @@ export function ExplanationSection() {
           >
             <div className="relative rounded-3xl overflow-hidden border border-black/5 shadow-2xl bg-white aspect-square lg:aspect-video flex items-center justify-center">
               <img 
-                src="/images/branding/respect_methodology_3d.png" 
+                src="images/branding/respect_methodology_3d.png" 
                 alt="Methodology" 
                 className="w-full h-full object-cover"
               />
