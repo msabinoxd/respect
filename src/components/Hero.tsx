@@ -87,7 +87,7 @@ export function Hero() {
             <motion.div variants={fadeUpPremium} className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[var(--background)] dark:bg-white/5 shadow-soft flex items-center justify-center text-brand-blue border border-black/[0.03] dark:border-white/10">
+                  <div className="w-10 h-10 rounded-lg bg-[var(--background)] dark:bg-white/5 shadow-soft flex items-center justify-center text-brand-blue border border-[var(--color-glass-border-clean)]">
                     {i === 1 && <Zap size={18} />}
                     {i === 2 && <ShieldCheck size={18} />}
                     {i === 3 && <CheckCircle2 size={18} />}
@@ -123,7 +123,7 @@ export function Hero() {
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute -top-6 -right-6 p-5 bg-[var(--background)]/90 dark:bg-black/80 backdrop-blur-md rounded-2xl shadow-premium border border-black/[0.03] dark:border-white/10 flex items-center gap-3"
+                  className="absolute -top-6 -right-6 p-5 bg-[var(--color-glass-clean)] backdrop-blur-md rounded-2xl shadow-premium border border-[var(--color-glass-border-clean)] flex items-center gap-3"
                 >
                   <div className="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shadow-lg">
                     <ShieldCheck size={20} />

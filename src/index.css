@@ -46,8 +46,9 @@
   --color-bg-white: #000000;
   --color-text-title: #FFFFFF;
   --color-text-body: #F1F5F9;
-  --color-glass-clean: rgba(0, 0, 0, 0.8);
-  --color-glass-border-clean: rgba(255, 255, 255, 0.05);
+  --color-text-muted: #94A3B8;
+  --color-glass-clean: rgba(0, 0, 0, 0.85);
+  --color-glass-border-clean: rgba(255, 255, 255, 0.08);
 }
 
 .v2-theme {

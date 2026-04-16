@@ -15,7 +15,7 @@ export function PilaresSolucoes() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={staggerSlow}
-          className="mb-24 text-center lg:text-left"
+          classNames="mb-24 text-center lg:text-left"
         >
           <motion.div variants={fadeUpPremium}>
             <Badge label={t('pilares.badge')} variant="blue" className="mb-6" />
@@ -50,7 +50,7 @@ export function PilaresSolucoes() {
             className="col-span-12 lg:col-span-8 group relative"
           >
             <div id="marketing" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover h-full p-12 flex flex-col md:flex-row gap-12 overflow-hidden relative border-black/[0.03]">
+            <div className="saas-card saas-card-hover h-full p-12 flex flex-col md:flex-row gap-12 overflow-hidden relative border-[var(--color-glass-border-clean)]">
               <div className="flex-1 z-10 flex flex-col justify-between">
                  <div>
                    <div className="w-16 h-16 rounded-2xl bg-brand-blue/5 flex items-center justify-center text-brand-blue mb-10">
@@ -72,7 +72,8 @@ export function PilaresSolucoes() {
                 <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[100px] -z-1" />
                 <img 
                   src="images/branding/respect_pillar_marketing_1776280883560.png" 
-                  className="w-full max-w-[320px] h-auto object-contain relative z-10 group-hover:translate-x-2 transition-transform duration-1000 loading='lazy'" 
+                  className="w-full max-w-[320px] h-auto object-contain relative z-10 group-hover:translate-x-2 transition-transform duration-1000" 
+                  loading="lazy"
                   alt={t('alts.pillar_marketing')}
                 />
               </div>
@@ -85,9 +86,9 @@ export function PilaresSolucoes() {
             className="col-span-12 lg:col-span-4 relative"
           >
             <div id="ti" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover h-full p-12 flex flex-col justify-between group border-black/[0.03]">
+            <div className="saas-card saas-card-hover h-full p-12 flex flex-col justify-between group border-[var(--color-glass-border-clean)]">
               <div className="relative">
-                <div className="w-16 h-16 rounded-2xl bg-black/[0.02] flex items-center justify-center text-text-title mb-10">
+                <div className="w-16 h-16 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center text-text-title mb-10">
                   <Code2 size={32} />
                 </div>
                 <h3 className="text-3xl font-black text-text-title mb-6 uppercase tracking-tighter">
@@ -100,7 +101,8 @@ export function PilaresSolucoes() {
                 <div className="mt-12 flex justify-center">
                    <img 
                     src="images/branding/respect_pillar_ti_1776280911682.png" 
-                    className="w-full max-w-[200px] h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700 loading='lazy'" 
+                    className="w-full max-w-[200px] h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700" 
+                    loading="lazy"
                     alt={t('alts.pillar_ti')}
                   />
                 </div>
@@ -117,7 +119,7 @@ export function PilaresSolucoes() {
             className="col-span-12 relative"
           >
             <div id="vendas" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 group overflow-hidden relative border-black/[0.03] bg-white">
+            <div className="saas-card saas-card-hover p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 group overflow-hidden relative border-[var(--color-glass-border-clean)] bg-[var(--background)]">
               <div className="absolute inset-0 bg-brand-blue/[0.02] -z-1" />
               <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-brand-blue/[0.03] rounded-full blur-[100px] -z-1" />
               
@@ -138,10 +140,14 @@ export function PilaresSolucoes() {
               <div className="relative z-10 lg:w-[300px] flex flex-col items-center gap-8">
                 <img 
                   src="images/branding/respect_pillar_sales_vendas_1776280963089.png" 
-                  className="w-full max-w-[200px] h-auto group-hover:scale-110 transition-transform duration-1000 loading='lazy'" 
+                  className="w-full max-w-[200px] h-auto group-hover:scale-110 transition-transform duration-1000" 
+                  loading="lazy"
                   alt={t('alts.pillar_sales')}
                 />
-                <div onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} className="px-12 py-5 bg-[var(--background)] dark:bg-white/5 text-[var(--foreground)] font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer border border-black/[0.03] dark:border-white/10">
+                <div 
+                  onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} 
+                  className="px-12 py-5 bg-[var(--background)] border border-[var(--color-glass-border-clean)] text-[var(--foreground)] font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer"
+                >
                   {t('pilares.cta')}
                 </div>
               </div>
