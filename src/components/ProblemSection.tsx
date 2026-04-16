@@ -26,36 +26,37 @@ export function ProblemSection() {
   ];
 
   return (
-    <Section variant="light" id="problema">
+    <Section variant="white" id="problema" className="relative">
       <Container size="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Visual Chaos Image */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            className="order-2 lg:order-1"
+            transition={{ duration: 1.2, ease: [0.25, 0.4, 0.25, 1] }}
+            className="order-2 lg:order-1 relative"
           >
-            <div className="relative group">
-              <div className="absolute inset-0 bg-brand-navy/5 rounded-[32px] blur-2xl -z-10 group-hover:bg-brand-navy/10 transition-colors" />
+            <div className="relative group flex justify-center">
+              <div className="absolute inset-0 bg-black/[0.02] rounded-full blur-[80px] -z-10" />
               <img
                 src="images/branding/respect_problem_chaos.png"
                 alt="Operational Chaos"
-                className="w-full h-auto rounded-[32px] shadow-premium grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 border border-black/5"
+                className="w-full max-w-[500px] h-auto transition-all duration-1000 group-hover:scale-[1.02] loading='lazy'"
               />
               
-              {/* Floating Warning Badge */}
+              {/* Floating Warning Badge - Technical Style */}
               <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-10 -right-6 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl border border-black/5 flex items-center gap-3"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute top-10 right-0 md:-right-10 p-5 bg-white/80 backdrop-blur-md rounded-2xl shadow-premium border border-black/[0.03] flex items-center gap-3 z-20"
               >
-                <div className="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange">
+                <div className="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
                   <ShieldAlert size={20} />
                 </div>
-                <div className="text-[11px] font-black uppercase tracking-tighter text-text-title">
-                  Efficiency Leak Detected
+                <div className="text-[10px] font-black uppercase tracking-widest text-text-title leading-tight">
+                  Status: <br/>
+                  <span className="text-brand-blue">EFFICIENCY LEAK</span>
                 </div>
               </motion.div>
             </div>
@@ -69,39 +70,39 @@ export function ProblemSection() {
             variants={staggerSlow}
             className="order-1 lg:order-2"
           >
-            <motion.div variants={fadeUpPremium} className="mb-6">
-              <Badge label="O Contraste" variant="navy" />
+            <motion.div variants={fadeUpPremium} className="mb-8">
+              <Badge label="Operational Friction" variant="navy" className="bg-black/5 border-black/10 text-black/50" />
             </motion.div>
 
             <motion.h2
               variants={fadeUpPremium}
-              className="text-4xl md:text-5xl font-black text-text-title tracking-tighter mb-8 uppercase font-[var(--font-display)]"
+              className="text-4xl md:text-6xl font-black text-text-title tracking-tighter mb-8 uppercase font-display"
             >
               {t('problem.headline')}
             </motion.h2>
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg text-text-body leading-relaxed mb-12 font-medium"
+              className="text-xl text-text-body leading-relaxed mb-12 font-medium opacity-80"
             >
               {t('problem.subline')}
             </motion.p>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {problems.map((prob, i) => (
                 <motion.div
                   key={i}
                   variants={fadeUpPremium}
-                  className="flex gap-6 p-6 rounded-2xl bg-white border border-black/5 shadow-sm hover:shadow-premium transition-all group"
+                  className="flex gap-8 p-8 rounded-2xl bg-white border border-black/[0.03] hover:border-black/[0.1] transition-all group"
                 >
-                  <div className="shrink-0 w-12 h-12 rounded-xl bg-bg-navy/5 flex items-center justify-center group-hover:bg-brand-blue/10 transition-colors">
-                    <prob.icon size={22} className="text-bg-navy group-hover:text-brand-blue transition-colors" />
+                  <div className="shrink-0 w-14 h-14 rounded-xl bg-black/[0.02] flex items-center justify-center group-hover:bg-brand-blue/5 transition-colors">
+                    <prob.icon size={24} className="text-text-title group-hover:text-brand-blue transition-colors" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-black text-text-title mb-2 uppercase tracking-tight">
+                    <h3 className="text-xl font-black text-text-title mb-2 uppercase tracking-tight">
                       {prob.title}
                     </h3>
-                    <p className="text-text-body leading-relaxed text-sm">
+                    <p className="text-text-body font-medium leading-relaxed opacity-60 text-sm">
                       {prob.desc}
                     </p>
                   </div>
@@ -113,8 +114,8 @@ export function ProblemSection() {
               variants={fadeUpPremium}
               className="mt-12"
             >
-              <p className="text-lg font-black text-brand-orange uppercase tracking-widest flex items-center gap-3">
-                <span className="w-8 h-[2px] bg-brand-orange" />
+              <p className="text-xs font-black text-text-muted uppercase tracking-[0.3em] flex items-center gap-4">
+                <span className="w-12 h-[1px] bg-black/10" />
                 {t('problem.footer')}
               </p>
             </motion.div>
