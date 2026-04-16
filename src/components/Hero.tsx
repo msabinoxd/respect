@@ -10,18 +10,20 @@ export function Hero() {
 
   return (
     <section id="home" className="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 overflow-hidden bg-bg-light">
-      {/* Dynamic Background Grids (Builderall Style) */}
+      {/* Technical Background Grid - Minimalist approach */}
       <div 
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        className="absolute inset-0 opacity-[0.05] pointer-events-none darken:opacity-[0.02]"
         style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, var(--color-brand-blue) 1px, transparent 0)',
-          backgroundSize: '40px 40px'
+          backgroundImage: `
+            linear-gradient(to right, rgba(10, 25, 47, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(10, 25, 47, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '80px 80px'
         }}
       />
 
-      {/* Ambient Glows */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-cyan/5 rounded-full blur-[120px] pointer-events-none" />
+      {/* Ambient Depth - Very Subtle */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vh] bg-gradient-to-tr from-brand-blue/[0.02] to-transparent pointer-events-none" />
 
       <Container size="lg" className="relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

@@ -5,26 +5,26 @@
   --font-sans: "Mulish", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Lato", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
-  /* Semantic Colors */
-  --background: #FFFFFF;
-  --foreground: #000000;
+  /* Semantic Colors - Minimal Cut V3.2 */
+  --background: #FBFBFC;
+  --foreground: #0A192F;
   --brand-blue: #0090FF;
   --brand-cyan: #00D1FF;
 
-  /* legacy Mapping */
-  --color-bg-light: #FFFFFF;
+  /* legacy Mapping - Refined */
+  --color-bg-light: #FBFBFC;
   --color-bg-white: #FFFFFF;
-  --color-bg-navy: #000000;
+  --color-bg-navy: #0A192F;
   --color-brand-blue: #0090FF;
   --color-brand-cyan: #00D1FF;
 
-  --color-text-title: #000000;
-  --color-text-body: #000000;
+  --color-text-title: #0A192F;
+  --color-text-body: #2D3E50;
   --color-text-muted: #64748B;
 
-  /* Glassmorphism */
-  --color-glass-clean: rgba(255, 255, 255, 0.8);
-  --color-glass-border-clean: rgba(0, 0, 0, 0.03);
+  /* Glassmorphism - Extra Subtle */
+  --color-glass-clean: rgba(255, 255, 255, 0.7);
+  --color-glass-border-clean: rgba(10, 25, 47, 0.04);
 
   /* Shadows */
   --shadow-premium: 0 10px 40px -15px rgba(0, 0, 0, 0.03);
@@ -86,9 +86,9 @@
 
 @utility glass-nav {
   background-color: var(--color-glass-clean);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-glass-border-clean);
-  box-shadow: var(--sh-nav);
+  box-shadow: 0 4px 30px rgba(10, 25, 47, 0.02);
 }
 
 @utility text-gradient-builderall {

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium } from '../shared/animations.premium';
 import { Section, Container } from './base';
-import { ShieldCheck } from 'lucide-react';
+import { Zap } from 'lucide-react';
 
 export function ScarcitySection() {
   const { t } = useTranslation();
@@ -18,22 +18,24 @@ export function ScarcitySection() {
           className="text-center bg-[var(--background)] border border-black/[0.03] dark:border-white/10 rounded-[60px] p-12 md:p-32 relative overflow-hidden"
         >
           <div className="relative z-10 flex flex-col items-center">
-            <div className="w-20 h-20 rounded-2xl bg-black/[0.02] flex items-center justify-center mb-10 border border-black/[0.03]">
-              <ShieldCheck size={36} strokeWidth={1.5} className="text-text-title opacity-40" />
+            <div className="w-20 h-20 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center mb-10 border border-[var(--foreground)]/5">
+              <Zap className="text-brand-blue" size={32} />
             </div>
             
-            <h2 className="text-3xl md:text-5xl font-black text-text-title tracking-tighter mb-8 uppercase font-display">
+            <h2 className="text-4xl md:text-7xl font-black text-text-title tracking-tighter uppercase mb-8 font-display">
               {t('scarcity.headline')}
             </h2>
             
-            <p className="text-xl md:text-2xl text-text-body font-medium leading-relaxed max-w-2xl mx-auto opacity-70">
+            <p className="text-text-body text-xl font-medium max-w-2xl opacity-70 mb-12">
               {t('scarcity.subline')}
             </p>
 
-            <div className="mt-12 flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-text-muted opacity-40">
-              <span className="w-12 h-[1px] bg-black" />
+            <div className="flex items-center gap-6 text-[10px] font-black uppercase tracking-[0.4em] text-text-muted opacity-40">
+              <span className="w-12 h-[1px] bg-[var(--foreground)]/10" />
+              <div className="w-2 h-2 rounded-full bg-brand-blue" />
+              <span className="w-12 h-[1px] bg-[var(--foreground)]/10" />
               {t('common.technical_rigor')}
-              <span className="w-12 h-[1px] bg-black" />
+              <span className="w-12 h-[1px] bg-[var(--foreground)]/10" />
             </div>
           </div>
         </motion.div>

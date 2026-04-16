@@ -23,9 +23,9 @@ export function Button({
 
   const variants: Record<string, string> = {
     primary: 'bg-brand-blue text-white shadow-[var(--sh-button)] hover:brightness-110 active:scale-[0.98]',
-    secondary: 'bg-[var(--background)] text-[var(--foreground)] border border-black/[0.1] dark:border-white/10 hover:bg-black/[0.02] dark:hover:bg-white/5',
-    navy: 'bg-black text-white hover:bg-neutral-900 shadow-lg active:scale-[0.98]',
-    ghost: 'text-text-muted hover:text-text-title hover:bg-black/[0.03]',
+    secondary: 'bg-[var(--background)] text-[var(--foreground)] border border-[var(--foreground)]/10 hover:bg-[var(--foreground)]/[0.02]',
+    navy: 'bg-[var(--color-bg-navy)] text-white hover:brightness-110 shadow-lg active:scale-[0.98]',
+    ghost: 'text-text-muted hover:text-text-title hover:bg-[var(--foreground)]/[0.03]',
   };
 
   const sizes: Record<string, string> = {
@@ -79,7 +79,7 @@ interface BadgeProps {
 export function Badge({ icon: Icon, label, variant = 'blue', className = '' }: BadgeProps) {
   const variants: Record<string, string> = {
     blue: 'bg-brand-blue/10 text-brand-blue border-brand-blue/20',
-    navy: 'bg-black/5 dark:bg-white/5 text-text-title dark:text-white border-black/10 dark:border-white/10',
+    navy: 'bg-[var(--color-bg-navy)]/5 text-[var(--color-bg-navy)] border-[var(--color-bg-navy)]/10',
     light: 'bg-white/10 text-white border-white/20',
   };
 

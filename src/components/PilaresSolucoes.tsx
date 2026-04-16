@@ -117,19 +117,19 @@ export function PilaresSolucoes() {
             className="col-span-12 relative"
           >
             <div id="vendas" className="absolute -top-32" />
-            <div className="saas-card saas-card-hover p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 group bg-black text-white border-none overflow-hidden relative">
-              <div className="absolute inset-0 bg-brand-blue/[0.05] -z-1" />
-              <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-[140px] -z-1" />
+            <div className="saas-card saas-card-hover p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 group overflow-hidden relative border-black/[0.03] bg-white">
+              <div className="absolute inset-0 bg-brand-blue/[0.02] -z-1" />
+              <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-brand-blue/[0.03] rounded-full blur-[100px] -z-1" />
               
               <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10 text-center lg:text-left">
-                <div className="w-20 h-20 rounded-2xl bg-white/5 flex items-center justify-center text-white">
+                <div className="w-20 h-20 rounded-2xl bg-brand-blue/5 flex items-center justify-center text-brand-blue">
                   <Target size={36} />
                 </div>
                 <div className="max-w-xl">
-                  <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tighter">
+                  <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tighter text-text-title">
                     {t('pilares.comercial.title')}
                   </h3>
-                  <p className="text-white/50 font-medium text-lg">
+                  <p className="text-text-body font-medium text-lg opacity-70">
                     {t('pilares.comercial.desc')}
                   </p>
                 </div>
