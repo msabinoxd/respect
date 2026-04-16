@@ -1,158 +1,159 @@
 {
   "nav": {
-    "home": "Home",
-    "marketing": "Marketing",
-    "ti": "IT & DevOps",
-    "comercial": "Sales",
-    "cta_default": "GET IN TOUCH",
-    "cta_scrolled": "BOOK A CALL",
-    "results": "Results"
+    "home": "SYSTEM",
+    "marketing": "ACQUISITION",
+    "ti": "ARCHITECTURE",
+    "comercial": "CONVERSION",
+    "cta_default": "DIAGNOSTIC",
+    "cta_scrolled": "SCHEDULE",
+    "results": "DATA"
   },
   "hero": {
-    "badge": "MARKETING · IT · SALES",
-    "line1": "YOUR GOAL.",
-    "line2": "OUR EXECUTION.",
-    "subtitle": "Marketing that generates demand. Technology that supports growth. Sales that close. <strong>Fully integrated, one team, one partner.</strong>",
-    "cta": "Book a Free Diagnostic",
-    "cta_secondary": "See what we do",
-    "trust1": "10+ years in the market",
-    "trust2": "3 integrated areas",
-    "trust3": "Measurable results"
+    "badge": "STRATEGIC INFRASTRUCTURE",
+    "line1": "RESPECT.",
+    "line2": "STRUCTURE. TECH. RESULT.",
+    "subtitle": "The missing link between your Marketing and Sales. We structure high-impact operations with integrated technical engineering. <span class='text-brand-blue font-black'>Stop the efficiency leak.</span>",
+    "cta": "Schedule Technical Diagnostic",
+    "cta_secondary": "See Methodology",
+    "trust1": "Real Effectiveness",
+    "trust2": "Integrated Flow",
+    "trust3": "Operational Stability"
   },
   "problem": {
-    "headline": "You've been through this before.",
-    "subline": "You hired a marketing agency that doesn't understand tech. A dev who doesn't understand business. A salesperson with no process. In the end, you became the project manager of 5 vendors who don't talk to each other — and results are half of what they could be.",
-    "item1_title": "Marketing that doesn't convert",
-    "item1_desc": "Investment in traffic, posts, and campaigns that generate likes — but not real clients. No funnel, no tracking, no idea what works.",
-    "item2_title": "Technology that slows growth",
-    "item2_desc": "Slow website, systems that don't integrate, data scattered across spreadsheets. Tech should accelerate — but it became a bottleneck.",
-    "item3_title": "Sales without a process",
-    "item3_desc": "Leads come in and get lost. The sales team relies on memory and WhatsApp. No CRM, no automated follow-up, no predictability.",
-    "footer": "The problem isn't lack of effort. It's lack of integration."
+    "headline": "EFFICIENCY LEAK.",
+    "subline": "Fragmentation between marketing, IT, and sales is expensive. You lose margin, increase your CAC, and lose control of your scale.",
+    "item1_title": "ISOLATED MARKETING",
+    "item1_desc": "Blind investment. Campaigns that generate traffic but fail to deliver to sales.",
+    "item2_title": "FRAGILE TECH",
+    "item2_desc": "Slow systems and poor integration. Infrastructure becomes the growth bottleneck.",
+    "item3_title": "SALES WITH NO FLOW",
+    "item3_desc": "Leads lost to archaic processes. Lack of data intelligence at closing.",
+    "footer": "Most companies don't have a product problem; they have an integration problem."
   },
   "big_idea": {
-    "headline": "What if everything worked together?",
-    "subline": "Marketing, IT, and Sales. One team.",
-    "description": "When marketing feeds the CRM, the CRM triggers follow-up, and technology sustains it all with stability — the result is different. No gaps. No rework. No blaming another vendor. That's what Respect does: integrates the three areas that move your business.",
-    "eco_acquisition": "Acquisition",
-    "eco_conversion": "Conversion",
-    "eco_retention": "Retention"
+    "headline": "THE ENGINE.",
+    "subline": "CONSOLIDATED.",
+    "description": "When marketing feeds the CRM and technology supports the operation under a single technical intelligence, friction disappears. Just coordinated execution focused on Net Margin.",
+    "eco_acquisition": "ACQUISITION",
+    "eco_conversion": "ARCHITECTURE",
+    "eco_retention": "MAXIMIZATION"
   },
   "transition": {
-    "headline": "See everything we implement"
+    "headline": "VALUE ENGINEERING."
   },
   "pilares": {
-    "badge": "OUR 3 AREAS OF EXPERTISE",
-    "headline": "EVERYTHING YOU NEED.",
-    "headline_highlight": "IN ONE PLACE.",
-    "subline": "Each area works independently, but when integrated, results multiply.",
-    "subline_strong": "See what we deliver in each:",
-    "ver_detalhes": "See all services →",
+    "badge": "OUR DELIVERY",
+    "title_line1": "HIGH IMPACT",
+    "title_line2": "STRUCTURE.",
+    "subtitle": "Three vital pillars fused into a single operational chassis. No silos. Just solidity.",
+    "cta": "Analyze Structure",
     "marketing": {
-      "badge": "Digital Marketing",
-      "title": "GENERATE QUALIFIED DEMAND",
-      "description": "Paid traffic, SEO, conversion funnels, landing pages, strategic content, and email automation. All tracked, all measurable, all results-focused.",
-      "f1": "Paid Traffic (Google, Meta, LinkedIn)",
-      "f2": "SEO & Strategic Content",
-      "f3": "Conversion Funnels & Automation",
-      "cta": "SEE MARKETING SERVICES"
+      "title": "ROI ACQUISITION.",
+      "desc": "Technical performance. Qualification of demand and traceable lead generation."
     },
     "ti": {
-      "badge": "IT & Infrastructure",
-      "title": "BUILD THE FOUNDATION",
-      "description": "High-performance websites, custom web systems, platform integrations, cloud, DevOps, and proactive maintenance. Technology that frees your business to grow.",
-      "f1": "Custom Software & Websites",
-      "f2": "Cloud, DevOps & Automation",
-      "f3": "Security & Integrations",
-      "cta": "SEE IT SERVICES"
+      "title": "ARCHITECTURE.",
+      "desc": "Digital backbone. DevOps, Web, and Cloud focused on scaling."
     },
-    "vendas": {
-      "badge": "Sales & Commercial",
-      "title": "CLOSE MORE AND BETTER",
-      "description": "AI chatbots on WhatsApp, configured and integrated CRM, sales playbooks, team training, and pipeline dashboards. Sales with process, not luck.",
-      "f1": "WhatsApp AI Chatbots",
-      "f2": "CRM & Automated Pipeline",
-      "f3": "Sales Consulting & Playbooks",
-      "cta": "SEE SALES SERVICES"
+    "comercial": {
+      "title": "CONVERSION.",
+      "desc": "Sales engineering. Where data transforms into real profit."
     }
   },
   "explanation": {
-    "headline": "It's not magic.",
-    "headline_highlight": "It's method.",
-    "subline": "Every project starts with diagnostic and ends with measurement. In between: strategy, execution, and continuous optimization. No guesswork, no surprises — you follow every step and every result in real time."
+    "badge": "METHOD",
+    "title_highlight": "SCALE",
+    "title": "ENGINEERING.",
+    "subtitle": "A linear and technical process focused on your business's operational solidity.",
+    "step1": {
+      "badge": "01",
+      "title": "DIAGNOSTIC"
+    },
+    "step2": {
+      "badge": "02",
+      "title": "STRUCTURING"
+    },
+    "step3": {
+      "badge": "03",
+      "title": "EXECUTION"
+    },
+    "step4": {
+      "badge": "04",
+      "title": "CONSOLIDATION"
+    }
   },
   "autoridade": {
-    "badge": "WHY RESPECT",
-    "headline": "RESULTS SPEAK",
-    "headline_highlight": "LOUDER THAN PROMISES.",
-    "subline": "We don't ask you to believe in us. We ask you to look at the facts: proven experience, multidisciplinary team, and a work model that delivers.",
-    "subline_strong": "Facts, not talk.",
-    "revenue_headline": "One team. Three areas. Zero silos.",
-    "revenue_subline": "That's how real results happen.",
+    "badge": "AUTHORITY",
+    "headline": "NUMBERS.",
+    "headline_highlight": "REAL METRICS.",
+    "subline": "Technical positioning. Proven value engineering.",
+    "subline_strong": "SILENT SOLIDITY.",
+    "revenue_headline": "ONE STRUCTURE. THREE AREAS.",
+    "revenue_subline": "The intelligence that shields your operation.",
     "stats": {
-      "anos_label": "Years in Market",
-      "anos_desc": "Real execution in marketing, technology, and sales projects for companies of all sizes.",
-      "pilares_label": "Integrated Areas",
-      "pilares_desc": "Marketing, IT, and Sales working together — no outsourcing pieces, no losing control.",
-      "resultados_label": "Results-Focused",
-      "resultados_desc": "Every delivery is tracked. If it doesn't generate measurable results, we adjust until it does.",
-      "suporte_label": "Ongoing Support",
-      "suporte_desc": "Active project follow-up. We don't disappear after delivery — we stay with you."
+      "anos_label": "EXPERIENCE",
+      "anos_desc": "Continuous execution in high-complexity technical projects.",
+      "pilares_label": "PILLARS",
+      "pilares_desc": "Integrated areas for total elimination of operational friction.",
+      "resultados_label": "SOLIDITY",
+      "resultados_desc": "Owned infrastructure, independent results.",
+      "suporte_label": "STABILITY",
+      "suporte_desc": "Proactive monitoring focused on business resilience."
     }
   },
   "faq": {
-    "badge": "COMMON QUESTIONS",
-    "headline": "Questions",
-    "headline_highlight": "everyone asks.",
-    "subline": "Straight answers. No fluff.",
-    "q1": "How much does it cost?",
-    "a1": "Depends on the scope. Every project is different — that's why we start with a free diagnostic to understand your situation and build a tailored proposal. No generic packages.",
-    "q2": "How soon will I see results?",
-    "a2": "Depends on the area. Paid traffic generates results in the first weeks. SEO and content, in 3-6 months. Custom software, based on complexity. In all cases, you track progress in real time.",
-    "q3": "Do I need to hire all 3 areas?",
-    "a3": "No. Each pillar works independently. But when integrated, results multiply — because everything connects: marketing feeds sales, and IT supports both.",
-    "q4": "Do you work with small companies?",
-    "a4": "Yes. We work with companies of all sizes — what matters is having a clear goal and willingness to invest in growth. If you're looking for serious results, we can help.",
-    "q5": "I've had bad experiences with agencies. Why would this be different?",
-    "a5": "Because most agencies only do marketing and outsource everything else. Here, marketing, technology, and sales are on the same team. No telephone game, no blaming another vendor. The result is our responsibility — entirely.",
-    "q6": "How do I start?",
-    "a6": "Book a free diagnostic. In 30 minutes we understand your situation, identify opportunities, and present an actionable plan. No commitment — if it makes sense for you, we move forward."
+    "badge": "FAQ",
+    "headline": "TECHNICAL",
+    "headline_highlight": "CLARITY.",
+    "subline": "Direct answers about our strategic infrastructure.",
+    "q1": "Business model?",
+    "a1": "Based on technical implementation and Performance over ROI.",
+    "q2": "Data visibility?",
+    "a2": "Absolute transparency. Real-time dashboards for CEO control.",
+    "q3": "Do I need all 3 areas?",
+    "a3": "The areas are modular, but integration is what resolves the efficiency leak.",
+    "q4": "Who is it for?",
+    "a4": "Companies that reached their scale ceiling and need elite processes.",
+    "q5": "Differentiation?",
+    "a5": "We assume total technical responsibility. The end of finger-pointing between vendors.",
+    "q6": "How to start?",
+    "a6": "Through a no-cost initial 30-minute technical diagnostic."
   },
   "cta_final": {
-    "badge": "LET'S TALK",
-    "headline": "YOUR NEXT STEP",
-    "headline_highlight": "IS SIMPLE.",
-    "subline": "A free 30-minute diagnostic. We understand your business, identify opportunities, and build an action plan. No commitment, no fluff.",
-    "cta": "BOOK A FREE DIAGNOSTIC",
-    "trust1": "30 min · No cost",
-    "trust2": "Custom action plan",
-    "trust3": "No commitment",
-    "footer_tagline": "Marketing · IT · Sales"
+    "badge": "CONTACT",
+    "headline": "STRUCTURE YOUR",
+    "headline_highlight": "OPERATION.",
+    "subline": "Technical diagnostic focused on Strategy, Technology, and Sales.",
+    "cta": "SCHEDULE DIAGNOSTIC NOW",
+    "trust1": "PROFESSIONALISM",
+    "trust2": "RESULT",
+    "trust3": "PEACE OF MIND",
+    "footer_tagline": "STRATEGY · TECHNOLOGY · SALES"
   },
   "scarcity": {
-    "headline": "Every client gets our full attention.",
-    "subline": "To guarantee quality delivery and real follow-up, we work with a limited number of projects at a time. If there's availability, we start fast. If not, you join our priority waitlist."
+    "headline": "CAPACITY.",
+    "subline": "We limit the number of active projects to ensure the required technical rigor."
   },
   "pilar_detalhe": {
-    "back": "Back to home",
-    "services_badge": "What we deliver",
-    "services_title": "Included services",
-    "services_sub": "Each service is implemented with methodology, professional tools, and ongoing follow-up.",
-    "deliverables_badge": "Deliverables",
-    "deliverables_title": "What you receive",
-    "outcomes_badge": "Expected results",
-    "outcomes_title": "Impact on your business",
-    "stack_badge": "Stack & Tools",
-    "stack_title": "Technologies we use",
-    "ideal_badge": "Ideal for",
-    "ideal_title": "This service is for you if:",
-    "cta_analysis": "Book a free diagnostic",
-    "outros_title": "See the other areas",
-    "outros_sub": "Marketing, IT, and Sales — each one strengthens the other."
+    "back": "BACK",
+    "services_badge": "EXECUTION",
+    "services_title": "IMPLEMENTATION",
+    "services_sub": "Applied engineering with international standard tools.",
+    "deliverables_badge": "DELIVERABLES",
+    "deliverables_title": "OUTPUT",
+    "outcomes_badge": "VALUE",
+    "outcomes_title": "IMPACT",
+    "stack_badge": "STACK",
+    "stack_title": "INFRASTRUCTURE",
+    "ideal_badge": "PROFILE",
+    "ideal_title": "RECOMMENDED FOR",
+    "cta_analysis": "SCHEDULE DIAGNOSTIC",
+    "outros_title": "ENGINE",
+    "outros_sub": "MARKETING, IT, AND SALES."
   },
   "theme": {
-    "toggle_dark": "Dark mode",
-    "toggle_light": "Light mode"
+    "toggle_dark": "OFF",
+    "toggle_light": "ON"
   },
   "lang": {
     "pt": "PT",
@@ -161,96 +162,96 @@
   },
   "pilares_data": {
     "marketing": {
-      "badge": "Digital Marketing",
-      "title": "Marketing that Generates Demand",
-      "tagline": "Traffic, funnels, content, and automation — all tracked, all results-focused.",
-      "description": "We implement the complete digital marketing operation: from acquisition strategy to nurturing and conversion. Google Ads, Meta Ads, SEO, email marketing, optimized landing pages, and dashboards with real data. Every dollar invested is tracked to the final result.",
-      "cta": "I want more demand",
-      "msg": "Hello! I'm interested in Respect's Digital Marketing services. I'd like to book a free diagnostic.",
-      "ideal_for": "Companies investing in marketing but unable to track returns. Businesses that need predictable qualified lead generation. Brands that want to move beyond 'posting for the sake of posting' and have a real acquisition strategy.",
+      "badge": "ACQUISITION",
+      "title": "ROI Engineering",
+      "tagline": "Traceable traffic and funnels focused on Net Margin.",
+      "description": "Technical implementation of acquisition channels. Focused on CAC reduction through real data and automations that eliminate investment waste.",
+      "cta": "STRUCTURE ACQUISITION",
+      "msg": "Hello! I'd like a technical diagnostic focused on Customer Acquisition.",
+      "ideal_for": "Operations that invest in traffic but lack real visibility of profit margin per channel.",
       "services": {
-        "s1": { "title": "Paid Traffic (Google, Meta, LinkedIn)", "desc": "Optimized campaigns with advanced targeting, remarketing, and continuous ROAS optimization." },
-        "s2": { "title": "Conversion Funnels", "desc": "Landing pages, smart forms, and nurturing sequences that turn visitors into leads and leads into customers." },
-        "s3": { "title": "SEO & Strategic Content", "desc": "Keyword research, optimized content production, and link building strategy to dominate organic results." },
-        "s4": { "title": "Email Marketing & Automation", "desc": "Automated welcome, nurture, reactivation, and sales sequences — integrated with CRM." },
-        "s5": { "title": "Analytics & Dashboards", "desc": "GA4, Pixel, Tag Manager configured. Real-time dashboards with the metrics that matter for your business." },
-        "s6": { "title": "Strategic Social Media", "desc": "Content planning, post management, and performance analysis. Content that positions, not just fills a grid." }
+        "s1": { "title": "Paid Traffic", "desc": "Google and Meta optimized for real conversion, not clicks." },
+        "s2": { "title": "Scale Funnels", "desc": "Capture structures integrated directly with your inventory/sales." },
+        "s3": { "title": "Performance SEO", "desc": "Content architecture focused on buying intent." },
+        "s4": { "title": "CRM Automation", "desc": "Algorithmic lead nurturing to maximize LTV." },
+        "s5": { "title": "Advanced Tracking", "desc": "Server-side tracking implementation and 360° visibility." },
+        "s6": { "title": "Data Analytics", "desc": "Decision-making dashboards for executive level." }
       },
       "deliverables": {
-        "d1": "Monthly strategic planning with execution calendar",
-        "d2": "Landing pages optimized for conversion",
-        "d3": "Complete tracking setup (GA4, Pixel, events)",
-        "d4": "Monthly reports with real data and recommendations",
-        "d5": "Automated email funnels configured",
-        "d6": "Campaign creatives (copy + visual brief)"
+        "d1": "CAC Stabilization Plan",
+        "d2": "Performance Landing Pages",
+        "d3": "Pixel and API Setup",
+        "d4": "Profitability Reports",
+        "d5": "24/7 Sales Funnels",
+        "d6": "A/B Testing Cell"
       },
       "outcomes": {
-        "o1": "Measurable and continuously decreasing acquisition cost",
-        "o2": "Predictable flow of qualified leads",
-        "o3": "Organic traffic growth in 3-6 months",
-        "o4": "Clear ROI visibility in each channel"
+        "o1": "Stabilized Acquisition Cost",
+        "o2": "Revenue Predictability",
+        "o3": "Investment Scalability",
+        "o4": "Real Data for Decision Making"
       }
     },
     "ti": {
-      "badge": "IT & Infrastructure",
-      "title": "Technology that Supports Growth",
-      "tagline": "Custom software, cloud, DevOps, and maintenance — the foundation that doesn't break.",
-      "description": "We develop and maintain the technology infrastructure your business needs to operate and grow: high-performance websites, custom web systems, APIs, platform integrations, scalable cloud, and ongoing support. Technology that works.",
-      "cta": "I want solid technology",
-      "msg": "Hello! I'm interested in Respect's IT & Infrastructure services. I'd like to book a free diagnostic.",
-      "ideal_for": "Companies that depend on technology to operate and need stability. Businesses that want to move from spreadsheets to a custom system. Operations that need to integrate tools that currently don't talk to each other.",
+      "badge": "ARCHITECTURE",
+      "title": "Operational Support",
+      "tagline": "The technological base that shields your growth.",
+      "description": "Development and DevOps. We ensure your infrastructure is resilient, fast, and capable of handling scale peaks without technical friction.",
+      "cta": "SHIELD TECHNOLOGY",
+      "msg": "Hello! I'd like a technical diagnostic focused on IT Infrastructure.",
+      "ideal_for": "Businesses dependent on digital stability that want to eliminate technical failures blocking revenue.",
       "services": {
-        "s1": { "title": "Custom Web & Mobile Software", "desc": "Applications built for your process — no forced adaptations to generic solutions." },
-        "s2": { "title": "DevOps & CI/CD", "desc": "Automated pipelines, continuous deployment, and staging environments for fast, secure deliveries." },
-        "s3": { "title": "Cloud & Infrastructure", "desc": "AWS, GCP, or VPS — scalable, monitored, and highly available." },
-        "s4": { "title": "Professional UI/UX", "desc": "Interfaces that work: design system, responsiveness, accessibility, and consistent experience." },
-        "s5": { "title": "Proactive Maintenance & Support", "desc": "Monitoring, updates, and ongoing support — without waiting for things to break." },
-        "s6": { "title": "Integrations & APIs", "desc": "Connection between ERPs, CRMs, payment gateways, and any system your business uses." }
+        "s1": { "title": "Web Platforms", "desc": "High-performance development with modern architecture." },
+        "s2": { "title": "DevOps", "desc": "Continuous integration and secure deploy environments (AWS/GCP)." },
+        "s3": { "title": "Cloud Systems", "desc": "Cloud setup optimized for cost and speed." },
+        "s4": { "title": "Digital Security", "desc": "Data shielding and protection against operational threats." },
+        "s5": { "title": "ERP Integrations", "desc": "Fluid connection between management systems and sales channels." },
+        "s6": { "title": "Conversion UX", "desc": "Design focused on reducing user cognitive effort." }
       },
       "deliverables": {
-        "d1": "Version-controlled code with technical documentation",
-        "d2": "Automated deployment via CI/CD",
-        "d3": "Monitoring with uptime and performance alerts",
-        "d4": "Staging environment separated from production",
-        "d5": "Operations manual for internal team",
-        "d6": "Security and load testing before go-live"
+        "d1": "Clean Code Architecture",
+        "d2": "Scalable Server Setup",
+        "d3": "API Integrations",
+        "d4": "Performance Reports (Core Web Vitals)",
+        "d5": "Backup and Disaster Recovery",
+        "d6": "Proactive 24/7 Maintenance"
       },
       "outcomes": {
-        "o1": "99%+ uptime with active monitoring",
-        "o2": "50% faster deliveries with CI/CD",
-        "o3": "Reduced reactive maintenance costs",
-        "o4": "Real integration between business tools"
+        "o1": "99.9% Minimum Uptime",
+        "o2": "Ultra-fast Navigation (ROI)",
+        "o3": "Digital Asset Protection",
+        "o4": "Agility in New Deploys"
       }
     },
     "vendas": {
-      "badge": "Sales & Commercial",
-      "title": "Sales with Process, Not Luck",
-      "tagline": "AI chatbots, CRM, playbooks, and training — predictable pipeline.",
-      "description": "We structure your company's sales process: AI chatbots on WhatsApp that qualify 24/7, CRM configured and integrated with marketing, tested sales playbooks, and practical team training. Result: more predictability, more conversion, less waste.",
-      "cta": "I want sales with process",
-      "msg": "Hello! I'm interested in Respect's Sales & Commercial services. I'd like to book a free diagnostic.",
-      "ideal_for": "Companies with sales teams that want to sell more with process. B2B businesses that need pipeline predictability. Operations that receive leads but can't convert consistently.",
+      "badge": "CONVERSION",
+      "title": "Sales Engineering",
+      "tagline": "Maximized lead-to-profit conversion via CRM and AI.",
+      "description": "Fine-tuning the commercial process. We implement tech and methods that transform interest into real revenue, with zero lead leakage.",
+      "cta": "MAXIMIZE SALES",
+      "msg": "Hello! I'd like a technical diagnostic focused on Sales Engineering.",
+      "ideal_for": "Companies generating leads but feeling that closing is inefficient or poorly tracked.",
       "services": {
-        "s1": { "title": "WhatsApp AI Chatbots", "desc": "Automated service, lead qualification, and scheduling via WhatsApp Business with AI." },
-        "s2": { "title": "CRM: Setup & Training", "desc": "Complete configuration of HubSpot, Pipedrive, or RD Station — with automations and hands-on training." },
-        "s3": { "title": "Sales Consulting", "desc": "Funnel diagnosis, bottleneck identification, and action plan to increase conversion." },
-        "s4": { "title": "Sales Playbooks", "desc": "Scripts, objection handling, prospecting cadences — all documented and tested." },
-        "s5": { "title": "CRM ↔ Marketing Integration", "desc": "Lead enters through marketing, lands in CRM, triggers automatic follow-up — no one gets lost." },
-        "s6": { "title": "Pipeline Dashboards", "desc": "Conversion per stage, revenue forecast, and team metrics — full visibility." }
+        "s1": { "title": "AI Service", "desc": "Immediate lead qualification via WhatsApp/Chat." },
+        "s2": { "title": "CRM Setup", "desc": "Strategic configuration of HubSpot or Pipedrive." },
+        "s3": { "title": "Commercial Process", "desc": "Pipeline scaling and closing triggers." },
+        "s4": { "title": "Sales Automation", "desc": "Personalized and automatic persistent follow-up." },
+        "s5": { "title": "Revenue Forecast", "desc": "Data-driven predictability of sales funnel." },
+        "s6": { "title": "Edge Integration", "desc": "Total alignment between Lead and Sales Team." }
       },
       "deliverables": {
-        "d1": "Chatbot configured and live on WhatsApp",
-        "d2": "Complete sales playbook (scripts, objections, cadences)",
-        "d3": "Recorded training for team onboarding",
-        "d4": "CRM configured with automations and integrations",
-        "d5": "Pipeline dashboard with automated reports",
-        "d6": "Monthly performance review and optimization"
+        "d1": "Ready CRM Structure",
+        "d2": "Active Qualification Chatbots",
+        "d3": "Technical Sales Playbook",
+        "d4": "High-Conversion Scripts",
+        "d5": "Commercial Pipeline Dashboards",
+        "d6": "Technical Team Training"
       },
       "outcomes": {
-        "o1": "30-50% shorter sales cycle with automated qualification",
-        "o2": "Measurable increase in conversion rate",
-        "o3": "Monthly revenue predictability",
-        "o4": "Sales team with clear, documented process"
+        "o1": "Increased Closing Rate",
+        "o2": "Reduced Sales Cycle",
+        "o3": "Improved Team Productivity",
+        "o4": "Full Tracking from Lead to Profit"
       }
     }
   }

@@ -22,10 +22,10 @@ export function Button({
   const base = 'inline-flex items-center justify-center gap-2 font-black uppercase tracking-wide rounded-xl transition-all duration-300 cursor-pointer select-none';
 
   const variants: Record<string, string> = {
-    primary: 'bg-gradient-to-r from-brand-blue to-brand-cyan text-white hover:brightness-110 shadow-[var(--sh-button)] hover:scale-[1.02] active:scale-[0.98]',
-    secondary: 'bg-bg-white text-brand-blue border-2 border-brand-blue hover:bg-brand-blue hover:text-white hover:scale-[1.02]',
-    navy: 'bg-bg-navy text-white hover:bg-bg-navy-dark shadow-lg hover:shadow-xl hover:scale-[1.02]',
-    ghost: 'text-text-muted hover:text-brand-blue hover:bg-black/5',
+    primary: 'bg-brand-blue text-white shadow-[var(--sh-button)] hover:brightness-110 active:scale-[0.98]',
+    secondary: 'bg-white text-text-title border border-black/[0.05] hover:bg-black/[0.02]',
+    navy: 'bg-black text-white hover:bg-neutral-900 shadow-lg active:scale-[0.98]',
+    ghost: 'text-text-muted hover:text-text-title hover:bg-black/[0.03]',
   };
 
   const sizes: Record<string, string> = {
@@ -103,9 +103,9 @@ interface SectionProps {
 
 export function Section({ children, variant = 'light', id, className = '' }: SectionProps) {
   const variants: Record<string, string> = {
-    light: 'bg-bg-light text-text-body',
-    white: 'bg-bg-white text-text-body',
-    navy: 'bg-bg-navy text-text-light',
+    light: 'bg-white text-text-body',
+    white: 'bg-white text-text-body',
+    navy: 'bg-black text-text-light',
   };
 
   return (

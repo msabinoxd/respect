@@ -1,158 +1,159 @@
 {
   "nav": {
-    "home": "Inicio",
-    "marketing": "Marketing",
-    "ti": "TI & DevOps",
-    "comercial": "Comercial",
-    "cta_default": "HABLEMOS",
-    "cta_scrolled": "AGENDAR REUNIÓN",
-    "results": "Resultados"
+    "home": "SISTEMA",
+    "marketing": "ADQUISICIÓN",
+    "ti": "ARQUITECTURA",
+    "comercial": "CONVERSIÓN",
+    "cta_default": "DIAGNÓSTICO",
+    "cta_scrolled": "AGENDAR",
+    "results": "DATOS"
   },
   "hero": {
-    "badge": "MARKETING · TI · COMERCIAL",
-    "line1": "SU OBJETIVO.",
-    "line2": "NUESTRA EJECUCIÓN.",
-    "subtitle": "Marketing que genera demanda. Tecnología que sostiene el crecimiento. Comercial que cierra. <strong>Todo integrado, un equipo, un socio.</strong>",
-    "cta": "Agendar Diagnóstico Gratuito",
-    "cta_secondary": "Ver lo que hacemos",
-    "trust1": "+10 años en el mercado",
-    "trust2": "3 áreas integradas",
-    "trust3": "Resultados medibles"
+    "badge": "INFRAESTRUCTURA ESTRATÉGICA",
+    "line1": "RESPECT.",
+    "line2": "ESTRUCTURA. TECNOLOGÍA. RESULTADO.",
+    "subtitle": "El eslabón perdido entre su Marketing y sus Ventas. Estructuramos operaciones de alto impacto con ingeniería técnica integrada. <span class='text-brand-blue font-black'>Basta de fuga de eficiencia.</span>",
+    "cta": "Agendar Diagnóstico Técnico",
+    "cta_secondary": "Ver Metodología",
+    "trust1": "Efectividad Real",
+    "trust2": "Flujo Integrado",
+    "trust3": "Solidez Operativa"
   },
   "problem": {
-    "headline": "Ya pasó por esto.",
-    "subline": "Contrató una agencia de marketing que no entiende de tecnología. Un dev que no entiende de negocio. Un vendedor sin proceso. Al final, usted se convierte en el gestor de 5 proveedores que no se hablan — y el resultado queda en la mitad de lo que podría ser.",
-    "item1_title": "Marketing que no convierte",
-    "item1_desc": "Inversión en tráfico, posts y campañas que generan likes — pero no clientes reales. Sin embudo, sin rastreo, sin saber qué funciona.",
-    "item2_title": "Tecnología que frena el crecimiento",
-    "item2_desc": "Sitio web lento, sistemas que no se integran, datos dispersos en planillas. La tecnología debería acelerar, pero se volvió un cuello de botella.",
-    "item3_title": "Ventas sin proceso",
-    "item3_desc": "Leads llegan y se pierden. El equipo comercial depende de la memoria y WhatsApp. Sin CRM, sin follow-up automatizado, sin previsibilidad.",
-    "footer": "El problema no es falta de esfuerzo. Es falta de integración."
+    "headline": "EFFICIENCY LEAK.",
+    "subline": "La fragmentación entre marketing, TI y ventas cuesta caro. Pierde margen, aumenta su CAC y pierde el control de su escala.",
+    "item1_title": "MARKETING AISLADO",
+    "item1_desc": "Inversión ciega. Campañas que generan tráfico pero fallan en la entrega al comercial.",
+    "item2_title": "TECNOLOGÍA FRÁGIL",
+    "item2_desc": "Sistemas lentos e integración precaria. La infraestructura se convierte en el cuello de botella del crecimiento.",
+    "item3_title": "VENTAS SIN FLUJO",
+    "item3_desc": "Leads perdidos por procesos arcaicos. Falta de inteligencia de datos en el cierre.",
+    "footer": "La mayoría de las empresas no tienen un problema de producto, tienen un problema de integración."
   },
   "big_idea": {
-    "headline": "¿Y si todo funcionara junto?",
-    "subline": "Marketing, TI y Comercial. Un equipo.",
-    "description": "Cuando el marketing alimenta el CRM, el CRM dispara el follow-up, y la tecnología sostiene todo con estabilidad — el resultado es otro. Sin gaps. Sin retrabajo. Sin culpar a otro proveedor. Eso es lo que Respect hace: integra las tres áreas que mueven su negocio.",
-    "eco_acquisition": "Adquisición",
-    "eco_conversion": "Conversión",
-    "eco_retention": "Retención"
+    "headline": "EL MOTOR.",
+    "subline": "CONSOLIDADO.",
+    "description": "Cuando el marketing alimenta el CRM y la tecnología sostiene la operación bajo una única inteligencia técnica, la fricción desaparece. Solo ejecución coordinada enfocada en Margen Neto.",
+    "eco_acquisition": "ADQUISICIÓN",
+    "eco_conversion": "ARQUITECTURA",
+    "eco_retention": "MAXIMIZACIÓN"
   },
   "transition": {
-    "headline": "Vea todo lo que implementamos"
+    "headline": "INGENIERÍA DE VALOR."
   },
   "pilares": {
-    "badge": "NUESTRAS 3 ÁREAS DE ACTUACIÓN",
-    "headline": "TODO LO QUE NECESITA.",
-    "headline_highlight": "EN UN SOLO LUGAR.",
-    "subline": "Cada área funciona sola, pero cuando se integran, el resultado se multiplica.",
-    "subline_strong": "Vea lo que entregamos en cada una:",
-    "ver_detalhes": "Ver todos los servicios →",
+    "badge": "NUESTRA ENTREGA",
+    "title_line1": "ESTRUCTURA DE",
+    "title_line2": "ALTO IMPACTO.",
+    "subtitle": "Tres pilares vitales fundidos en un único chasis operativo. Sin silos. Solo solidez.",
+    "cta": "Analizar Estructura",
     "marketing": {
-      "badge": "Marketing Digital",
-      "title": "GENERAR DEMANDA CALIFICADA",
-      "description": "Tráfico pago, SEO, embudos de conversión, landing pages, contenido estratégico y automatización de email. Todo rastreado, todo medible, todo enfocado en resultado.",
-      "f1": "Tráfico Pago (Google, Meta, LinkedIn)",
-      "f2": "SEO & Contenido Estratégico",
-      "f3": "Embudos de Conversión & Automatización",
-      "cta": "VER SERVICIOS DE MARKETING"
+      "title": "ADQUISICIÓN ROI.",
+      "desc": "Rendimiento técnico. Generación de demanda cualificada y rastreable."
     },
     "ti": {
-      "badge": "TI & Infraestructura",
-      "title": "CONSTRUIR LA BASE QUE SOSTIENE",
-      "description": "Sitios de alta performance, sistemas web a medida, integraciones entre plataformas, cloud, DevOps y mantenimiento proactivo. La tecnología que libera el negocio para crecer.",
-      "f1": "Software & Sitios a Medida",
-      "f2": "Cloud, DevOps & Automatización",
-      "f3": "Seguridad & Integraciones",
-      "cta": "VER SERVICIOS DE TI"
+      "title": "ARQUITECTURA.",
+      "desc": "Sustento digital. DevOps, Web y Cloud enfocados en escala."
     },
-    "vendas": {
-      "badge": "Comercial & Ventas",
-      "title": "CERRAR MÁS Y MEJOR",
-      "description": "Chatbots con IA en WhatsApp, CRM configurado e integrado, playbooks de ventas, entrenamiento del equipo y dashboards de pipeline. Ventas con proceso, no con suerte.",
-      "f1": "Chatbots WhatsApp con IA",
-      "f2": "CRM & Pipeline Automatizado",
-      "f3": "Consultoría & Playbooks de Ventas",
-      "cta": "VER SERVICIOS COMERCIALES"
+    "comercial": {
+      "title": "CONVERSIÓN.",
+      "desc": "Ingeniería comercial. Donde el dato se transforma en lucro real."
     }
   },
   "explanation": {
-    "headline": "No es magia.",
-    "headline_highlight": "Es método.",
-    "subline": "Todo proyecto comienza con diagnóstico y termina con medición. En el medio: estrategia, ejecución y optimización continua. Sin adivinanzas, sin sorpresas — usted acompaña cada etapa y cada resultado en tiempo real."
+    "badge": "MÉTODO",
+    "title_highlight": "INGENIERÍA",
+    "title": "DE ESCALA.",
+    "subtitle": "Proceso lineal y técnico enfocado en la solidez operativa de su negocio.",
+    "step1": {
+      "badge": "01",
+      "title": "DIAGNÓSTICO"
+    },
+    "step2": {
+      "badge": "02",
+      "title": "ESTRUCTURACIÓN"
+    },
+    "step3": {
+      "badge": "03",
+      "title": "EJECUCIÓN"
+    },
+    "step4": {
+      "badge": "04",
+      "title": "CONSOLIDACIÓN"
+    }
   },
   "autoridade": {
-    "badge": "POR QUÉ RESPECT",
-    "headline": "LOS RESULTADOS HABLAN",
-    "headline_highlight": "MÁS QUE LAS PROMESAS.",
-    "subline": "No pedimos que crea en nosotros. Pedimos que mire los hechos: experiencia comprobada, equipo multidisciplinario y un modelo de trabajo que entrega.",
-    "subline_strong": "Hechos, no discurso.",
-    "revenue_headline": "Un equipo. Tres áreas. Cero silos.",
-    "revenue_subline": "Así es como el resultado ocurre de verdad.",
+    "badge": "AUTORIDAD",
+    "headline": "NÚMEROS.",
+    "headline_highlight": "MÉTRICAS REALES.",
+    "subline": "Posicionamiento técnico. Ingeniería de valor comprobada.",
+    "subline_strong": "SOLIDEZ SILENCIOSA.",
+    "revenue_headline": "UNA ESTRUCTURA. TRES ÁREAS.",
+    "revenue_subline": "La inteligencia que blinda su operación.",
     "stats": {
-      "anos_label": "Años en el Mercado",
-      "anos_desc": "Ejecución real en proyectos de marketing, tecnología y ventas para empresas de diferentes tamaños.",
-      "pilares_label": "Áreas Integradas",
-      "pilares_desc": "Marketing, TI y Comercial trabajando juntos — sin tercerizar pedazos, sin perder el control.",
-      "resultados_label": "Enfoque en Resultado",
-      "resultados_desc": "Cada entrega es rastreada. Si no genera resultado medible, ajustamos hasta que lo genere.",
-      "suporte_label": "Soporte Continuo",
-      "suporte_desc": "Seguimiento activo del proyecto. No desaparecemos después de entregar — nos quedamos."
+      "anos_label": "EXPERIENCIA",
+      "anos_desc": "Ejecución continua en proyectos técnicos de alta complejidad.",
+      "pilares_label": "PILARES",
+      "pilares_desc": "Áreas integradas para la eliminación total de la fricción operativa.",
+      "resultados_label": "SOLIDEZ",
+      "resultados_desc": "Infraestructura propia, resultados independientes.",
+      "suporte_label": "ESTABILIDAD",
+      "suporte_desc": "Monitoreo proactivo enfocado en la resiliencia del negocio."
     }
   },
   "faq": {
-    "badge": "PREGUNTAS COMUNES",
-    "headline": "Preguntas",
-    "headline_highlight": "que todos hacen.",
-    "subline": "Respuestas directas. Sin rodeos.",
-    "q1": "¿Cuánto cuesta?",
-    "a1": "Depende del alcance. Cada proyecto es diferente — por eso comenzamos con un diagnóstico gratuito para entender su escenario y armar una propuesta a medida. Sin paquetes genéricos.",
-    "q2": "¿En cuánto tiempo veo resultado?",
-    "a2": "Depende del área. Tráfico pago genera resultado en las primeras semanas. SEO y contenido, en 3-6 meses. Software a medida, según la complejidad. En todos los casos, usted acompaña la evolución en tiempo real.",
-    "q3": "¿Necesito contratar las 3 áreas?",
-    "a3": "No. Cada pilar funciona de forma independiente. Pero cuando se integran, el resultado es exponencialmente mejor — porque todo conversa: el marketing alimenta al comercial, y TI sostiene a los dos.",
-    "q4": "¿Trabajan con empresas pequeñas?",
-    "a4": "Sí. Trabajamos con empresas de diferentes tamaños — lo que importa es tener claridad del objetivo y disposición para invertir en el crecimiento. Si busca resultado serio, podemos ayudar.",
-    "q5": "Tuve malas experiencias con agencias. ¿Por qué sería diferente?",
-    "a5": "Porque la mayoría de las agencias solo hacen marketing y tercerizan el resto. Aquí, marketing, tecnología y ventas están en el mismo equipo. Sin teléfono descompuesto, sin culpar a otro proveedor. El resultado es responsabilidad nuestra — entera.",
-    "q6": "¿Cómo empiezo?",
-    "a6": "Agende un diagnóstico gratuito. En 30 minutos entendemos su escenario, identificamos oportunidades y presentamos un plan objetivo. Sin compromiso — si tiene sentido para usted, avanzamos."
+    "badge": "FAQ",
+    "headline": "CLARIDAD",
+    "headline_highlight": "TÉCNICA.",
+    "subline": "Respuestas directas sobre nuestra infraestructura estratégica.",
+    "q1": "¿Modelo de negocio?",
+    "a1": "Basado en implementación técnica y Performance sobre ROI.",
+    "q2": "¿Visibilidad de datos?",
+    "a2": "Transparencia absoluta. Dashboards en tiempo real para control del CEO.",
+    "q3": "¿Necesito las 3 áreas?",
+    "a3": "Las áreas son modulares, pero la integración es lo que resuelve la fuga de eficiencia.",
+    "q4": "¿Para quién es?",
+    "a4": "Empresas que alcanzaron el techo de la escala y necesitan procesos de élite.",
+    "q5": "¿Diferencial?",
+    "a5": "Asumimos la responsabilidad técnica total. El fin de la culpa entre proveedores.",
+    "q6": "¿Cómo empezar?",
+    "a6": "A través de un diagnóstico técnico de 30 minutos sin costo inicial."
   },
   "cta_final": {
-    "badge": "HABLEMOS",
-    "headline": "SU PRÓXIMO PASO",
-    "headline_highlight": "ES SIMPLE.",
-    "subline": "Un diagnóstico gratuito de 30 minutos. Entendemos su negocio, identificamos oportunidades y armamos un plan de acción. Sin compromiso, sin rodeos.",
-    "cta": "AGENDAR DIAGNÓSTICO GRATUITO",
-    "trust1": "30 min · Sin costo",
-    "trust2": "Plan de acción personalizado",
-    "trust3": "Sin compromiso",
-    "footer_tagline": "Marketing · TI · Comercial"
+    "badge": "CONTACTO",
+    "headline": "ESTRUCTURE SU",
+    "headline_highlight": "OPERACIÓN.",
+    "subline": "Diagnóstico técnico enfocado en Estrategia, Tecnología y Comercial.",
+    "cta": "AGENDAR DIAGNÓSTICO AHORA",
+    "trust1": "PROFESIONALISMO",
+    "trust2": "RESULTADO",
+    "trust3": "TRANQUILIDAD",
+    "footer_tagline": "ESTRATEGIA · TECNOLOGÍA · VENTAS"
   },
   "scarcity": {
-    "headline": "Cada cliente recibe atención total.",
-    "subline": "Para garantizar calidad en la entrega y seguimiento real, trabajamos con un número limitado de proyectos a la vez. Si hay disponibilidad, empezamos rápido. Si no, entra en nuestra lista de prioridad."
+    "headline": "CAPACIDAD.",
+    "subline": "Limitamos el número de proyectos activos para garantizar el rigor técnico exigido."
   },
   "pilar_detalhe": {
-    "back": "Volver al inicio",
-    "services_badge": "Lo que entregamos",
-    "services_title": "Servicios incluidos",
-    "services_sub": "Cada servicio se implementa con metodología, herramientas profesionales y seguimiento continuo.",
-    "deliverables_badge": "Entregables",
-    "deliverables_title": "Lo que recibe",
-    "outcomes_badge": "Resultados esperados",
-    "outcomes_title": "Impacto en su negocio",
-    "stack_badge": "Stack & Herramientas",
-    "stack_title": "Tecnologías que usamos",
-    "ideal_badge": "Ideal para",
-    "ideal_title": "Este servicio es para usted si:",
-    "cta_analysis": "Agendar diagnóstico gratuito",
-    "outros_title": "Vea las otras áreas",
-    "outros_sub": "Marketing, TI y Comercial — cada uno potencia al otro."
+    "back": "VOLVER",
+    "services_badge": "EJECUCIÓN",
+    "services_title": "IMPLEMENTACIÓN",
+    "services_sub": "Ingeniería aplicada con herramientas de estándar internacional.",
+    "deliverables_badge": "RESULTADOS",
+    "deliverables_title": "ENTREGABLES",
+    "outcomes_badge": "VALOR",
+    "outcomes_title": "IMPACTO",
+    "stack_badge": "STACK",
+    "stack_title": "INFRAESTRUCTURA",
+    "ideal_badge": "PERFIL",
+    "ideal_title": "INDICADO PARA",
+    "cta_analysis": "AGENDAR DIAGNÓSTICO",
+    "outros_title": "MOTOR",
+    "outros_sub": "MARKETING, TI Y COMERCIAL."
   },
   "theme": {
-    "toggle_dark": "Modo oscuro",
-    "toggle_light": "Modo claro"
+    "toggle_dark": "OFF",
+    "toggle_light": "ON"
   },
   "lang": {
     "pt": "PT",
@@ -161,96 +162,96 @@
   },
   "pilares_data": {
     "marketing": {
-      "badge": "Marketing Digital",
-      "title": "Marketing que Genera Demanda",
-      "tagline": "Tráfico, embudos, contenido y automatización — todo rastreado, todo enfocado en resultado.",
-      "description": "Implementamos la operación completa de marketing digital: desde la estrategia de adquisición hasta la nutrición y conversión. Google Ads, Meta Ads, SEO, email marketing, landing pages optimizadas y dashboards con datos reales. Cada peso invertido se rastrea hasta el resultado final.",
-      "cta": "Quiero generar más demanda",
-      "msg": "¡Hola! Me interesan los servicios de Marketing Digital de Respect. Quisiera agendar un diagnóstico gratuito.",
-      "ideal_for": "Empresas que invierten en marketing pero no pueden rastrear el retorno. Negocios que necesitan generar leads calificados de forma predecible. Marcas que quieren salir del 'post por post' y tener una estrategia real de adquisición.",
+      "badge": "ADQUISICIÓN",
+      "title": "Ingeniería de ROI",
+      "tagline": "Tráfico y embudos rastreables enfocados en Margen Neto.",
+      "description": "Implementación técnica de canales de adquisición. Foco en la reducción de CAC a través de datos reales y automatizaciones que eliminan el desperdicio de inversión.",
+      "cta": "ESTRUCTURAR ADQUISICIÓN",
+      "msg": "¡Hola! Quisiera un diagnóstico técnico enfocado en Adquisición de Clientes.",
+      "ideal_for": "Operaciones que invierten en tráfico mas no poseen visibilidad real del margen de beneficio por canal.",
       "services": {
-        "s1": { "title": "Tráfico Pago (Google, Meta, LinkedIn)", "desc": "Campañas optimizadas con segmentación avanzada, remarketing y optimización continua de ROAS." },
-        "s2": { "title": "Embudos de Conversión", "desc": "Landing pages, formularios inteligentes y secuencias de nutrición que transforman visitantes en leads y leads en clientes." },
-        "s3": { "title": "SEO & Contenido Estratégico", "desc": "Investigación de palabras clave, producción de contenido optimizado y estrategia de link building para dominar el orgánico." },
-        "s4": { "title": "Email Marketing & Automatización", "desc": "Secuencias automatizadas de bienvenida, nutrición, reactivación y ventas — integradas al CRM." },
-        "s5": { "title": "Analytics & Dashboards", "desc": "GA4, Pixel, Tag Manager configurados. Dashboards en tiempo real con las métricas que importan para su negocio." },
-        "s6": { "title": "Social Media Estratégico", "desc": "Planificación de contenido, gestión de publicaciones y análisis de performance. Contenido que posiciona, no solo llena grilla." }
+        "s1": { "title": "Tráfico Pago", "desc": "Google y Meta optimizados para conversión real, no clics." },
+        "s2": { "title": "Embudos de Escala", "desc": "Estructuras de captura integradas directamente con su inventario/ventas." },
+        "s3": { "title": "SEO de Performance", "desc": "Arquitectura de contenido enfocada en intención de compra." },
+        "s4": { "title": "Automatización CRM", "desc": "Nutrición algorítmica de leads para maximizar el LTV." },
+        "s5": { "title": "Tracking Avanzado", "desc": "Implementación de Server-side tracking y visibilidad 360°." },
+        "s6": { "title": "Data Analytics", "desc": "Dashboards decisorios para el nivel ejecutivo." }
       },
       "deliverables": {
-        "d1": "Planificación estratégica mensual con calendario de ejecución",
-        "d2": "Landing pages optimizadas para conversión",
-        "d3": "Configuración completa de rastreo (GA4, Pixel, eventos)",
-        "d4": "Informes mensuales con datos reales y recomendaciones",
-        "d5": "Embudos de email automatizados y configurados",
-        "d6": "Creativos para campañas (copy + briefing visual)"
+        "d1": "Plan de Estabilización de CAC",
+        "d2": "Landing Pages de Performance",
+        "d3": "Configuración de Pixel y API",
+        "d4": "Reportes de Rentabilidad",
+        "d5": "Embudos de Atención 24/7",
+        "d6": "Célula de Pruebas A/B"
       },
       "outcomes": {
-        "o1": "Costo de adquisición medible y en baja continua",
-        "o2": "Flujo predecible de leads calificados",
-        "o3": "Crecimiento de tráfico orgánico en 3-6 meses",
-        "o4": "Visión clara de ROI en cada canal"
+        "o1": "Costo de Adquisición Estabilizado",
+        "o2": "Previsibilidad de Facturación",
+        "o3": "Escalabilidad de Inversión",
+        "o4": "Datos Reales para Toma de Decisión"
       }
     },
     "ti": {
-      "badge": "TI & Infraestructura",
-      "title": "Tecnología que Sostiene el Crecimiento",
-      "tagline": "Software a medida, cloud, DevOps y mantenimiento — la base que no se quiebra.",
-      "description": "Desarrollamos y mantenemos la infraestructura tecnológica que su negocio necesita para operar y crecer: sitios de alta performance, sistemas web a medida, APIs, integraciones entre plataformas, cloud escalable y soporte continuo. Tecnología que funciona.",
-      "cta": "Quiero tecnología sólida",
-      "msg": "¡Hola! Me interesan los servicios de TI & Infraestructura de Respect. Quisiera agendar un diagnóstico gratuito.",
-      "ideal_for": "Empresas que dependen de la tecnología para operar y necesitan estabilidad. Negocios que quieren salir de las planillas y tener un sistema propio. Operaciones que necesitan integrar herramientas que hoy no se comunican.",
+      "badge": "ARQUITECTURA",
+      "title": "Sustento Operativo",
+      "tagline": "La base tecnológica que blinda su crecimiento.",
+      "description": "Desarrollo y DevOps. Garantizamos que su infraestructura sea resiliente, rápida y capaz de soportar picos de escala sin fricción técnica.",
+      "cta": "BLINDAR TECNOLOGÍA",
+      "msg": "¡Hola! Quisiera un diagnóstico técnico enfocado en Infraestrutura y TI.",
+      "ideal_for": "Negocios que dependen de la estabilidad digital y quieren eliminar fallas técnicas que impiden la facturación.",
       "services": {
-        "s1": { "title": "Software Web & Mobile a Medida", "desc": "Aplicaciones desarrolladas para su proceso — sin adaptaciones forzadas a soluciones genéricas." },
-        "s2": { "title": "DevOps & CI/CD", "desc": "Pipelines automatizados, deploy continuo y ambientes de staging para entregas rápidas y seguras." },
-        "s3": { "title": "Cloud & Infraestructura", "desc": "AWS, GCP o VPS — escalable, monitoreado y con alta disponibilidad." },
-        "s4": { "title": "UI/UX Profesional", "desc": "Interfaces que funcionan: design system, responsividad, accesibilidad y experiencia consistente." },
-        "s5": { "title": "Mantenimiento & Soporte Proactivo", "desc": "Monitoreo, actualizaciones y soporte continuo — sin esperar a que se rompa para actuar." },
-        "s6": { "title": "Integraciones & APIs", "desc": "Conexión entre ERPs, CRMs, pasarelas de pago y cualquier sistema que su negocio use." }
+        "s1": { "title": "Web Platforms", "desc": "Desarrollo de alta performance con arquitectura moderna." },
+        "s2": { "title": "DevOps", "desc": "Integración continua y ambientes de deploy seguros (AWS/GCP)." },
+        "s3": { "title": "Sistemas Cloud", "desc": "Setup de nube optimizado para costo y velocidad." },
+        "s4": { "title": "Seguridad Digital", "desc": "Blindaje de datos e protección contra ataques operativos." },
+        "s5": { "title": "Integraciones ERP", "desc": "Conexión fluida entre sistemas de gestión y canales de venta." },
+        "s6": { "title": "UX de Conversión", "desc": "Diseño enfocado en reducir el esfuerzo cognitivo del usuario." }
       },
       "deliverables": {
-        "d1": "Código versionado con documentación técnica",
-        "d2": "Deploy automatizado vía CI/CD",
-        "d3": "Monitoreo con alertas de uptime y performance",
-        "d4": "Ambiente de staging separado de producción",
-        "d5": "Manual de operación para equipo interno",
-        "d6": "Pruebas de seguridad y carga antes del go-live"
+        "d1": "Arquitectura de Código Limpio",
+        "d2": "Setup de Servidor Escalable",
+        "d3": "Integraciones vía API",
+        "d4": "Reportes de Performance (Core Web Vitals)",
+        "d5": "Backup y Disaster Recovery",
+        "d6": "Mantenimiento Proactivo 24/7"
       },
       "outcomes": {
-        "o1": "99%+ de disponibilidad con monitoreo activo",
-        "o2": "Entregas 50% más rápidas con CI/CD",
-        "o3": "Reducción de costos de mantenimiento reactivo",
-        "o4": "Integración real entre las herramientas del negocio"
+        "o1": "99.9% de Disponibilidade Mínima",
+        "o2": "Navegación Ultra-rápida (ROI)",
+        "o3": "Protección de Activos Digitales",
+        "o4": "Agilidad en Nuevos Lançamientos"
       }
     },
     "vendas": {
-      "badge": "Comercial & Ventas",
-      "title": "Ventas con Proceso, No con Suerte",
-      "tagline": "Chatbots con IA, CRM, playbooks y entrenamiento — pipeline predecible.",
-      "description": "Estructuramos el proceso comercial de su empresa: chatbots con IA en WhatsApp que califican 24/7, CRM configurado e integrado al marketing, playbooks de ventas probados y entrenamiento práctico del equipo. Resultado: más previsibilidad, más conversión, menos desperdicio.",
-      "cta": "Quiero ventas con proceso",
-      "msg": "¡Hola! Me interesan los servicios de Comercial & Ventas de Respect. Quisiera agendar un diagnóstico gratuito.",
-      "ideal_for": "Empresas con equipo comercial que quieren vender más con proceso. Negocios B2B que necesitan previsibilidad en el pipeline. Operaciones que reciben leads pero no logran convertir de forma consistente.",
+      "badge": "CONVERSIÓN",
+      "title": "Ingeniería de Ventas",
+      "tagline": "Maximización de conversión leads-a-lucro vía CRM e IA.",
+      "description": "Ajuste fino del proceso comercial. Implementamos tecnología y métodos que transforman interés en facturación real, sin fuga de leads.",
+      "cta": "MAXIMIZAR VENTAS",
+      "msg": "¡Hola! Quisiera un diagnóstico técnico enfocado en Ingeniería Comercial y Ventas.",
+      "ideal_for": "Empresas que generan leads mas sienten que el cierre es ineficiente o mal rastreado.",
       "services": {
-        "s1": { "title": "Chatbots WhatsApp con IA", "desc": "Atención automatizada, calificación de leads y agendamientos vía WhatsApp Business con IA." },
-        "s2": { "title": "CRM: Setup & Entrenamiento", "desc": "Configuración completa de HubSpot, Pipedrive o RD Station — con automatizaciones y entrenamiento práctico." },
-        "s3": { "title": "Consultoría Comercial", "desc": "Diagnóstico del embudo, identificación de cuellos de botella y plan de acción para aumentar conversión." },
-        "s4": { "title": "Playbooks de Ventas", "desc": "Scripts, tratamiento de objeciones, cadencias de prospección — todo documentado y probado." },
-        "s5": { "title": "Integración CRM ↔ Marketing", "desc": "Lead entra por marketing, cae en el CRM, dispara follow-up automático — sin perder a nadie." },
-        "s6": { "title": "Dashboards de Pipeline", "desc": "Conversión por etapa, forecast de ingresos y métricas del equipo — visibilidad total." }
+        "s1": { "title": "IA en la Atención", "desc": "Calificación inmediata de leads vía WhatsApp/Chat." },
+        "s2": { "title": "Setup de CRM", "desc": "Configuración estratégica de HubSpot o Pipedrive." },
+        "s3": { "title": "Proceso Comercial", "desc": "Escalonamiento de pipeline y gatillos de cierre." },
+        "s4": { "title": "Automatización de Ventas", "desc": "Follow-up persistente automático y personalizado." },
+        "s5": { "title": "Forecast de Ingresos", "desc": "Previsibilidad basada en datos reales de embudo." },
+        "s6": { "title": "Integración de Punta", "desc": "Alineación total entre Lead y Vendedor." }
       },
       "deliverables": {
-        "d1": "Chatbot configurado y funcionando en WhatsApp",
-        "d2": "Playbook de ventas completo (scripts, objeciones, cadencias)",
-        "d3": "Entrenamientos grabados para onboarding del equipo",
-        "d4": "CRM configurado con automatizaciones e integraciones",
-        "d5": "Dashboard de pipeline con informes automáticos",
-        "d6": "Revisión mensual de performance y optimización"
+        "d1": "Estructura de CRM Lista",
+        "d2": "Chatbots de Qualificación Activos",
+        "d3": "Playbook de Ventas Técnico",
+        "d4": "Scripts de Alta Conversión",
+        "d5": "Dashboards de Pipeline Comercial",
+        "d6": "Entrenamiento Técnico para el Equipo"
       },
       "outcomes": {
-        "o1": "Ciclo de venta 30-50% menor con calificación automática",
-        "o2": "Aumento medible de la tasa de conversión",
-        "o3": "Previsibilidad mensual de ingresos",
-        "o4": "Equipo comercial con proceso claro y documentado"
+        "o1": "Aumento en la Tasa de Cierre",
+        "o2": "Reducción del Ciclo de Venta",
+        "o3": "Equipo Comercial más Productivo",
+        "o4": "Rastreo Completo del Lead al Lucro"
       }
     }
   }

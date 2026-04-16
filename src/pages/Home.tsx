@@ -26,7 +26,7 @@ export function Home() {
         <Hero />
       </div>
 
-      <Suspense fallback={<div className="min-h-[60vh] bg-bg-light" />}>
+      <Suspense fallback={<div className="min-h-[60vh] bg-white" />}>
         {/* 2. PROBLEMA — O contraste e a fragmentação */}
         <div id="problema">
           <ProblemSection />

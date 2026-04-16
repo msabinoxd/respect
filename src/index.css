@@ -1,65 +1,63 @@
 @import "tailwindcss";
 
 @theme {
-  /* Tipografia: Builderall usa tipografia geométrica arredondada para dar ar de SaaS premium */
+  /* Tipografia: Foco em autoridade e clareza executiva */
   --font-sans: "Mulish", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Lato", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
-  /* Cores Nativas do Tailwind v4 (geram utilitários text-*, bg-*, from-*) */
+  /* Cores - The Minimal Cut V3.1 (Branco/Preto Absoluto) */
   --color-bg-light: #FFFFFF;
   --color-bg-white: #FFFFFF;
-  --color-bg-navy: #0B1B36;
-  --color-bg-navy-dark: #050E20;
+  --color-bg-navy: #000000;
+  --color-bg-navy-dark: #000000;
 
   --color-brand-blue: #0090FF;
   --color-brand-cyan: #00D1FF;
-  --color-brand-navy: #0B1B36;
-  --color-brand-orange: #FF6A00;
+  --color-brand-navy: #000000;
 
   --color-text-title: #0B1B36;
   --color-text-body: #334155;
-  --color-text-light: #F8F9FA;
+  --color-text-light: #FFFFFF;
   --color-text-muted: #64748B;
 
-  --shadow-premium: 0 20px 50px -12px rgba(0, 70, 180, 0.12);
-  --shadow-soft: 0 10px 30px -15px rgba(0, 0, 0, 0.05);
+  /* Glassmorphism Ultra-Clean */
+  --color-glass-clean: rgba(255, 255, 255, 0.9);
+  --color-glass-border-clean: rgba(0, 0, 0, 0.03);
 
-  --color-text-muted: #64748b;
-  --color-text-light: #F8FAFC;
+  /* Shadows - Minimal Cut (Quase invisíveis) */
+  --shadow-premium: 0 10px 40px -15px rgba(0, 0, 0, 0.03);
+  --shadow-soft: 0 4px 20px -10px rgba(0, 0, 0, 0.02);
+  
+  --sh-soft: 0px 4px 20px rgba(0, 0, 0, 0.02);
+  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.04);
+  --sh-button: 0px 8px 20px rgba(0, 144, 255, 0.2);
+  --sh-nav: 0px 4px 30px rgba(0, 0, 0, 0.02);
 
-  /* Glassmorphism Enterprise */
-  --color-glass-clean: rgba(255, 255, 255, 0.85);
-  --color-glass-border-clean: rgba(0, 0, 0, 0.05);
-
-  /* Shadows Enterprise */
-  --sh-soft: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.08);
-  --sh-button: 0px 8px 20px rgba(0, 144, 255, 0.3);
-  --sh-nav: 0px 4px 30px rgba(11, 27, 54, 0.08);
-  --sh-builderall: 0px 4px 20px rgba(0, 0, 0, 0.08);
-
-  /* Tokens V2 (Builderall SaaS Style) */
+  /* Tokens V2 (Refined for Premium White) */
   --v2-primary: #0090FF;
   --v2-secondary: #00D1FF;
-  --v2-shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.12);
-  --v2-radius: 12px;
-  --v2-radius-lg: 16px;
+  --v2-shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  --v2-radius: 8px; /* Menos arredondado para ar mais técnico */
+  --v2-radius-lg: 12px;
 }
 
-/* ── V2 THEME OVERRIDES ── */
+/* ── V2 THEME OVERRIDES (Enforcing Absolute Purity) ── */
 .v2-theme {
-  --sh-soft: var(--sh-builderall);
+  --sh-soft: 0px 1px 3px rgba(0,0,0,0.02);
   --sh-deep: var(--v2-shadow-lg);
   --color-brand-blue: var(--v2-primary);
   --color-brand-cyan: var(--v2-secondary);
-  --color-bg-light: #F8F9FA; /* Soft Grey SaaS */
+  --color-bg-light: #FFFFFF; /* Forced Absolute White */
 }
 
 .dark.v2-theme {
-  --color-bg-light: #050E20;
+  --color-bg-light: #000000; /* Absolute Black */
+  --color-text-title: #FFFFFF;
+  --color-text-body: #CBD5E1;
+  --color-glass-border-clean: rgba(255, 255, 255, 0.05);
 }
 
-/* === Utilities Builderall Style === */
+/* === Utilities Minimal Cut Style === */
 @utility bento-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -76,6 +74,7 @@
 
 .v2-theme .saas-card {
   border-radius: var(--v2-radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.03); /* Technical thin border */
 }
 
 @utility saas-card-hover {
@@ -84,12 +83,12 @@
 }
 
 .v2-theme .saas-card:hover {
-  @apply ring-2 ring-brand-blue/30;
+  @apply ring-1 ring-brand-blue/10; /* Subtle ring instead of heavy ring */
 }
 
 @utility glass-nav {
   background-color: var(--color-glass-clean);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-glass-border-clean);
   box-shadow: var(--sh-nav);
 }
@@ -99,21 +98,7 @@
 }
 
 @utility v2-selection-ring {
-  @apply ring-2 ring-brand-blue ring-offset-2 ring-offset-white transition-all duration-300;
-}
-
-/* Glass card for dark navy sections */
-@utility glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-}
-
-@utility glass-subtle {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 0.5rem;
+  @apply ring-1 ring-brand-blue/30 ring-offset-2 ring-offset-white transition-all duration-300;
 }
 
 /* Base */
@@ -125,68 +110,33 @@ body {
   background-color: var(--color-bg-light);
   font-family: var(--font-sans);
   @apply antialiased;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Títulos sempre geométricos e fortes */
+/* Títulos: Autoridade Máxima */
 h1, h2, h3 {
   font-family: var(--font-display);
   color: var(--color-text-title);
+  @apply tracking-tighter;
 }
 
-/* Dark mode: headings in light sections */
-.dark h1,
-.dark h2,
-.dark h3 {
-  color: var(--color-text-title);
+.dark body {
+  @apply bg-bg-navy text-white;
 }
 
-/* Ajustes de Tailwind v4 base */
 @layer base {
   ::selection {
-    background: rgba(0, 144, 255, 0.2);
+    background: rgba(0, 144, 255, 0.1);
     color: var(--color-text-title);
   }
 }
 
-/* Animações Builderall */
-@keyframes pulseBlue {
-  0% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0.4); }
-  70% { box-shadow: 0 0 0 20px rgba(0, 144, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0); }
-}
-
 @utility btn-pulse {
-  animation: pulseBlue 2s infinite;
+  animation: pulseBlue 3s infinite;
 }
 
-/* V2 Specific Component Refinements */
-.v2-theme #home img {
-  box-shadow: var(--sh-deep) !important;
-  border-radius: var(--v2-radius-lg) !important;
-}
-
-.v2-theme .saas-card {
-  border: 1px solid rgba(0, 144, 255, 0.08); /* Bordas levemente azuladas */
-}
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-    @apply bg-bg-light text-text-body;
-  }
-
-  /* Melhoria no contraste do Light Mode (Premium White) */
-}
-
-@utility glass-card {
-  @apply backdrop-blur-md bg-white/70 border border-white/40 shadow-premium;
-}
-
-@utility text-gradient-builderall {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-cyan font-black;
+@keyframes pulseBlue {
+  0% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0.1); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 144, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0); }
 }

@@ -14,7 +14,7 @@ export const CONFIG = {
     tagline: "Marketing · TI · Comercial",
     concept: "Respeito",
   },
-  UI_VERSION: 'V1' as 'V1' | 'V2',
+  UI_VERSION: 'V2' as 'V1' | 'V2',
 } as const;
 
 export const waURL = (msg: string = CONFIG.wa.msgHero) =>
