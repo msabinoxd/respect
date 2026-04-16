@@ -27,7 +27,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
 
   if (!pilar) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-[var(--background)]">
         <p className="text-text-muted">{t('pilar_detalhe.not_found', 'Pilar não encontrado.')}</p>
       </div>
     );
@@ -39,19 +39,19 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
   const outcomeKeys = Array.from({ length: pilar.outcomeCount }, (_, i) => `o${i + 1}`);
 
   return (
-    <>
+    <div className="bg-[var(--background)] transition-colors duration-500">
       {/* ── HERO DA PÁGINA ── */}
-      <section className="relative min-h-[70vh] flex items-end pb-20 overflow-hidden bg-bg-light pt-32">
+      <section className="relative min-h-[70vh] flex items-end pb-20 overflow-hidden pt-32 border-b border-[var(--color-glass-border-clean)]">
         {/* Ambient Glow Branding */}
         <div className="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[180px] pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-navy/5 rounded-full blur-[140px] pointer-events-none" />
 
-        {/* Grid */}
+        {/* Grid Overlay */}
         <div
-          className="absolute inset-0 opacity-[0.025]"
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px',
+            backgroundImage: `linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)`,
+            backgroundSize: '40px 40px',
           }}
         />
 
@@ -66,9 +66,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               {/* Back link */}
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted hover:text-brand-blue transition-colors mb-10"
+                className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.3em] text-text-muted hover:text-brand-blue transition-all mb-12 group"
               >
-                <ArrowLeft size={14} />
+                <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
                 {t('pilar_detalhe.back')}
               </Link>
 
@@ -76,20 +76,20 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 <Badge
                   label={t(`pilares_data.${id}.badge`)}
                   variant="navy"
-                  className="mb-6"
+                  className="mb-8"
                 />
               </motion.div>
 
               <motion.h1
                 variants={fadeUpPremium}
-                className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-text-title tracking-tighter"
+                className="text-4xl sm:text-5xl md:text-8xl font-black leading-[0.9] mb-8 text-text-title tracking-tighter uppercase font-display"
               >
                 {pilarTitle}
               </motion.h1>
 
               <motion.p
                 variants={fadeUpPremium}
-                className="text-base md:text-xl text-text-body leading-relaxed font-medium mb-10 max-w-2xl"
+                className="text-lg md:text-2xl text-text-body leading-relaxed font-medium mb-12 max-w-2xl opacity-70"
               >
                 {pilarDesc}
               </motion.p>
@@ -100,7 +100,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   size="lg"
                   icon={ArrowRight}
                   onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_CTA`)}
-                  className="shadow-2xl"
+                  className="shadow-premium"
                 >
                   {t(`pilares_data.${id}.cta`)}
                 </Button>
@@ -111,15 +111,16 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
+              transition={{ duration: 1.5, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
               className="relative hidden lg:block"
             >
-              <div className="relative aspect-square">
-                 <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-3xl" />
+              <div className="relative aspect-square flex items-center justify-center">
+                 <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[140px]" />
                  <img 
                    src={pilar.detailImage} 
                    alt={pilarTitle}
-                   className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
+                   className="w-full max-w-[500px] h-auto object-contain relative z-10 drop-shadow-2xl animate-float"
+                   loading="lazy"
                  />
               </div>
             </motion.div>
@@ -128,25 +129,25 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </section>
 
       {/* ── SERVIÇOS DETALHADOS ── */}
-      <Section variant="white" id="servicos-detalhes">
+      <Section variant="white" id="servicos-detalhes" className="relative border-b border-[var(--color-glass-border-clean)]">
         <Container size="lg">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
             variants={staggerSlow}
-            className="mb-14"
+            className="mb-20"
           >
             <motion.div variants={fadeUpPremium}>
-              <Badge label={t('pilar_detalhe.services_badge')} variant="navy" className="mb-6" />
+              <Badge label={t('pilar_detalhe.services_badge')} variant="navy" className="mb-8" />
             </motion.div>
             <motion.h2
               variants={fadeUpPremium}
-              className="text-3xl md:text-5xl font-black text-text-title tracking-tighter mb-4 uppercase"
+              className="text-3xl md:text-6xl font-black text-text-title tracking-tighter mb-8 uppercase font-display"
             >
               {t('pilar_detalhe.services_title')}
             </motion.h2>
-            <motion.p variants={fadeUpPremium} className="text-text-body max-w-xl font-medium">
+            <motion.p variants={fadeUpPremium} className="text-text-body max-w-2xl text-xl font-medium opacity-70">
               {t('pilar_detalhe.services_sub')}
             </motion.p>
           </motion.div>
@@ -156,21 +157,24 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={staggerSlow}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {pilar.services.map((svc) => (
               <motion.div
                 key={svc.key}
                 variants={fadeUpPremium}
-                className="bg-white border border-black/5 p-6 rounded-2xl group hover:bg-brand-blue/5 transition-all duration-300 shadow-sm hover:shadow-premium"
+                className="bg-[var(--background)] border border-[var(--color-glass-border-clean)] p-10 rounded-3xl group hover:border-[var(--foreground)]/10 transition-all duration-500 shadow-sm hover:shadow-premium relative overflow-hidden"
               >
-                <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <svc.icon size={20} className="text-white" />
+                <div className="absolute top-0 right-0 p-4 opacity-[0.03] text-[var(--foreground)] group-hover:opacity-10 transition-opacity">
+                   <svc.icon size={80} strokeWidth={1} />
                 </div>
-                <h3 className="text-base font-black text-text-title mb-2 uppercase tracking-tight">
+                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
+                  <svc.icon size={24} className="text-white" />
+                </div>
+                <h3 className="text-xl font-black text-text-title mb-4 uppercase tracking-tight">
                   {t(`pilares_data.${id}.services.${svc.key}.title`)}
                 </h3>
-                <p className="text-sm text-text-body font-medium leading-relaxed">
+                <p className="text-[15px] text-text-body font-medium leading-relaxed opacity-60">
                   {t(`pilares_data.${id}.services.${svc.key}.desc`)}
                 </p>
               </motion.div>
@@ -180,9 +184,9 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── DELIVERABLES + OUTCOMES ── */}
-      <Section variant="white" id="entregaveis" className="bg-slate-50/30">
+      <Section variant="white" id="entregaveis" className="bg-[var(--foreground)]/[0.01]">
         <Container size="lg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             {/* Deliverables */}
             <motion.div
               initial="hidden"
@@ -191,22 +195,24 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               variants={staggerSlow}
             >
               <motion.div variants={fadeUpPremium}>
-                <Badge label={t('pilar_detalhe.deliverables_badge')} variant="navy" className="mb-6" />
+                <Badge label={t('pilar_detalhe.deliverables_badge')} variant="navy" className="mb-8" />
               </motion.div>
               <motion.h2
-              variants={fadeUpPremium}
-              className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8 uppercase"
-            >
+                variants={fadeUpPremium}
+                className="text-2xl md:text-5xl font-black text-text-title tracking-tighter mb-12 uppercase font-display"
+              >
                 {t('pilar_detalhe.deliverables_title')}
               </motion.h2>
-              <motion.ul variants={staggerSlow} className="flex flex-col gap-4">
+              <motion.ul variants={staggerSlow} className="flex flex-col gap-6">
                 {deliverableKeys.map((dKey) => (
                   <motion.li
                     key={dKey}
                     variants={fadeUpPremium}
-                    className="flex items-start gap-4 text-[15px] font-medium text-text-body"
+                    className="flex items-start gap-5 text-[16px] font-medium text-text-body group"
                   >
-                    <CheckCircle2 size={18} className="text-brand-blue flex-shrink-0 mt-0.5" />
+                    <div className="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-blue/20 transition-colors">
+                      <CheckCircle2 size={14} className="text-brand-blue" />
+                    </div>
                     {t(`pilares_data.${id}.deliverables.${dKey}`)}
                   </motion.li>
                 ))}
@@ -221,22 +227,24 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               variants={staggerSlow}
             >
               <motion.div variants={fadeUpPremium}>
-                <Badge label={t('pilar_detalhe.outcomes_badge')} variant="navy" className="mb-6" />
+                <Badge label={t('pilar_detalhe.outcomes_badge')} variant="navy" className="mb-8" />
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
-                className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8 uppercase"
+                className="text-2xl md:text-5xl font-black text-text-title tracking-tighter mb-12 uppercase font-display"
               >
                 {t('pilar_detalhe.outcomes_title')}
               </motion.h2>
-              <motion.ul variants={staggerSlow} className="flex flex-col gap-4">
+              <motion.ul variants={staggerSlow} className="flex flex-col gap-6">
                 {outcomeKeys.map((oKey) => (
                   <motion.li
                     key={oKey}
                     variants={fadeUpPremium}
-                    className="flex items-start gap-4 text-[15px] font-medium text-text-body"
+                    className="flex items-start gap-5 text-[16px] font-medium text-text-body group"
                   >
-                    <Zap size={18} className="text-brand-blue flex-shrink-0 mt-0.5" />
+                    <div className="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-blue/20 transition-colors">
+                      <Zap size={14} className="text-brand-blue" />
+                    </div>
                     {t(`pilares_data.${id}.outcomes.${oKey}`)}
                   </motion.li>
                 ))}
@@ -247,11 +255,11 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── STACK (TI only) + IDEAL FOR ── */}
-      <Section variant="white" id="perfil">
+      <Section variant="white" id="perfil" className="border-t border-[var(--color-glass-border-clean)]">
         <Container size="lg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             {/* Stack (TI only) */}
-            {pilar.stack && pilar.stack.length > 0 && (
+            {pilar.stack && pilar.stack.length > 0 ? (
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -259,30 +267,30 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                 variants={staggerSlow}
               >
                 <motion.div variants={fadeUpPremium}>
-                  <Badge label={t('pilar_detalhe.stack_badge')} variant="navy" className="mb-6" />
+                  <Badge label={t('pilar_detalhe.stack_badge')} variant="navy" className="mb-8" />
                 </motion.div>
                 <motion.h2
                   variants={fadeUpPremium}
-                  className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-8 uppercase"
+                  className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-10 uppercase font-display"
                 >
                   {t('pilar_detalhe.stack_title')}
                 </motion.h2>
                 <motion.div
                   variants={staggerSlow}
-                  className="flex flex-wrap gap-3"
+                  className="flex flex-wrap gap-4"
                 >
                   {pilar.stack.map((tech) => (
                     <motion.span
                       key={tech}
                       variants={fadeUpPremium}
-                      className="bg-brand-blue/5 border border-brand-blue/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-brand-blue rounded-lg"
+                      className="bg-[var(--foreground)]/[0.04] border border-[var(--color-glass-border-clean)] px-5 py-2.5 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--foreground)] opacity-60 hover:opacity-100 rounded-xl transition-all"
                     >
                       {tech}
                     </motion.span>
                   ))}
                 </motion.div>
               </motion.div>
-            )}
+            ) : <div className="hidden lg:block" />}
 
             {/* Ideal For */}
             <motion.div
@@ -290,36 +298,36 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               whileInView="visible"
               viewport={{ once: true, margin: '-80px' }}
               variants={staggerSlow}
-              className={pilar.stack ? '' : 'lg:col-span-2 max-w-2xl mx-auto text-center'}
+              className="relative"
             >
               <motion.div variants={fadeUpPremium}>
-                <Badge label={t('pilar_detalhe.ideal_badge')} variant="navy" className="mb-6 mx-auto" />
+                <Badge label={t('pilar_detalhe.ideal_badge')} variant="navy" className="mb-8" />
               </motion.div>
               <motion.h2
                 variants={fadeUpPremium}
-                className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-6 uppercase"
+                className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-10 uppercase font-display"
               >
                 {t('pilar_detalhe.ideal_title')}
               </motion.h2>
               <motion.div
                 variants={fadeUpPremium}
-                className="bg-white border border-black/5 rounded-3xl p-6 flex items-start gap-4 text-left shadow-sm"
+                className="bg-[var(--background)] border border-[var(--color-glass-border-clean)] rounded-3xl p-10 flex items-start gap-8 shadow-premium"
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center flex-shrink-0`}>
-                  <Users size={24} className="text-white" />
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${pilar.gradient} flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                  <Users size={28} className="text-white" />
                 </div>
-                <p className="text-text-body font-medium leading-relaxed text-sm md:text-lg">
+                <p className="text-text-body font-medium leading-relaxed text-lg italic opacity-80">
                    "{t(`pilares_data.${id}.ideal_for`)}"
                 </p>
               </motion.div>
 
-              <motion.div variants={fadeUpPremium} className="mt-8 flex justify-center">
+              <motion.div variants={fadeUpPremium} className="mt-12">
                 <Button
                   variant="primary"
                   size="lg"
                   icon={Target}
                   onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_Bottom`)}
-                  className="shadow-xl"
+                  className="w-full sm:w-auto shadow-premium"
                 >
                   {t('pilar_detalhe.cta_analysis')}
                 </Button>
@@ -330,22 +338,22 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
       </Section>
 
       {/* ── OUTROS PILARES ── */}
-      <Section variant="white" id="outros-pilares" className="border-t border-black/5">
+      <Section variant="white" id="outros-pilares" className="border-t border-[var(--color-glass-border-clean)] bg-[var(--foreground)]/[0.01]">
         <Container>
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
             variants={staggerSlow}
-            className="text-center mb-10"
+            className="text-center mb-16"
           >
             <motion.h2
               variants={fadeUpPremium}
-              className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-3 uppercase"
+              className="text-2xl md:text-4xl font-black text-text-title tracking-tighter mb-4 uppercase font-display"
             >
               {t('pilar_detalhe.outros_title')}
             </motion.h2>
-              <motion.p variants={fadeUpPremium} className="text-text-body text-sm font-medium">
+              <motion.p variants={fadeUpPremium} className="text-text-body text-base font-medium opacity-60">
               {t('pilar_detalhe.outros_sub')}
             </motion.p>
           </motion.div>
@@ -355,7 +363,7 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={staggerSlow}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center"
           >
             {(['marketing', 'ti', 'vendas'] as const)
               .filter((p) => p !== id)
@@ -365,18 +373,18 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
                   <motion.div key={otherId} variants={fadeUpPremium}>
                     <Link
                       to={`/${otherId}`}
-                      className={`bg-white border border-black/5 rounded-2xl p-6 flex items-center gap-4 hover:bg-brand-blue/5 transition-all duration-300 group min-w-[280px] shadow-sm hover:shadow-premium`}
+                      className={`bg-[var(--background)] border border-[var(--color-glass-border-clean)] rounded-2xl p-8 flex items-center gap-6 hover:border-[var(--foreground)]/10 transition-all duration-500 group min-w-[320px] shadow-sm hover:shadow-premium`}
                     >
-                      <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${other.gradient} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                        <other.icon size={20} className="text-white" />
+                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${other.gradient} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-md`}>
+                        <other.icon size={22} className="text-white" />
                       </div>
-                      <div>
-                        <p className="text-[10px] font-black uppercase tracking-widest text-brand-blue mb-0.5">
+                      <div className="flex-1">
+                        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-blue mb-1">
                           {t(`pilares_data.${otherId}.badge`)}
                         </p>
-                        <p className="text-sm font-black text-text-title uppercase tracking-tight">{t(`pilares_data.${otherId}.title`)}</p>
+                        <p className="text-base font-black text-text-title uppercase tracking-tight">{t(`pilares_data.${otherId}.title`)}</p>
                       </div>
-                      <ArrowRight size={16} className="text-brand-blue ml-auto group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={18} className="text-brand-blue group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </motion.div>
                 );
@@ -387,6 +395,6 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
 
       {/* ── CTA FINAL ── */}
       <CTAFinal />
-    </>
+    </div>
   );
 }

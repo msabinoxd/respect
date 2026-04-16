@@ -35,7 +35,7 @@
     "badge": "STRATEGIC INFRASTRUCTURE",
     "line1": "RESPECT.",
     "line2": "STRUCTURE. TECH. RESULT.",
-    "subtitle": "The missing link between your Marketing and Sales. We structure high-impact operations with integrated technical engineering. <span class='text-brand-blue font-black'>Stop the efficiency leak.</span>",
+    "subtitle": "The technical link that shields your revenue. Marketing and Sales fused with <span class='text-brand-blue font-black'>Elite Execution Engineering.</span>",
     "cta": "Schedule Technical Diagnostic",
     "cta_secondary": "See Methodology",
     "trust1": "Real Effectiveness",
@@ -44,19 +44,19 @@
   },
   "problem": {
     "headline": "EFFICIENCY LEAK.",
-    "subline": "Fragmentation between marketing, IT, and sales is expensive. You lose margin, increase your CAC, and lose control of your scale.",
+    "subline": "Operational fragmentation is expensive. When Marketing, IT, and Sales are not aligned, you lose margin and sacrifice your scaling potential.",
     "item1_title": "ISOLATED MARKETING",
-    "item1_desc": "Blind investment. Campaigns that generate traffic but fail to deliver to sales.",
+    "item1_desc": "Blind investment. High-cost campaigns that fail to deliver actionable data for closing.",
     "item2_title": "FRAGILE TECH",
-    "item2_desc": "Slow systems and poor integration. Infrastructure becomes the growth bottleneck.",
+    "item2_desc": "Slow infrastructure that interrupts revenue. The technical bottleneck that sabotages your growth.",
     "item3_title": "SALES WITH NO FLOW",
-    "item3_desc": "Leads lost to archaic processes. Lack of data intelligence at closing.",
-    "footer": "Most companies don't have a product problem; they have an integration problem."
+    "item3_desc": "Leads wasted in manual processes. Lack of commercial intelligence for maximum conversion.",
+    "footer": "Most companies don't have a product problem; they have a technical integration problem."
   },
   "big_idea": {
     "headline": "THE ENGINE.",
     "subline": "CONSOLIDATED.",
-    "description": "When marketing feeds the CRM and technology supports the operation under a single technical intelligence, friction disappears. Just coordinated execution focused on Net Margin.",
+    "description": "When Marketing feeds the CRM and Technology supports the operation under a single technical intelligence, friction disappears. Total focus on Net Margin.",
     "eco_acquisition": "ACQUISITION",
     "eco_conversion": "ARCHITECTURE",
     "eco_retention": "MAXIMIZATION"
@@ -68,26 +68,26 @@
     "badge": "OUR DELIVERY",
     "title_line1": "HIGH IMPACT",
     "title_line2": "STRUCTURE.",
-    "subtitle": "Three vital pillars fused into a single operational chassis. No silos. Just solidity.",
+    "subtitle": "Three fundamentals fused into a single operational chassis to shield your profitability.",
     "cta": "Analyze Structure",
     "marketing": {
       "title": "ROI ACQUISITION.",
-      "desc": "Technical performance. Qualification of demand and traceable lead generation."
+      "desc": "Scaling channels with full traceability. Where every penny invested generates data and profit."
     },
     "ti": {
       "title": "ARCHITECTURE.",
-      "desc": "Digital backbone. DevOps, Web, and Cloud focused on scaling."
+      "desc": "Resilient and fast infrastructure. Technical shielding to support any scale."
     },
     "comercial": {
       "title": "CONVERSION.",
-      "desc": "Sales engineering. Where data transforms into real profit."
+      "desc": "High-closing sales engineering. We transform data into real revenue."
     }
   },
   "explanation": {
     "badge": "METHOD",
     "title_highlight": "SCALE",
     "title": "ENGINEERING.",
-    "subtitle": "A linear and technical process focused on your business's operational solidity.",
+    "subtitle": "A linear and technical process focused on your business's maximum solidity.",
     "step1": {
       "badge": "01",
       "title": "DIAGNOSTIC"
@@ -109,19 +109,19 @@
     "badge": "AUTHORITY",
     "headline": "NUMBERS.",
     "headline_highlight": "REAL METRICS.",
-    "subline": "Technical positioning. Proven value engineering.",
+    "subline": "Proven value engineering in high-complexity operations.",
     "subline_strong": "SILENT SOLIDITY.",
     "revenue_headline": "ONE STRUCTURE. THREE AREAS.",
-    "revenue_subline": "The intelligence that shields your operation.",
+    "revenue_subline": "The technical intelligence that shields your growth.",
     "stats": {
       "anos_label": "EXPERIENCE",
-      "anos_desc": "Continuous execution in high-complexity technical projects.",
+      "anos_desc": "A decade of execution in high-impact digital infrastructures.",
       "pilares_label": "PILLARS",
-      "pilares_desc": "Integrated areas for total elimination of operational friction.",
+      "pilares_desc": "Total integration to eliminate 100% of friction between departments.",
       "resultados_label": "SOLIDITY",
-      "resultados_desc": "Owned infrastructure, independent results.",
-      "suporte_label": "STABILITY",
-      "suporte_desc": "Proactive monitoring focused on business resilience."
+      "resultados_desc": "Owned infrastructure and independent server environment.",
+      "suporte_label": "RESILIENCE",
+      "suporte_desc": "Proactive monitoring focused on uninterrupted revenue."
     }
   },
   "faq": {
@@ -130,15 +130,15 @@
     "headline_highlight": "CLARITY.",
     "subline": "Direct answers about our strategic infrastructure.",
     "q1": "Business model?",
-    "a1": "Based on technical implementation and Performance over ROI.",
+    "a1": "Consultative technical implementation focused on solidity and sustainable ROI.",
     "q2": "Data visibility?",
-    "a2": "Absolute transparency. Real-time dashboards for CEO control.",
+    "a2": "Total transparency. Decision-making dashboards for absolute CEO control.",
     "q3": "Do I need all 3 areas?",
-    "a3": "The areas are modular, but integration is what resolves the efficiency leak.",
+    "a3": "The areas are modular, but technical fusion is what shields against margin leakage.",
     "q4": "Who is it for?",
-    "a4": "Companies that reached their scale ceiling and need elite processes.",
+    "a4": "Companies that reached their operational ceiling and need elite processes.",
     "q5": "Differentiation?",
-    "a5": "We assume total technical responsibility. The end of finger-pointing between vendors.",
+    "a5": "We assume technical responsibility for the ecosystem. We end silos.",
     "q6": "How to start?",
     "a6": "Through a no-cost initial 30-minute technical diagnostic."
   },
@@ -146,7 +146,7 @@
     "badge": "CONTACT",
     "headline": "STRUCTURE YOUR",
     "headline_highlight": "OPERATION.",
-    "subline": "Technical diagnostic focused on Strategy, Technology, and Sales.",
+    "subline": "Strategic diagnostic focused on Technology, Acquisition, and Sales.",
     "cta": "SCHEDULE DIAGNOSTIC NOW",
     "trust1": "PROFESSIONALISM",
     "trust2": "RESULT",
@@ -155,13 +155,13 @@
   },
   "scarcity": {
     "headline": "CAPACITY.",
-    "subline": "We limit the number of active projects to ensure the required technical rigor."
+    "subline": "Extreme technical rigor. We limit the number of projects per quarter."
   },
   "pilar_detalhe": {
     "back": "BACK",
     "services_badge": "EXECUTION",
     "services_title": "IMPLEMENTATION",
-    "services_sub": "Applied engineering with international standard tools.",
+    "services_sub": "Applied engineering with an international standard stack.",
     "deliverables_badge": "DELIVERABLES",
     "deliverables_title": "OUTPUT",
     "outcomes_badge": "VALUE",
@@ -187,94 +187,94 @@
     "marketing": {
       "badge": "ACQUISITION",
       "title": "ROI Engineering",
-      "tagline": "Traceable traffic and funnels focused on Net Margin.",
-      "description": "Technical implementation of acquisition channels. Focused on CAC reduction through real data and automations that eliminate investment waste.",
+      "tagline": "Investment scalability through data and performance.",
+      "description": "Traction channels optimized by data engineering. We reduce your CAC by shielding every funnel stage against operational waste.",
       "cta": "STRUCTURE ACQUISITION",
       "msg": "Hello! I'd like a technical diagnostic focused on Customer Acquisition.",
-      "ideal_for": "Operations that invest in traffic but lack real visibility of profit margin per channel.",
+      "ideal_for": "Operations investing high in traffic but lacking real visibility of profit margin per channel.",
       "services": {
-        "s1": { "title": "Paid Traffic", "desc": "Google and Meta optimized for real conversion, not clicks." },
-        "s2": { "title": "Scale Funnels", "desc": "Capture structures integrated directly with your inventory/sales." },
-        "s3": { "title": "Performance SEO", "desc": "Content architecture focused on buying intent." },
-        "s4": { "title": "CRM Automation", "desc": "Algorithmic lead nurturing to maximize LTV." },
-        "s5": { "title": "Advanced Tracking", "desc": "Server-side tracking implementation and 360° visibility." },
-        "s6": { "title": "Data Analytics", "desc": "Decision-making dashboards for executive level." }
+        "s1": { "title": "Paid Traffic", "desc": "Google and Meta optimized for real closing ROI." },
+        "s2": { "title": "Scale Funnels", "desc": "Capture architectures integrated directly into the sales system." },
+        "s3": { "title": "SEO Engine", "desc": "Technical visibility structure focused on buying intent." },
+        "s4": { "title": "CRM Automation", "desc": "Smart nurturing to maximize customer lifetime value." },
+        "s5": { "title": "Elite Tracking", "desc": "Server-side tracking for 100% data accuracy." },
+        "s6": { "title": "Data Insights", "desc": "Predictive intelligence for future investment rounds." }
       },
       "deliverables": {
         "d1": "CAC Stabilization Plan",
-        "d2": "Performance Landing Pages",
-        "d3": "Pixel and API Setup",
-        "d4": "Profitability Reports",
-        "d5": "24/7 Sales Funnels",
-        "d6": "A/B Testing Cell"
+        "d2": "High-Conversion Landing Pages",
+        "d3": "Advanced Pixel and API Setup",
+        "d4": "Real Profitability Reports",
+        "d5": "24/7 Service Systems",
+        "d6": "Multivariable Testing Environment"
       },
       "outcomes": {
-        "o1": "Stabilized Acquisition Cost",
-        "o2": "Revenue Predictability",
-        "o3": "Investment Scalability",
-        "o4": "Real Data for Decision Making"
+        "o1": "Stabilized and Predictable CAC",
+        "o2": "Security in Capital Contribution",
+        "o3": "Scaling without Margin Loss",
+        "o4": "Real Data for Geometric Growth"
       }
     },
     "ti": {
       "badge": "ARCHITECTURE",
-      "title": "Operational Support",
-      "tagline": "The technological base that shields your growth.",
-      "description": "Development and DevOps. We ensure your infrastructure is resilient, fast, and capable of handling scale peaks without technical friction.",
+      "title": "Technical Shielding",
+      "tagline": "The support infrastructure for your revenue.",
+      "description": "We shield your technological base. We ensure resilience, extreme speed, and total security so nothing interrupts your sales operation.",
       "cta": "SHIELD TECHNOLOGY",
       "msg": "Hello! I'd like a technical diagnostic focused on IT Infrastructure.",
-      "ideal_for": "Businesses dependent on digital stability that want to eliminate technical failures blocking revenue.",
+      "ideal_for": "Companies dependent on digital stability that want to eliminate failures costing revenue.",
       "services": {
-        "s1": { "title": "Web Platforms", "desc": "High-performance development with modern architecture." },
-        "s2": { "title": "DevOps", "desc": "Continuous integration and secure deploy environments (AWS/GCP)." },
-        "s3": { "title": "Cloud Systems", "desc": "Cloud setup optimized for cost and speed." },
-        "s4": { "title": "Digital Security", "desc": "Data shielding and protection against operational threats." },
-        "s5": { "title": "ERP Integrations", "desc": "Fluid connection between management systems and sales channels." },
-        "s6": { "title": "Conversion UX", "desc": "Design focused on reducing user cognitive effort." }
+        "s1": { "title": "Web Architecture", "desc": "High-performance development focused on conversion speed." },
+        "s2": { "title": "Elite DevOps", "desc": "Scalable environments and secure deploys (AWS/GCP/Azure)." },
+        "s3": { "title": "Cloud Strategy", "desc": "Cloud setup optimized for fixed cost and maximum efficiency." },
+        "s4": { "title": "Data Security", "desc": "Monitoring and protection against external operational threats." },
+        "s5": { "title": "Fluid Integrations", "desc": "Perfect technical connection between all your management systems." },
+        "s6": { "title": "Performance Audit", "desc": "Constant optimization based on Core Web Vitals (SEO/ROI)." }
       },
       "deliverables": {
-        "d1": "Clean Code Architecture",
-        "d2": "Scalable Server Setup",
-        "d3": "API Integrations",
-        "d4": "Performance Reports (Core Web Vitals)",
-        "d5": "Backup and Disaster Recovery",
-        "d6": "Proactive 24/7 Maintenance"
+        "d1": "Shielded Digital Architecture",
+        "d2": "Scalable Cloud Setup",
+        "d3": "High-Performance API Integrations",
+        "d4": "Unit Technical Reports",
+        "d5": "Disaster Recovery Protocols",
+        "d6": "Total Proactive Support"
       },
       "outcomes": {
-        "o1": "99.9% Minimum Uptime",
-        "o2": "Ultra-fast Navigation (ROI)",
-        "o3": "Digital Asset Protection",
-        "o4": "Agility in New Deploys"
+        "o1": "Uninterrupted Revenue Flows",
+        "o2": "Loading Speed (ROI Impact)",
+        "o3": "Total Data Integrity",
+        "o4": "Supreme Agility in New Deploys"
       }
     },
     "vendas": {
       "badge": "CONVERSION",
-      "title": "Sales Engineering",
-      "tagline": "Maximized lead-to-profit conversion via CRM and AI.",
-      "description": "Fine-tuning the commercial process. We implement tech and methods that transform interest into real revenue, with zero lead leakage.",
+      "title": "Commercial Engineering",
+      "tagline": "Maximum profit extraction per lead generated.",
+      "description": "Fine-tuning the commercial engine. We implement technology and intelligence to transform interest into real cash profit.",
       "cta": "MAXIMIZE SALES",
       "msg": "Hello! I'd like a technical diagnostic focused on Sales Engineering.",
-      "ideal_for": "Companies generating leads but feeling that closing is inefficient or poorly tracked.",
+      "ideal_for": "Companies generating interest volume but suffering from closing inefficiency.",
       "services": {
-        "s1": { "title": "AI Service", "desc": "Immediate lead qualification via WhatsApp/Chat." },
-        "s2": { "title": "CRM Setup", "desc": "Strategic configuration of HubSpot or Pipedrive." },
-        "s3": { "title": "Commercial Process", "desc": "Pipeline scaling and closing triggers." },
-        "s4": { "title": "Sales Automation", "desc": "Personalized and automatic persistent follow-up." },
-        "s5": { "title": "Revenue Forecast", "desc": "Data-driven predictability of sales funnel." },
-        "s6": { "title": "Edge Integration", "desc": "Total alignment between Lead and Sales Team." }
+        "s1": { "title": "Qualifying AI", "desc": "Immediate lead filtering via WhatsApp and digital channels." },
+        "s2": { "title": "Elite CRM Setup", "desc": "Strategic HubSpot architecture for 360-degree lead visibility." },
+        "s3": { "title": "Data-Driven Sales", "desc": "Commercial targeting based on technical behavior." },
+        "s4": { "title": "Follow-up Automation", "desc": "Automatic contact recovery for zero waste." },
+        "s5": { "title": "Technical Forecasting", "desc": "Data-driven predictability of sales funnel." },
+        "s6": { "title": "CRM-to-Ops integration", "desc": "Direct connection between the lead sold and operation." }
       },
       "deliverables": {
-        "d1": "Ready CRM Structure",
-        "d2": "Active Qualification Chatbots",
-        "d3": "Technical Sales Playbook",
-        "d4": "High-Conversion Scripts",
-        "d5": "Commercial Pipeline Dashboards",
-        "d6": "Technical Team Training"
+        "d1": "Optimized CRM Environment",
+        "d2": "High-Conversion Chatbots",
+        "d3": "Strategic Commercial Playbook",
+        "d4": "Technical Sales Scripts",
+        "d5": "Real-Time Pipeline Dashboards",
+        "d6": "Sales Team Technical Training"
       },
       "outcomes": {
-        "o1": "Increased Closing Rate",
-        "o2": "Reduced Sales Cycle",
-        "o3": "Improved Team Productivity",
-        "o4": "Full Tracking from Lead to Profit"
+        "o1": "Jump in Closing Rate",
+        "o2": "Drastically Reduced Sales Cycle",
+        "o3": "Maximum Team Productivity",
+        "o4": "Lead-to-Profit Visibility"
       }
     }
   }

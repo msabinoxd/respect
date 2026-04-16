@@ -35,7 +35,7 @@
     "badge": "INFRAESTRUTURA ESTRATÉGICA",
     "line1": "RESPECT.",
     "line2": "ESTRUTURA. TECNOLOGIA. RESULTADO.",
-    "subtitle": "O elo perdido entre seu Marketing e suas Vendas. Estruturamos operações de alto impacto com engenharia técnica integrada. <span class='text-brand-blue font-black'>Chega de vazamento de eficiência.</span>",
+    "subtitle": "O elo técnico que blinda o faturamento da sua operação. Fusão entre Marketing e Vendas com <span class='text-brand-blue font-black'>Engenharia de Execução de Elite.</span>",
     "cta": "Agendar Diagnóstico Técnico",
     "cta_secondary": "Ver Metodologia",
     "trust1": "Efetividade Real",
@@ -44,19 +44,19 @@
   },
   "problem": {
     "headline": "VAZAMENTO DE EFICIÊNCIA.",
-    "subline": "A fragmentação entre marketing, TI e comercial custa caro. Você perde margem, aumenta seu CAC e perde o controle da sua escala.",
+    "subline": "A fragmentação operacional custa caro. Quando Marketing, TI e Vendas não falam a mesma língua, você perde margem e sacrifica sua escala.",
     "item1_title": "MARKETING ISOLADO",
-    "item1_desc": "Investimento cego. Campanhas que geram tráfego mas falham na entrega para o comercial.",
+    "item1_desc": "Investimento cego. Campanhas de alto custo que falham na entrega de dados úteis para o fechamento.",
     "item2_title": "TECNOLOGIA FRÁGIL",
-    "item2_desc": "Sistemas lentos e integração precária. A infraestrutura se torna o gargalo do crescimento.",
+    "item2_desc": "Infraestrutura lenta que interrompe o faturamento. O gargalo técnico que sabota o seu crescimento.",
     "item3_title": "VENDAS SEM FLUXO",
-    "item3_desc": "Leads perdidos por processos arcaicos. Falta de inteligência de dados no fechamento.",
-    "footer": "A maioria das empresas não tem um problema de produto, tem um problema de integração."
+    "item3_desc": "Leads desperdiçados em processos manuais. Falta de inteligência comercial para máxima conversão.",
+    "footer": "A maioria das empresas não tem um problema de produto, tem um problema de integração técnica."
   },
   "big_idea": {
     "headline": "O MOTOR.",
     "subline": "CONSOLIDADO.",
-    "description": "Quando o marketing alimenta o CRM e a tecnologia sustenta a operação sob uma única inteligência técnica, a fricção desaparece. Apenas execução coordenada focada em Margem Líquida.",
+    "description": "Quando Marketing alimenta o CRM e a Tecnologia sustenta a operação sob uma única inteligência técnica, a fricção desaparece. Foco total em Margem Líquida.",
     "eco_acquisition": "AQUISIÇÃO",
     "eco_conversion": "ARQUITETURA",
     "eco_retention": "MAXIMIZAÇÃO"
@@ -68,26 +68,26 @@
     "badge": "NOSSA ENTREGA",
     "title_line1": "ESTRUTURA DE",
     "title_line2": "ALTO IMPACTO.",
-    "subtitle": "Três pilares vitais fundidos em um único chassi operacional. Sem silos. Apenas solidez.",
+    "subtitle": "Três fundamentos fundidos em um único chassi operacional para blindar sua rentabilidade.",
     "cta": "Analisar Estrutura",
     "marketing": {
       "title": "AQUISIÇÃO ROI.",
-      "desc": "Performance técnica. Geração de demanda qualificada e rastreável."
+      "desc": "Canais de escala com rastreabilidade total. Onde cada centavo investido gera dado e lucro."
     },
     "ti": {
       "title": "ARQUITETURA.",
-      "desc": "Sustento digital. DevOps, Web e Cloud focados em escala."
+      "desc": "Infraestrutura resiliente e rápida. Blindagem tecnológica para suportar qualquer escala."
     },
     "comercial": {
       "title": "CONVERSÃO.",
-      "desc": "Engenharia comercial. Onde o dado se transforma em lucro real."
+      "desc": "Engenharia comercial de alto fechamento. Transformamos dados em faturamento real."
     }
   },
   "explanation": {
     "badge": "MÉTODO",
     "title_highlight": "ENGENHARIA",
     "title": "DE ESCALA.",
-    "subtitle": "Processo linear e técnico focado na solidez operacional do seu negócio.",
+    "subtitle": "Processo linear e técnico focado na solidez máxima do seu negócio.",
     "step1": {
       "badge": "01",
       "title": "DIAGNÓSTICO"
@@ -109,19 +109,19 @@
     "badge": "AUTORIDADE",
     "headline": "NÚMEROS.",
     "headline_highlight": "MÉTRICAS REAIS.",
-    "subline": "Posicionamento técnico. Engenharia de valor comprovada.",
+    "subline": "Engenharia de valor comprovada em operações de alta complexidade.",
     "subline_strong": "SOLIDEZ SILENCIOSA.",
     "revenue_headline": "UMA ESTRUTURA. TRÊS ÁREAS.",
-    "revenue_subline": "A inteligência que blinda sua operação.",
+    "revenue_subline": "A inteligência técnica que blinda seu crescimento.",
     "stats": {
       "anos_label": "EXPERIÊNCIA",
-      "anos_desc": "Execução contínua em projetos técnicos de alta complexidade.",
+      "anos_desc": "Uma década de execução em infraestruturas digitais de alto impacto.",
       "pilares_label": "PILARES",
-      "pilares_desc": "Áreas integradas para eliminação total da fricção operacional.",
+      "pilares_desc": "Integração total para eliminar 100% da fricção entre áreas.",
       "resultados_label": "SOLIDEZ",
-      "resultados_desc": "Infraestrutura própria, resultados independentes.",
-      "suporte_label": "ESTABILIDADE",
-      "suporte_desc": "Monitoramento proativo focado na resiliência do negócio."
+      "resultados_desc": "Ativos próprios e infraestrutura independente de terceiros.",
+      "suporte_label": "RESILIÊNCIA",
+      "suporte_desc": "Monitoramento proativo focado em faturamento ininterrupto."
     }
   },
   "faq": {
@@ -130,15 +130,15 @@
     "headline_highlight": "TÉCNICA.",
     "subline": "Respostas diretas sobre nossa infraestrutura estratégica.",
     "q1": "Modelo de negócio?",
-    "a1": "Baseado em implementação técnica e performance sobre ROI.",
+    "a1": "Implementação técnica consultiva focada em solidez e ROI sustentável.",
     "q2": "Visibilidade de dados?",
-    "a2": "Transparência absoluta. Dashboards em tempo real para controle do CEO.",
+    "a2": "Transparência total. Dashboards decisórios para controle absoluto do CEO.",
     "q3": "Preciso das 3 áreas?",
-    "a3": "As áreas são modulares, mas a integração é o que resolve o vazamento de eficiência.",
+    "a3": "As áreas são modulares, mas a fusão técnica é o que blinda o vazamento de margem.",
     "q4": "Para quem é?",
-    "a4": "Empresas que atingiram o teto da escala e precisam de processos de elite.",
+    "a4": "Empresas que atingiram o teto operacional e precisam de processos de elite.",
     "q5": "Diferencial?",
-    "a5": "Assumimos a responsabilidade técnica total. O fim da culpa entre fornecedores.",
+    "a5": "Nós assumimos a responsabilidade técnica do ecossistema. Acabamos com silos.",
     "q6": "Como começar?",
     "a6": "Através de um diagnóstico técnico de 30 minutos sem custo inicial."
   },
@@ -146,7 +146,7 @@
     "badge": "CONTATO",
     "headline": "ESTRUTURE SUA",
     "headline_highlight": "OPERAÇÃO.",
-    "subline": "Diagnóstico técnico focado em Estratégia, Tecnologia e Comercial.",
+    "subline": "Diagnóstico estratégico focado em Tecnologia, Aquisição e Comercial.",
     "cta": "AGENDAR DIAGNÓSTICO AGORA",
     "trust1": "PROFISSIONALISMO",
     "trust2": "RESULTADO",
@@ -155,13 +155,13 @@
   },
   "scarcity": {
     "headline": "CAPACIDADE.",
-    "subline": "Limitamos o número de projetos ativos para garantir o rigor técnico exigido."
+    "subline": "Rigor técnico extremo. Limitamos o número de projetos por trimestre."
   },
   "pilar_detalhe": {
     "back": "VOLTAR",
     "services_badge": "EXECUÇÃO",
     "services_title": "IMPLEMENTAÇÃO",
-    "services_sub": "Engenharia aplicada com ferramentas de padrão internacional.",
+    "services_sub": "Engenharia aplicada com stack de padrão internacional.",
     "deliverables_badge": "RESULTADOS",
     "deliverables_title": "ENTREGÁVEIS",
     "outcomes_badge": "VALOR",
@@ -187,94 +187,94 @@
     "marketing": {
       "badge": "AQUISIÇÃO",
       "title": "Engenharia de ROI",
-      "tagline": "Tráfego e funis rastreáveis focados em Margem Líquida.",
-      "description": "Implementação técnica de canais de aquisição. Foco em redução de CAC através de dados reais e automações que eliminam o desperdício de investimento.",
+      "tagline": "Escalabilidade de investimento através de dados e performance.",
+      "description": "Canais de tração otimizados por engenharia de dados. Reduzimos seu CAC blindando cada etapa do funil contra desperdício operacional.",
       "cta": "ESTRUTURAR AQUISIÇÃO",
       "msg": "Olá! Gostaria de um diagnóstico técnico focado em Aquisição de Clientes.",
-      "ideal_for": "Operações que investem em tráfego mas não possuem visibilidade real da margem de lucro por canal.",
+      "ideal_for": "Negócios que investem alto em tráfego mas não possuem visibilidade real da lucro por canal.",
       "services": {
-        "s1": { "title": "Tráfego Pago", "desc": "Google e Meta otimizados para conversão real, não cliques." },
-        "s2": { "title": "Funis de Escala", "desc": "Estruturas de captura integradas diretamente com seu estoque/vendas." },
-        "s3": { "title": "SEO de Performance", "desc": "Arquitetura de conteúdo focada em intenção de compra." },
-        "s4": { "title": "Automação CRM", "desc": "Nutrição algorítmica de leads para maximizar o LTV." },
-        "s5": { "title": "Tracking Avançado", "desc": "Implementação de Server-side tracking e visibilidade 360°." },
-        "s6": { "title": "Data Analytics", "desc": "Dashboards decisórios para o nível executivo." }
+        "s1": { "title": "Tráfego Pago", "desc": "Google e Meta otimizados para ROI real de fechamento." },
+        "s2": { "title": "Funis de Escala", "desc": "Arquiteturas de captura integradas diretamente ao sistema de vendas." },
+        "s3": { "title": "SEO Engine", "desc": "Estrutura de visibilidade técnica focada em intenção de compra." },
+        "s4": { "title": "Automação CRM", "desc": "Nutrição inteligente para maximizar o valor vitalício do cliente." },
+        "s5": { "title": "Tracking Elite", "desc": "Server-side tracking para 100% de precisão nos dados." },
+        "s6": { "title": "Data Insights", "desc": "Inteligência preditiva para futuras rodadas de investimento." }
       },
       "deliverables": {
         "d1": "Plano de Estabilização de CAC",
-        "d2": "Landing Pages de Performance",
-        "d3": "Configuração de Pixel e API",
-        "d4": "Relatórios de Rentabilidade",
-        "d5": "Funis de Atendimento 24/7",
-        "d6": "Célula de Testes A/B"
+        "d2": "Landing Pages de Alta Conversão",
+        "d3": "Setup Avançado de Pixel e API",
+        "d4": "Relatórios de Rentabilidade Real",
+        "d5": "Sistemas de Atendimento 24/7",
+        "d6": "Ambiente de Testes Multivariáveis"
       },
       "outcomes": {
-        "o1": "Custo de Aquisição Estabilizado",
-        "o2": "Previsibilidade de Faturamento",
-        "o3": "Escalabilidade de Investimento",
-        "o4": "Dados Reais para Tomada de Decisão"
+        "o1": "CAC Estabilizado e Previsível",
+        "o2": "Segurança no Aporte de Capital",
+        "o3": "Escalabilidade sem Perda de Margem",
+        "o4": "Dados Reais para Crescimento Geométrico"
       }
     },
     "ti": {
       "badge": "ARQUITETURA",
-      "title": "Sustento Operacional",
-      "tagline": "A base tecnológica que blinda seu crescimento.",
-      "description": "Desenvolvimento e DevOps. Garantimos que sua infraestrutura seja resiliente, rápida e capaz de suportar picos de escala sem fricção técnica.",
+      "title": "Blindagem Técnica",
+      "tagline": "A infraestrutura de suporte para o seu faturamento.",
+      "description": "Blindamos sua base tecnológica. Garantimos resiliência, velocidade extrema e segurança total para que nada interrompa sua operação de vendas.",
       "cta": "BLINDAR TECNOLOGIA",
       "msg": "Olá! Gostaria de um diagnóstico técnico focado em Infraestrutura e TI.",
-      "ideal_for": "Negócios que dependem de estabilidade digital e querem eliminar falhas técnicas que impedem o faturamento.",
+      "ideal_for": "Empresas que dependem de estabilidade digital e querem eliminar falhas que custam faturamento.",
       "services": {
-        "s1": { "title": "Web Platforms", "desc": "Desenvolvimento de alta performance com arquitetura moderna." },
-        "s2": { "title": "DevOps", "desc": "Integração contínua e ambientes de deploy seguros (AWS/GCP)." },
-        "s3": { "title": "Sistemas Cloud", "desc": "Setup de nuvem otimizado para custo e velocidade." },
-        "s4": { "title": "Segurança Digital", "desc": "Blindagem de dados e proteção contra ataques operacionais." },
-        "s5": { "title": "Integrações ERP", "desc": "Conexão fluida entre sistemas de gestão e canais de venda." },
-        "s6": { "title": "UX de Conversão", "desc": "Design focado em reduzir o esforço cognitivo do usuário." }
+        "s1": { "title": "Web Architecture", "desc": "Desenvolvimento de alta performance com foco em velocidade de conversão." },
+        "s2": { "title": "DevOps de Elite", "desc": "Ambientes escaláveis e desploys seguros (AWS/GCP/Azure)." },
+        "s3": { "title": "Cloud Strategy", "desc": "Setup de nuvem otimizado para custo fixo e máxima eficiência." },
+        "s4": { "title": "Segurança de Dados", "desc": "Monitoramento e proteção contra ameaças operacionais externas." },
+        "s5": { "title": "Integrações Fluidas", "desc": "Conexão técnica perfeita entre todos os seus sistemas de gestão." },
+        "s6": { "title": "Performance Audit", "desc": "Otimização constante baseada em Core Web Vitals (SEO/ROI)." }
       },
       "deliverables": {
-        "d1": "Arquitetura de Código Limpa",
-        "d2": "Setup de Servidor Escalável",
-        "d3": "Integrações via API",
-        "d4": "Relatórios de Performance (Core Web Vitals)",
-        "d5": "Backup e Disaster Recovery",
-        "d6": "Manutenção Proativa 24/7"
+        "d1": "Arquitetura Digital Blindada",
+        "d2": "Setup de Cloud Escalável",
+        "d3": "Integrações via API de Alta Performance",
+        "d4": "Relatórios Técnicos Unitários",
+        "d5": "Protocólos de Disaster Recovery",
+        "d6": "Suporte Proativo Total"
       },
       "outcomes": {
-        "o1": "99.9% de Disponibilidade Mínima",
-        "o2": "Navegação Ultra-rápida (ROI)",
-        "o3": "Proteção de Ativos Digitais",
-        "o4": "Agilidade em Novos Lançamentos"
+        "o1": "Faturamento sem Interrupções Técnicas",
+        "o2": "Velocidade de Carregamento (Impacto ROI)",
+        "o3": "Integridade Total dos Dados",
+        "o4": "Agilidade Suprema em Novos Lançamentos"
       }
     },
     "vendas": {
       "badge": "CONVERSÃO",
-      "title": "Engenharia de Vendas",
-      "tagline": "Maximização de conversão leads-para-lucro via CRM e IA.",
-      "description": "Ajuste fino do processo comercial. Implementamos tecnologia e métodos que transformam interesse em faturamento real, sem perda de leads pelo caminho.",
+      "title": "Engenharia Comercial",
+      "tagline": "Máxima extração de lucro por lead gerado.",
+      "description": "Ajuste fino do motor comercial. Implementamos tecnologia e inteligência para transformar interesse em lucro real no caixa.",
       "cta": "MAXIMIZAR VENDAS",
       "msg": "Olá! Gostaria de um diagnóstico técnico focado em Engenharia Comercial e Vendas.",
-      "ideal_for": "Empresas que geram leads mas sentem que o fechamento é ineficiente ou mal rastreado.",
+      "ideal_for": "Empresas que geram volume de interesse mas sofrem com ineficiência no fechamento.",
       "services": {
-        "s1": { "title": "IA no Atendimento", "desc": "Qualificação imediata de leads via WhatsApp/Chat." },
-        "s2": { "title": "Setup de CRM", "desc": "Configuração estratégica de HubSpot ou Pipedrive." },
-        "s3": { "title": "Processo Comercial", "desc": "Escalonamento de pipeline e gatilhos de fechamento." },
-        "s4": { "title": "Automação de Vendas", "desc": "Follow-up persistente automático e personalizado." },
-        "s5": { "title": "Forecast de Receita", "desc": "Previsibilidade baseada em dados reais de funil." },
-        "s6": { "title": "Integração de Ponta", "desc": "Alinhamento total entre Lead e vendedor." }
+        "s1": { "title": "IA Qualificadora", "desc": "Filtro imediato de leads via WhatsApp e canais digitais." },
+        "s2": { "title": "Setup de CRM Elite", "desc": "Arquitetura estratégica de HubSpot para visão 360 do lead." },
+        "s3": { "title": "Comercial de Dados", "desc": "Direcionamento comercial baseado em comportamento técnico." },
+        "s4": { "title": "Automação Follow-up", "desc": "Recuperação automática de contatos para zero desperdício." },
+        "s5": { "title": "Forecasting Técnico", "desc": "Previsibilidade de faturamento baseada em dados de funil." },
+        "s6": { "title": "CRM-to-Ops integration", "desc": "Conexão direta entre o lead vendido e a operação." }
       },
       "deliverables": {
-        "d1": "Estrutura de CRM Pronta",
-        "d2": "Chatbots de Qualificação Ativos",
-        "d3": "Playbook de Vendas Técnico",
-        "d4": "Scripts de Alta Conversão",
-        "d5": "Dashboards de Pipeline Comercial",
-        "d6": "Treinamento Técnico para o Time"
+        "d1": "Ambiente de CRM Otimizado",
+        "d2": "Chatbots de Alta Conversão",
+        "d3": "Playbook Comercial Estratégico",
+        "d4": "Scripts Técnicos de Venda",
+        "d5": "Dashboards de Pipeline em Tempo Real",
+        "d6": "Treinamento para Time Comercial"
       },
       "outcomes": {
-        "o1": "Aumento na Taxa de Fechamento",
-        "o2": "Redução do Ciclo de Venda",
-        "o3": "Time Comercial mais Produtivo",
-        "o4": "Rastreio Completo da Origem ao Lucro"
+        "o1": "Salto na Taxa de Fechamento",
+        "o2": "Ciclo de Venda Reduzido drasticamente",
+        "o3": "Máxima Produtividade do Time",
+        "o4": "Visibilidade do Lead-para-Lucro"
       }
     }
   }

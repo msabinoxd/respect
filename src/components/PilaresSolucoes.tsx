@@ -15,7 +15,7 @@ export function PilaresSolucoes() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={staggerSlow}
-          classNames="mb-24 text-center lg:text-left"
+          className="mb-24 text-center lg:text-left"
         >
           <motion.div variants={fadeUpPremium}>
             <Badge label={t('pilares.badge')} variant="blue" className="mb-6" />

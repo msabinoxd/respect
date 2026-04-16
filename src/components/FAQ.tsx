@@ -12,7 +12,7 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
   const { t } = useTranslation();
 
   return (
-    <motion.div variants={fadeUpPremium} className="border-b border-black/[0.03]">
+    <motion.div variants={fadeUpPremium} className="border-b border-[var(--color-glass-border-clean)]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full text-left bg-[var(--background)] py-10 flex items-start justify-between gap-10 group"
@@ -71,7 +71,7 @@ export function FAQ() {
             className="lg:col-span-4 flex flex-col items-start"
           >
             <motion.div variants={fadeUpPremium}>
-              <Badge icon={HelpCircle} label={t('faq.badge')} variant="navy" className="bg-black/5 border-black/10 text-black/50 mb-8" />
+              <Badge icon={HelpCircle} label={t('faq.badge')} variant="navy" className="mb-8" />
             </motion.div>
 
             <motion.h2

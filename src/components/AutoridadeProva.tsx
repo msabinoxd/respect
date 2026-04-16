@@ -40,8 +40,8 @@ function StatCard({ stat, inView }: { stat: typeof STATS_META[0]; inView: boolea
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center p-12 bg-[var(--background)] dark:bg-white/5 border border-black/[0.03] dark:border-white/10 rounded-3xl group hover:border-black/[0.1] dark:hover:border-white/20 transition-all">
-      <div className="w-16 h-16 rounded-2xl bg-black/[0.02] flex items-center justify-center mb-8 text-black opacity-30 group-hover:text-brand-blue group-hover:opacity-100 transition-all">
+    <div className="flex flex-col items-center p-12 bg-[var(--background)] border border-[var(--color-glass-border-clean)] rounded-3xl group hover:border-[var(--foreground)]/10 transition-all">
+      <div className="w-16 h-16 rounded-2xl bg-[var(--foreground)]/[0.02] flex items-center justify-center mb-8 text-[var(--foreground)] opacity-30 group-hover:text-brand-blue group-hover:opacity-100 transition-all">
         <stat.icon size={26} strokeWidth={1.5} />
       </div>
 
@@ -84,7 +84,7 @@ export function AutoridadeProva() {
             className="lg:col-span-12 flex flex-col items-center text-center mb-24"
           >
             <motion.div variants={fadeUpPremium}>
-              <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="bg-black/5 border-black/10 text-black/50 mb-8" />
+              <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="mb-8" />
             </motion.div>
 
             <motion.h2
@@ -105,12 +105,12 @@ export function AutoridadeProva() {
 
             <motion.div
               variants={fadeUpPremium}
-              className="flex flex-col items-center border-t border-black/[0.03] pt-16 w-full"
+              className="flex flex-col items-center border-t border-[var(--color-glass-border-clean)] pt-16 w-full"
             >
               <h3 className="text-xs font-black text-text-muted tracking-[0.4em] uppercase mb-4">
                 {t('autoridade.revenue_headline')}
               </h3>
-              <p className="text-black font-black text-3xl md:text-7xl uppercase tracking-tighter">
+              <p className="text-[var(--foreground)] font-black text-3xl md:text-7xl uppercase tracking-tighter">
                 {t('autoridade.revenue_subline')}
               </p>
             </motion.div>

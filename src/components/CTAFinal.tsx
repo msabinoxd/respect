@@ -20,7 +20,7 @@ export function CTAFinal() {
             className="flex flex-col items-start text-left"
           >
             <motion.div variants={fadeUpPremium} className="mb-8">
-              <Badge icon={ShieldCheck} label={t('cta_final.badge')} variant="navy" className="bg-black/5 border-black/10 text-black/50" />
+              <Badge icon={ShieldCheck} label={t('cta_final.badge')} variant="navy" className="mb-8" />
             </motion.div>
 
             <motion.h2
@@ -68,15 +68,16 @@ export function CTAFinal() {
              <img 
               src="images/branding/respect_methodology_3d.png" 
               alt={t('alts.methodology_3d')}
-              className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02] loading='lazy'"
+              className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02]"
+              loading="lazy"
             />
           </motion.div>
         </div>
 
-        <div className="mt-40 pt-12 border-t border-black/[0.03] dark:border-white/5 flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="mt-40 pt-12 border-t border-[var(--color-glass-border-clean)] flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-text-muted/40">
             <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name}</p>
-            <span className="hidden md:block w-1 h-1 rounded-full bg-black/10" />
+            <span className="hidden md:block w-1 h-1 rounded-full bg-[var(--foreground)]/10" />
             <p>{CONFIG.brand.tagline}</p>
           </div>
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-text-muted/40 text-center md:text-right">

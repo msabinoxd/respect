@@ -52,7 +52,8 @@ export function BigIdeaSection() {
             <img
               src="images/branding/respect_big_idea_integration_1776280861053.png"
               alt={t('alts.engine_integration')}
-              className="relative z-10 w-full max-w-[800px] h-auto transition-transform duration-1000 hover:scale-[1.01] loading='lazy'"
+              className="relative z-10 w-full max-w-[800px] h-auto transition-transform duration-1000 hover:scale-[1.01]"
+              loading="lazy"
             />
           </motion.div>
 
@@ -69,7 +70,7 @@ export function BigIdeaSection() {
                 variants={fadeUpPremium}
                 className="flex flex-col items-center gap-6 group"
               >
-                <div className="w-20 h-20 rounded-2xl bg-black/[0.02] border border-black/[0.03] flex items-center justify-center text-text-title group-hover:text-brand-blue group-hover:bg-brand-blue/5 group-hover:border-brand-blue/10 transition-all duration-500">
+                <div className="w-20 h-20 rounded-2xl bg-[var(--foreground)]/[0.02] border border-[var(--color-glass-border-clean)] flex items-center justify-center text-text-title group-hover:text-brand-blue group-hover:bg-brand-blue/5 group-hover:border-brand-blue/10 transition-all duration-500">
                   <item.icon size={30} strokeWidth={1.5} />
                 </div>
                 <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-text-muted group-hover:text-brand-blue transition-colors">

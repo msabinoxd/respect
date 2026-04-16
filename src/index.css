@@ -48,7 +48,11 @@
   --color-text-body: #F1F5F9;
   --color-text-muted: #94A3B8;
   --color-glass-clean: rgba(0, 0, 0, 0.85);
-  --color-glass-border-clean: rgba(255, 255, 255, 0.08);
+  --color-glass-border-clean: rgba(255, 255, 255, 0.1);
+}
+
+.dark img {
+  filter: brightness(0.9) contrast(1.1);
 }
 
 .v2-theme {
@@ -136,4 +140,14 @@ h1, h2, h3 {
   0% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0.1); }
   70% { box-shadow: 0 0 0 15px rgba(0, 144, 255, 0); }
   100% { box-shadow: 0 0 0 0 rgba(0, 144, 255, 0); }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
 }
