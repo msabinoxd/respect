@@ -1,6 +1,9 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export function BlueprintSales() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full h-full flex items-center justify-center p-8">
       <svg viewBox="0 0 200 160" className="w-full h-full text-brand-blue opacity-80">
@@ -51,8 +54,12 @@ export function BlueprintSales() {
           transition={{ duration: 1.5, repeat: Infinity }}
         />
 
-        <text x="40" y="15" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">TRAFFIC_IN</text>
-        <text x="110" y="150" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">CONVERSION_OUT</text>
+        <text x="40" y="15" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">
+          {t('blueprints.sales.traffic')}
+        </text>
+        <text x="110" y="150" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">
+          {t('blueprints.sales.conversion')}
+        </text>
       </svg>
     </div>
   );

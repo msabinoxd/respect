@@ -290,6 +290,30 @@
       }
     }
   },
+  "preloader": {
+    "log1": "INITIALIZING_ACQUISITION_ENGINE...",
+    "log2": "SYNCING_CONVERSION_ARCHITECTURE...",
+    "log3": "AUDITING_OPERATIONAL_SHIELDING...",
+    "log4": "ESTABLISHING_ELITE_RIGOR...",
+    "log5": "RESPECT_SYSTEM_READY."
+  },
+  "blueprints": {
+    "marketing": {
+      "flow": "ACQUISITION_FLOW",
+      "sync": "DATA_SYNC"
+    },
+    "ti": {
+      "infra": "INFRA_V4",
+      "node": "ACTIVE_NODE"
+    },
+    "sales": {
+      "traffic": "TRAFFIC_IN",
+      "conversion": "CONVERSION_OUT"
+    },
+    "methodology": {
+      "map": "SYSTEM_EVOLUTION_MAP"
+    }
+  },
   "lgpd": {
     "modal_title": "ACCESS CONDITIONS AND PRIVACY",
     "modal_text": "To view our infrastructure and ensure technical rigor, we use performance and security cookies. By accepting, you agree to our technical and commercial data processing protocol.",

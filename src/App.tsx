@@ -3,6 +3,7 @@ import { useScroll, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { LGPDModal } from './components/LGPDModal';
+import { SovereignPreloader } from './components/SovereignPreloader';
 import { Home } from './pages/Home';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CONFIG } from './config';
@@ -31,6 +32,7 @@ function AppLayout() {
 
       <WhatsAppFloat />
       <LGPDModal />
+      <SovereignPreloader />
     </div>
   );
 }

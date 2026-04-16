@@ -1,6 +1,9 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export function BlueprintTI() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full h-full flex items-center justify-center p-8">
       <svg viewBox="0 0 200 160" className="w-full h-full text-[var(--foreground)] opacity-60">
@@ -59,8 +62,12 @@ export function BlueprintTI() {
           className="opacity-40"
         />
         
-        <text x="30" y="55" className="text-[5px] font-black fill-current opacity-30 uppercase tracking-widest">INFRA_V4</text>
-        <text x="130" y="55" className="text-[5px] font-black fill-current opacity-30 uppercase tracking-widest">NODE_ACTIVE</text>
+        <text x="30" y="55" className="text-[5px] font-black fill-current opacity-30 uppercase tracking-widest">
+          {t('blueprints.ti.infra')}
+        </text>
+        <text x="130" y="55" className="text-[5px] font-black fill-current opacity-30 uppercase tracking-widest">
+          {t('blueprints.ti.node')}
+        </text>
       </svg>
     </div>
   );

@@ -1,6 +1,9 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export function BlueprintMarketing() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full h-full flex items-center justify-center p-8">
       <svg viewBox="0 0 200 160" className="w-full h-full text-brand-blue opacity-80">
@@ -65,8 +68,12 @@ export function BlueprintMarketing() {
         ))}
         
         {/* Technical Labels */}
-        <text x="10" y="20" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">AQUISITION_FLOW</text>
-        <text x="160" y="140" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">DATA_SYNC</text>
+        <text x="10" y="20" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest">
+          {t('blueprints.marketing.flow')}
+        </text>
+        <text x="160" y="140" className="text-[6px] font-black fill-current opacity-40 uppercase tracking-widest text-right" textAnchor="end">
+          {t('blueprints.marketing.sync')}
+        </text>
       </svg>
     </div>
   );

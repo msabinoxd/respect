@@ -3,6 +3,7 @@ import { Target, Lightbulb, Settings, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { Container, Section, Badge } from './base';
+import { BlueprintMethodology } from './BlueprintMethodology';
 
 export function ExplanationSection() {
   const { t } = useTranslation();
@@ -83,7 +84,7 @@ export function ExplanationSection() {
           >
             <div className="absolute inset-0 bg-brand-blue/10 rounded-full blur-[120px] -z-1" />
             
-            <div className="saas-card bg-white/5 border-white/10 p-4 relative overflow-hidden group">
+            <div className="saas-card bg-white/5 border-white/10 p-4 relative overflow-hidden group min-h-[400px] flex items-center justify-center">
                {/* Grid Background */}
                <div className="absolute inset-0 opacity-10 pointer-events-none"
                     style={{
@@ -92,11 +93,7 @@ export function ExplanationSection() {
                     }} 
                />
                
-               <img 
-                 src="images/branding/respect_workflow_visual.png" 
-                 alt={t('alts.workflow_visual')} 
-                 className="w-full h-auto relative z-10 group-hover:scale-105 transition-transform duration-1000"
-               />
+               <BlueprintMethodology />
 
                {/* Stats Floating */}
                <div className="absolute bottom-10 left-10 p-6 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 z-20">

@@ -10,6 +10,7 @@ const TransitionSection = lazy(() => import('../components/TransitionSection').t
 const PilaresSolucoes = lazy(() => import('../components/PilaresSolucoes').then((m) => ({ default: m.PilaresSolucoes })));
 const ExplanationSection = lazy(() => import('../components/ExplanationSection').then(m => ({ default: m.ExplanationSection })));
 const AutoridadeProva = lazy(() => import('../components/AutoridadeProva').then((m) => ({ default: m.AutoridadeProva })));
+const TechStackMarquee = lazy(() => import('../components/TechStackMarquee').then((m) => ({ default: m.TechStackMarquee })));
 const ScarcitySection = lazy(() => import('../components/ScarcitySection').then(m => ({ default: m.ScarcitySection })));
 const CTAFinal = lazy(() => import('../components/CTAFinal').then((m) => ({ default: m.CTAFinal })));
 
@@ -54,6 +55,7 @@ export function Home() {
         {/* 7. PROVA — Autoridade com números e métricas */}
         <div id="autoridade">
           <AutoridadeProva />
+          <TechStackMarquee />
         </div>
 
         {/* 8. FAQ — Quebra de objeções finais */}
