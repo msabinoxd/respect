@@ -33,7 +33,9 @@ export function Header() {
   const handleNav = (href: string, e: React.MouseEvent) => {
     if (href.startsWith('#')) {
       e.preventDefault();
-      if (location.pathname !== '/') {
+      const isHomePath = location.pathname === '/' || location.pathname === '/v2';
+      
+      if (!isHomePath) {
         navigate('/' + href);
       } else {
         const id = href.substring(1);

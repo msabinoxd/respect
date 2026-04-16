@@ -15,11 +15,14 @@ export function MethodologyV2() {
   ];
 
   return (
-    <Section variant="white" id="metodologia" className="py-32">
+    <Section variant="white" id="metodologia" className="py-32 md:py-48 bg-white relative overflow-hidden">
+       {/* Decorative Background Glow */}
+       <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-brand-blue/[0.03] blur-[120px] rounded-full -z-1" />
+
        <Container size="lg">
-         <div className="flex flex-col lg:flex-row gap-20 items-center">
+         <div className="flex flex-col lg:flex-row gap-24 lg:gap-32 items-center">
            
-           <div className="flex-1 w-full">
+           <div className="flex-1 w-full text-center lg:text-left">
              <motion.div
                initial="hidden"
                whileInView="visible"
@@ -27,19 +30,19 @@ export function MethodologyV2() {
                variants={staggerSlow}
              >
                <motion.div variants={fadeUpPremium}>
-                 <Badge label="EXECUÇÃO LINEAR" variant="blue" className="mb-8" />
+                 <Badge label="EXECUÇÃO LINEAR" variant="blue" className="mb-10" />
                </motion.div>
                
                <motion.h2
                  variants={fadeUpPremium}
-                 className="text-4xl md:text-6xl font-black text-text-title mb-8 leading-[1.1] tracking-tight"
+                 className="text-4xl md:text-7xl font-black text-text-title mb-10 leading-[1] tracking-[-0.04em] uppercase"
                >
                  {t('methodology.headline')}
                </motion.h2>
 
                <motion.p
                  variants={fadeUpPremium}
-                 className="text-xl md:text-2xl text-text-body font-bold opacity-80 mb-12"
+                 className="text-xl md:text-2xl text-text-body font-bold opacity-70 mb-14 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                >
                  {t('methodology.subline')}
                </motion.p>
@@ -48,39 +51,45 @@ export function MethodologyV2() {
                   <Button 
                     size="lg" 
                     variant="primary" 
-                    className="!px-10 !py-5 shadow-xl shadow-brand-blue/20"
+                    className="!px-12 !py-6 shadow-sh-button group"
                     onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })}
                   >
                     {t('methodology.cta')}
-                    <ArrowRight className="ml-2" />
+                    <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" />
                   </Button>
                </motion.div>
              </motion.div>
            </div>
 
            <div className="flex-1 w-full">
-             <div className="space-y-4">
+             <div className="space-y-6">
                {steps.map((text, i) => (
                  <motion.div
                    key={i}
-                   initial={{ opacity: 0, x: 20 }}
+                   initial={{ opacity: 0, x: 30 }}
                    whileInView={{ opacity: 1, x: 0 }}
                    viewport={{ once: true }}
                    transition={{ delay: i * 0.15 + 0.5, duration: 0.8 }}
-                   className="p-8 rounded-2xl bg-slate-50 border border-black/[0.03] flex gap-6 group hover:bg-white hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-500"
+                   whileHover={{ x: 12, transition: { duration: 0.3 } }}
+                   className="p-10 rounded-[32px] bg-[#F9FAFB] border border-black/[0.03] flex flex-col sm:flex-row gap-8 group hover:bg-white hover:shadow-2xl hover:border-brand-blue/10 transition-all duration-500 relative overflow-hidden"
                  >
-                   <div className="shrink-0 w-12 h-12 rounded-xl bg-white shadow-sm border border-black/[0.03] flex items-center justify-center text-brand-blue font-black text-xs group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                   {/* Subtle Indicator */}
+                   <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-blue scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top" />
+                   
+                   <div className="shrink-0 w-16 h-16 rounded-2xl bg-white shadow-premium border border-black/[0.02] flex items-center justify-center text-brand-blue font-black text-lg group-hover:bg-brand-blue group-hover:text-white transition-all duration-500">
                      {String(i + 1).padStart(2, '0')}
                    </div>
                    <div className="flex-1">
-                      <p className="text-lg font-bold text-text-title leading-relaxed">
-                        {text.split(':')[0]}
-                        <span className="block text-sm font-medium opacity-60 mt-1">
-                          {text.split(':')[1]}
-                        </span>
+                      <p className="text-xl font-black text-text-title leading-tight mb-2 uppercase tracking-tighter">
+                        {text.split(':')[1] ? text.split(':')[0] : text}
                       </p>
+                      {text.split(':')[1] && (
+                        <p className="text-base font-bold text-text-body opacity-60 leading-relaxed">
+                          {text.split(':')[1]}
+                        </p>
+                      )}
                    </div>
-                   <CheckCircle2 className="shrink-0 text-brand-blue opacity-0 group-hover:opacity-100 transition-opacity" size={24} />
+                   <CheckCircle2 className="shrink-0 text-brand-blue opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 transition-all duration-500" size={28} />
                  </motion.div>
                ))}
              </div>

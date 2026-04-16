@@ -12,26 +12,26 @@ export function ProblemV2() {
       icon: TrendingDown,
       title: t('problem.items.mkt.title'),
       desc: t('problem.items.mkt.desc'),
-      danger: true
     },
     {
       icon: Layers,
       title: t('problem.items.ti.title'),
       desc: t('problem.items.ti.desc'),
-      danger: true
     },
     {
       icon: MousePointerClick,
       title: t('problem.items.sales.title'),
       desc: t('problem.items.sales.desc'),
-      danger: true
     }
   ];
 
   return (
-    <Section variant="light" id="problema" className="relative bg-slate-50">
+    <Section variant="light" id="problema" className="relative bg-[#F8FAFC] py-32 overflow-hidden">
+      {/* Background Subtle Elements */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/[0.02] blur-[150px] rounded-full -z-1" />
+      
       <Container size="lg">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row gap-24 lg:gap-32">
           
           {/* Information Side */}
           <motion.div
@@ -39,22 +39,22 @@ export function ProblemV2() {
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={staggerSlow}
-            className="flex-1"
+            className="flex-1 lg:sticky lg:top-32 h-fit"
           >
             <motion.div variants={fadeUpPremium}>
-              <Badge label="ANÁLISE DE IMPACTO" variant="navy" className="mb-6" />
+              <Badge label="ANÁLISE DE IMPACTO" variant="navy" className="mb-8" />
             </motion.div>
             
             <motion.h2
               variants={fadeUpPremium}
-              className="text-4xl md:text-6xl font-black text-text-title tracking-tight mb-8 leading-[1.1]"
+              className="text-4xl md:text-6xl font-black text-text-title tracking-[-0.04em] mb-10 leading-[1.05] uppercase"
             >
               {t('problem.headline')}
             </motion.h2>
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-xl md:text-2xl text-red-600 font-bold mb-10 border-l-4 border-red-500 pl-8 py-2"
+              className="text-xl md:text-2xl text-red-600 font-bold mb-12 border-l-4 border-red-500/30 pl-8 py-3 bg-red-500/5 rounded-r-2xl"
             >
               {t('problem.subline')}
             </motion.p>
@@ -66,24 +66,32 @@ export function ProblemV2() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerSlow}
-            className="flex-1 space-y-6"
+            className="flex-1 space-y-8"
           >
             {problems.map((prob, i) => (
               <motion.div
                 key={i}
                 variants={fadeUpPremium}
-                className="group relative p-8 rounded-3xl bg-white border border-red-100 hover:border-red-500 transition-all duration-500 shadow-sm hover:shadow-xl"
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative p-10 rounded-[32px] bg-white border border-red-100 transition-all duration-500 shadow-premium hover:shadow-2xl hover:border-red-500/20 overflow-hidden"
               >
-                <div className="flex gap-8 items-start">
-                  <div className="shrink-0 w-16 h-16 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-all">
-                    <prob.icon size={28} />
-                  </div>
+                {/* Scanner Shine Effect */}
+                <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out bg-gradient-to-r from-transparent via-red-500/5 to-transparent -z-0" />
+                
+                <div className="relative z-10 flex gap-8 items-start">
+                  <motion.div 
+                    animate={{ y: [0, -3, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
+                    className="shrink-0 w-20 h-20 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-all duration-500 shadow-inner"
+                  >
+                    <prob.icon size={32} />
+                  </motion.div>
                   <div>
-                    <h3 className="text-xl font-black text-text-title mb-3 uppercase tracking-tight flex items-center gap-3">
+                    <h3 className="text-2xl font-black text-text-title mb-4 uppercase tracking-tighter flex items-center gap-3">
                       {prob.title}
-                      <AlertTriangle size={16} className="text-red-500 opacity-50" />
+                      <AlertTriangle size={18} className="text-red-500 opacity-30 group-hover:opacity-100 transition-opacity" />
                     </h3>
-                    <p className="text-text-body font-bold opacity-80 leading-relaxed">
+                    <p className="text-text-body font-bold opacity-70 leading-relaxed text-lg">
                       {prob.desc}
                     </p>
                   </div>

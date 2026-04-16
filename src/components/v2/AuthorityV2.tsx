@@ -31,9 +31,9 @@ export function AuthorityV2() {
   ];
 
   return (
-    <Section variant="navy" id="autoridade" className="bg-slate-900 border-y border-white/5 py-32">
-       {/* Background Grid Pattern */}
-       <div className="absolute inset-0 opacity-[0.03] bg-grid-premium" />
+    <Section variant="navy" id="autoridade" className="bg-[#050B15] border-y border-white/5 py-32 md:py-48 overflow-hidden relative">
+       {/* Background Grid Pattern - High Contrast */}
+       <div className="absolute inset-0 opacity-[0.05] bg-grid-premium pointer-events-none" />
        
        <Container size="lg" className="relative z-10">
          <motion.div
@@ -41,29 +41,29 @@ export function AuthorityV2() {
            whileInView="visible"
            viewport={{ once: true, margin: '-100px' }}
            variants={staggerSlow}
-           className="text-center mb-20"
+           className="text-center mb-32"
          >
            <motion.div variants={fadeUpPremium}>
-             <Badge label="AUTORIDADE TÉCNICA" variant="light" className="mb-8" />
+             <Badge label="AUTORIDADE TÉCNICA" variant="light" className="mb-10" />
            </motion.div>
            
            <motion.h2
              variants={fadeUpPremium}
-             className="text-4xl md:text-7xl font-black text-white mb-8 tracking-tight uppercase leading-[0.9]"
+             className="text-4xl md:text-8xl font-black text-white mb-10 tracking-[-0.04em] uppercase leading-[0.9] max-w-5xl mx-auto"
            >
              {t('authority.headline')}
            </motion.h2>
 
            <motion.p
              variants={fadeUpPremium}
-             className="text-xl md:text-2xl text-white/50 max-w-3xl mx-auto font-medium"
+             className="text-xl md:text-2xl text-white/40 max-w-3xl mx-auto font-bold"
            >
              {t('authority.subline')}
            </motion.p>
          </motion.div>
 
          {/* STATS GRID */}
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-32">
            {stats.map((stat, i) => (
              <motion.div
                key={i}
@@ -71,32 +71,36 @@ export function AuthorityV2() {
                whileInView="visible"
                viewport={{ once: true }}
                variants={fadeUpPremium}
-               className="p-10 rounded-[32px] bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.06] hover:border-white/10 transition-all group"
+               whileHover={{ y: -10, transition: { duration: 0.3 } }}
+               className="p-12 rounded-[40px] bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.04] hover:border-brand-blue/30 transition-all duration-500 group shadow-2xl relative overflow-hidden"
              >
-               <div className="text-5xl md:text-6xl font-black text-brand-blue mb-4 group-hover:scale-110 transition-transform origin-left">
+               {/* Neon Glow Effect on Hover */}
+               <div className="absolute -inset-1 bg-brand-blue/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-1" />
+               
+               <div className="text-6xl md:text-7xl font-black text-brand-blue mb-6 group-hover:scale-110 transition-transform origin-left duration-500 drop-shadow-[0_0_15px_rgba(0,144,255,0.3)]">
                  {stat.value}
                </div>
-               <div className="text-lg font-black text-white mb-4 uppercase tracking-tighter">
+               <div className="text-xl font-black text-white mb-4 uppercase tracking-tighter">
                  {stat.label}
                </div>
-               <p className="text-white/40 text-sm font-medium leading-relaxed">
+               <p className="text-white/40 text-[15px] font-bold leading-relaxed">
                  {stat.desc}
                </p>
              </motion.div>
            ))}
          </div>
 
-         {/* PARTNERS / TECH STACK - proeminente */}
+         {/* PARTNERS / TECH STACK */}
          <motion.div
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
            viewport={{ once: true }}
-           className="pt-16 border-t border-white/5"
+           className="pt-24 border-t border-white/5"
          >
-           <p className="text-[10px] font-black tracking-[0.4em] text-white/20 uppercase mb-12 text-center">
+           <p className="text-[11px] font-black tracking-[0.4em] text-white/20 uppercase mb-16 text-center">
              INFRAESTRUTURA DE PADRÃO GLOBAL
            </p>
-           <div className="grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+           <div className="grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition-all duration-1000 ease-out scale-95 hover:scale-100">
              <TechStackMarquee />
            </div>
          </motion.div>
