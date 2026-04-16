@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
@@ -9,13 +9,22 @@ export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="relative min-h-[90vh] md:min-h-screen flex items-center pt-20 overflow-hidden bg-bg-light">
-      {/* Background Glows */}
+    <section id="home" className="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 overflow-hidden bg-bg-light">
+      {/* Dynamic Background Grids (Builderall Style) */}
+      <div 
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle at 2px 2px, var(--color-brand-blue) 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }}
+      />
+
+      {/* Ambient Glows */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-cyan/5 rounded-full blur-[120px] pointer-events-none" />
 
       <Container size="lg" className="relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -24,95 +33,101 @@ export function Hero() {
           >
             {/* Badge */}
             <motion.div variants={fadeUpPremium} className="mb-8">
-              <Badge label={t('hero.badge')} variant="blue" />
+              <Badge label={t('hero.badge')} variant="blue" className="px-4 py-1.5" />
             </motion.div>
 
-            {/* Headline */}
+            {/* Headline - "Silent Authority" style */}
             <motion.h1
               variants={fadeUpPremium}
-              className="text-[42px] sm:text-[60px] md:text-[80px] lg:text-[88px] font-black leading-[0.95] mb-8 text-text-title tracking-tighter uppercase font-[var(--font-display)]"
+              className="text-[48px] sm:text-[64px] md:text-[84px] lg:text-[92px] font-black leading-[0.9] mb-8 text-text-title tracking-tighter uppercase font-display"
             >
-              {t('hero.line1')}
+              <span className="opacity-40">{t('hero.line1')}</span>
               <br />
               <span className="text-gradient-builderall">{t('hero.line2')}</span>
             </motion.h1>
 
-            {/* Subtitle */}
+            {/* Subtitle - Professional & Technical */}
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg md:text-xl text-text-body w-full max-w-xl leading-relaxed font-medium mb-12"
+              className="text-lg md:text-xl text-text-body w-full max-w-xl leading-relaxed font-medium mb-12 border-l-4 border-brand-blue/20 pl-6"
               dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
             />
 
-            {/* CTAs */}
-            <motion.div variants={fadeUpPremium} className="flex flex-col sm:flex-row items-center gap-4 w-full">
+            {/* Main Actions */}
+            <motion.div variants={fadeUpPremium} className="flex flex-col sm:flex-row items-center gap-4 w-full mb-12">
               <Button
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
                 onClick={() => trackAndOpenWA(CONFIG.wa.msgHero, 'Hero_Main_CTA')}
-                className="w-full sm:w-auto text-base sm:text-lg px-12 animate-[pulseBlue_2s_infinite]"
+                className="w-full sm:w-auto text-base sm:text-lg px-12 btn-pulse"
               >
                 {t('hero.cta')}
               </Button>
               <Button
-                variant="secondary"
+                variant="ghost"
                 size="lg"
                 onClick={() => {
-                  const el = document.getElementById('problema');
+                  const el = document.getElementById('metodologia');
                   el?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="w-full sm:w-auto text-base sm:text-lg px-10"
+                className="w-full sm:w-auto text-base font-bold tracking-widest"
               >
                 {t('hero.cta_secondary')}
               </Button>
             </motion.div>
 
-            {/* Trust Bullets */}
-            <motion.div variants={fadeUpPremium} className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-12 text-[11px] font-bold uppercase tracking-widest text-text-muted">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-brand-blue" />
-                {t('hero.trust1')}
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-brand-blue" />
-                {t('hero.trust2')}
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-brand-blue" />
-                {t('hero.trust3')}
-              </div>
+            {/* Technical Trust Indicators */}
+            <motion.div variants={fadeUpPremium} className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-white shadow-soft flex items-center justify-center text-brand-blue border border-black/[0.03]">
+                    {i === 1 && <Zap size={18} />}
+                    {i === 2 && <ShieldCheck size={18} />}
+                    {i === 3 && <CheckCircle2 size={18} />}
+                  </div>
+                  <div className="text-[10px] font-black uppercase tracking-widest text-text-muted leading-tight">
+                    {t(`hero.trust${i}`)}
+                  </div>
+                </div>
+              ))}
             </motion.div>
           </motion.div>
 
-          {/* Hero Visual */}
+          {/* Hero Visual - Premium MacBook Mockup */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
-            className="hidden lg:flex justify-center relative"
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 1.2, ease: [0.25, 0.4, 0.25, 1], delay: 0.3 }}
+            className="hidden lg:block relative"
           >
-            <div className="relative w-full aspect-square max-w-[550px]">
-              <div className="absolute inset-0 bg-brand-blue/10 rounded-[40px] blur-3xl -z-10" />
-              <img
-                src="images/branding/respect_hero_abstract_3d_1776280816156.png"
-                alt="Respect Digital Sovereignty"
-                className="w-full h-full object-cover rounded-[40px] shadow-premium border border-white/20"
-              />
+            <div className="relative group">
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-brand-blue/10 rounded-[40px] blur-3xl -z-10 group-hover:bg-brand-blue/20 transition-all duration-700" />
               
-              <motion.div
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-10 -left-10 p-6 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl flex items-center gap-4 border border-white/40"
-              >
-                <div className="w-12 h-12 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
-                  <ShieldCheck size={24} />
-                </div>
-                <div>
-                  <div className="text-[10px] font-bold text-text-muted uppercase tracking-widest">Sovereignty</div>
-                  <div className="text-sm font-black text-text-title uppercase">Guaranteed</div>
-                </div>
-              </motion.div>
+              {/* Laptop Image Mockup */}
+              <div className="relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
+                <img
+                  src="images/branding/respect_laptop_mockup.png"
+                  alt="Respect Infrastructure System"
+                  className="w-full h-auto drop-shadow-[0_35px_60px_rgba(0,144,255,0.15)]"
+                />
+                
+                {/* Floating Tech Badge */}
+                <motion.div
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                  className="absolute -top-6 -right-6 p-5 bg-white/90 backdrop-blur-md rounded-2xl shadow-premium border border-white/40 flex items-center gap-3"
+                >
+                  <div className="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shadow-lg">
+                    <ShieldCheck size={20} />
+                  </div>
+                  <div>
+                    <div className="text-[9px] font-black text-brand-blue uppercase tracking-tighter">Status</div>
+                    <div className="text-xs font-black text-text-title uppercase">Sovereign Engine Active</div>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>

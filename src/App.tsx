@@ -5,12 +5,14 @@ import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { Home } from './pages/Home';
 import { PilarDetalhe } from './pages/PilarDetalhe';
 import { NotFound } from './pages/NotFound';
+import { CONFIG } from './config';
 
 function AppLayout() {
   const { scrollYProgress } = useScroll();
+  const uiVersionClass = CONFIG.UI_VERSION === 'V2' ? 'v2-theme' : '';
 
   return (
-    <div className="min-h-screen bg-bg-light text-text-body font-sans">
+    <div className={`min-h-screen bg-bg-light text-text-body font-sans transition-colors duration-500 ${uiVersionClass}`}>
       {/* Progress Bar (Global) - Builderall Colors */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-blue to-brand-cyan z-[100] origin-left"

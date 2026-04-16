@@ -2,8 +2,8 @@
 
 @theme {
   /* Tipografia: Builderall usa tipografia geométrica arredondada para dar ar de SaaS premium */
-  --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Plus Jakarta Sans", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Mulish", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lato", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
   /* Cores Nativas do Tailwind v4 (geram utilitários text-*, bg-*, from-*) */
   --color-bg-light: #FFFFFF;
@@ -36,37 +36,55 @@
   --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.08);
   --sh-button: 0px 8px 20px rgba(0, 144, 255, 0.3);
   --sh-nav: 0px 4px 30px rgba(11, 27, 54, 0.08);
+  --sh-builderall: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+  /* Tokens V2 (Builderall SaaS Style) */
+  --v2-primary: #0090FF;
+  --v2-secondary: #00D1FF;
+  --v2-shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  --v2-radius: 12px;
+  --v2-radius-lg: 16px;
 }
 
-/* ── Dark Mode Variant ── */
-@custom-variant dark (&:where(.dark, .dark *));
+/* ── V2 THEME OVERRIDES ── */
+.v2-theme {
+  --sh-soft: var(--sh-builderall);
+  --sh-deep: var(--v2-shadow-lg);
+  --color-brand-blue: var(--v2-primary);
+  --color-brand-cyan: var(--v2-secondary);
+  --color-bg-light: #F8F9FA; /* Soft Grey SaaS */
+}
 
-/* Dark theme token overrides */
-.dark {
+.dark.v2-theme {
   --color-bg-light: #050E20;
-  --color-bg-white: #0B1B36;
-  --color-text-title: #F8FAFC;
-  --color-text-body: #CBD5E1;
-  --color-text-muted: #94A3B8;
-  --color-glass-clean: rgba(11, 27, 54, 0.85);
-  --color-glass-border-clean: rgba(255, 255, 255, 0.06);
-  --sh-soft: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  --sh-deep: 0px 10px 40px rgba(0, 0, 0, 0.5);
-  --sh-nav: 0px 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* === Utilities Builderall Style === */
+@utility bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
 @utility saas-card {
   background-color: var(--color-bg-white);
-  border-radius: 1rem;
+  border-radius: var(--v2-radius);
   border: 1px solid var(--color-glass-border-clean);
   box-shadow: var(--sh-soft);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.v2-theme .saas-card {
+  border-radius: var(--v2-radius-lg);
 }
 
 @utility saas-card-hover {
   @apply hover:-translate-y-1;
   box-shadow: var(--sh-deep);
+}
+
+.v2-theme .saas-card:hover {
+  @apply ring-2 ring-brand-blue/30;
 }
 
 @utility glass-nav {
@@ -78,6 +96,10 @@
 
 @utility text-gradient-builderall {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan;
+}
+
+@utility v2-selection-ring {
+  @apply ring-2 ring-brand-blue ring-offset-2 ring-offset-white transition-all duration-300;
 }
 
 /* Glass card for dark navy sections */
@@ -136,6 +158,16 @@ h1, h2, h3 {
 
 @utility btn-pulse {
   animation: pulseBlue 2s infinite;
+}
+
+/* V2 Specific Component Refinements */
+.v2-theme #home img {
+  box-shadow: var(--sh-deep) !important;
+  border-radius: var(--v2-radius-lg) !important;
+}
+
+.v2-theme .saas-card {
+  border: 1px solid rgba(0, 144, 255, 0.08); /* Bordas levemente azuladas */
 }
 @layer base {
   html {

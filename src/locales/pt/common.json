@@ -9,15 +9,15 @@
     "results": "Resultados"
   },
   "hero": {
-    "badge": "MARKETING · TI · COMERCIAL",
-    "line1": "SEU OBJETIVO.",
-    "line2": "NOSSA EXECUÇÃO.",
-    "subtitle": "Marketing que gera demanda. Tecnologia que sustenta o crescimento. Comercial que fecha. <strong>Tudo integrado, uma equipe, um parceiro.</strong>",
+    "badge": "ESTRATÉGIA · TECNOLOGIA · VENDAS",
+    "line1": "RESPECT.",
+    "line2": "ESTRATÉGIA & EXECUÇÃO.",
+    "subtitle": "Marketing que gera demanda. TI que sustenta o crescimento. Comercial que converte. <strong>Execução de alta performance sob o mesmo teto.</strong>",
     "cta": "Agendar Diagnóstico Gratuito",
-    "cta_secondary": "Ver o que fazemos",
-    "trust1": "+10 anos de mercado",
-    "trust2": "3 áreas integradas",
-    "trust3": "Resultados mensuráveis"
+    "cta_secondary": "Ver Metodologia",
+    "trust1": "+10 anos de experiência",
+    "trust2": "3 pilares integrados",
+    "trust3": "Soberania Digital"
   },
   "problem": {
     "headline": "Você já passou por isso.",
@@ -39,116 +39,117 @@
     "eco_retention": "Retenção"
   },
   "transition": {
-    "headline": "Veja tudo que implementamos"
+    "headline": "Ecossistema Integrado."
   },
   "pilares": {
-    "badge": "NOSSAS 3 ÁREAS DE ATUAÇÃO",
-    "headline": "TUDO QUE VOCÊ PRECISA.",
-    "headline_highlight": "EM UM SÓ LUGAR.",
-    "subline": "Cada área funciona sozinha, mas quando integradas, o resultado multiplica.",
-    "subline_strong": "Veja o que entregamos em cada uma:",
-    "ver_detalhes": "Ver todos os serviços →",
+    "badge": "O que entregamos",
+    "title_line1": "Ecossistema",
+    "title_line2": "360° integrado.",
+    "subtitle": "Três áreas que operam sob a mesma inteligência. Sem silos, sem falhas de comunicação, apenas execução coordenada para gerar soberania.",
+    "cta": "Explorar Pilar",
     "marketing": {
-      "badge": "Marketing Digital",
-      "title": "GERAR DEMANDA QUALIFICADA",
-      "description": "Tráfego pago, SEO, funis de conversão, landing pages, conteúdo estratégico e automação de email. Tudo rastreado, tudo mensurável, tudo focado em resultado.",
-      "f1": "Tráfego Pago (Google, Meta, LinkedIn)",
-      "f2": "SEO & Conteúdo Estratégico",
-      "f3": "Funis de Conversão & Automação",
-      "cta": "VER SERVIÇOS DE MARKETING"
+      "title": "Growth & Performance",
+      "desc": "Marketing técnico focado em ROAS e geração de demanda qualificada. Do tráfego pago ao SEO técnico."
     },
     "ti": {
-      "badge": "TI & Infraestrutura",
-      "title": "CONSTRUIR A BASE QUE SUSTENTA",
-      "description": "Sites de alta performance, sistemas web sob medida, integrações entre plataformas, cloud, DevOps e manutenção proativa. A tecnologia que libera o negócio pra crescer.",
-      "f1": "Software & Sites Sob Medida",
-      "f2": "Cloud, DevOps & Automação",
-      "f3": "Segurança & Integrações",
-      "cta": "VER SERVIÇOS DE TI"
+      "title": "TI & Infraestrutura",
+      "desc": "Sustentação digital. De sites ultra-rápidos a automações complexas e DevOps."
     },
-    "vendas": {
-      "badge": "Comercial & Vendas",
-      "title": "FECHAR MAIS E MELHOR",
-      "description": "Chatbots com IA no WhatsApp, CRM configurado e integrado, playbooks de vendas, treinamento do time e dashboards de pipeline. Vendas com processo, não com sorte.",
-      "f1": "Chatbots WhatsApp com IA",
-      "f2": "CRM & Pipeline Automatizado",
-      "f3": "Consultoria & Playbooks de Vendas",
-      "cta": "VER SERVIÇOS COMERCIAIS"
+    "comercial": {
+      "title": "Consultoria Comercial",
+      "desc": "Onde o lead vira lucro. Processos de CRM, scripts e estruturação de times de venda."
     }
   },
   "explanation": {
-    "headline": "Não é mágica.",
-    "headline_highlight": "É método.",
-    "subline": "Todo projeto começa com diagnóstico e termina com mensuração. No meio, tem estratégia, execução e otimização contínua. Sem achismo, sem surpresa — você acompanha cada etapa e cada resultado em tempo real."
+    "badge": "Metodologia Própria",
+    "title_highlight": "Engenharia",
+    "title": "de Execução.",
+    "subtitle": "Não entregamos apenas serviços, entregamos uma infraestrutura de crescimento. Nosso processo é linear, técnico e focado na soberania do seu negócio.",
+    "step1": {
+      "badge": "Fase 01",
+      "title": "Diagnóstico Técnico"
+    },
+    "step2": {
+      "badge": "Fase 02",
+      "title": "Estratégia Integrada"
+    },
+    "step3": {
+      "badge": "Fase 03",
+      "title": "Execução de Alta Performance"
+    },
+    "step4": {
+      "badge": "Fase 04",
+      "title": "Soberania Digital"
+    }
   },
   "autoridade": {
-    "badge": "POR QUE A RESPECT",
-    "headline": "RESULTADOS FALAM",
-    "headline_highlight": "MAIS QUE PROMESSAS.",
-    "subline": "Não pedimos que você acredite em nós. Pedimos que olhe os fatos: experiência comprovada, equipe multidisciplinar e um modelo de trabalho que entrega.",
-    "subline_strong": "Fatos, não discurso.",
+    "badge": "RESULTADOS TÉCNICOS",
+    "headline": "FATOS FALAM MAIS",
+    "headline_highlight": "QUE PROMESSAS.",
+    "subline": "Posicionamento é o primeiro passo para a autoridade. Nossa entrega fala pela nossa experiência.",
+    "subline_strong": "Engenharia de Valor.",
     "revenue_headline": "Uma equipe. Três áreas. Zero silos.",
-    "revenue_subline": "É assim que resultado acontece de verdade.",
+    "revenue_subline": "A Respect integra a inteligência que move o seu negócio.",
     "stats": {
-      "anos_label": "Anos de Mercado",
-      "anos_desc": "Execução real em projetos de marketing, tecnologia e vendas para empresas de diferentes portes.",
-      "pilares_label": "Áreas Integradas",
-      "pilares_desc": "Marketing, TI e Comercial trabalhando juntos — sem terceirizar pedaços, sem perder o controle.",
-      "resultados_label": "Foco em Resultado",
-      "resultados_desc": "Cada entrega é rastreada. Se não gera resultado mensurável, a gente ajusta até gerar.",
-      "suporte_label": "Suporte Contínuo",
-      "suporte_desc": "Acompanhamento ativo do projeto. Sem sumir depois de entregar — a gente fica junto."
+      "anos_label": "Anos de Experiência",
+      "anos_desc": "Execução real em projetos complexos de tecnologia e marketing.",
+      "pilares_label": "Pilares Integrados",
+      "pilares_desc": "Marketing, TI e Comercial trabalhando sob a mesma gestão.",
+      "resultados_label": "Soberania Digital",
+      "resultados_desc": "Seus dados, sua plataforma, seu lucro. Sem dependência de terceiros.",
+      "suporte_label": "Monitoramento Ativo",
+      "suporte_desc": "Acompanhamento técnico contínuo para garantir estabilidade e performance."
     }
   },
   "faq": {
     "badge": "DÚVIDAS COMUNS",
     "headline": "Perguntas",
-    "headline_highlight": "que todo mundo faz.",
-    "subline": "Respostas diretas. Sem enrolação.",
+    "headline_highlight": "Técnicas.",
+    "subline": "Respostas diretas sobre nosso modelo de trabalho.",
     "q1": "Quanto custa?",
-    "a1": "Depende do escopo. Cada projeto é diferente — por isso começamos com um diagnóstico gratuito pra entender seu cenário e montar uma proposta sob medida. Sem pacote genérico.",
-    "q2": "Em quanto tempo vejo resultado?",
-    "a2": "Depende da área. Tráfego pago gera resultado nas primeiras semanas. SEO e conteúdo, em 3-6 meses. Software sob medida, conforme a complexidade. Em todos os casos, você acompanha a evolução em tempo real.",
-    "q3": "Preciso contratar as 3 áreas?",
-    "a3": "Não. Cada pilar funciona de forma independente. Mas quando integrados, o resultado é exponencialmente melhor — porque tudo conversa: o marketing alimenta o comercial, e a TI sustenta os dois.",
-    "q4": "Vocês trabalham com empresas pequenas?",
-    "a4": "Sim. Trabalhamos com empresas de diferentes portes — o que importa é ter clareza do objetivo e disposição pra investir no crescimento. Se você está buscando resultado sério, a gente consegue ajudar.",
-    "q5": "Já tive experiências ruins com agências. Por que seria diferente?",
-    "a5": "Porque a maioria das agências faz só marketing e terceiriza o resto. Aqui, marketing, tecnologia e vendas estão no mesmo time. Sem telefone sem fio, sem culpar outro fornecedor. O resultado é responsabilidade nossa — inteira.",
+    "a1": "Depende do escopo técnico. Cada projeto é único — começamos com um diagnóstico gratuito pra entender seu cenário e montar uma proposta baseada em retorno sobre investimento.",
+    "q2": "Como acompanho o resultado?",
+    "a2": "Você recebe acesso a dashboards técnicos em tempo real. Tudo é mensurável: do tráfego à conversão comercial.",
+    "q3": "Preciso das 3 áreas?",
+    "a3": "Não. Cada pilar é independente. Mas a integração completa é o que gera a verdadeira soberania e eficiência operacional.",
+    "q4": "Trabalham com qualquer empresa?",
+    "a4": "Buscamos empresas que desejam escalar com processos sólidos. Se você busca execução de elite, estamos prontos.",
+    "q5": "Qual o diferencial da Respect?",
+    "a5": "Integramos as três áreas que geram lucro. Sem telefone sem fio, sem culpar outro fornecedor. A responsabilidade da execução é inteiramente nossa.",
     "q6": "Como começo?",
-    "a6": "Agenda um diagnóstico gratuito. Em 30 minutos a gente entende seu cenário, identifica as oportunidades e apresenta um plano objetivo. Sem compromisso — se fizer sentido pra você, a gente segue."
+    "a6": "Agende um diagnóstico técnico gratuito. Em 30 minutos identificaremos os gargalos da sua operação e apresentaremos as possibilidades."
   },
   "cta_final": {
-    "badge": "VAMOS CONVERSAR",
-    "headline": "SEU PRÓXIMO PASSO",
-    "headline_highlight": "É SIMPLES.",
-    "subline": "Um diagnóstico gratuito de 30 minutos. A gente entende seu negócio, identifica oportunidades e monta um plano de ação. Sem compromisso, sem enrolação.",
-    "cta": "AGENDAR DIAGNÓSTICO GRATUITO",
-    "trust1": "30 min · Sem custo",
-    "trust2": "Plano de ação personalizado",
-    "trust3": "Sem compromisso",
+    "badge": "PRÓXIMO PASSO",
+    "headline": "CONSTRUA SEU",
+    "headline_highlight": "RESPEITO.",
+    "subline": "Diagnóstico gratuito de 30 minutos. Vamos analisar sua estratégia, tecnologia e comercial.",
+    "cta": "AGENDAR DIAGNÓSTICO TÉCNICO",
+    "trust1": "Análise Técnica",
+    "trust2": "Plano de Soberania",
+    "trust3": "Sem Jargões",
     "footer_tagline": "Marketing · TI · Comercial"
   },
   "scarcity": {
-    "headline": "Cada cliente recebe atenção total.",
-    "subline": "Pra garantir qualidade na entrega e acompanhamento de verdade, trabalhamos com um número limitado de projetos por vez. Se tem vaga, começamos rápido. Se não tem, você entra na fila de prioridade."
+    "headline": "Gestão de Elite.",
+    "subline": "Para garantir a qualidade da engenharia e acompanhamento, trabalhamos com um número limitado de projetos simultâneos."
   },
   "pilar_detalhe": {
     "back": "Voltar para o início",
-    "services_badge": "O que entregamos",
-    "services_title": "Serviços incluídos",
-    "services_sub": "Cada serviço é implementado com metodologia, ferramentas profissionais e acompanhamento contínuo.",
+    "services_badge": "Execução Técnica",
+    "services_title": "O que implementamos",
+    "services_sub": "Processos, ferramentas e acompanhamento contínuo.",
     "deliverables_badge": "Entregáveis",
     "deliverables_title": "O que você recebe",
-    "outcomes_badge": "Resultados esperados",
-    "outcomes_title": "Impacto no seu negócio",
-    "stack_badge": "Stack & Ferramentas",
-    "stack_title": "Tecnologias que usamos",
-    "ideal_badge": "Ideal para",
+    "outcomes_badge": "Possibilidades & Resultados",
+    "outcomes_title": "Impacto na Operação",
+    "stack_badge": "Infraestrutura",
+    "stack_title": "Tecnologias de Ponta",
+    "ideal_badge": "Posicionamento",
     "ideal_title": "Esse serviço é pra você se:",
-    "cta_analysis": "Agendar diagnóstico gratuito",
-    "outros_title": "Veja as outras áreas",
-    "outros_sub": "Marketing, TI e Comercial — cada um potencializa o outro."
+    "cta_analysis": "Agendar diagnóstico técnico",
+    "outros_title": "Pilares Integrados",
+    "outros_sub": "Marketing, TI e Comercial — um ecossistema completo."
   },
   "theme": {
     "toggle_dark": "Modo escuro",

@@ -1,68 +1,111 @@
 import { motion } from 'motion/react';
+import { Target, Lightbulb, Settings, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
-import { Section, Container } from './base';
-import { Cpu } from 'lucide-react';
+import { Container, Section, Badge } from './base';
 
 export function ExplanationSection() {
   const { t } = useTranslation();
 
+  const steps = [
+    { id: '01', icon: Target, key: 'step1' },
+    { id: '02', icon: Lightbulb, key: 'step2' },
+    { id: '03', icon: Settings, key: 'step3' },
+    { id: '04', icon: ShieldCheck, key: 'step4' },
+  ];
+
   return (
-    <Section variant="light" id="explicacao">
+    <Section variant="navy" id="metodologia" className="bg-[#050E20] border-y border-white/5">
       <Container size="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          
+          {/* Methodology Text */}
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: '-100px' }}
             variants={staggerSlow}
           >
+            <motion.div variants={fadeUpPremium}>
+              <Badge label={t('explanation.badge')} variant="light" className="mb-6 opacity-60" />
+            </motion.div>
             <motion.h2
               variants={fadeUpPremium}
-              className="text-3xl md:text-5xl font-black text-text-title tracking-tighter mb-8 uppercase leading-[0.95]"
+              className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 uppercase font-display"
             >
-              {t('explanation.headline')}
+              <span className="text-brand-blue">{t('explanation.title_highlight')}</span>
               <br />
-              <span className="text-gradient-builderall">{t('explanation.headline_highlight')}</span>
+              {t('explanation.title')}
             </motion.h2>
-
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg text-text-body font-medium leading-relaxed mb-10"
+              className="text-white/60 text-lg font-medium mb-12 max-w-xl leading-relaxed"
             >
-              {t('explanation.subline')}
+              {t('explanation.subtitle')}
             </motion.p>
+
+            {/* Workflow Nodes */}
+            <div className="flex flex-col gap-6">
+              {steps.map((step, i) => (
+                <motion.div
+                  key={step.id}
+                  variants={fadeUpPremium}
+                  className="flex items-center gap-6 group"
+                >
+                  <div className="relative">
+                    <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
+                      <step.icon size={20} />
+                    </div>
+                    {i < steps.length - 1 && (
+                      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-brand-blue/30 to-transparent" />
+                    )}
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-black text-brand-blue uppercase tracking-widest mb-1">
+                      {t(`explanation.${step.key}.badge`)}
+                    </div>
+                    <div className="text-white font-black uppercase tracking-tight">
+                      {t(`explanation.${step.key}.title`)}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
+          {/* Workflow Canvas Visual */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            variants={staggerSlow}
+            transition={{ duration: 1 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden border border-black/5 shadow-2xl bg-white aspect-square lg:aspect-video flex items-center justify-center">
-              <img 
-                src="images/branding/respect_methodology_3d.png" 
-                alt="Methodology" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none" />
-            </div>
+            <div className="absolute inset-0 bg-brand-blue/10 rounded-full blur-[120px] -z-1" />
             
-            {/* Floating Card Asset */}
-            <motion.div 
-              variants={fadeUpPremium}
-              className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-white/80 backdrop-blur-xl border border-black/5 shadow-xl max-w-[240px] hidden md:block"
-            >
-              <div className="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center mb-3">
-                <Cpu size={20} className="text-brand-blue" />
-              </div>
-              <p className="text-sm font-black text-text-title uppercase tracking-tighter leading-tight">
-                {t('explanation.headline')} {t('explanation.headline_highlight')}
-              </p>
-            </motion.div>
+            <div className="saas-card bg-white/5 border-white/10 p-4 relative overflow-hidden group">
+               {/* Grid Background */}
+               <div className="absolute inset-0 opacity-10 pointer-events-none"
+                    style={{
+                      backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
+                      backgroundSize: '30px 30px'
+                    }} 
+               />
+               
+               <img 
+                 src="images/branding/respect_workflow_visual.png" 
+                 alt="Integrated Workflow" 
+                 className="w-full h-auto relative z-10 group-hover:scale-105 transition-transform duration-1000"
+               />
+
+               {/* Stats Floating */}
+               <div className="absolute bottom-10 left-10 p-6 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 z-20">
+                  <div className="text-[10px] font-black text-brand-blue uppercase tracking-widest mb-2">Engenharia de Execução</div>
+                  <div className="text-2xl font-black text-white uppercase tracking-tighter">100% Integrado</div>
+               </div>
+            </div>
           </motion.div>
+
         </div>
       </Container>
     </Section>
