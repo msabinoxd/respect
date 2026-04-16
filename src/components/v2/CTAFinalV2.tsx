@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
-import { fadeUpPremium } from '../../shared/animations.premium';
+import { ArrowRight } from 'lucide-react';
+import { fadeUpPremium, staggerSlow } from '../../shared/animations.premium';
 import { Container, Button } from '../base';
 import { BlueprintSuccess } from '../BlueprintSuccess';
 

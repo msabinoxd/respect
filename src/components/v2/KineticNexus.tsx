@@ -1,8 +1,6 @@
 import { motion } from 'motion/react';
-import { useTranslation } from 'react-i18next';
 
 export function KineticNexus() {
-  const { t } = useTranslation('v2');
 
   const nodes = [
     { label: 'MARKETING_ACQUISITION', color: '#0090FF', delay: 0 },
