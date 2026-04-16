@@ -73,17 +73,17 @@ export function HeroV2() {
               </div>
             </motion.div>
 
-            {/* RADICAL HEADLINE - HARMONIC SCALE */}
+            {/* RADICAL HEADLINE - HUMAN SCALE */}
             <motion.h1
               variants={fadeUpPremium}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 text-text-title tracking-[-0.02em] uppercase font-display"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.15] mb-8 text-text-title tracking-tight uppercase font-display"
               dangerouslySetInnerHTML={{ __html: t('hero.headline') }}
             />
 
-            {/* AGGRESSIVE SUBTITLE - ELEGANT SCALE */}
+            {/* AGGRESSIVE SUBTITLE - CLEAN SCALE */}
             <motion.p
               variants={fadeUpPremium}
-              className="text-base md:text-lg text-text-body w-full max-w-xl mx-auto lg:mx-0 leading-relaxed font-bold mb-10 opacity-60"
+              className="text-sm sm:text-base md:text-lg text-text-body w-full max-w-xl mx-auto lg:mx-0 leading-relaxed font-bold mb-10 opacity-50"
             >
               {t('hero.subheadline')}
             </motion.p>
