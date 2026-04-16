@@ -67,8 +67,13 @@ export function AutoridadeProva() {
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <Section variant="light" id="autoridade">
-      <Container size="lg">
+    <Section variant="light" id="autoridade" className="relative overflow-hidden">
+      {/* Background Decorative Asset */}
+      <div className="absolute top-1/2 -right-64 -translate-y-1/2 w-full max-w-2xl opacity-50 hidden lg:block pointer-events-none">
+        <img src="/images/branding/respect_authority_3d.png" alt="" className="w-full h-auto" />
+      </div>
+
+      <Container size="lg" className="relative z-10">
         <motion.div
           ref={ref}
           initial="hidden"

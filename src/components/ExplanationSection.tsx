@@ -39,21 +39,29 @@ export function ExplanationSection() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerSlow}
-            className="grid grid-cols-1 gap-4"
+            className="relative"
           >
-            <div className="p-8 rounded-2xl bg-white border border-black/5 shadow-sm relative overflow-hidden group">
-               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                  <Network size={80} className="text-brand-blue" />
-               </div>
-               <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4">
-                    <Cpu size={24} className="text-brand-blue" />
-                  </div>
-                  <p className="text-text-title font-black text-lg leading-tight uppercase tracking-tight">
-                    {t('explanation.headline')} {t('explanation.headline_highlight')}
-                  </p>
-               </div>
+            <div className="relative rounded-3xl overflow-hidden border border-black/5 shadow-2xl bg-white aspect-square lg:aspect-video flex items-center justify-center">
+              <img 
+                src="/images/branding/respect_methodology_3d.png" 
+                alt="Methodology" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none" />
             </div>
+            
+            {/* Floating Card Asset */}
+            <motion.div 
+              variants={fadeUpPremium}
+              className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-white/80 backdrop-blur-xl border border-black/5 shadow-xl max-w-[240px] hidden md:block"
+            >
+              <div className="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center mb-3">
+                <Cpu size={20} className="text-brand-blue" />
+              </div>
+              <p className="text-sm font-black text-text-title uppercase tracking-tighter leading-tight">
+                {t('explanation.headline')} {t('explanation.headline_highlight')}
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </Container>
