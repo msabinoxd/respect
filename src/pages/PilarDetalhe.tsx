@@ -56,55 +56,74 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
         />
 
         <Container size="lg" className="relative z-10">
-          {/* Back link */}
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted hover:text-brand-blue transition-colors mb-10"
-          >
-            <ArrowLeft size={14} />
-            {t('pilar_detalhe.back')}
-          </Link>
-
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerSlow}
-            className="max-w-3xl"
-          >
-            <motion.div variants={fadeUpPremium}>
-              <Badge
-                label={t(`pilares_data.${id}.badge`)}
-                variant="navy"
-                className="mb-6"
-              />
-            </motion.div>
-
-            <motion.h1
-              variants={fadeUpPremium}
-              className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-text-title tracking-tighter"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={staggerSlow}
+              className="max-w-3xl"
             >
-              {pilarTitle}
-            </motion.h1>
-
-            <motion.p
-              variants={fadeUpPremium}
-              className="text-base md:text-xl text-text-body leading-relaxed font-medium mb-10 max-w-2xl"
-            >
-              {pilarDesc}
-            </motion.p>
-
-            <motion.div variants={fadeUpPremium}>
-              <Button
-                variant="primary"
-                size="lg"
-                icon={ArrowRight}
-                onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_CTA`)}
-                className="shadow-2xl"
+              {/* Back link */}
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted hover:text-brand-blue transition-colors mb-10"
               >
-                {t(`pilares_data.${id}.cta`)}
-              </Button>
+                <ArrowLeft size={14} />
+                {t('pilar_detalhe.back')}
+              </Link>
+
+              <motion.div variants={fadeUpPremium}>
+                <Badge
+                  label={t(`pilares_data.${id}.badge`)}
+                  variant="navy"
+                  className="mb-6"
+                />
+              </motion.div>
+
+              <motion.h1
+                variants={fadeUpPremium}
+                className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-6 text-text-title tracking-tighter"
+              >
+                {pilarTitle}
+              </motion.h1>
+
+              <motion.p
+                variants={fadeUpPremium}
+                className="text-base md:text-xl text-text-body leading-relaxed font-medium mb-10 max-w-2xl"
+              >
+                {pilarDesc}
+              </motion.p>
+
+              <motion.div variants={fadeUpPremium}>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  icon={ArrowRight}
+                  onClick={() => trackAndOpenWA(t(`pilares_data.${id}.msg`), `Detalhe_${pilar.glowColor}_CTA`)}
+                  className="shadow-2xl"
+                >
+                  {t(`pilares_data.${id}.cta`)}
+                </Button>
+              </motion.div>
             </motion.div>
-          </motion.div>
+
+            {/* Pillar Specific Detail Visual */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, x: 20 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
+              className="relative hidden lg:block"
+            >
+              <div className="relative aspect-square">
+                 <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-3xl" />
+                 <img 
+                   src={pilar.detailImage} 
+                   alt={pilarTitle}
+                   className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
+                 />
+              </div>
+            </motion.div>
+          </div>
         </Container>
       </section>
 

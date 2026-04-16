@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { Section, Container } from './base';
-import { Network, Cpu } from 'lucide-react';
+import { Cpu } from 'lucide-react';
 
 export function ExplanationSection() {
   const { t } = useTranslation();
