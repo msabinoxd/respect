@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "headline": "Your Operation is Bleeding Money in the Gaps Between Marketing, IT, and Sales. <br/> <span class='text-brand-blue'>We Stop the Bleeding.</span>",
+    "subheadline": "No more revenue sabotaged by fragile infrastructure and disconnected data. Respect is the Elite Execution Engineering that unifies your operation and shields your profit.",
+    "cta_primary": "SCHEDULE FREE TECHNICAL DIAGNOSTIC",
+    "cta_secondary": "SEE HOW WE SHIELD YOUR REVENUE",
+    "metrics": {
+      "efficiency": "+30% Proven Operational Efficiency.",
+      "cac": "-25% CAC Reduction in 90 Days.",
+      "uptime": "100% Integrated and Resilient Infrastructure."
+    }
+  },
+  "problem": {
+    "headline": "The Hidden Cost of Fragmentation: Why Your Company is Losing Millions.",
+    "subline": "Most companies don't have a product problem; they have a TECHNICAL INTEGRATION problem.",
+    "items": {
+      "mkt": {
+        "title": "ISOLATED MARKETING",
+        "desc": "High-cost campaigns generating cold leads and useless data. You invest, but you don't convert."
+      },
+      "ti": {
+        "title": "FRAGILE TECHNOLOGY",
+        "desc": "Slow and unstable infrastructure that kills sales and sabotages your growth. Your site goes down, your revenue follows."
+      },
+      "sales": {
+        "title": "FLOWLESS SALES",
+        "desc": "Qualified leads lost in manual processes and lack of commercial intelligence. Your sales team is firing in the dark."
+      }
+    }
+  },
+  "solution": {
+    "headline": "The Respect Engine: The Only Solution that Unifies and Multiplies Your Profit.",
+    "subline": "When Marketing, IT, and Sales operate under a single technical intelligence, friction disappears. Your total focus is on Net Margin.",
+    "items": {
+      "acquisition": {
+        "title": "ROI ACQUISITION",
+        "desc": "Scaling channels with full traceability. Every penny invested generates measurable profit."
+      },
+      "architecture": {
+        "title": "SHIELDED ARCHITECTURE",
+        "desc": "Resilient and fast infrastructure. Technology that supports any scale without failure."
+      },
+      "conversion": {
+        "title": "MAXIMIZED CONVERSION",
+        "desc": "High-closing commercial engineering. We transform data into real and predictable revenue."
+      }
+    }
+  },
+  "authority": {
+    "headline": "Proven Value Engineering. Real Numbers. Silent Solidity.",
+    "subline": "We aren't just consultants. We are profit architects for high-complexity operations.",
+    "metrics": {
+      "efficiency": "+30% OPERATIONAL EFFICIENCY",
+      "efficiency_desc": "Through smart automation and process optimization.",
+      "cac": "-25% CAC REDUCTION",
+      "cac_desc": "With precise segmentation and predictive lead qualification.",
+      "uptime": "99.9% SYSTEM UPTIME",
+      "uptime_desc": "Infrastructure monitored 24/7 for uninterrupted revenue.",
+      "experience": "10+ YEARS OF EXPERIENCE",
+      "experience_desc": "A decade shielding high-impact digital operations."
+    }
+  },
+  "methodology": {
+    "headline": "Our Scaling Engineering: Linear Process for Maximum Solidity.",
+    "subline": "From diagnostic to consolidation, every step is technical, precise, and focused on your results.",
+    "steps": {
+      "s1": "STRATEGIC DIAGNOSTIC: We identify technical bottlenecks draining your revenue.",
+      "s2": "ELITE STRUCTURING: We design the integration architecture that unifies your operation.",
+      "s3": "SHIELDED EXECUTION: We implement the solution with technical rigor and constant monitoring.",
+      "s4": "PROFIT CONSOLIDATION: We guarantee the sustainability and scalability of your new operational engine."
+    },
+    "cta": "SCHEDULE DIAGNOSTIC NOW"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions: Direct Answers to Your Technical Doubts.",
+    "subline": "Understand how Respect solves your operation's most complex challenges."
+  },
+  "scarcity": {
+    "headline": "Limited Capacity: Extreme Technical Rigor Demands Focus.",
+    "subline": "To ensure excellence, we limit the number of projects per quarter. Your spot is valuable.",
+    "cta": "GUARANTEE YOUR FREE DIAGNOSTIC"
+  }
+}

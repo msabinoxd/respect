@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "headline": "Sua Operação Sangra Dinheiro nos Vãos entre Marketing, TI e Vendas. <br/> <span class='text-brand-blue'>Nós Estancamos a Hemorragia.</span>",
+    "subheadline": "Chega de faturamento sabotado por infraestrutura frágil e dados desconectados. A Respect é a Engenharia de Execução de Elite que unifica sua operação e blinda seu lucro.",
+    "cta_primary": "AGENDAR DIAGNÓSTICO TÉCNICO GRATUITO",
+    "cta_secondary": "VEJA COMO BLINDAMOS SEU FATURAMENTO",
+    "metrics": {
+      "efficiency": "+30% Eficiência Operacional Comprovada.",
+      "cac": "-25% Redução no CAC em 90 Dias.",
+      "uptime": "Infraestrutura 100% Integrada e Resiliente."
+    }
+  },
+  "problem": {
+    "headline": "O Custo Oculto da Fragmentação: Por Que Sua Empresa Está Perdendo Milhões.",
+    "subline": "A maioria das empresas não tem um problema de produto, tem um problema de INTEGRAÇÃO TÉCNICA.",
+    "items": {
+      "mkt": {
+        "title": "MARKETING ISOLADO",
+        "desc": "Campanhas de alto custo que geram leads frios e dados inúteis. Você investe, mas não converte."
+      },
+      "ti": {
+        "title": "TECNOLOGIA FRÁGIL",
+        "desc": "Infraestrutura lenta e instável que derruba vendas e sabota seu crescimento. Seu site cai, seu faturamento também."
+      },
+      "sales": {
+        "title": "VENDAS SEM FLUXO",
+        "desc": "Leads qualificados que se perdem em processos manuais e falta de inteligência comercial. Sua equipe de vendas está atirando no escuro."
+      }
+    }
+  },
+  "solution": {
+    "headline": "O Motor Respect: A Única Solução que Unifica e Multiplica Seu Lucro.",
+    "subline": "Quando Marketing, TI e Vendas operam sob uma única inteligência técnica, a fricção desaparece. Seu foco total é na Margem Líquida.",
+    "items": {
+      "acquisition": {
+        "title": "AQUISIÇÃO ROI",
+        "desc": "Canais de escala com rastreabilidade total. Cada centavo investido gera lucro mensurável."
+      },
+      "architecture": {
+        "title": "ARQUITETURA BLINDADA",
+        "desc": "Infraestrutura resiliente e rápida. Tecnologia que suporta qualquer escala sem falhas."
+      },
+      "conversion": {
+        "title": "CONVERSÃO MAXIMIZADA",
+        "desc": "Engenharia comercial de alto fechamento. Transformamos dados em faturamento real e previsível."
+      }
+    }
+  },
+  "authority": {
+    "headline": "Engenharia de Valor Comprovada. Números Reais. Solidez Silenciosa.",
+    "subline": "Não somos apenas consultores. Somos arquitetos de lucro para operações de alta complexidade.",
+    "metrics": {
+      "efficiency": "+30% EFICIÊNCIA OPERACIONAL",
+      "efficiency_desc": "Através de automação inteligente e otimização de processos.",
+      "cac": "-25% REDUÇÃO NO CAC",
+      "cac_desc": "Com segmentação precisa e qualificação preditiva de leads.",
+      "uptime": "99.9% SYSTEM UPTIME",
+      "uptime_desc": "Infraestrutura monitorada 24/7 para faturamento ininterrupto.",
+      "experience": "10+ ANOS DE EXPERIÊNCIA",
+      "experience_desc": "Uma década blindando operações digitais de alto impacto."
+    }
+  },
+  "methodology": {
+    "headline": "Nossa Engenharia de Escala: Processo Linear para Solidez Máxima.",
+    "subline": "Do diagnóstico à consolidação, cada passo é técnico, preciso e focado no seu resultado.",
+    "steps": {
+      "s1": "DIAGNÓSTICO ESTRATÉGICO: Identificamos os gargalos técnicos que drenam seu faturamento.",
+      "s2": "ESTRUTURAÇÃO DE ELITE: Projetamos a arquitetura de integração que unifica sua operação.",
+      "s3": "EXECUÇÃO BLINDADA: Implementamos a solução com rigor técnico e monitoramento constante.",
+      "s4": "CONSOLIDAÇÃO DE LUCRO: Garantimos a sustentabilidade e escalabilidade do seu novo motor operacional."
+    },
+    "cta": "AGENDAR DIAGNÓSTICO AGORA"
+  },
+  "faq": {
+    "headline": "Perguntas Frequentes: Respostas Diretas para Suas Dúvidas Técnicas.",
+    "subline": "Entenda como a Respect resolve os desafios mais complexos da sua operação."
+  },
+  "scarcity": {
+    "headline": "Capacidade Limitada: Rigor Técnico Extremo Exige Foco.",
+    "subline": "Para garantir a excelência, limitamos o número de projetos por trimestre. Sua vaga é valiosa.",
+    "cta": "GARANTA SEU DIAGNÓSTICO GRATUITO"
+  }
+}

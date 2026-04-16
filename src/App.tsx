@@ -5,6 +5,7 @@ import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { LGPDModal } from './components/LGPDModal';
 import { SovereignPreloader } from './components/SovereignPreloader';
 import { Home } from './pages/Home';
+import { HomeV2 } from './pages/HomeV2';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CONFIG } from './config';
 
@@ -25,6 +26,7 @@ function AppLayout() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/v2" element={<HomeV2 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="*" element={<Home />} />
         </Routes>
