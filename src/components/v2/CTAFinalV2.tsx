@@ -1,11 +1,10 @@
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium } from '../../shared/animations.premium';
-import { Container, Section, Button } from '../base';
+import { Container, Button } from '../base';
 import { BlueprintSuccess } from '../BlueprintSuccess';
 
 export function CTAFinalV2() {
-  const { t } = useTranslation('v2');
   const { t: tCommon } = useTranslation('common');
 
   return (

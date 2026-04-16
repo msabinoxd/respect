@@ -7,11 +7,8 @@ import { FAQ } from '../components/FAQ';
 import { ScarcityV2 } from '../components/v2/ScarcityV2';
 import { CTAFinalV2 } from '../components/v2/CTAFinalV2';
 import { useSEO } from '../hooks/useSEO';
-import { useTranslation } from 'react-i18next';
 
 export function HomeV2() {
-  const { t } = useTranslation('v2');
-  
   useSEO(
     'Respect V2 — Engenharia de Execução Blindada',
     'Estancamos a hemorragia da sua operação. Marketing, TI e Vendas unificados em uma única infraestrutura de lucro.'
