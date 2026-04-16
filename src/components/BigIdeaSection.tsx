@@ -1,8 +1,9 @@
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
-import { Section, Container } from './base';
+import { Container, Section } from './base';
 import { Target, TrendingUp, ShieldCheck } from 'lucide-react';
+import { BlueprintEngine } from './BlueprintEngine';
 
 export function BigIdeaSection() {
   const { t } = useTranslation();
@@ -40,21 +41,17 @@ export function BigIdeaSection() {
             </motion.p>
           </motion.div>
 
-          {/* Central Integration Image - The Hero Asset */}
+          {/* Central Integration Visual — The Engine Blueprint */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: [0.25, 0.4, 0.25, 1] }}
-            className="relative mb-24 w-full flex justify-center"
+            className="relative mb-24 w-full flex justify-center min-h-[400px] items-center"
           >
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[300px] bg-brand-blue/5 rounded-full blur-[140px] -z-1" />
-            <img
-              src="images/branding/respect_big_idea_integration_1776280861053.png"
-              alt={t('alts.engine_integration')}
-              className="relative z-10 w-full max-w-[800px] h-auto transition-transform duration-1000 hover:scale-[1.01]"
-              loading="lazy"
-            />
+            
+            <BlueprintEngine />
           </motion.div>
 
           <motion.div

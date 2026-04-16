@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
 import { trackAndOpenWA, CONFIG } from '../config';
 import { Button, Container, Badge } from './base';
+import { BlueprintSuccess } from './BlueprintSuccess';
 
 export function CTAFinal() {
   const { t } = useTranslation();
@@ -59,20 +60,16 @@ export function CTAFinal() {
           </motion.div>
 
           {/* Image visual */}
+          {/* Outcome Visual — The Success Blueprint */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: [0.25, 0.4, 0.25, 1] }}
-            className="hidden lg:flex justify-center relative"
+            className="hidden lg:flex justify-center relative min-h-[300px] items-center"
           >
              <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[120px] -z-1" />
-             <img 
-               src="images/branding/respect_methodology_3d.png" 
-               alt={t('alts.methodology_3d')}
-               className="w-full max-w-[500px] h-auto transition-transform duration-1000 hover:scale-[1.02]"
-               loading="lazy"
-             />
+             <BlueprintSuccess />
           </motion.div>
         </div>
 

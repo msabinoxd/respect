@@ -9,6 +9,15 @@ import { CTAFinal } from '../components/CTAFinal';
 import { useSEO } from '../hooks/useSEO';
 import { useTranslation } from 'react-i18next';
 import { InteractiveGrid } from '../components/InteractiveGrid';
+import { BlueprintMarketing } from '../components/BlueprintMarketing';
+import { BlueprintTI } from '../components/BlueprintTI';
+import { BlueprintSales } from '../components/BlueprintSales';
+
+const BLUEPRINT_MAP = {
+  marketing: BlueprintMarketing,
+  ti: BlueprintTI,
+  vendas: BlueprintSales
+};
 
 interface PilarDetalheProps {
   id: 'marketing' | 'ti' | 'vendas';
@@ -101,21 +110,20 @@ export function PilarDetalhe({ id }: PilarDetalheProps) {
               </motion.div>
             </motion.div>
 
-            {/* Pillar Specific Detail Visual */}
+            {/* Pillar Specific Detail Visual — Blueprint System */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ duration: 1.5, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
               className="relative hidden lg:block"
             >
-              <div className="relative aspect-square flex items-center justify-center">
+              <div className="relative aspect-square flex items-center justify-center min-h-[500px]">
                  <div className="absolute inset-0 bg-brand-blue/5 rounded-full blur-[140px]" />
-                 <img 
-                   src={pilar.detailImage} 
-                   alt={pilarTitle}
-                   className="w-full max-w-[500px] h-auto object-contain relative z-10 drop-shadow-2xl animate-float"
-                   loading="lazy"
-                 />
+                 
+                 {(() => {
+                   const Blueprint = BLUEPRINT_MAP[id];
+                   return <Blueprint />;
+                 })()}
               </div>
             </motion.div>
           </div>
