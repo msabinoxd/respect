@@ -6,7 +6,7 @@
   --font-display: "Plus Jakarta Sans", "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
   /* Cores Nativas do Tailwind v4 (geram utilitários text-*, bg-*, from-*) */
-  --color-bg-light: #F8F9FA;
+  --color-bg-light: #FFFFFF;
   --color-bg-white: #FFFFFF;
   --color-bg-navy: #0B1B36;
   --color-bg-navy-dark: #050E20;
@@ -24,7 +24,6 @@
   --shadow-premium: 0 20px 50px -12px rgba(0, 70, 180, 0.12);
   --shadow-soft: 0 10px 30px -15px rgba(0, 0, 0, 0.05);
 
-  --color-bg-light: #FBFBFC;
   --color-text-muted: #64748b;
   --color-text-light: #F8FAFC;
 

@@ -15,8 +15,8 @@ const CTAFinal = lazy(() => import('../components/CTAFinal').then((m) => ({ defa
 
 export function Home() {
   useSEO(
-    'Respect — Soberania Digital para o seu Negócio',
-    'Agência Full-Stack de Marketing Digital, TI & DevOps e Consultoria Comercial. Construindo ecossistemas de alta conversão e infraestrutura corporativa.'
+    'Respect — Marketing, TI & Comercial Integrados',
+    'Agência completa de Marketing Digital, TI & DevOps e Consultoria Comercial. Tudo integrado, uma equipe, resultados mensuráveis.'
   );
 
   return (

@@ -16,9 +16,9 @@ export function Header() {
 
   const NAV_LINKS = [
     { label: t('nav.home'), href: '#home' },
-    { label: t('nav.marketing'), href: '#solucoes' },
-    { label: t('nav.ti'), href: '#solucoes' },
-    { label: t('nav.comercial'), href: '#solucoes' },
+    { label: t('nav.marketing'), href: '/marketing' },
+    { label: t('nav.ti'), href: '/ti' },
+    { label: t('nav.comercial'), href: '/vendas' },
     { label: t('autoridade.badge'), href: '#autoridade' },
   ];
 
@@ -50,13 +50,23 @@ export function Header() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-[13px] font-black uppercase tracking-widest text-text-body hover:text-brand-blue transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue after:transition-all after:duration-300 hover:after:w-full"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-[13px] font-black uppercase tracking-widest text-text-body hover:text-brand-blue transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-[13px] font-black uppercase tracking-widest text-text-body hover:text-brand-blue transition-colors relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </div>
 
@@ -103,14 +113,25 @@ export function Header() {
             <Container>
               <div className="flex flex-col gap-2 py-8">
                 {NAV_LINKS.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-sm font-black uppercase tracking-widest text-text-title hover:text-brand-blue py-4 border-b border-[var(--color-glass-border-clean)] transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  link.href.startsWith('/') ? (
+                    <Link
+                      key={link.label}
+                      to={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-sm font-black uppercase tracking-widest text-text-title hover:text-brand-blue py-4 border-b border-[var(--color-glass-border-clean)] transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-sm font-black uppercase tracking-widest text-text-title hover:text-brand-blue py-4 border-b border-[var(--color-glass-border-clean)] transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )
                 ))}
                 <Button
                   variant="primary"

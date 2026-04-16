@@ -49,8 +49,8 @@ export function ExplanationSection() {
                   <div className="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4">
                     <Cpu size={24} className="text-brand-blue" />
                   </div>
-                  <p className="text-text-title font-bold text-lg leading-tight">
-                    Engenharia de Receita: onde cada byte de dado se torna um centavo de lucro.
+                  <p className="text-text-title font-black text-lg leading-tight uppercase tracking-tight">
+                    {t('explanation.headline')} {t('explanation.headline_highlight')}
                   </p>
                </div>
             </div>

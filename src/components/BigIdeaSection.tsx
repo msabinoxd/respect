@@ -14,10 +14,10 @@ export function BigIdeaSection() {
   ];
 
   return (
-    <Section variant="navy" id="insight">
+    <Section variant="white" id="insight">
       {/* Background Visual Element */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/30 rounded-full blur-[160px]" />
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/20 rounded-full blur-[160px]" />
       </div>
       
       <Container size="lg" className="relative z-10">
@@ -30,7 +30,7 @@ export function BigIdeaSection() {
           >
             <motion.h2
               variants={fadeUpPremium}
-              className="text-4xl md:text-7xl font-black text-white tracking-tighter mb-8 uppercase leading-[0.95] font-[var(--font-display)]"
+              className="text-4xl md:text-7xl font-black text-text-title tracking-tighter mb-8 uppercase leading-[0.95] font-[var(--font-display)]"
             >
               {t('big_idea.headline')}
               <br />
@@ -39,7 +39,7 @@ export function BigIdeaSection() {
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-lg md:text-xl text-text-light/80 mt-4 mb-16 font-medium leading-relaxed"
+              className="text-lg md:text-xl text-text-body mt-4 mb-16 font-medium leading-relaxed"
             >
               {t('big_idea.description')}
             </motion.p>

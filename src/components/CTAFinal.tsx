@@ -9,10 +9,10 @@ export function CTAFinal() {
   const { t } = useTranslation();
 
   return (
-    <footer id="contato" className="relative bg-brand-navy pt-32 pb-16 overflow-hidden">
+    <footer id="contato" className="relative bg-white pt-32 pb-16 overflow-hidden">
 
-      {/* Luz Azul Corporativa */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-brand-blue/20 rounded-full blur-[150px] pointer-events-none" />
+      {/* Luz Azul Corporativa Suave */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-brand-blue/[0.08] rounded-full blur-[150px] pointer-events-none" />
 
       <Container className="relative z-10 text-center" size="default">
         <motion.div
@@ -23,12 +23,12 @@ export function CTAFinal() {
           className="flex flex-col items-center text-center"
         >
           <motion.div variants={fadeUpPremium} className="mb-10">
-            <Badge icon={ShieldCheck} label={t('cta_final.badge')} variant="light" />
+            <Badge icon={ShieldCheck} label={t('cta_final.badge')} variant="navy" />
           </motion.div>
 
           <motion.h2
             variants={fadeUpPremium}
-            className="text-[40px] sm:text-[56px] md:text-[80px] font-black leading-[0.95] tracking-tighter text-white uppercase mb-8"
+            className="text-[40px] sm:text-[56px] md:text-[80px] font-black leading-[0.95] tracking-tighter text-text-title uppercase mb-8"
           >
             {t('cta_final.headline')} <br className="hidden md:block" />
             <span className="text-brand-blue">{t('cta_final.headline_highlight')}</span>
@@ -36,7 +36,7 @@ export function CTAFinal() {
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-2xl text-text-light w-full max-w-4xl leading-relaxed font-medium mb-16 opacity-90"
+            className="text-lg md:text-2xl text-text-body w-full max-w-4xl leading-relaxed font-medium mb-16 opacity-90"
           >
             {t('cta_final.subline')}
           </motion.p>
@@ -55,7 +55,7 @@ export function CTAFinal() {
               {t('cta_final.cta')}
             </Button>
 
-            <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-text-light/60">
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-4 text-[12px] font-bold uppercase tracking-widest text-text-muted">
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust1')}</div>
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust2')}</div>
               <div className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-brand-blue" /> {t('cta_final.trust3')}</div>
@@ -63,9 +63,9 @@ export function CTAFinal() {
           </motion.div>
         </motion.div>
 
-        <div className="mt-28 md:mt-32 pt-8 border-t border-[rgba(255,255,255,0.05)] flex flex-col md:flex-row items-center justify-between gap-6 text-[12px] font-black uppercase tracking-widest text-text-light/40">
+        <div className="mt-28 md:mt-32 pt-8 border-t border-black/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[12px] font-black uppercase tracking-widest text-text-muted/60">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name} MARKETING SUITE</p>
+            <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name}</p>
             <span className="hidden md:block w-1 h-1 rounded-full bg-brand-blue" />
             <p>{CONFIG.brand.tagline}</p>
           </div>

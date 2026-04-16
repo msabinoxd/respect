@@ -78,7 +78,7 @@ export function AutoridadeProva() {
           className="flex flex-col items-center text-center mb-20"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge icon={Award} label={t('autoridade.badge')} variant="blue" className="mb-8" />
+            <Badge icon={Award} label={t('autoridade.badge')} variant="navy" className="mb-8" />
           </motion.div>
 
           <motion.h2
@@ -95,7 +95,7 @@ export function AutoridadeProva() {
             className="text-lg md:text-xl text-text-body w-full max-w-4xl leading-relaxed font-medium"
           >
             {t('autoridade.subline').replace(t('autoridade.subline_strong'), '')}{' '}
-            <span className="font-bold text-text-title">{t('autoridade.subline_strong')}</span>
+            <span className="font-bold text-brand-blue">{t('autoridade.subline_strong')}</span>
           </motion.p>
 
           <motion.div
@@ -105,7 +105,7 @@ export function AutoridadeProva() {
             <h3 className="text-xl md:text-2xl font-black text-text-title tracking-tight uppercase">
               {t('autoridade.revenue_headline')}
             </h3>
-            <p className="text-brand-blue font-black text-2xl md:text-4xl uppercase tracking-tighter mt-2">
+            <p className="text-brand-blue font-black text-2xl md:text-5xl uppercase tracking-tighter mt-2">
               {t('autoridade.revenue_subline')}
             </p>
           </motion.div>

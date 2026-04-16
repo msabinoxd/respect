@@ -40,10 +40,10 @@ export function PilaresSolucoes() {
   const { t } = useTranslation();
 
   return (
-    <Section variant="navy" id="servicos" className="relative">
+    <Section variant="white" id="servicos" className="relative">
 
-      {/* Detalhe de fundo */}
-      <div className="absolute top-0 left-0 w-full h-[300px] bg-gradient-to-b from-[rgba(0,144,255,0.05)] to-transparent" />
+      {/* Detalhe de fundo técnico sutil */}
+      <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-brand-blue/[0.03] to-transparent pointer-events-none" />
 
       <Container size="lg">
         <motion.div
@@ -54,12 +54,12 @@ export function PilaresSolucoes() {
           className="flex flex-col items-center text-center mb-20"
         >
           <motion.div variants={fadeUpPremium}>
-            <Badge icon={Handshake} label={t('pilares.badge')} variant="light" className="mb-6" />
+            <Badge icon={Handshake} label={t('pilares.badge')} variant="navy" className="mb-6" />
           </motion.div>
 
           <motion.h2
             variants={fadeUpPremium}
-            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-6 text-white tracking-tighter uppercase leading-tight"
+            className="text-[32px] sm:text-[48px] md:text-[64px] font-black mb-6 text-text-title tracking-tighter uppercase leading-tight"
           >
             {t('pilares.headline')} <br className="hidden md:block" />
             <span className="text-gradient-builderall">{t('pilares.headline_highlight')}</span>
@@ -67,10 +67,10 @@ export function PilaresSolucoes() {
 
           <motion.p
             variants={fadeUpPremium}
-            className="text-lg md:text-xl text-text-light/80 w-full max-w-4xl leading-relaxed font-medium"
+            className="text-lg md:text-xl text-text-body w-full max-w-4xl leading-relaxed font-medium"
           >
             {t('pilares.subline')}{' '}
-            <span className="text-white font-black">{t('pilares.subline_strong')}</span>
+            <span className="text-brand-blue font-black">{t('pilares.subline_strong')}</span>
           </motion.p>
         </motion.div>
 
@@ -84,30 +84,30 @@ export function PilaresSolucoes() {
         >
           {PILARES_META.map((pilar, i) => (
             <motion.div key={i} variants={fadeUpPremium} className="h-full">
-              <Card interactive className="relative group text-left overflow-hidden border-none">
+              <Card interactive className="relative group text-left overflow-hidden border border-black/5 shadow-sm hover:shadow-premium transition-all duration-500 bg-white">
 
                 {/* Linha azul superior */}
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-blue to-brand-cyan" />
 
                 <div className="mb-8 mt-2">
-                  <span className="text-[11px] font-black uppercase tracking-widest text-brand-blue bg-brand-blue/10 px-3 py-1.5 rounded-md">
+                  <span className="text-[11px] font-black uppercase tracking-widest text-brand-blue bg-brand-blue/5 px-3 py-1.5 rounded-md">
                     {t(`pilares.${pilar.id}.badge`)}
                   </span>
                 </div>
 
-                <h3 className="text-[24px] font-black text-white mb-4 tracking-tighter uppercase leading-none">
+                <h3 className="text-[24px] font-black text-text-title mb-4 tracking-tighter uppercase leading-none">
                   {t(`pilares.${pilar.id}.title`)}
                 </h3>
 
-                <p className="text-[15px] text-text-light leading-relaxed mb-8 flex-1">
+                <p className="text-[15px] text-text-body leading-relaxed mb-8 flex-1">
                   {t(`pilares.${pilar.id}.description`)}
                 </p>
 
                 {/* Features List */}
                 <ul className="flex flex-col gap-4 mb-10">
                   {pilar.features.map((feat, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-text-light">
-                      <div className="w-8 h-8 rounded-full bg-bg-light flex items-center justify-center flex-shrink-0">
+                    <li key={idx} className="flex items-center gap-3 text-sm font-bold text-text-title/80">
+                      <div className="w-8 h-8 rounded-full bg-brand-blue/5 flex items-center justify-center flex-shrink-0">
                         <feat.icon size={16} className="text-brand-blue" />
                       </div>
                       {t(`pilares.${pilar.id}.${feat.key}`)}
