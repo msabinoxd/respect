@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Target, Shield, Gauge, ArrowRight } from 'lucide-react';
 import { fadeUpPremium, staggerSlow } from '../../shared/animations.premium';
-import { Container, Section, Badge } from '../base';
-import { BlueprintEngine } from '../BlueprintEngine';
+import { Container, Section, Badge, Button } from '../base';
+import { KineticNexus } from './KineticNexus';
 
 export function SolutionV2() {
   const { t } = useTranslation('v2');
@@ -33,42 +33,31 @@ export function SolutionV2() {
   ];
 
   return (
-    <Section variant="white" id="solucao" className="relative pb-40 pt-24 overflow-hidden">
+    <Section variant="white" id="solucao" className="relative pb-40 pt-24 overflow-hidden border-t border-black/[0.02]">
       {/* Background Accent */}
       <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-brand-blue/[0.02] blur-[120px] rounded-full -z-1" />
 
       <Container size="lg">
         <div className="flex flex-col lg:flex-row items-center gap-24 lg:gap-32">
           
-          {/* Left: Interactive Diagram / Visual Representation */}
+          {/* Left: Interactive Diagram / Visual Representation - Kinetic Coded */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="flex-1 w-full max-w-[640px]"
           >
-            <div className="relative p-16 bg-[#FAFBFF] rounded-[48px] border border-brand-blue/5 overflow-hidden group shadow-premium hover:shadow-2xl transition-all duration-700">
-              {/* Simplified Flow Diagram - Using BlueprintEngine but styled as a "Nexus" */}
-              <div className="absolute inset-0 bg-brand-blue/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              
-              <div className="relative z-10 transition-transform duration-700 group-hover:scale-[1.02]">
-                <BlueprintEngine />
+            <div className="relative p-12 lg:p-16 bg-[#FDFEFF] rounded-[48px] border border-black/[0.02] overflow-hidden group shadow-premium-deep hover:shadow-2xl transition-all duration-700">
+              {/* Custom Coded System Component */}
+              <div className="relative z-10 transition-transform duration-700 group-hover:scale-[1.01]">
+                <KineticNexus />
               </div>
-              
-              {/* Floating Benefit Tags */}
-              <motion.div 
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-12 right-12 bg-white shadow-premium-deep px-6 py-3.5 rounded-2xl border border-brand-blue/10 backdrop-blur-md z-20"
-              >
-                 <span className="text-[11px] font-black text-brand-blue uppercase tracking-widest">+ LUCRO LÍQUIDO</span>
-              </motion.div>
 
               {/* Interactive Decoration */}
-              <div className="absolute bottom-12 left-12 flex items-center gap-3">
+              <div className="absolute bottom-12 left-12 flex items-center gap-4 bg-white/40 backdrop-blur-md px-4 py-2 rounded-full border border-black/[0.02]">
                 <div className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
-                <span className="text-[10px] font-black text-brand-blue/40 uppercase tracking-[0.3em]">System Monitoring Active</span>
+                <span className="text-[9px] font-black text-brand-blue uppercase tracking-[0.3em]">INTEGRATION_SYNC_v2.4_ACTIVE</span>
               </div>
             </div>
           </motion.div>
@@ -87,14 +76,14 @@ export function SolutionV2() {
               
               <motion.h2
                 variants={fadeUpPremium}
-                className="text-4xl md:text-7xl font-black text-text-title mb-10 leading-[1] tracking-[-0.04em] uppercase"
+                className="text-3xl md:text-5xl font-black text-text-title mb-8 leading-tight tracking-[-0.02em] uppercase"
               >
                 {t('solution.headline')}
               </motion.h2>
 
               <motion.p
                 variants={fadeUpPremium}
-                className="text-xl md:text-2xl text-text-body font-bold opacity-70 mb-14 border-l-4 border-brand-blue/20 pl-8 leading-relaxed"
+                className="text-lg md:text-xl text-text-body font-bold opacity-50 mb-12 border-l-4 border-brand-blue/20 pl-8 leading-relaxed"
               >
                 {t('solution.subline')}
               </motion.p>

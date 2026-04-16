@@ -31,14 +31,14 @@ export function ScarcityV2() {
            
            <motion.h2
              variants={fadeUpPremium}
-             className="text-4xl md:text-7xl font-black text-text-title leading-[1] tracking-[-0.04em] uppercase"
+             className="text-3xl md:text-5xl font-black text-text-title leading-tight tracking-[-0.02em] uppercase"
            >
              {t('scarcity.headline')}
            </motion.h2>
 
            <motion.p
              variants={fadeUpPremium}
-             className="text-xl md:text-2xl text-text-body font-bold opacity-60 leading-relaxed max-w-xl mx-auto"
+             className="text-lg md:text-xl text-text-body font-bold opacity-50 leading-relaxed max-w-xl mx-auto"
            >
              {t('scarcity.subline')}
            </motion.p>

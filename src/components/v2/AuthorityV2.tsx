@@ -49,14 +49,14 @@ export function AuthorityV2() {
            
            <motion.h2
              variants={fadeUpPremium}
-             className="text-4xl md:text-8xl font-black text-white mb-10 tracking-[-0.04em] uppercase leading-[0.9] max-w-5xl mx-auto"
+             className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-[-0.02em] uppercase leading-tight max-w-4xl mx-auto"
            >
              {t('authority.headline')}
            </motion.h2>
 
            <motion.p
              variants={fadeUpPremium}
-             className="text-xl md:text-2xl text-white/40 max-w-3xl mx-auto font-bold"
+             className="text-lg md:text-xl text-white/30 max-w-2xl mx-auto font-bold"
            >
              {t('authority.subline')}
            </motion.p>

@@ -47,14 +47,14 @@ export function ProblemV2() {
             
             <motion.h2
               variants={fadeUpPremium}
-              className="text-4xl md:text-6xl font-black text-text-title tracking-[-0.04em] mb-10 leading-[1.05] uppercase"
+              className="text-3xl md:text-5xl font-black text-text-title tracking-[-0.02em] mb-8 leading-tight uppercase"
             >
               {t('problem.headline')}
             </motion.h2>
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-xl md:text-2xl text-red-600 font-bold mb-12 border-l-4 border-red-500/30 pl-8 py-3 bg-red-500/5 rounded-r-2xl"
+              className="text-lg md:text-xl text-red-600 font-bold mb-10 border-l-4 border-red-500/30 pl-8 py-2 bg-red-500/5 rounded-r-xl"
             >
               {t('problem.subline')}
             </motion.p>

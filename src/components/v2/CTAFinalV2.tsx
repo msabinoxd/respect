@@ -30,7 +30,7 @@ export function CTAFinalV2() {
             
             <motion.h2
               variants={fadeUpPremium}
-              className="text-4xl md:text-8xl font-black text-text-title mb-10 leading-[0.9] tracking-[-0.04em] uppercase"
+              className="text-3xl md:text-5xl lg:text-6xl font-black text-text-title mb-8 leading-tight tracking-[-0.02em] uppercase"
             >
               ESTRUTURE SUA <br />
               <span className="text-brand-blue">OPERAÇÃO AGORA.</span>
@@ -38,7 +38,7 @@ export function CTAFinalV2() {
 
             <motion.p
               variants={fadeUpPremium}
-              className="text-xl md:text-2xl font-bold text-text-body/60 mb-14 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              className="text-lg md:text-xl font-bold text-text-body/40 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
               Não deixe que a fragmentação técnica consuma sua margem de lucro. Garanta seu lugar na próxima rodada de implementação.
             </motion.p>

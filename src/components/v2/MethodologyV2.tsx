@@ -35,14 +35,14 @@ export function MethodologyV2() {
                
                <motion.h2
                  variants={fadeUpPremium}
-                 className="text-4xl md:text-7xl font-black text-text-title mb-10 leading-[1] tracking-[-0.04em] uppercase"
+                 className="text-3xl md:text-5xl font-black text-text-title mb-8 leading-tight tracking-[-0.02em] uppercase"
                >
                  {t('methodology.headline')}
                </motion.h2>
 
                <motion.p
                  variants={fadeUpPremium}
-                 className="text-xl md:text-2xl text-text-body font-bold opacity-70 mb-14 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+                 className="text-lg md:text-xl text-text-body font-bold opacity-50 mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0"
                >
                  {t('methodology.subline')}
                </motion.p>
