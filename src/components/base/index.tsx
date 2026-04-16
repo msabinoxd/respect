@@ -23,7 +23,7 @@ export function Button({
 
   const variants: Record<string, string> = {
     primary: 'bg-brand-blue text-white shadow-[var(--sh-button)] hover:brightness-110 active:scale-[0.98]',
-    secondary: 'bg-white text-text-title border border-black/[0.05] hover:bg-black/[0.02]',
+    secondary: 'bg-[var(--background)] text-[var(--foreground)] border border-black/[0.1] dark:border-white/10 hover:bg-black/[0.02] dark:hover:bg-white/5',
     navy: 'bg-black text-white hover:bg-neutral-900 shadow-lg active:scale-[0.98]',
     ghost: 'text-text-muted hover:text-text-title hover:bg-black/[0.03]',
   };

@@ -9,7 +9,7 @@ export function CTAFinal() {
   const { t } = useTranslation();
 
   return (
-    <footer id="diagnostico" className="relative bg-white pt-40 pb-20 overflow-hidden">
+    <footer id="diagnostico" className="relative bg-[var(--background)] pt-40 pb-20 overflow-hidden transition-colors duration-400">
       <Container size="lg" className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
@@ -73,7 +73,7 @@ export function CTAFinal() {
           </motion.div>
         </div>
 
-        <div className="mt-40 pt-12 border-t border-black/[0.03] flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="mt-40 pt-12 border-t border-black/[0.03] dark:border-white/5 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-text-muted/40">
             <p>&copy; {new Date().getFullYear()} {CONFIG.brand.name}</p>
             <span className="hidden md:block w-1 h-1 rounded-full bg-black/10" />

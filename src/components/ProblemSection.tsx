@@ -49,7 +49,7 @@ export function ProblemSection() {
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-10 right-0 md:-right-10 p-5 bg-white/80 backdrop-blur-md rounded-2xl shadow-premium border border-black/[0.03] flex items-center gap-3 z-20"
+                className="absolute top-10 right-0 md:-right-10 p-5 bg-white/80 dark:bg-black/80 backdrop-blur-md rounded-2xl shadow-premium border border-black/[0.03] dark:border-white/10 flex items-center gap-3 z-20"
               >
                 <div className="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
                   <ShieldAlert size={20} />
@@ -93,7 +93,7 @@ export function ProblemSection() {
                 <motion.div
                   key={i}
                   variants={fadeUpPremium}
-                  className="flex gap-8 p-8 rounded-2xl bg-white border border-black/[0.03] hover:border-black/[0.1] transition-all group"
+                className="flex gap-8 p-8 rounded-2xl bg-white dark:bg-white/5 border border-black/[0.03] dark:border-white/5 hover:border-black/[0.1] dark:hover:border-white/10 transition-all group"
                 >
                   <div className="shrink-0 w-14 h-14 rounded-xl bg-black/[0.02] flex items-center justify-center group-hover:bg-brand-blue/5 transition-colors">
                     <prob.icon size={24} className="text-text-title group-hover:text-brand-blue transition-colors" />

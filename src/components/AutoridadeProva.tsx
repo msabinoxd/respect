@@ -40,7 +40,7 @@ function StatCard({ stat, inView }: { stat: typeof STATS_META[0]; inView: boolea
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center p-12 bg-white border border-black/[0.03] rounded-3xl group hover:border-black/[0.1] transition-all">
+    <div className="flex flex-col items-center p-12 bg-[var(--background)] dark:bg-white/5 border border-black/[0.03] dark:border-white/10 rounded-3xl group hover:border-black/[0.1] dark:hover:border-white/20 transition-all">
       <div className="w-16 h-16 rounded-2xl bg-black/[0.02] flex items-center justify-center mb-8 text-black opacity-30 group-hover:text-brand-blue group-hover:opacity-100 transition-all">
         <stat.icon size={26} strokeWidth={1.5} />
       </div>

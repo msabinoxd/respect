@@ -15,11 +15,11 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
     <motion.div variants={fadeUpPremium} className="border-b border-black/[0.03]">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left bg-white py-10 flex items-start justify-between gap-10 group"
+        className="w-full text-left bg-[var(--background)] py-10 flex items-start justify-between gap-10 group"
         aria-expanded={open}
       >
         <span className="flex items-start gap-10">
-          <span className="text-[10px] font-black text-black/20 pt-1.5 w-6 flex-shrink-0">
+          <span className="text-[10px] font-black text-[var(--foreground)] opacity-20 pt-1.5 w-6 flex-shrink-0">
             {String(index + 1).padStart(2, '0')}
           </span>
           <span className="text-xl md:text-2xl font-black text-text-title group-hover:text-brand-blue transition-colors uppercase tracking-tighter">
@@ -31,7 +31,7 @@ function FAQItem({ qKey, index }: { qKey: string; index: number }) {
           transition={{ duration: 0.3 }}
           className="flex-shrink-0 mt-3"
         >
-          <ChevronDown size={20} className="text-black/20 group-hover:text-brand-blue transition-colors" />
+          <ChevronDown size={20} className="text-[var(--foreground)] opacity-20 group-hover:text-brand-blue transition-colors" />
         </motion.div>
       </button>
 

@@ -15,7 +15,7 @@ export function ScarcitySection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUpPremium}
-          className="text-center bg-white border border-black/[0.03] rounded-[60px] p-12 md:p-32 relative overflow-hidden"
+          className="text-center bg-[var(--background)] border border-black/[0.03] dark:border-white/10 rounded-[60px] p-12 md:p-32 relative overflow-hidden"
         >
           <div className="relative z-10 flex flex-col items-center">
             <div className="w-20 h-20 rounded-2xl bg-black/[0.02] flex items-center justify-center mb-10 border border-black/[0.03]">

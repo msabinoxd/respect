@@ -141,7 +141,7 @@ export function PilaresSolucoes() {
                   className="w-full max-w-[200px] h-auto group-hover:scale-110 transition-transform duration-1000 loading='lazy'" 
                   alt={t('alts.pillar_sales')}
                 />
-                <div onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} className="px-12 py-5 bg-white text-black font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer">
+                <div onClick={() => document.getElementById('diagnostico')?.scrollIntoView({ behavior: 'smooth' })} className="px-12 py-5 bg-[var(--background)] dark:bg-white/5 text-[var(--foreground)] font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:bg-brand-blue hover:text-white transition-all transform hover:translate-y-[-2px] cursor-pointer border border-black/[0.03] dark:border-white/10">
                   {t('pilares.cta')}
                 </div>
               </div>
