@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Shield } from 'lucide-react';
 import { fadeUpPremium, staggerSlow } from '../shared/animations.premium';
-import { Container, Section, Badge } from '../components/base';
+import { Container, Badge } from '../components/base';
 import { useSEO } from '../hooks/useSEO';
 
 export function PrivacyPolicy() {
